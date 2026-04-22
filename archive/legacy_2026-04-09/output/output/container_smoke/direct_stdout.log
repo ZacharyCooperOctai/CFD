@@ -1,0 +1,331 @@
+LOG_SOLVER        | info    | NO override given on the command line.
+LOG_LS            | info    | initialize linear system solvers
+|                 | |       | | 3 linear systems
+LOG_NLS           | info    | initialize non-linear system solvers
+|                 | |       | | 15 non-linear systems
+LOG_SOLVER        | info    | numberOfIntervals = 3
+LOG_SOLVER        | info    | Allocated simulation result data storage for method 'mat' and file='direct_debug.mat'
+LOG_SOLVER        | info    | recognized solver: dassl
+LOG_SOLVER        | info    | Configuration of the dassl code:
+|                 | |       | | The relative tolerance is 1e-06. Following absolute tolerances are used for the states: 
+|                 | |       | | maximum step size not set
+|                 | |       | | initial step size not set
+|                 | |       | | maximum integration order 5
+|                 | |       | | use equidistant time grid YES
+|                 | |       | | jacobian is calculated by Colored numerical Jacobian, which is default for dassl and ida. Needs omc compiler flag --generateDynamicJacobian=numeric. With option -idaLS=klu a sparse matrix is used.
+|                 | |       | | dassl uses internal root finding method YES
+|                 | |       | | dassl performs an restart after an event occurs YES
+LOG_INIT          | info    | ### START INITIALIZATION ###
+LOG_INIT          | info    | updating min-values
+LOG_INIT          | info    | updating max-values
+LOG_INIT          | info    | updating nominal-values
+LOG_INIT          | info    | updating primary start-values
+LOG_NLS           | info    | update static data of non-linear system solvers
+LOG_INIT          | info    | initialization method: symbolic        [solves the initialization problem symbolically - default]
+LOG_INIT_HOMOTOPY | info    | Model contains homotopy operator: Use adaptive homotopy method to solve initialization problem. To disable initialization with homotopy operator use "-noHomotopyOnFirstTry".
+LOG_INIT_HOMOTOPY | info    | Global homotopy with equidistant step size started.
+LOG_INIT_HOMOTOPY | info    | The homotopy path will be exported to s000_baseline_equidistant_global_homotopy.csv.
+LOG_INIT_HOMOTOPY | info    | homotopy process
+|                 | |       | ---------------------------
+LOG_INIT_HOMOTOPY | info    | homotopy parameter lambda = 0
+LOG_LS            | info    | Start solving Linear System 1190 (size 5) at time 0 with Lapack Solver
+LOG_LS            | warning | Failed to solve linear system of equations (no. 1190) at time 0.000000. Residual norm is 4.9766697611642.
+LOG_STDOUT        | warning | The default linear solver fails, the fallback solver with total pivoting is started at time 0.000000. That might raise performance issues, for more information use -lv LOG_LS.
+LOG_LS            | info    | Start solving Linear System 1190 (size 5) at time 0 with Total Pivot Solver
+LOG_NLS           | info    | ############ Solve nonlinear system 1594 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]       dc.weaDat.weaBus.TWetBul  =           291.15		 nom =                1
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 6
+|                 | |       | | |  number of function evaluations : 7
+|                 | |       | | |  number of jacobian evaluations : 6
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]       dc.weaDat.weaBus.TWetBul  =        260.17477
+LOG_INIT_HOMOTOPY | info    | homotopy parameter lambda = 0 done
+|                 | |       | ---------------------------
+LOG_INIT_HOMOTOPY | info    | homotopy parameter lambda = 0.333333
+LOG_LS            | info    | Start solving Linear System 255 (size 5) at time 0 with Lapack Solver
+LOG_LS            | warning | Failed to solve linear system of equations (no. 255) at time 0.000000. Residual norm is 4.9766697611642.
+LOG_STDOUT        | warning | The default linear solver fails, the fallback solver with total pivoting is started at time 0.000000. That might raise performance issues, for more information use -lv LOG_LS.
+LOG_LS            | info    | Start solving Linear System 255 (size 5) at time 0 with Total Pivot Solver
+LOG_NLS           | info    | ############ Solve nonlinear system 410 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[21]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 1
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[21]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 414 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[20]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 1
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[20]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 418 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[19]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 1
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[19]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 422 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[18]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 1
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[18]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 426 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[17]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 1
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[17]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 430 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[16]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 1
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[16]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 665 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]       dc.weaDat.weaBus.TWetBul  =        260.17477		 nom =                1
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 1
+|                 | |       | | |  number of function evaluations : 2
+|                 | |       | | |  number of jacobian evaluations : 1
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]       dc.weaDat.weaBus.TWetBul  =        260.17477
+Start Fast Fluid Dynamics Simulation with Thread
+LOG_INIT_HOMOTOPY | info    | homotopy parameter lambda = 0.333333 done
+|                 | |       | ---------------------------
+LOG_INIT_HOMOTOPY | info    | homotopy parameter lambda = 0.666667
+LOG_LS            | info    | Start solving Linear System 255 (size 5) at time 0 with Lapack Solver
+LOG_LS            | warning | Failed to solve linear system of equations (no. 255) at time 0.000000. Residual norm is 4.9766697611642.
+LOG_LS            | warning | The default linear solver fails, the fallback solver with total pivoting is started at time 0.000000. That might raise performance issues, for more information use -lv LOG_LS.
+LOG_LS            | info    | Start solving Linear System 255 (size 5) at time 0 with Total Pivot Solver
+LOG_NLS           | info    | ############ Solve nonlinear system 410 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[21]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 2
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[21]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 414 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[20]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 2
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[20]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 418 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[19]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 2
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[19]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 422 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[18]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 2
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[18]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 426 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[17]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 2
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[17]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 430 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[16]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 2
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[16]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 665 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]       dc.weaDat.weaBus.TWetBul  =        260.17477		 nom =                1
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 1
+|                 | |       | | |  number of function evaluations : 3
+|                 | |       | | |  number of jacobian evaluations : 1
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]       dc.weaDat.weaBus.TWetBul  =        260.17477
+LOG_INIT_HOMOTOPY | info    | homotopy parameter lambda = 0.666667 done
+|                 | |       | ---------------------------
+Start Fast Fluid Dynamics Simulation with Thread
+LOG_INIT_HOMOTOPY | info    | homotopy parameter lambda = 1
+LOG_LS            | info    | Start solving Linear System 255 (size 5) at time 0 with Lapack Solver
+LOG_LS            | warning | Failed to solve linear system of equations (no. 255) at time 0.000000. Residual norm is 4.9766697611642.
+LOG_LS            | info    | Too many warnings, reached display limit of 3. Suppressing further warning messages of the same type.
+LOG_LS            | info    | Change limit with simulation flag -lvMaxWarn=<newLimit>
+LOG_LS            | warning | The default linear solver fails, the fallback solver with total pivoting is started at time 0.000000. That might raise performance issues, for more information use -lv LOG_LS.
+LOG_LS            | info    | Too many warnings, reached display limit of 3. Suppressing further warning messages of the same type.
+LOG_LS            | info    | Change limit with simulation flag -lvMaxWarn=<newLimit>
+LOG_LS            | info    | Start solving Linear System 255 (size 5) at time 0 with Total Pivot Solver
+LOG_NLS           | info    | ############ Solve nonlinear system 410 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[21]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 3
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[21]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 414 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[20]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 3
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[20]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 418 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[19]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 3
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[19]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 422 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[18]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 3
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[18]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 426 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[17]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 3
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[17]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 430 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[16]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 3
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[16]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 665 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]       dc.weaDat.weaBus.TWetBul  =        260.17477		 nom =                1
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 1
+|                 | |       | | |  number of function evaluations : 4
+|                 | |       | | |  number of jacobian evaluations : 1
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]       dc.weaDat.weaBus.TWetBul  =        260.17477
+LOG_INIT_HOMOTOPY | info    | homotopy parameter lambda = 1 done
+|                 | |       | ---------------------------
+Start Fast Fluid Dynamics Simulation with Thread
+LOG_INIT          | info    | ### END INITIALIZATION ###
+LOG_LS            | info    | Start solving Linear System 1996 (size 5) at time 0 with Lapack Solver
+LOG_LS            | warning | Failed to solve linear system of equations (no. 1996) at time 0.000000. Residual norm is 9.18755268720378.
+LOG_STDOUT        | warning | The default linear solver fails, the fallback solver with total pivoting is started at time 0.000000. That might raise performance issues, for more information use -lv LOG_LS.
+LOG_LS            | info    | Start solving Linear System 1996 (size 5) at time 0 with Total Pivot Solver
+LOG_NLS           | info    | ############ Solve nonlinear system 2051 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[16]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 1
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[16]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 2057 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[17]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 1
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[17]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 2063 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[18]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 1
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[18]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 2069 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[19]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 1
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[19]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 2075 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[20]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 1
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[20]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 2081 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[21]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 1
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[21]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 2209 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]       dc.weaDat.weaBus.TWetBul  =        260.17477		 nom =                1
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 1
+|                 | |       | | |  number of function evaluations : 2
+|                 | |       | | |  number of jacobian evaluations : 1
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]       dc.weaDat.weaBus.TWetBul  =        260.17477
+LOG_LS            | info    | Start solving Linear System 1996 (size 5) at time 0 with Lapack Solver

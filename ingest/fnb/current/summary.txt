@@ -1,0 +1,43 @@
+======================================================================
+DATA CENTRE FFD MODEL — GEOMETRY AND MESH SUMMARY
+======================================================================
+
+ROOM ENVELOPE
+  X (width):  15.0 m
+  Y (length): 25.0 m
+  White space height: 3.9 m
+  Plenum depth: 0.6 m
+  Total Z domain: -0.60 to 3.90 m
+
+MESH
+  Grid nodes:  X=101, Y=318, Z=38
+  Grid cells:  X=100, Y=317, Z=37
+  Total cells: 1,172,900
+  Min cell size X: 0.1500 m
+  Max cell size X: 0.1500 m
+  Min cell size Y: 0.0462 m
+  Max cell size Y: 0.1667 m
+  Min cell size Z: 0.0444 m
+  Max cell size Z: 0.1480 m
+
+RACK ROWS
+  row_1: X=[2.3, 13.6] Y=[2.6, 3.7] Z=[0.0, 2.26] heat=65000 W
+  row_2: X=[2.3, 13.6] Y=[5.2, 6.3] Z=[0.0, 2.26] heat=65000 W
+  row_3: X=[2.3, 13.6] Y=[7.8, 8.9] Z=[0.0, 2.26] heat=65000 W
+  row_4: X=[2.3, 13.6] Y=[10.4, 11.5] Z=[0.0, 2.26] heat=65000 W
+  row_5: X=[2.3, 13.6] Y=[13.0, 14.1] Z=[0.0, 2.26] heat=65000 W
+  row_6: X=[2.3, 13.6] Y=[15.6, 16.7] Z=[0.0, 2.26] heat=65000 W
+  row_7: X=[2.3, 13.6] Y=[18.2, 19.3] Z=[0.0, 2.26] heat=65000 W
+  row_8: X=[2.3, 13.6] Y=[20.8, 21.9] Z=[0.0, 2.26] heat=65000 W
+
+CONTAINMENT BLOCKS: 12
+PERFORATED TILE ZONES: 8
+CRAC OPENINGS: 12
+VIRTUAL SENSORS: 325
+
+CELL FLAG DISTRIBUTION
+  fluid                    :    868,933 cells ( 74.1%)
+  wall_adiabatic           :     92,450 cells (  7.9%)
+  tile_opening             :      5,396 cells (  0.5%)
+  containment_wall         :     18,009 cells (  1.5%)
+  rack_source              :    188,112 cells ( 16.0%)

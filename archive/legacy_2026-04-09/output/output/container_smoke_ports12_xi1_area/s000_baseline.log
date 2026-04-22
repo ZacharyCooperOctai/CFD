@@ -1,0 +1,44 @@
+LOG_STDOUT        | warning | The default linear solver fails, the fallback solver with total pivoting is started at time 0.000000. That might raise performance issues, for more information use -lv LOG_LS.
+LOG_STDOUT        | warning | The default linear solver fails, the fallback solver with total pivoting is started at time 0.000000. That might raise performance issues, for more information use -lv LOG_LS.
+Start Fast Fluid Dynamics Simulation with Thread
+LOG_STDOUT        | warning | The default linear solver fails, the fallback solver with total pivoting is started at time 0.000000. That might raise performance issues, for more information use -lv LOG_LS.
+LOG_ASSERT        | warning | [/workspace/external/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/InfraredRadiationExchange.mo:63:3-68:36:writable]
+|                 | |       | The following assertion has been violated at time 0.000000
+|                 | |       | ((dc.roo.irRadExc.J[1] <= 0.0)) --> "Variable violating max constraint: dc.roo.irRadExc.J[1] <= 0.0, has value: 471112"
+LOG_ASSERT        | warning | [/workspace/external/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/InfraredRadiationExchange.mo:63:3-68:36:writable]
+|                 | |       | The following assertion has been violated at time 0.000000
+|                 | |       | ((dc.roo.irRadExc.J[2] <= 0.0)) --> "Variable violating max constraint: dc.roo.irRadExc.J[2] <= 0.0, has value: 471112"
+LOG_ASSERT        | warning | [/workspace/external/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/InfraredRadiationExchange.mo:63:3-68:36:writable]
+|                 | |       | The following assertion has been violated at time 0.000000
+|                 | |       | ((dc.roo.irRadExc.J[3] <= 0.0)) --> "Variable violating max constraint: dc.roo.irRadExc.J[3] <= 0.0, has value: 84800.1"
+LOG_ASSERT        | warning | [/workspace/external/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/InfraredRadiationExchange.mo:63:3-68:36:writable]
+|                 | |       | The following assertion has been violated at time 0.000000
+|                 | |       | ((dc.roo.irRadExc.J[4] <= 0.0)) --> "Variable violating max constraint: dc.roo.irRadExc.J[4] <= 0.0, has value: 84800.1"
+LOG_ASSERT        | warning | [/workspace/external/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/InfraredRadiationExchange.mo:63:3-68:36:writable]
+|                 | |       | The following assertion has been violated at time 0.000000
+|                 | |       | ((dc.roo.irRadExc.J[5] <= 0.0)) --> "Variable violating max constraint: dc.roo.irRadExc.J[5] <= 0.0, has value: 136264"
+LOG_ASSERT        | warning | [/workspace/external/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/InfraredRadiationExchange.mo:63:3-68:36:writable]
+|                 | |       | The following assertion has been violated at time 0.000000
+|                 | |       | ((dc.roo.irRadExc.J[6] <= 0.0)) --> "Variable violating max constraint: dc.roo.irRadExc.J[6] <= 0.0, has value: 136264"
+LOG_ASSERT        | warning | [/workspace/external/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/InfraredRadiationExchange.mo:70:3-74:37:writable]
+|                 | |       | The following assertion has been violated at time 0.000000
+|                 | |       | ((dc.roo.irRadExc.G[1] >= 0.0)) --> "Variable violating min constraint: 0.0 <= dc.roo.irRadExc.G[1], has value: -471112"
+LOG_ASSERT        | warning | [/workspace/external/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/InfraredRadiationExchange.mo:70:3-74:37:writable]
+|                 | |       | The following assertion has been violated at time 0.000000
+|                 | |       | ((dc.roo.irRadExc.G[2] >= 0.0)) --> "Variable violating min constraint: 0.0 <= dc.roo.irRadExc.G[2], has value: -471112"
+LOG_ASSERT        | warning | [/workspace/external/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/InfraredRadiationExchange.mo:70:3-74:37:writable]
+|                 | |       | The following assertion has been violated at time 0.000000
+|                 | |       | ((dc.roo.irRadExc.G[3] >= 0.0)) --> "Variable violating min constraint: 0.0 <= dc.roo.irRadExc.G[3], has value: -84800.1"
+LOG_ASSERT        | warning | [/workspace/external/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/InfraredRadiationExchange.mo:70:3-74:37:writable]
+|                 | |       | The following assertion has been violated at time 0.000000
+|                 | |       | ((dc.roo.irRadExc.G[4] >= 0.0)) --> "Variable violating min constraint: 0.0 <= dc.roo.irRadExc.G[4], has value: -84800.1"
+LOG_ASSERT        | warning | [/workspace/external/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/InfraredRadiationExchange.mo:70:3-74:37:writable]
+|                 | |       | The following assertion has been violated at time 0.000000
+|                 | |       | ((dc.roo.irRadExc.G[5] >= 0.0)) --> "Variable violating min constraint: 0.0 <= dc.roo.irRadExc.G[5], has value: -136264"
+LOG_ASSERT        | warning | [/workspace/external/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/InfraredRadiationExchange.mo:70:3-74:37:writable]
+|                 | |       | The following assertion has been violated at time 0.000000
+|                 | |       | ((dc.roo.irRadExc.G[6] >= 0.0)) --> "Variable violating min constraint: 0.0 <= dc.roo.irRadExc.G[6], has value: -136264"
+LOG_SUCCESS       | info    | The initialization finished successfully with 3 homotopy steps.
+LOG_ASSERT        | debug   | 
+LOG_ASSERT        | debug   | 
+Execution failed!

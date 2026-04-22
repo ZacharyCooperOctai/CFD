@@ -1,0 +1,48 @@
+case:
+  id: minimal_coupled
+  generator: buildings_forced_convection_template
+  model_name: MinimalCoupledFFD
+  controls:
+    fan_count: 1
+    supply_temp_count: 1
+  defaults:
+    scenario: baseline
+    stop_time: 20.0
+    sync_dt: 10.0
+  validation:
+    mat_required: true
+    fail_on_stdout_patterns:
+    - Segmentation fault
+    - Execution failed
+    - LOG_ASSERT
+    - Variable violating
+    fail_on_stderr_patterns:
+    - 'error:'
+    - assertion
+    - segmentation fault
+    fail_on_ffd_patterns:
+    - ERROR in
+    - Could not
+    - different number
+    - Segmentation fault
+    variable_bounds:
+    - name: dc.T_sup_out[1]
+      min: 270.0
+      max: 320.0
+    - name: dc.T_ret_out[1]
+      min: 270.0
+      max: 340.0
+template:
+  example: ForcedConvection
+  base_ffd: external/modelica-buildings/Buildings/Resources/Data/ThermalZones/Detailed/Examples/FFD/ForcedConvection.ffd
+  base_cfd: external/modelica-buildings/Buildings/Resources/Data/ThermalZones/Detailed/Examples/FFD/ForcedConvection.cfd
+  base_dat: external/modelica-buildings/Buildings/Resources/Data/ThermalZones/Detailed/Examples/FFD/EmptyRoom.dat
+  supply_port_name: Inlet
+  return_port_name: Outlet
+  surface_names:
+  - East Wall
+  - West Wall
+  - North Wall
+  - South Wall
+  - Ceiling
+  - Floor

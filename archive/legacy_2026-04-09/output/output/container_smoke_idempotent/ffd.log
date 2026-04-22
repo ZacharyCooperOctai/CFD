@@ -1,0 +1,183 @@
+Start Fast Fluid Dynamics Simulation with Thread
+fileName="/workspace/output/container_smoke_idempotent/dc_model.ffd"
+read_parameter(): Opened file /workspace/output/container_smoke_idempotent/dc_model.ffd for FFD parameters with base directory /workspace/output/container_smoke_idempotent/
+assign_parameter(): inpu.parameter_file_format=SCI
+assign_parameter(): inpu.parameter_file_name=/workspace/output/container_smoke_idempotent/dc_model.cfd
+assign_parameter(): inpu.block_file_name=/workspace/output/container_smoke_idempotent/dc_model.dat
+assign_parameter(): prob.nu=0.000015
+assign_parameter(): prob.rho=1.204000
+assign_parameter(): prob.gravx=0.000000
+assign_parameter(): prob.gravy=0.000000
+assign_parameter(): prob.gravz=-9.810000
+assign_parameter(): prob.cond=0.025700
+assign_parameter(): prob.Cp=1006.000000
+assign_parameter(): prob.beta=0.003430
+assign_parameter(): prob.diff=0.000010
+assign_parameter(): prob.coeff_h=0.004000
+assign_parameter(): prob.Temp_Buoyancy=22.000000
+assign_parameter(): init.T=22.000000
+assign_parameter(): init.u=0.000000
+assign_parameter(): init.v=0.000000
+assign_parameter(): init.w=0.000000
+assign_parameter(): outp.version=RUN
+read_sci_input(): Start to read sci input file /workspace/output/container_smoke_idempotent/dc_model.cfd
+read_sci_input(): para->bc->nb_bc=20
+read_sci_input(): para->bc->nb_inlet=6
+read_sci_input(): para->bc->inletName[0]=crac_1_supply
+read_sci_input(): VX=9.000000, VY=0.000000, VZ=0.000000, T=14.000000, Xi=0.000000
+read_sci_input(): para->bc->inletName[1]=crac_2_supply
+read_sci_input(): VX=-9.000000, VY=0.000000, VZ=0.000000, T=14.000000, Xi=0.000000
+read_sci_input(): para->bc->inletName[2]=crac_3_supply
+read_sci_input(): VX=9.000000, VY=0.000000, VZ=0.000000, T=14.000000, Xi=0.000000
+read_sci_input(): para->bc->inletName[3]=crac_4_supply
+read_sci_input(): VX=-9.000000, VY=0.000000, VZ=0.000000, T=14.000000, Xi=0.000000
+read_sci_input(): para->bc->inletName[4]=crac_5_supply
+read_sci_input(): VX=9.000000, VY=0.000000, VZ=0.000000, T=14.000000, Xi=0.000000
+read_sci_input(): para->bc->inletName[5]=crac_6_supply
+read_sci_input(): VX=-9.000000, VY=0.000000, VZ=0.000000, T=14.000000, Xi=0.000000
+read_sci_input(): para->bc->nb_outlet=14
+read_sci_input(): para->bc->outletName[0]=crac_1_return
+read_sci_input(): VX=-7.500000, VY=0.000000, VX=0.000000, T=22.000000, Xi=0.000000
+read_sci_input(): para->bc->outletName[1]=crac_2_return
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, T=22.000000, Xi=0.000000
+read_sci_input(): para->bc->outletName[2]=crac_3_return
+read_sci_input(): VX=-7.500000, VY=0.000000, VX=0.000000, T=22.000000, Xi=0.000000
+read_sci_input(): para->bc->outletName[3]=crac_4_return
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, T=22.000000, Xi=0.000000
+read_sci_input(): para->bc->outletName[4]=crac_5_return
+read_sci_input(): VX=-7.500000, VY=0.000000, VX=0.000000, T=22.000000, Xi=0.000000
+read_sci_input(): para->bc->outletName[5]=crac_6_return
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, T=22.000000, Xi=0.000000
+read_sci_input(): para->bc->outletName[6]=Tile 0.2500 row_1_tiles
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, T=22.000000, Xi=0.000000
+read_sci_input(): para->bc->outletName[7]=Tile 0.2500 row_2_tiles
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, T=22.000000, Xi=0.000000
+read_sci_input(): para->bc->outletName[8]=Tile 0.2500 row_3_tiles
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, T=22.000000, Xi=0.000000
+read_sci_input(): para->bc->outletName[9]=Tile 0.2500 row_4_tiles
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, T=22.000000, Xi=0.000000
+read_sci_input(): para->bc->outletName[10]=Tile 0.2500 row_5_tiles
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, T=22.000000, Xi=0.000000
+read_sci_input(): para->bc->outletName[11]=Tile 0.2500 row_6_tiles
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, T=22.000000, Xi=0.000000
+read_sci_input(): para->bc->outletName[12]=Tile 0.2500 row_7_tiles
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, T=22.000000, Xi=0.000000
+read_sci_input(): para->bc->outletName[13]=Tile 0.2500 row_8_tiles
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, T=22.000000, Xi=0.000000
+read_sci_input(): Port[0]:crac_1_supply
+read_sci_input(): Port[1]:crac_2_supply
+read_sci_input(): Port[2]:crac_3_supply
+read_sci_input(): Port[3]:crac_4_supply
+read_sci_input(): Port[4]:crac_5_supply
+read_sci_input(): Port[5]:crac_6_supply
+read_sci_input(): Port[6]:crac_1_return
+read_sci_input(): Port[7]:crac_2_return
+read_sci_input(): Port[8]:crac_3_return
+read_sci_input(): Port[9]:crac_4_return
+read_sci_input(): Port[10]:crac_5_return
+read_sci_input(): Port[11]:crac_6_return
+read_sci_input(): Port[12]:Tile 0.2500 row_1_tiles
+read_sci_input(): Port[13]:Tile 0.2500 row_2_tiles
+read_sci_input(): Port[14]:Tile 0.2500 row_3_tiles
+read_sci_input(): Port[15]:Tile 0.2500 row_4_tiles
+read_sci_input(): Port[16]:Tile 0.2500 row_5_tiles
+read_sci_input(): Port[17]:Tile 0.2500 row_6_tiles
+read_sci_input(): Port[18]:Tile 0.2500 row_7_tiles
+read_sci_input(): Port[19]:Tile 0.2500 row_8_tiles
+read_sci_input(): para->bc->nb_block=20
+read_sci_input(): para->bc->blockName[0]=Rack 2 65000.0 5.899343e-05 row_1
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=2545.226700, Xi=0.000000
+read_sci_input(): para->bc->blockName[1]=Rack -2 65000.0 5.899343e-05 row_2
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=2545.226700, Xi=0.000000
+read_sci_input(): para->bc->blockName[2]=Rack 2 65000.0 5.899343e-05 row_3
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=2545.226700, Xi=0.000000
+read_sci_input(): para->bc->blockName[3]=Rack -2 65000.0 5.899343e-05 row_4
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=2545.226700, Xi=0.000000
+read_sci_input(): para->bc->blockName[4]=Rack 2 65000.0 5.899343e-05 row_5
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=2545.226700, Xi=0.000000
+read_sci_input(): para->bc->blockName[5]=Rack -2 65000.0 5.899343e-05 row_6
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=2545.226700, Xi=0.000000
+read_sci_input(): para->bc->blockName[6]=Rack 2 65000.0 5.899343e-05 row_7
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=2545.226700, Xi=0.000000
+read_sci_input(): para->bc->blockName[7]=Rack -2 65000.0 5.899343e-05 row_8
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=2545.226700, Xi=0.000000
+read_sci_input(): para->bc->blockName[8]=ha_12_end_west
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[9]=ha_12_end_east
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[10]=ha_12_roof
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[11]=ha_34_end_west
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[12]=ha_34_end_east
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[13]=ha_34_roof
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[14]=ha_56_end_west
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[15]=ha_56_end_east
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[16]=ha_56_roof
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[17]=ha_78_end_west
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[18]=ha_78_end_east
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[19]=ha_78_roof
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->nb_wall=6
+read_sci_input(): para->bc->wallName[0]="West wall"
+read_sci_input(): ThermalBC=0, T/q_dot=0.000000
+read_sci_input(): para->bc->wallName[1]="East wall"
+read_sci_input(): ThermalBC=0, T/q_dot=0.000000
+read_sci_input(): para->bc->wallName[2]="South wall"
+read_sci_input(): ThermalBC=0, T/q_dot=0.000000
+read_sci_input(): para->bc->wallName[3]="North wall"
+read_sci_input(): ThermalBC=0, T/q_dot=0.000000
+read_sci_input(): para->bc->wallName[4]="Floor"
+read_sci_input(): ThermalBC=0, T/q_dot=0.000000
+read_sci_input(): para->bc->wallName[5]="Ceiling"
+read_sci_input(): ThermalBC=0, T/q_dot=0.000000
+read_sci_input(): para->bc->nb_source=0
+read_sci_input(): para->mytime->t_start=0.000000
+read_sci_input(): para->mytime->dt=0.100000
+read_sci_input(): para->mytime->step_total=9000
+read_sci_input(): Read sci input file /workspace/output/container_smoke_idempotent/dc_model.cfd
+read_sci_input(): start to read block information from "/workspace/output/container_smoke_idempotent/dc_model.dat".
+read_sci_input(): end of reading zeroone.dat.
+bounary_area(): Calculated surface area for FFD boundaries are:
+	Wall boundaries:
+		West wall: 108.464512[m2]
+		East wall: 108.464512[m2]
+		South wall: 67.500000[m2]
+		North wall: 67.500000[m2]
+		Floor: 375.000000[m2]
+		Ceiling: 375.000000[m2]
+	Inlet boundaries:
+		crac_1_supply: 0.533333[m2]
+		crac_2_supply: 0.533333[m2]
+		crac_3_supply: 0.578462[m2]
+		crac_4_supply: 0.578462[m2]
+		crac_5_supply: 0.578462[m2]
+		crac_6_supply: 0.578462[m2]
+	Outlet boundaries:
+		crac_1_return: 0.740000[m2]
+		crac_2_return: 0.740000[m2]
+		crac_3_return: 0.802616[m2]
+		crac_4_return: 0.802616[m2]
+		crac_5_return: 0.802616[m2]
+		crac_6_return: 0.802616[m2]
+		Tile 0.2500 row_1_tiles: 0.000000[m2]
+		Tile 0.2500 row_2_tiles: 0.000000[m2]
+		Tile 0.2500 row_3_tiles: 0.000000[m2]
+		Tile 0.2500 row_4_tiles: 0.000000[m2]
+		Tile 0.2500 row_5_tiles: 0.000000[m2]
+		Tile 0.2500 row_6_tiles: 0.000000[m2]
+		Tile 0.2500 row_7_tiles: 0.000000[m2]
+		Tile 0.2500 row_8_tiles: 0.000000[m2]
+-------------------------------------------------------------------
+	nSur=6
+ERROR in read_cosim_parameter(): Modelica(12) and FFD(20) have different number of fluid ports.
+ERROR in set_initial_data(): Could not read cosimulation parameters.
+ERROR in ffd(): Could not set initial data.
+ERROR in ffd_thread(): Cosimulation failed

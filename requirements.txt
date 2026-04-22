@@ -1,0 +1,31 @@
+# =============================================================================
+# Data Centre FFD–Modelica Coupled Simulation — Python Dependencies
+# =============================================================================
+# Install into a virtual environment:
+#   python -m venv .venv
+#   .venv\Scripts\activate          (Windows)
+#   pip install -r requirements.txt
+# =============================================================================
+
+# --- Step 0 & 1: geometry generation and FFD binary converter ----------------
+numpy>=1.24
+pyyaml>=6.0
+
+# --- Step 3: validation plots and 3-D VTK visualisation ---------------------
+matplotlib>=3.7
+pyvista>=0.43             # VTK export and 3-D notebook visualisation
+trame>=3.0                # interactive WebGL backend for pyvista in Jupyter
+nest-asyncio2             # allows trame server to autolaunch inside Jupyter event loop
+trame-vtk>=2.0            # VTK serialisation for trame
+trame-vuetify>=2.0        # UI components for trame
+
+# --- Step 4: OpenModelica Python interface and result parsing ----------------
+OMPython>=3.5
+BuildingsPy>=3.0          # alternative result parser and Modelica runner
+
+# --- Step 4: .mat result file reader (Dymola/OpenModelica output) ------------
+# DyMat is not on PyPI; install from source if needed:
+#   pip install git+https://github.com/jraedler/DyMat.git
+# Alternatively, BuildingsPy can parse .mat files directly.
+# Uncomment the line below if you install DyMat manually:
+# DyMat

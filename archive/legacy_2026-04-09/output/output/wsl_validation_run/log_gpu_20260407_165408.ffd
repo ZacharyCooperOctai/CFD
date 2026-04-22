@@ -1,0 +1,281 @@
+Start FFD simulation on GPU
+read_parameter(): Opened input.ffd for FFD parameters
+assign_parameter(): inpu.parameter_file_format=SCI
+assign_parameter(): inpu.parameter_file_name=dc_model.cfd
+assign_parameter(): inpu.block_file_name=dc_model.dat
+assign_parameter(): prob.nu=0.000015
+assign_parameter(): prob.rho=1.204000
+assign_parameter(): prob.gravx=0.000000
+assign_parameter(): prob.gravy=0.000000
+assign_parameter(): prob.gravz=-9.810000
+assign_parameter(): prob.cond=0.025700
+assign_parameter(): prob.Cp=1006.000000
+assign_parameter(): prob.beta=0.003430
+assign_parameter(): prob.diff=0.000010
+assign_parameter(): prob.coeff_h=0.004000
+assign_parameter(): prob.Temp_Buoyancy=22.000000
+assign_parameter(): init.T=22.000000
+assign_parameter(): init.u=0.000000
+assign_parameter(): init.v=0.000000
+assign_parameter(): init.w=0.000000
+assign_parameter(): outp.version=RUN
+read_sci_input(): Start to read sci input file dc_model.cfd
+read_sci_input(): para->bc->nb_bc=20
+read_sci_input(): para->bc->nb_inlet=6
+read_sci_input(): para->bc->inletName[0]=crac_1_supply
+read_sci_input(): VX=9.000000, VY=0.000000, VZ=0.000000, T=14.000000, Xi=0.000000
+read_sci_input(): para->bc->inletName[1]=crac_2_supply
+read_sci_input(): VX=-9.000000, VY=0.000000, VZ=0.000000, T=14.000000, Xi=0.000000
+read_sci_input(): para->bc->inletName[2]=crac_3_supply
+read_sci_input(): VX=9.000000, VY=0.000000, VZ=0.000000, T=14.000000, Xi=0.000000
+read_sci_input(): para->bc->inletName[3]=crac_4_supply
+read_sci_input(): VX=-9.000000, VY=0.000000, VZ=0.000000, T=14.000000, Xi=0.000000
+read_sci_input(): para->bc->inletName[4]=crac_5_supply
+read_sci_input(): VX=9.000000, VY=0.000000, VZ=0.000000, T=14.000000, Xi=0.000000
+read_sci_input(): para->bc->inletName[5]=crac_6_supply
+read_sci_input(): VX=-9.000000, VY=0.000000, VZ=0.000000, T=14.000000, Xi=0.000000
+read_sci_input(): para->bc->nb_outlet=14
+read_sci_input(): para->bc->outletName[0]=crac_1_return
+read_sci_input(): VX=-7.500000, VY=0.000000, VX=0.000000, T=22.000000, Xi=0.000000
+read_sci_input(): para->bc->outletName[1]=crac_2_return
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, T=22.000000, Xi=0.000000
+read_sci_input(): para->bc->outletName[2]=crac_3_return
+read_sci_input(): VX=-7.500000, VY=0.000000, VX=0.000000, T=22.000000, Xi=0.000000
+read_sci_input(): para->bc->outletName[3]=crac_4_return
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, T=22.000000, Xi=0.000000
+read_sci_input(): para->bc->outletName[4]=crac_5_return
+read_sci_input(): VX=-7.500000, VY=0.000000, VX=0.000000, T=22.000000, Xi=0.000000
+read_sci_input(): para->bc->outletName[5]=crac_6_return
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, T=22.000000, Xi=0.000000
+read_sci_input(): para->bc->outletName[6]=Tile 0.2500 row_1_tiles
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, T=22.000000, Xi=0.000000
+read_sci_input(): para->bc->outletName[7]=Tile 0.2500 row_2_tiles
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, T=22.000000, Xi=0.000000
+read_sci_input(): para->bc->outletName[8]=Tile 0.2500 row_3_tiles
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, T=22.000000, Xi=0.000000
+read_sci_input(): para->bc->outletName[9]=Tile 0.2500 row_4_tiles
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, T=22.000000, Xi=0.000000
+read_sci_input(): para->bc->outletName[10]=Tile 0.2500 row_5_tiles
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, T=22.000000, Xi=0.000000
+read_sci_input(): para->bc->outletName[11]=Tile 0.2500 row_6_tiles
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, T=22.000000, Xi=0.000000
+read_sci_input(): para->bc->outletName[12]=Tile 0.2500 row_7_tiles
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, T=22.000000, Xi=0.000000
+read_sci_input(): para->bc->outletName[13]=Tile 0.2500 row_8_tiles
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, T=22.000000, Xi=0.000000
+read_sci_input(): Port[0]:crac_1_supply
+read_sci_input(): Port[1]:crac_2_supply
+read_sci_input(): Port[2]:crac_3_supply
+read_sci_input(): Port[3]:crac_4_supply
+read_sci_input(): Port[4]:crac_5_supply
+read_sci_input(): Port[5]:crac_6_supply
+read_sci_input(): Port[6]:crac_1_return
+read_sci_input(): Port[7]:crac_2_return
+read_sci_input(): Port[8]:crac_3_return
+read_sci_input(): Port[9]:crac_4_return
+read_sci_input(): Port[10]:crac_5_return
+read_sci_input(): Port[11]:crac_6_return
+read_sci_input(): Port[12]:Tile 0.2500 row_1_tiles
+read_sci_input(): Port[13]:Tile 0.2500 row_2_tiles
+read_sci_input(): Port[14]:Tile 0.2500 row_3_tiles
+read_sci_input(): Port[15]:Tile 0.2500 row_4_tiles
+read_sci_input(): Port[16]:Tile 0.2500 row_5_tiles
+read_sci_input(): Port[17]:Tile 0.2500 row_6_tiles
+read_sci_input(): Port[18]:Tile 0.2500 row_7_tiles
+read_sci_input(): Port[19]:Tile 0.2500 row_8_tiles
+read_sci_input(): para->bc->nb_block=20
+read_sci_input(): para->bc->blockName[0]=Rack 2 65000.0 5.899343e-05 row_1
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=2545.226807, Xi=0.000000
+read_sci_input(): para->bc->blockName[1]=Rack -2 65000.0 5.899343e-05 row_2
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=2545.226807, Xi=0.000000
+read_sci_input(): para->bc->blockName[2]=Rack 2 65000.0 5.899343e-05 row_3
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=2545.226807, Xi=0.000000
+read_sci_input(): para->bc->blockName[3]=Rack -2 65000.0 5.899343e-05 row_4
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=2545.226807, Xi=0.000000
+read_sci_input(): para->bc->blockName[4]=Rack 2 65000.0 5.899343e-05 row_5
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=2545.226807, Xi=0.000000
+read_sci_input(): para->bc->blockName[5]=Rack -2 65000.0 5.899343e-05 row_6
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=2545.226807, Xi=0.000000
+read_sci_input(): para->bc->blockName[6]=Rack 2 65000.0 5.899343e-05 row_7
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=2545.226807, Xi=0.000000
+read_sci_input(): para->bc->blockName[7]=Rack -2 65000.0 5.899343e-05 row_8
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=2545.226807, Xi=0.000000
+read_sci_input(): para->bc->blockName[8]=ha_12_end_west
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[9]=ha_12_end_east
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[10]=ha_12_roof
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[11]=ha_34_end_west
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[12]=ha_34_end_east
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[13]=ha_34_roof
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[14]=ha_56_end_west
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[15]=ha_56_end_east
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[16]=ha_56_roof
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[17]=ha_78_end_west
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[18]=ha_78_end_east
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[19]=ha_78_roof
+read_sci_input(): VX=0.000000, VY=0.000000, VX=-1.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->nb_wall=6
+read_sci_input(): para->bc->wallName[0]="West wall"
+read_sci_input(): ThermalBC=0, T/q_dot=0.000000
+read_sci_input(): para->bc->wallName[1]="East wall"
+read_sci_input(): ThermalBC=0, T/q_dot=0.000000
+read_sci_input(): para->bc->wallName[2]="South wall"
+read_sci_input(): ThermalBC=0, T/q_dot=0.000000
+read_sci_input(): para->bc->wallName[3]="North wall"
+read_sci_input(): ThermalBC=0, T/q_dot=0.000000
+read_sci_input(): para->bc->wallName[4]="Floor"
+read_sci_input(): ThermalBC=0, T/q_dot=0.000000
+read_sci_input(): para->bc->wallName[5]="Ceiling"
+read_sci_input(): ThermalBC=0, T/q_dot=0.000000
+read_sci_input(): para->bc->nb_source=0
+read_sci_input(): para->mytime->t_start=0.000000
+read_sci_input(): para->mytime->dt=0.100000
+read_sci_input(): para->mytime->step_total=9000
+read_sci_input(): Read sci input file dc_model.cfd
+read_sci_input(): start to read block information from "dc_model.dat".
+read_sci_input(): end of reading zeroone.dat.
+ffd(): successfully initialize virables.
+ffd.c: Start FFD solver.
+main(): start getting GPU information
+main(): start getting platform information
+main(): finishing checking avaiblable platforms
+main(): finishing chosing the avaiblable platform
+main(): finishing creating context for the platform
+main(): finishing creating queue associated with the context
+main(): start creating the Write buffers associated with the kernel arguments
+main(): start cl kernel file reading
+main(): finish cl kernel file reading
+main(): start creating kernels executable
+main(): start creating the buffer objects
+Physical time=0.1000 s, CPU time=2.5957 s, Time Ratio=0.0385
+main(): start averaging data at
+Physical time=0.2000 s, CPU time=3.9825 s, Time Ratio=0.0502
+Physical time=0.3000 s, CPU time=5.9025 s, Time Ratio=0.0508
+Physical time=0.4000 s, CPU time=8.1065 s, Time Ratio=0.0493
+Physical time=0.5000 s, CPU time=9.6239 s, Time Ratio=0.0520
+Physical time=0.6000 s, CPU time=11.0487 s, Time Ratio=0.0543
+Physical time=0.7000 s, CPU time=12.4833 s, Time Ratio=0.0561
+Physical time=0.8000 s, CPU time=13.9401 s, Time Ratio=0.0574
+Physical time=0.9000 s, CPU time=15.4047 s, Time Ratio=0.0584
+Physical time=1.0000 s, CPU time=16.8490 s, Time Ratio=0.0594
+Physical time=1.1000 s, CPU time=18.2837 s, Time Ratio=0.0602
+Physical time=1.2000 s, CPU time=19.7165 s, Time Ratio=0.0609
+Physical time=1.3000 s, CPU time=21.1464 s, Time Ratio=0.0615
+Physical time=1.4000 s, CPU time=22.5603 s, Time Ratio=0.0621
+Physical time=1.5000 s, CPU time=24.0427 s, Time Ratio=0.0624
+Physical time=1.6000 s, CPU time=25.5231 s, Time Ratio=0.0627
+Physical time=1.7000 s, CPU time=27.0206 s, Time Ratio=0.0629
+Physical time=1.8000 s, CPU time=28.5036 s, Time Ratio=0.0631
+Physical time=1.9000 s, CPU time=29.9752 s, Time Ratio=0.0634
+Physical time=2.0000 s, CPU time=31.4170 s, Time Ratio=0.0637
+Physical time=2.1000 s, CPU time=32.8697 s, Time Ratio=0.0639
+Physical time=2.2000 s, CPU time=34.3029 s, Time Ratio=0.0641
+Physical time=2.3000 s, CPU time=35.7314 s, Time Ratio=0.0644
+Physical time=2.4000 s, CPU time=37.1680 s, Time Ratio=0.0646
+Physical time=2.5000 s, CPU time=38.6063 s, Time Ratio=0.0648
+Physical time=2.6000 s, CPU time=40.0812 s, Time Ratio=0.0649
+Physical time=2.7000 s, CPU time=41.5463 s, Time Ratio=0.0650
+Physical time=2.8000 s, CPU time=43.0434 s, Time Ratio=0.0651
+Physical time=2.9000 s, CPU time=44.5378 s, Time Ratio=0.0651
+Physical time=3.0000 s, CPU time=46.0383 s, Time Ratio=0.0652
+Physical time=3.1000 s, CPU time=47.5106 s, Time Ratio=0.0652
+Physical time=3.2000 s, CPU time=48.9826 s, Time Ratio=0.0653
+Physical time=3.3000 s, CPU time=50.4311 s, Time Ratio=0.0654
+Physical time=3.4000 s, CPU time=51.9483 s, Time Ratio=0.0654
+Physical time=3.5000 s, CPU time=53.4128 s, Time Ratio=0.0655
+Physical time=3.6000 s, CPU time=54.8518 s, Time Ratio=0.0656
+Physical time=3.7000 s, CPU time=56.2921 s, Time Ratio=0.0657
+Physical time=3.8000 s, CPU time=57.7213 s, Time Ratio=0.0658
+Physical time=3.9000 s, CPU time=59.1694 s, Time Ratio=0.0659
+Physical time=4.0000 s, CPU time=60.5989 s, Time Ratio=0.0660
+Physical time=4.1000 s, CPU time=62.0638 s, Time Ratio=0.0661
+Physical time=4.2000 s, CPU time=63.7058 s, Time Ratio=0.0659
+Physical time=4.3000 s, CPU time=65.3034 s, Time Ratio=0.0658
+Physical time=4.4000 s, CPU time=66.9229 s, Time Ratio=0.0657
+Physical time=4.5000 s, CPU time=68.4856 s, Time Ratio=0.0657
+Physical time=4.6000 s, CPU time=70.0664 s, Time Ratio=0.0657
+Physical time=4.7000 s, CPU time=71.5771 s, Time Ratio=0.0657
+Physical time=4.8000 s, CPU time=73.0591 s, Time Ratio=0.0657
+Physical time=4.9000 s, CPU time=74.4738 s, Time Ratio=0.0658
+Physical time=5.0000 s, CPU time=75.8874 s, Time Ratio=0.0659
+Physical time=5.1000 s, CPU time=77.3289 s, Time Ratio=0.0660
+Physical time=5.2000 s, CPU time=78.7757 s, Time Ratio=0.0660
+Physical time=5.3000 s, CPU time=80.2879 s, Time Ratio=0.0660
+Physical time=5.4000 s, CPU time=81.7620 s, Time Ratio=0.0660
+Physical time=5.5000 s, CPU time=83.2180 s, Time Ratio=0.0661
+Physical time=5.6000 s, CPU time=84.6616 s, Time Ratio=0.0661
+Physical time=5.7000 s, CPU time=86.0933 s, Time Ratio=0.0662
+Physical time=5.8000 s, CPU time=87.5083 s, Time Ratio=0.0663
+Physical time=5.9000 s, CPU time=88.9461 s, Time Ratio=0.0663
+Physical time=6.0000 s, CPU time=90.3996 s, Time Ratio=0.0664
+Physical time=6.1000 s, CPU time=91.8759 s, Time Ratio=0.0664
+Physical time=6.2000 s, CPU time=93.3182 s, Time Ratio=0.0664
+Physical time=6.3000 s, CPU time=94.7771 s, Time Ratio=0.0665
+Physical time=6.4000 s, CPU time=96.2608 s, Time Ratio=0.0665
+Physical time=6.5000 s, CPU time=97.6837 s, Time Ratio=0.0665
+Physical time=6.6000 s, CPU time=99.1387 s, Time Ratio=0.0666
+Physical time=6.7000 s, CPU time=100.5923 s, Time Ratio=0.0666
+Physical time=6.8000 s, CPU time=102.0455 s, Time Ratio=0.0666
+Physical time=6.9000 s, CPU time=103.5347 s, Time Ratio=0.0666
+Physical time=7.0000 s, CPU time=104.9842 s, Time Ratio=0.0667
+Physical time=7.1000 s, CPU time=106.4505 s, Time Ratio=0.0667
+Physical time=7.2000 s, CPU time=107.9555 s, Time Ratio=0.0667
+Physical time=7.3000 s, CPU time=109.4090 s, Time Ratio=0.0667
+Physical time=7.4000 s, CPU time=110.9011 s, Time Ratio=0.0667
+Physical time=7.5000 s, CPU time=112.3908 s, Time Ratio=0.0667
+Physical time=7.6000 s, CPU time=113.8738 s, Time Ratio=0.0667
+Physical time=7.7000 s, CPU time=115.3986 s, Time Ratio=0.0667
+Physical time=7.8000 s, CPU time=116.9139 s, Time Ratio=0.0667
+Physical time=7.9000 s, CPU time=118.3963 s, Time Ratio=0.0667
+Physical time=8.0000 s, CPU time=119.8762 s, Time Ratio=0.0667
+Physical time=8.1000 s, CPU time=121.4740 s, Time Ratio=0.0667
+Physical time=8.2000 s, CPU time=123.0137 s, Time Ratio=0.0667
+Physical time=8.3000 s, CPU time=124.5600 s, Time Ratio=0.0666
+Physical time=8.4000 s, CPU time=126.0924 s, Time Ratio=0.0666
+Physical time=8.5000 s, CPU time=127.5808 s, Time Ratio=0.0666
+Physical time=8.6000 s, CPU time=129.0428 s, Time Ratio=0.0666
+Physical time=8.7000 s, CPU time=130.5100 s, Time Ratio=0.0667
+Physical time=8.8000 s, CPU time=131.9437 s, Time Ratio=0.0667
+Physical time=8.9000 s, CPU time=133.4250 s, Time Ratio=0.0667
+Physical time=9.0000 s, CPU time=134.8787 s, Time Ratio=0.0667
+Physical time=9.1000 s, CPU time=136.3106 s, Time Ratio=0.0668
+Physical time=9.2000 s, CPU time=137.7940 s, Time Ratio=0.0668
+Physical time=9.3000 s, CPU time=139.2691 s, Time Ratio=0.0668
+Physical time=9.4000 s, CPU time=140.8022 s, Time Ratio=0.0668
+Physical time=9.5000 s, CPU time=142.2528 s, Time Ratio=0.0668
+Physical time=9.6000 s, CPU time=143.6913 s, Time Ratio=0.0668
+Physical time=9.7000 s, CPU time=145.1096 s, Time Ratio=0.0668
+Physical time=9.8000 s, CPU time=146.5532 s, Time Ratio=0.0669
+Physical time=9.9000 s, CPU time=147.9978 s, Time Ratio=0.0669
+Physical time=10.0000 s, CPU time=149.5083 s, Time Ratio=0.0669
+Physical time=10.1000 s, CPU time=150.9969 s, Time Ratio=0.0669
+Physical time=10.2000 s, CPU time=152.4690 s, Time Ratio=0.0669
+Physical time=10.3000 s, CPU time=153.9315 s, Time Ratio=0.0669
+Physical time=10.4000 s, CPU time=155.3733 s, Time Ratio=0.0669
+Physical time=10.5000 s, CPU time=156.8648 s, Time Ratio=0.0669
+Physical time=10.6000 s, CPU time=158.3645 s, Time Ratio=0.0669
+Physical time=10.7000 s, CPU time=159.8916 s, Time Ratio=0.0669
+Physical time=10.8000 s, CPU time=161.3310 s, Time Ratio=0.0669
+Physical time=10.9000 s, CPU time=162.7762 s, Time Ratio=0.0670
+Physical time=11.0000 s, CPU time=164.2064 s, Time Ratio=0.0670
+Physical time=11.1000 s, CPU time=165.6605 s, Time Ratio=0.0670
+Physical time=11.2000 s, CPU time=167.1092 s, Time Ratio=0.0670
+Physical time=11.3000 s, CPU time=168.6049 s, Time Ratio=0.0670
+Physical time=11.4000 s, CPU time=170.0769 s, Time Ratio=0.0670
+Physical time=11.5000 s, CPU time=171.5175 s, Time Ratio=0.0670
+Physical time=11.6000 s, CPU time=172.9557 s, Time Ratio=0.0671
+Physical time=11.7000 s, CPU time=174.3967 s, Time Ratio=0.0671
+Physical time=11.8000 s, CPU time=175.8231 s, Time Ratio=0.0671
+Physical time=11.9000 s, CPU time=177.3535 s, Time Ratio=0.0671
+Physical time=12.0000 s, CPU time=178.9305 s, Time Ratio=0.0671
+Physical time=12.1000 s, CPU time=180.4659 s, Time Ratio=0.0670

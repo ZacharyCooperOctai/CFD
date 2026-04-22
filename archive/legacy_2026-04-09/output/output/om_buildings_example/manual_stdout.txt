@@ -1,0 +1,38 @@
+LOG_SOLVER        | info    | NO override given on the command line.
+LOG_SOLVER        | info    | numberOfIntervals = 5
+LOG_SOLVER        | info    | Allocated simulation result data storage for method 'mat' and file='ForcedConvection_30s_res.mat'
+LOG_SOLVER        | info    | recognized solver: dassl
+LOG_SOLVER        | info    | Configuration of the dassl code:
+|                 | |       | | The relative tolerance is 1e-06. Following absolute tolerances are used for the states: 
+|                 | |       | | maximum step size not set
+|                 | |       | | initial step size not set
+|                 | |       | | maximum integration order 5
+|                 | |       | | use equidistant time grid YES
+|                 | |       | | jacobian is calculated by Colored numerical Jacobian, which is default for dassl and ida. Needs omc compiler flag --generateDynamicJacobian=numeric. With option -idaLS=klu a sparse matrix is used.
+|                 | |       | | dassl uses internal root finding method YES
+|                 | |       | | dassl performs an restart after an event occurs YES
+LOG_STDOUT        | warning | The default linear solver fails, the fallback solver with total pivoting is started at time 0.000000. That might raise performance issues, for more information use -lv LOG_LS.
+LOG_STDOUT        | warning | The default linear solver fails, the fallback solver with total pivoting is started at time 0.000000. That might raise performance issues, for more information use -lv LOG_LS.
+LOG_SUCCESS       | info    | The initialization finished successfully without homotopy method.
+LOG_SOLVER        | info    | Wrote parameters to the file after initialization (for output formats that support this)
+LOG_SOLVER        | info    | Start numerical solver from 0 to 30
+LOG_SOLVER        | info    | Sparse structure of ODE sparse pattern [size: 15x15]
+|                 | |       | | 0 non-zero elements
+|                 | |       | | Transposed sparse structure (rows: states)
+|                 | |       | | | 
+|                 | |       | | | 
+|                 | |       | | | 
+|                 | |       | | | 
+|                 | |       | | | 
+|                 | |       | | | 
+|                 | |       | | | 
+|                 | |       | | | 
+|                 | |       | | | 
+|                 | |       | | | 
+|                 | |       | | | 
+|                 | |       | | | 
+|                 | |       | | | 
+|                 | |       | | | 
+|                 | |       | | | 
+LOG_SOLVER        | info    | call solver from 0 to 0 (stepSize: 0)
+|                 | |       | | finished solver step 0

@@ -1,0 +1,7 @@
+setCommandLineOptions("--preOptModules-=removeSimpleEquations -d=bltdump,backenddaeinfo,tearingdump");
+cd("C:/Users/ZacharyCooper-Baldoc/Desktop/Repositories/CFD");
+loadFile("C:/OMLibs/modelica-buildings/Buildings/package.mo");
+loadFile("C:/Users/ZacharyCooper-Baldoc/Desktop/Repositories/CFD/dc_model.mo");
+loadFile("C:/Users/ZacharyCooper-Baldoc/Desktop/Repositories/CFD/output/tmp_scenario_const.mo");
+translateModel(Scenario_const_inputs);
+getErrorString();

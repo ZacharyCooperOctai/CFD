@@ -1,0 +1,11 @@
+"/workspace/output/manual_smoke_area"
+true
+true
+true
+true
+{"/workspace/output/manual_smoke_area/s000_baseline", "s000_baseline_init.xml"}
+"[/workspace/external/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/CFDExchange.mo:64:3-114:21:writable] Warning: Pure function 'Scenario_s000_baseline.dc.roo.air.cfd.sendParameters' contains a call to impure function 'Buildings.ThermalZones.Detailed.BaseClasses.cfdStartCosimulation'.
+[/workspace/external/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/CFDExchange.mo:119:3-142:15:writable] Warning: Pure function 'Scenario_s000_baseline.dc.roo.air.cfd.exchange' contains a call to impure function 'Buildings.ThermalZones.Detailed.BaseClasses.cfdExchangeData'.
+Warning: The model contains alias variables with redundant start and/or conflicting nominal values. It is recommended to resolve the conflicts, because otherwise the system could be hard to solve. To print the conflicting alias sets and the chosen candidates please use -d=aliasConflicts.
+"
+

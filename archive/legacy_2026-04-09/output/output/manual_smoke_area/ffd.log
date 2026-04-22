@@ -1,0 +1,431 @@
+Start Fast Fluid Dynamics Simulation with Thread
+fileName="/workspace/output/manual_smoke_area/dc_model.ffd"
+read_parameter(): Opened file /workspace/output/manual_smoke_area/dc_model.ffd for FFD parameters with base directory /workspace/output/manual_smoke_area/
+assign_parameter(): inpu.parameter_file_format=SCI
+assign_parameter(): inpu.parameter_file_name=/workspace/output/manual_smoke_area/dc_model.cfd
+assign_parameter(): inpu.block_file_name=/workspace/output/manual_smoke_area/dc_model.dat
+assign_parameter(): prob.nu=0.000015
+assign_parameter(): prob.rho=1.204000
+assign_parameter(): prob.gravx=0.000000
+assign_parameter(): prob.gravy=0.000000
+assign_parameter(): prob.gravz=-9.810000
+assign_parameter(): prob.cond=0.025700
+assign_parameter(): prob.Cp=1006.000000
+assign_parameter(): prob.beta=0.003430
+assign_parameter(): prob.diff=0.000010
+assign_parameter(): prob.coeff_h=0.004000
+assign_parameter(): prob.Temp_Buoyancy=22.000000
+assign_parameter(): init.T=22.000000
+assign_parameter(): init.u=0.000000
+assign_parameter(): init.v=0.000000
+assign_parameter(): init.w=0.000000
+assign_parameter(): outp.version=RUN
+assign_parameter(): bc.nb_Xi=1
+assign_parameter(): bc.nb_C=0
+read_sci_input(): Start to read sci input file /workspace/output/manual_smoke_area/dc_model.cfd
+read_sci_input(): para->bc->nb_bc=12
+read_sci_input(): para->bc->nb_inlet=6
+read_sci_input(): para->bc->inletName[0]=crac_1_supply
+read_sci_input(): VX=9.000000, VY=0.000000, VZ=0.000000, T=14.000000, Xi=0.000000
+read_sci_input(): para->bc->inletName[1]=crac_2_supply
+read_sci_input(): VX=-9.000000, VY=0.000000, VZ=0.000000, T=14.000000, Xi=0.000000
+read_sci_input(): para->bc->inletName[2]=crac_3_supply
+read_sci_input(): VX=9.000000, VY=0.000000, VZ=0.000000, T=14.000000, Xi=0.000000
+read_sci_input(): para->bc->inletName[3]=crac_4_supply
+read_sci_input(): VX=-9.000000, VY=0.000000, VZ=0.000000, T=14.000000, Xi=0.000000
+read_sci_input(): para->bc->inletName[4]=crac_5_supply
+read_sci_input(): VX=9.000000, VY=0.000000, VZ=0.000000, T=14.000000, Xi=0.000000
+read_sci_input(): para->bc->inletName[5]=crac_6_supply
+read_sci_input(): VX=-9.000000, VY=0.000000, VZ=0.000000, T=14.000000, Xi=0.000000
+read_sci_input(): para->bc->nb_outlet=6
+read_sci_input(): para->bc->outletName[0]=crac_1_return
+read_sci_input(): VX=-7.500000, VY=0.000000, VX=0.000000, T=22.000000, Xi=0.000000
+read_sci_input(): para->bc->outletName[1]=crac_2_return
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, T=22.000000, Xi=0.000000
+read_sci_input(): para->bc->outletName[2]=crac_3_return
+read_sci_input(): VX=-7.500000, VY=0.000000, VX=0.000000, T=22.000000, Xi=0.000000
+read_sci_input(): para->bc->outletName[3]=crac_4_return
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, T=22.000000, Xi=0.000000
+read_sci_input(): para->bc->outletName[4]=crac_5_return
+read_sci_input(): VX=-7.500000, VY=0.000000, VX=0.000000, T=22.000000, Xi=0.000000
+read_sci_input(): para->bc->outletName[5]=crac_6_return
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, T=22.000000, Xi=0.000000
+read_sci_input(): Port[0]:crac_1_supply
+read_sci_input(): Port[1]:crac_2_supply
+read_sci_input(): Port[2]:crac_3_supply
+read_sci_input(): Port[3]:crac_4_supply
+read_sci_input(): Port[4]:crac_5_supply
+read_sci_input(): Port[5]:crac_6_supply
+read_sci_input(): Port[6]:crac_1_return
+read_sci_input(): Port[7]:crac_2_return
+read_sci_input(): Port[8]:crac_3_return
+read_sci_input(): Port[9]:crac_4_return
+read_sci_input(): Port[10]:crac_5_return
+read_sci_input(): Port[11]:crac_6_return
+read_sci_input(): para->bc->nb_block=20
+read_sci_input(): para->bc->blockName[0]=Rack 2 65000.0 5.899343e-05 row_1
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=2545.226700, Xi=0.000000
+read_sci_input(): para->bc->blockName[1]=Rack -2 65000.0 5.899343e-05 row_2
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=2545.226700, Xi=0.000000
+read_sci_input(): para->bc->blockName[2]=Rack 2 65000.0 5.899343e-05 row_3
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=2545.226700, Xi=0.000000
+read_sci_input(): para->bc->blockName[3]=Rack -2 65000.0 5.899343e-05 row_4
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=2545.226700, Xi=0.000000
+read_sci_input(): para->bc->blockName[4]=Rack 2 65000.0 5.899343e-05 row_5
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=2545.226700, Xi=0.000000
+read_sci_input(): para->bc->blockName[5]=Rack -2 65000.0 5.899343e-05 row_6
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=2545.226700, Xi=0.000000
+read_sci_input(): para->bc->blockName[6]=Rack 2 65000.0 5.899343e-05 row_7
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=2545.226700, Xi=0.000000
+read_sci_input(): para->bc->blockName[7]=Rack -2 65000.0 5.899343e-05 row_8
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=2545.226700, Xi=0.000000
+read_sci_input(): para->bc->blockName[8]=ha_12_end_west
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[9]=ha_12_end_east
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[10]=ha_12_roof
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[11]=ha_34_end_west
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[12]=ha_34_end_east
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[13]=ha_34_roof
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[14]=ha_56_end_west
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[15]=ha_56_end_east
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[16]=ha_56_roof
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[17]=ha_78_end_west
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[18]=ha_78_end_east
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[19]=ha_78_roof
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->nb_wall=6
+read_sci_input(): para->bc->wallName[0]="West wall"
+read_sci_input(): ThermalBC=0, T/q_dot=0.000000
+read_sci_input(): para->bc->wallName[1]="East wall"
+read_sci_input(): ThermalBC=0, T/q_dot=0.000000
+read_sci_input(): para->bc->wallName[2]="South wall"
+read_sci_input(): ThermalBC=0, T/q_dot=0.000000
+read_sci_input(): para->bc->wallName[3]="North wall"
+read_sci_input(): ThermalBC=0, T/q_dot=0.000000
+read_sci_input(): para->bc->wallName[4]="Floor"
+read_sci_input(): ThermalBC=0, T/q_dot=0.000000
+read_sci_input(): para->bc->wallName[5]="Ceiling"
+read_sci_input(): ThermalBC=0, T/q_dot=0.000000
+read_sci_input(): para->bc->nb_source=0
+read_sci_input(): para->mytime->t_start=0.000000
+read_sci_input(): para->mytime->dt=0.100000
+read_sci_input(): para->mytime->step_total=9000
+read_sci_input(): Read sci input file /workspace/output/manual_smoke_area/dc_model.cfd
+read_sci_input(): start to read block information from "/workspace/output/manual_smoke_area/dc_model.dat".
+read_sci_input(): end of reading zeroone.dat.
+bounary_area(): Calculated surface area for FFD boundaries are:
+	Wall boundaries:
+		West wall: 108.464512[m2]
+		East wall: 108.464512[m2]
+		South wall: 67.500000[m2]
+		North wall: 67.500000[m2]
+		Floor: 375.000000[m2]
+		Ceiling: 375.000000[m2]
+	Inlet boundaries:
+		crac_1_supply: 0.533333[m2]
+		crac_2_supply: 0.533333[m2]
+		crac_3_supply: 0.578462[m2]
+		crac_4_supply: 0.578462[m2]
+		crac_5_supply: 0.578462[m2]
+		crac_6_supply: 0.578462[m2]
+	Outlet boundaries:
+		crac_1_return: 0.740000[m2]
+		crac_2_return: 0.740000[m2]
+		crac_3_return: 0.802616[m2]
+		crac_4_return: 0.802616[m2]
+		crac_5_return: 0.802616[m2]
+		crac_6_return: 0.802616[m2]
+-------------------------------------------------------------------
+	nSur=6
+	nPorts=12
+	nSen=0
+	nXi=1
+	nC=0
+	nConExtWin=1
+	sha=0
+	Surface 0: Floor
+		Area:375.000000[m2],	 Tilt:3.141593[deg]
+		Thermal boundary: Fixed heat flux
+	Surface 1: Ceiling
+		Area:375.000000[m2],	 Tilt:0.000000[deg]
+		Thermal boundary: Fixed heat flux
+	Surface 2: South wall
+		Area:67.500000[m2],	 Tilt:1.570796[deg]
+		Thermal boundary: Fixed heat flux
+	Surface 3: North wall
+		Area:67.500000[m2],	 Tilt:1.570796[deg]
+		Thermal boundary: Fixed heat flux
+	Surface 4: West wall
+		Area:108.464512[m2],	 Tilt:1.570796[deg]
+		Thermal boundary: Fixed heat flux
+	Surface 5: East wall
+		Area:108.464512[m2],	 Tilt:1.570796[deg]
+		Thermal boundary: Fixed heat flux
+	Fluid Ports 0: crac_1_supply
+	Fluid Ports 1: crac_2_supply
+	Fluid Ports 2: crac_3_supply
+	Fluid Ports 3: crac_4_supply
+	Fluid Ports 4: crac_5_supply
+	Fluid Ports 5: crac_6_supply
+	Fluid Ports 6: crac_1_return
+	Fluid Ports 7: crac_2_return
+	Fluid Ports 8: crac_3_return
+	Fluid Ports 9: crac_4_return
+	Fluid Ports 10: crac_5_return
+	Fluid Ports 11: crac_6_return
+compare_boundary_names(): Matched boundary name "Floor".
+compare_boundary_names(): Matched boundary name "Ceiling".
+compare_boundary_names(): Matched boundary name "South wall".
+compare_boundary_names(): Matched boundary name "North wall".
+compare_boundary_names(): Matched boundary name "West wall".
+compare_boundary_names(): Matched boundary name "East wall".
+Start to compare port names
+	Modelica: port[0]=crac_1_supply
+	FFD: port[0]=crac_1_supply
+compare_boundary_names(): Matched boundary name "crac_1_supply".
+	Modelica: port[1]=crac_2_supply
+	FFD: port[0]=crac_1_supply
+	FFD: port[1]=crac_2_supply
+compare_boundary_names(): Matched boundary name "crac_2_supply".
+	Modelica: port[2]=crac_3_supply
+	FFD: port[0]=crac_1_supply
+	FFD: port[1]=crac_2_supply
+	FFD: port[2]=crac_3_supply
+compare_boundary_names(): Matched boundary name "crac_3_supply".
+	Modelica: port[3]=crac_4_supply
+	FFD: port[0]=crac_1_supply
+	FFD: port[1]=crac_2_supply
+	FFD: port[2]=crac_3_supply
+	FFD: port[3]=crac_4_supply
+compare_boundary_names(): Matched boundary name "crac_4_supply".
+	Modelica: port[4]=crac_5_supply
+	FFD: port[0]=crac_1_supply
+	FFD: port[1]=crac_2_supply
+	FFD: port[2]=crac_3_supply
+	FFD: port[3]=crac_4_supply
+	FFD: port[4]=crac_5_supply
+compare_boundary_names(): Matched boundary name "crac_5_supply".
+	Modelica: port[5]=crac_6_supply
+	FFD: port[0]=crac_1_supply
+	FFD: port[1]=crac_2_supply
+	FFD: port[2]=crac_3_supply
+	FFD: port[3]=crac_4_supply
+	FFD: port[4]=crac_5_supply
+	FFD: port[5]=crac_6_supply
+compare_boundary_names(): Matched boundary name "crac_6_supply".
+	Modelica: port[6]=crac_1_return
+	FFD: port[0]=crac_1_supply
+	FFD: port[1]=crac_2_supply
+	FFD: port[2]=crac_3_supply
+	FFD: port[3]=crac_4_supply
+	FFD: port[4]=crac_5_supply
+	FFD: port[5]=crac_6_supply
+	FFD: port[6]=crac_1_return
+compare_boundary_names(): Matched boundary name "crac_1_return".
+	Modelica: port[7]=crac_2_return
+	FFD: port[0]=crac_1_supply
+	FFD: port[1]=crac_2_supply
+	FFD: port[2]=crac_3_supply
+	FFD: port[3]=crac_4_supply
+	FFD: port[4]=crac_5_supply
+	FFD: port[5]=crac_6_supply
+	FFD: port[6]=crac_1_return
+	FFD: port[7]=crac_2_return
+compare_boundary_names(): Matched boundary name "crac_2_return".
+	Modelica: port[8]=crac_3_return
+	FFD: port[0]=crac_1_supply
+	FFD: port[1]=crac_2_supply
+	FFD: port[2]=crac_3_supply
+	FFD: port[3]=crac_4_supply
+	FFD: port[4]=crac_5_supply
+	FFD: port[5]=crac_6_supply
+	FFD: port[6]=crac_1_return
+	FFD: port[7]=crac_2_return
+	FFD: port[8]=crac_3_return
+compare_boundary_names(): Matched boundary name "crac_3_return".
+	Modelica: port[9]=crac_4_return
+	FFD: port[0]=crac_1_supply
+	FFD: port[1]=crac_2_supply
+	FFD: port[2]=crac_3_supply
+	FFD: port[3]=crac_4_supply
+	FFD: port[4]=crac_5_supply
+	FFD: port[5]=crac_6_supply
+	FFD: port[6]=crac_1_return
+	FFD: port[7]=crac_2_return
+	FFD: port[8]=crac_3_return
+	FFD: port[9]=crac_4_return
+compare_boundary_names(): Matched boundary name "crac_4_return".
+	Modelica: port[10]=crac_5_return
+	FFD: port[0]=crac_1_supply
+	FFD: port[1]=crac_2_supply
+	FFD: port[2]=crac_3_supply
+	FFD: port[3]=crac_4_supply
+	FFD: port[4]=crac_5_supply
+	FFD: port[5]=crac_6_supply
+	FFD: port[6]=crac_1_return
+	FFD: port[7]=crac_2_return
+	FFD: port[8]=crac_3_return
+	FFD: port[9]=crac_4_return
+	FFD: port[10]=crac_5_return
+compare_boundary_names(): Matched boundary name "crac_5_return".
+	Modelica: port[11]=crac_6_return
+	FFD: port[0]=crac_1_supply
+	FFD: port[1]=crac_2_supply
+	FFD: port[2]=crac_3_supply
+	FFD: port[3]=crac_4_supply
+	FFD: port[4]=crac_5_supply
+	FFD: port[5]=crac_6_supply
+	FFD: port[6]=crac_1_return
+	FFD: port[7]=crac_2_return
+	FFD: port[8]=crac_3_return
+	FFD: port[9]=crac_4_return
+	FFD: port[10]=crac_5_return
+	FFD: port[11]=crac_6_return
+compare_boundary_names(): Matched boundary name "crac_6_return".
+compare_boundary_area(): Start to compare the area of solid surfaces.
+	West wall has the same area of 108.464512[m2]
+	East wall has the same area of 108.464512[m2]
+	South wall has the same area of 67.500000[m2]
+	North wall has the same area of 67.500000[m2]
+	Floor has the same area of 375.000000[m2]
+	Ceiling has the same area of 375.000000[m2]
+read_cosim_parameter(): Simulation starts at 10.000000s
+read_cosim_parameter(): Overwrite the density of air 1.204000 kg/m3 with 1.200000 kg/m3
+-------------------------------------------------------------------
+assign_thermal_bc(): Thermal conditions for solid surfaces:
+	West wall: Q_dot=0.000000[W/m2]
+	East wall: Q_dot=0.000000[W/m2]
+	South wall: Q_dot=-0.000000[W/m2]
+	North wall: Q_dot=-0.000000[W/m2]
+	Floor: Q_dot=0.000000[W/m2]
+	Ceiling: Q_dot=0.000000[W/m2]
+Convective sensible heat received by FFD is 0.000000
+Latent heat received by FFD is 0.000000
+assign_port_bc():
+	crac_1_supply: vel=8.465630[m/s], T=14.000000[degC]
+	Xi[0]=0.010000
+	crac_2_supply: vel=8.465630[m/s], T=14.000000[degC]
+	Xi[0]=0.010000
+	crac_3_supply: vel=7.805187[m/s], T=14.000000[degC]
+	Xi[0]=0.010000
+	crac_4_supply: vel=7.805187[m/s], T=14.000000[degC]
+	Xi[0]=0.010000
+	crac_5_supply: vel=7.805187[m/s], T=14.000000[degC]
+	Xi[0]=0.010000
+	crac_6_supply: vel=7.805187[m/s], T=14.000000[degC]
+	Xi[0]=0.010000
+	crac_1_return: vel=-6.101351[m/s], T=22.000000[degC]
+	Xi[0]=0.010000
+	crac_2_return: vel=-6.101351[m/s], T=22.000000[degC]
+	Xi[0]=0.010000
+	crac_3_return: vel=-5.625356[m/s], T=22.000000[degC]
+	Xi[0]=0.010000
+	crac_4_return: vel=-5.625356[m/s], T=22.000000[degC]
+	Xi[0]=0.010000
+	crac_5_return: vel=-5.625356[m/s], T=22.000000[degC]
+	Xi[0]=0.010000
+	crac_6_return: vel=-5.625356[m/s], T=22.000000[degC]
+	Xi[0]=0.010000
+-------------------------------------------------------------------
+write_cosim_data(): Start to write FFD data to Modelica at t=10.000000[s]
+	Averaged room temperature 22.185933[degC]
+	Flow information at the ports:
+		crac_1_supply: TPor[0]=273.150000
+		crac_1_supply: Xi[0]=0.000000
+		crac_2_supply: TPor[1]=273.150000
+		crac_2_supply: Xi[0]=0.000000
+		crac_3_supply: TPor[2]=273.150000
+		crac_3_supply: Xi[0]=0.000000
+		crac_4_supply: TPor[3]=273.150000
+		crac_4_supply: Xi[0]=0.000000
+		crac_5_supply: TPor[4]=273.150000
+		crac_5_supply: Xi[0]=0.000000
+		crac_6_supply: TPor[5]=273.150000
+		crac_6_supply: Xi[0]=0.000000
+		crac_1_return: TPor[6]=295.150000
+		crac_1_return: Xi[0]=0.000000
+		crac_2_return: TPor[7]=295.150000
+		crac_2_return: Xi[0]=0.000000
+		crac_3_return: TPor[8]=295.150000
+		crac_3_return: Xi[0]=0.000000
+		crac_4_return: TPor[9]=295.150000
+		crac_4_return: Xi[0]=0.000000
+		crac_5_return: TPor[10]=295.150000
+		crac_5_return: Xi[0]=0.000000
+		crac_6_return: TPor[11]=295.150000
+		crac_6_return: Xi[0]=0.000000
+	Information at solid surfaces:
+		West wall: 295.150000[K]
+		East wall: 295.150000[K]
+		South wall: 295.150000[K]
+		North wall: 295.150000[K]
+		Floor: 295.149996[K]
+		Ceiling: 295.150000[K]
+	Sensor Information:
+ffd.c: Start FFD solver.
+Physical time=10.1000 s, CPU time=49.8497 s, Time Ratio=0.2026
+Physical time=10.2000 s, CPU time=69.8966 s, Time Ratio=0.1459
+Physical time=10.3000 s, CPU time=89.2409 s, Time Ratio=0.1154
+Physical time=10.4000 s, CPU time=108.4059 s, Time Ratio=0.0959
+Physical time=10.5000 s, CPU time=126.7916 s, Time Ratio=0.0828
+Physical time=10.6000 s, CPU time=146.0587 s, Time Ratio=0.0726
+Physical time=10.7000 s, CPU time=166.9863 s, Time Ratio=0.0641
+Physical time=10.8000 s, CPU time=189.1104 s, Time Ratio=0.0571
+Physical time=10.9000 s, CPU time=208.6571 s, Time Ratio=0.0522
+Physical time=11.0000 s, CPU time=227.6941 s, Time Ratio=0.0483
+Physical time=11.1000 s, CPU time=249.6172 s, Time Ratio=0.0445
+Physical time=11.2000 s, CPU time=269.7835 s, Time Ratio=0.0415
+Physical time=11.3000 s, CPU time=291.5876 s, Time Ratio=0.0388
+Physical time=11.4000 s, CPU time=314.7731 s, Time Ratio=0.0362
+Physical time=11.5000 s, CPU time=337.4470 s, Time Ratio=0.0341
+Physical time=11.6000 s, CPU time=360.1894 s, Time Ratio=0.0322
+Physical time=11.7000 s, CPU time=379.3981 s, Time Ratio=0.0308
+Physical time=11.8000 s, CPU time=399.6803 s, Time Ratio=0.0295
+Physical time=11.9000 s, CPU time=418.8959 s, Time Ratio=0.0284
+Physical time=12.0000 s, CPU time=439.3387 s, Time Ratio=0.0273
+Physical time=12.1000 s, CPU time=458.5719 s, Time Ratio=0.0264
+Physical time=12.2000 s, CPU time=477.7605 s, Time Ratio=0.0255
+Physical time=12.3000 s, CPU time=501.7673 s, Time Ratio=0.0245
+Physical time=12.4000 s, CPU time=527.1348 s, Time Ratio=0.0235
+Physical time=12.5000 s, CPU time=552.5342 s, Time Ratio=0.0226
+Physical time=12.6000 s, CPU time=574.9308 s, Time Ratio=0.0219
+Physical time=12.7000 s, CPU time=597.3086 s, Time Ratio=0.0213
+Physical time=12.8000 s, CPU time=619.8399 s, Time Ratio=0.0207
+Physical time=12.9000 s, CPU time=641.8232 s, Time Ratio=0.0201
+Physical time=13.0000 s, CPU time=664.2365 s, Time Ratio=0.0196
+Physical time=13.1000 s, CPU time=687.5294 s, Time Ratio=0.0191
+Physical time=13.2000 s, CPU time=709.5014 s, Time Ratio=0.0186
+Physical time=13.3000 s, CPU time=730.9691 s, Time Ratio=0.0182
+Physical time=13.4000 s, CPU time=752.3683 s, Time Ratio=0.0178
+Physical time=13.5000 s, CPU time=771.3952 s, Time Ratio=0.0175
+Physical time=13.6000 s, CPU time=790.7131 s, Time Ratio=0.0172
+Physical time=13.7000 s, CPU time=809.7759 s, Time Ratio=0.0169
+Physical time=13.8000 s, CPU time=829.5113 s, Time Ratio=0.0166
+Physical time=13.9000 s, CPU time=849.2532 s, Time Ratio=0.0164
+Physical time=14.0000 s, CPU time=871.8698 s, Time Ratio=0.0161
+Physical time=14.1000 s, CPU time=892.8880 s, Time Ratio=0.0158
+Physical time=14.2000 s, CPU time=912.6973 s, Time Ratio=0.0156
+Physical time=14.3000 s, CPU time=931.7507 s, Time Ratio=0.0153
+Physical time=14.4000 s, CPU time=950.4425 s, Time Ratio=0.0152
+Physical time=14.5000 s, CPU time=970.6260 s, Time Ratio=0.0149
+Physical time=14.6000 s, CPU time=989.0669 s, Time Ratio=0.0148
+Physical time=14.7000 s, CPU time=1008.1971 s, Time Ratio=0.0146
+Physical time=14.8000 s, CPU time=1026.7509 s, Time Ratio=0.0144
+Physical time=14.9000 s, CPU time=1046.8570 s, Time Ratio=0.0142
+Physical time=15.0000 s, CPU time=1065.3652 s, Time Ratio=0.0141
+Physical time=15.1000 s, CPU time=1084.3868 s, Time Ratio=0.0139
+Physical time=15.2000 s, CPU time=1103.5679 s, Time Ratio=0.0138
+Physical time=15.3000 s, CPU time=1123.0524 s, Time Ratio=0.0136
+Physical time=15.4000 s, CPU time=1142.2933 s, Time Ratio=0.0135
+Physical time=15.5000 s, CPU time=1161.0713 s, Time Ratio=0.0133
+Physical time=15.6000 s, CPU time=1180.2864 s, Time Ratio=0.0132

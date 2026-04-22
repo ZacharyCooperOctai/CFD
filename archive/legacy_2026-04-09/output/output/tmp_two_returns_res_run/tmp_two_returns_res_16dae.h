@@ -1,0 +1,3 @@
+#ifndef tmp_two_returns_res_16DAE_H
+#define tmp_two_returns_res_16DAE_H
+#endif

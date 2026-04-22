@@ -1,0 +1,57 @@
+LOG_SOLVER        | info    | NO override given on the command line.
+LOG_SOLVER        | info    | numberOfIntervals = 5
+LOG_SOLVER        | info    | Allocated simulation result data storage for method 'mat' and file='ForcedConvection_30s.mat'
+LOG_SOLVER        | info    | recognized solver: dassl
+LOG_SOLVER        | info    | Configuration of the dassl code:
+|                 | |       | | The relative tolerance is 1e-06. Following absolute tolerances are used for the states: 
+|                 | |       | | maximum step size not set
+|                 | |       | | initial step size not set
+|                 | |       | | maximum integration order 5
+|                 | |       | | use equidistant time grid YES
+|                 | |       | | jacobian is calculated by Colored numerical Jacobian, which is default for dassl and ida. Needs omc compiler flag --generateDynamicJacobian=numeric. With option -idaLS=klu a sparse matrix is used.
+|                 | |       | | dassl uses internal root finding method YES
+|                 | |       | | dassl performs an restart after an event occurs YES
+LOG_INIT          | info    | ### START INITIALIZATION ###
+LOG_INIT          | info    | updating min-values
+LOG_INIT          | info    | updating max-values
+LOG_INIT          | info    | updating nominal-values
+LOG_INIT          | info    | updating primary start-values
+LOG_INIT          | info    | initialization method: symbolic        [solves the initialization problem symbolically - default]
+LOG_STDOUT        | warning | The default linear solver fails, the fallback solver with total pivoting is started at time 0.000000. That might raise performance issues, for more information use -lv LOG_LS.
+LOG_INIT          | info    | ### END INITIALIZATION ###
+Start Fast Fluid Dynamics Simulation with Thread
+LOG_STDOUT        | warning | The default linear solver fails, the fallback solver with total pivoting is started at time 0.000000. That might raise performance issues, for more information use -lv LOG_LS.
+LOG_EVENTS        | info    | status of relations at time=0
+|                 | |       | | [1] (pre: false) false = weaDat.add30Min.y > pre(weaDat.conTimMin.tNext)
+|                 | |       | | [2] (pre: false) false = weaDat.weaBus.cloTim > pre(weaDat.conTim.tNext)
+LOG_EVENTS        | info    | status of zero crossings at time=0
+|                 | |       | | [1] (pre:  0) -1 = weaDat.conTimMin.canRepeatWeatherFile and weaDat.add30Min.y > pre(weaDat.conTimMin.tNext)
+|                 | |       | | [2] (pre:  0) -1 = weaDat.conTim.canRepeatWeatherFile and weaDat.weaBus.cloTim > pre(weaDat.conTim.tNext)
+LOG_SUCCESS       | info    | The initialization finished successfully without homotopy method.
+LOG_SOLVER        | info    | Wrote parameters to the file after initialization (for output formats that support this)
+LOG_SOLVER        | info    | Start numerical solver from 0 to 30
+LOG_SOLVER        | info    | Sparse structure of ODE sparse pattern [size: 15x15]
+|                 | |       | | 0 non-zero elements
+|                 | |       | | Transposed sparse structure (rows: states)
+|                 | |       | | | 
+|                 | |       | | | 
+|                 | |       | | | 
+|                 | |       | | | 
+|                 | |       | | | 
+|                 | |       | | | 
+|                 | |       | | | 
+|                 | |       | | | 
+|                 | |       | | | 
+|                 | |       | | | 
+|                 | |       | | | 
+|                 | |       | | | 
+|                 | |       | | | 
+|                 | |       | | | 
+|                 | |       | | | 
+LOG_SOLVER        | info    | call solver from 0 to 6 (stepSize: 6)
+|                 | |       | | finished solver step 6
+LOG_EVENTS        | info    | time event at time=6
+|                 | |       | | [1] sample(6, 6)
+LOG_ASSERT        | debug   | Ç
+LOG_ASSERT        | debug   | Ç
+Execution failed!

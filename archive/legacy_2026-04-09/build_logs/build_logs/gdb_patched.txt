@@ -1,0 +1,333 @@
+[New Thread 34788.0x9f98]
+[New Thread 34788.0x6cdc]
+[New Thread 34788.0x50d0]
+[New Thread 34788.0x8088]
+[New Thread 34788.0x6e14]
+[New Thread 34788.0xbc88]
+[New Thread 34788.0x9820]
+[New Thread 34788.0x5148]
+[New Thread 34788.0x4870]
+[New Thread 34788.0xbe64]
+[New Thread 34788.0x3d0c]
+[New Thread 34788.0xc408]
+[New Thread 34788.0x57e8]
+[New Thread 34788.0x1868]
+[New Thread 34788.0xce78]
+[New Thread 34788.0xceec]
+[New Thread 34788.0x21e0]
+[New Thread 34788.0xccd4]
+LOG_SOLVER        | info    | NO override given on the command line.
+LOG_SOLVER        | info    | numberOfIntervals = 3
+LOG_SOLVER        | info    | Allocated simulation result data storage for method 'mat' and file='s000_baseline_res.mat'
+LOG_SOLVER        | info    | recognized solver: dassl
+LOG_SOLVER        | info    | Configuration of the dassl code:
+|                 | |       | | The relative tolerance is 1e-06. Following absolute tolerances are used for the states: 
+|                 | |       | | maximum step size not set
+|                 | |       | | initial step size not set
+|                 | |       | | maximum integration order 5
+|                 | |       | | use equidistant time grid YES
+|                 | |       | | jacobian is calculated by Colored numerical Jacobian, which is default for dassl and ida. Needs omc compiler flag --generateDynamicJacobian=numeric. With option -idaLS=klu a sparse matrix is used.
+|                 | |       | | dassl uses internal root finding method YES
+|                 | |       | | dassl performs an restart after an event occurs YES
+LOG_STDOUT        | warning | The default linear solver fails, the fallback solver with total pivoting is started at time 0.000000. That might raise performance issues, for more information use -lv LOG_LS.
+LOG_STDOUT        | warning | The default linear solver fails, the fallback solver with total pivoting is started at time 0.000000. That might raise performance issues, for more information use -lv LOG_LS.
+[New Thread 34788.0x6b4c]
+[New Thread 34788.0xc560]
+[New Thread 34788.0x9724]
+Start Fast Fluid Dynamics Simulation with Thread ID 3334476400
+Start Fast Fluid Dynamics Simulation with Thread ID 3334476400
+LOG_STDOUT        | warning | The default linear solver fails, the fallback solver with total pivoting is started at time 0.000000. That might raise performance issues, for more information use -lv LOG_LS.
+Start Fast Fluid Dynamics Simulation with Thread ID 3334476400
+LOG_EVENTS        | info    | status of relations at time=0
+|                 | |       | | [1] (pre: false) false = time >= pre(fanTable.nextTimeEvent)
+|                 | |       | | [2] (pre: false) false = time >= pre(TsupTable.nextTimeEvent)
+|                 | |       | | [3] (pre:  true)  true = dc.roo.air.cfd.u[15] > 0.0
+|                 | |       | | [4] (pre:  true)  true = dc.roo.air.cfd.u[11] > 0.0
+|                 | |       | | [5] (pre: false) false = (-dc.roo.air.cfd.u[20]) > 0.0
+|                 | |       | | [6] (pre: false) false = (-dc.roo.air.cfd.u[16]) > 0.0
+|                 | |       | | [7] (pre:  true)  true = dc.roo.air.cfd.u[14] > 0.0
+|                 | |       | | [8] (pre: false) false = (-dc.roo.air.cfd.u[21]) > 0.0
+
+Thread 20 received signal SIGSEGV, Segmentation fault.
+[Switching to Thread 34788.0x6b4c]
+0x00007ffb5f30d151 in ucrtbase!strlen () from C:\Windows\System32\ucrtbase.dll
+#0  0x00007ffb5f30d151 in ucrtbase!strlen () from C:\Windows\System32\ucrtbase.dll
+#1  0x00007ffade7f2764 in read_parameter () from C:\Users\ZacharyCooper-Baldoc\Desktop\Repositories\CFD\external\modelica-buildings\Buildings\Resources\Library\win64\ffd.dll
+#2  0x00007ffade7efcd9 in initialize () from C:\Users\ZacharyCooper-Baldoc\Desktop\Repositories\CFD\external\modelica-buildings\Buildings\Resources\Library\win64\ffd.dll
+#3  0x00007ffade7eeac8 in ffd () from C:\Users\ZacharyCooper-Baldoc\Desktop\Repositories\CFD\external\modelica-buildings\Buildings\Resources\Library\win64\ffd.dll
+#4  0x00007ffade7eea0f in ffd_cosimulation () from C:\Users\ZacharyCooper-Baldoc\Desktop\Repositories\CFD\external\modelica-buildings\Buildings\Resources\Library\win64\ffd.dll
+#5  0x00007ffade7eefe2 in ffd_thread () from C:\Users\ZacharyCooper-Baldoc\Desktop\Repositories\CFD\external\modelica-buildings\Buildings\Resources\Library\win64\ffd.dll
+#6  0x00007ffb6104e8d7 in KERNEL32!BaseThreadInitThunk () from C:\Windows\System32\kernel32.dll
+#7  0x00007ffb61dac48c in ntdll!RtlUserThreadStart () from C:\Windows\SYSTEM32\ntdll.dll
+#8  0x0000000000000000 in ?? ()
+rax            0x0                 0
+rbx            0x63                99
+rcx            0x0                 0
+rdx            0xabababab0064      188753807868004
+rsi            0x7ffade808078      140715451515000
+rdi            0xc6ca5180          3335147904
+rbp            0x0                 0x0
+rsp            0xd07bfc98          0xd07bfc98
+r8             0x7efefefefefefeff  9151031864016699135
+r9             0x2aaaaaa9ff636565  3074457342744683877
+r10            0x14c0000           21757952
+r11            0x8101010101010100  -9151031864016699136
+r12            0x0                 0
+r13            0x0                 0
+r14            0x0                 0
+r15            0xc6c027c0          3334481856
+rip            0x7ffb5f30d151      0x7ffb5f30d151 <ucrtbase!strlen+49>
+eflags         0x10246             [ PF ZF IF RF ]
+cs             0x33                51
+ss             0x2b                43
+ds             0x2b                43
+es             0x2b                43
+fs             0x53                83
+gs             0x2b                43
+
+Thread 22 (Thread 34788.0x9724):
+#0  0x00007ffb61e82534 in ntdll!ZwCreateFile () from C:\Windows\SYSTEM32\ntdll.dll
+#1  0x00007ffb5f3b5537 in KERNELBASE!GetDriveTypeW () from C:\Windows\System32\KernelBase.dll
+#2  0x00007ffb5f3b6e27 in KERNELBASE!CreateFileW () from C:\Windows\System32\KernelBase.dll
+#3  0x00007ffb5f259c3c in ucrtbase!ftell () from C:\Windows\System32\ucrtbase.dll
+#4  0x00007ffb5f25a777 in ucrtbase!_wsopen_s () from C:\Windows\System32\ucrtbase.dll
+#5  0x00007ffb5f25ac59 in ucrtbase!_wsopen_s () from C:\Windows\System32\ucrtbase.dll
+#6  0x00007ffb5f25a8ea in ucrtbase!_wsopen_s () from C:\Windows\System32\ucrtbase.dll
+#7  0x00007ffb5f25b116 in ucrtbase!_wopen () from C:\Windows\System32\ucrtbase.dll
+#8  0x00007ffade7fa434 in ffd_log () from C:\Users\ZacharyCooper-Baldoc\Desktop\Repositories\CFD\external\modelica-buildings\Buildings\Resources\Library\win64\ffd.dll
+#9  0x00007ffade7eefb7 in ffd_thread () from C:\Users\ZacharyCooper-Baldoc\Desktop\Repositories\CFD\external\modelica-buildings\Buildings\Resources\Library\win64\ffd.dll
+#10 0x00007ffb6104e8d7 in KERNEL32!BaseThreadInitThunk () from C:\Windows\System32\kernel32.dll
+#11 0x00007ffb61dac48c in ntdll!RtlUserThreadStart () from C:\Windows\SYSTEM32\ntdll.dll
+#12 0x0000000000000000 in ?? ()
+
+Thread 21 (Thread 34788.0xc560):
+#0  0x00007ffb61e82534 in ntdll!ZwCreateFile () from C:\Windows\SYSTEM32\ntdll.dll
+#1  0x00007ffb5f3b5537 in KERNELBASE!GetDriveTypeW () from C:\Windows\System32\KernelBase.dll
+#2  0x00007ffb5f3b6e27 in KERNELBASE!CreateFileW () from C:\Windows\System32\KernelBase.dll
+#3  0x00007ffb5f259c3c in ucrtbase!ftell () from C:\Windows\System32\ucrtbase.dll
+#4  0x00007ffb5f25a777 in ucrtbase!_wsopen_s () from C:\Windows\System32\ucrtbase.dll
+#5  0x00007ffb5f25ac59 in ucrtbase!_wsopen_s () from C:\Windows\System32\ucrtbase.dll
+#6  0x00007ffb5f25a8ea in ucrtbase!_wsopen_s () from C:\Windows\System32\ucrtbase.dll
+#7  0x00007ffb5f25b116 in ucrtbase!_wopen () from C:\Windows\System32\ucrtbase.dll
+#8  0x00007ffade7fa45a in ffd_log () from C:\Users\ZacharyCooper-Baldoc\Desktop\Repositories\CFD\external\modelica-buildings\Buildings\Resources\Library\win64\ffd.dll
+#9  0x00007ffade7eefda in ffd_thread () from C:\Users\ZacharyCooper-Baldoc\Desktop\Repositories\CFD\external\modelica-buildings\Buildings\Resources\Library\win64\ffd.dll
+#10 0x00007ffb6104e8d7 in KERNEL32!BaseThreadInitThunk () from C:\Windows\System32\kernel32.dll
+#11 0x00007ffb61dac48c in ntdll!RtlUserThreadStart () from C:\Windows\SYSTEM32\ntdll.dll
+#12 0x0000000000000000 in ?? ()
+
+Thread 20 (Thread 34788.0x6b4c):
+#0  0x00007ffb5f30d151 in ucrtbase!strlen () from C:\Windows\System32\ucrtbase.dll
+#1  0x00007ffade7f2764 in read_parameter () from C:\Users\ZacharyCooper-Baldoc\Desktop\Repositories\CFD\external\modelica-buildings\Buildings\Resources\Library\win64\ffd.dll
+#2  0x00007ffade7efcd9 in initialize () from C:\Users\ZacharyCooper-Baldoc\Desktop\Repositories\CFD\external\modelica-buildings\Buildings\Resources\Library\win64\ffd.dll
+#3  0x00007ffade7eeac8 in ffd () from C:\Users\ZacharyCooper-Baldoc\Desktop\Repositories\CFD\external\modelica-buildings\Buildings\Resources\Library\win64\ffd.dll
+#4  0x00007ffade7eea0f in ffd_cosimulation () from C:\Users\ZacharyCooper-Baldoc\Desktop\Repositories\CFD\external\modelica-buildings\Buildings\Resources\Library\win64\ffd.dll
+#5  0x00007ffade7eefe2 in ffd_thread () from C:\Users\ZacharyCooper-Baldoc\Desktop\Repositories\CFD\external\modelica-buildings\Buildings\Resources\Library\win64\ffd.dll
+#6  0x00007ffb6104e8d7 in KERNEL32!BaseThreadInitThunk () from C:\Windows\System32\kernel32.dll
+#7  0x00007ffb61dac48c in ntdll!RtlUserThreadStart () from C:\Windows\SYSTEM32\ntdll.dll
+#8  0x0000000000000000 in ?? ()
+
+Thread 19 (Thread 34788.0xccd4):
+#0  0x00007ffb61e81b14 in ntdll!ZwWaitForSingleObject () from C:\Windows\SYSTEM32\ntdll.dll
+#1  0x00007ffb5f3ab1bf in WaitForSingleObjectEx () from C:\Windows\System32\KernelBase.dll
+#2  0x00007ffad5e24e97 in GC_wait_marker () at extra/../win32_threads.c:2153
+#3  0x00007ffad5e2da55 in GC_help_marker (my_mark_no=1) at extra/../mark.c:1245
+#4  GC_mark_thread (id=<optimized out>) at extra/../win32_threads.c:1761
+#5  0x00007ffb5f2237b0 in wcsrchr () from C:\Windows\System32\ucrtbase.dll
+#6  0x00007ffb6104e8d7 in KERNEL32!BaseThreadInitThunk () from C:\Windows\System32\kernel32.dll
+#7  0x00007ffb61dac48c in ntdll!RtlUserThreadStart () from C:\Windows\SYSTEM32\ntdll.dll
+#8  0x0000000000000000 in ?? ()
+
+Thread 18 (Thread 34788.0x21e0):
+#0  0x00007ffb61e81b14 in ntdll!ZwWaitForSingleObject () from C:\Windows\SYSTEM32\ntdll.dll
+#1  0x00007ffb5f3ab1bf in WaitForSingleObjectEx () from C:\Windows\System32\KernelBase.dll
+#2  0x00007ffad5e24e97 in GC_wait_marker () at extra/../win32_threads.c:2153
+#3  0x00007ffad5e2da55 in GC_help_marker (my_mark_no=1) at extra/../mark.c:1245
+#4  GC_mark_thread (id=<optimized out>) at extra/../win32_threads.c:1761
+#5  0x00007ffb5f2237b0 in wcsrchr () from C:\Windows\System32\ucrtbase.dll
+#6  0x00007ffb6104e8d7 in KERNEL32!BaseThreadInitThunk () from C:\Windows\System32\kernel32.dll
+#7  0x00007ffb61dac48c in ntdll!RtlUserThreadStart () from C:\Windows\SYSTEM32\ntdll.dll
+#8  0x0000000000000000 in ?? ()
+
+Thread 17 (Thread 34788.0xceec):
+#0  0x00007ffb61e81b14 in ntdll!ZwWaitForSingleObject () from C:\Windows\SYSTEM32\ntdll.dll
+#1  0x00007ffb5f3ab1bf in WaitForSingleObjectEx () from C:\Windows\System32\KernelBase.dll
+#2  0x00007ffad5e24e97 in GC_wait_marker () at extra/../win32_threads.c:2153
+#3  0x00007ffad5e2da55 in GC_help_marker (my_mark_no=1) at extra/../mark.c:1245
+#4  GC_mark_thread (id=<optimized out>) at extra/../win32_threads.c:1761
+#5  0x00007ffb5f2237b0 in wcsrchr () from C:\Windows\System32\ucrtbase.dll
+#6  0x00007ffb6104e8d7 in KERNEL32!BaseThreadInitThunk () from C:\Windows\System32\kernel32.dll
+#7  0x00007ffb61dac48c in ntdll!RtlUserThreadStart () from C:\Windows\SYSTEM32\ntdll.dll
+#8  0x0000000000000000 in ?? ()
+
+Thread 16 (Thread 34788.0xce78):
+#0  0x00007ffb61e81b14 in ntdll!ZwWaitForSingleObject () from C:\Windows\SYSTEM32\ntdll.dll
+#1  0x00007ffb5f3ab1bf in WaitForSingleObjectEx () from C:\Windows\System32\KernelBase.dll
+#2  0x00007ffad5e24e97 in GC_wait_marker () at extra/../win32_threads.c:2153
+#3  0x00007ffad5e2da55 in GC_help_marker (my_mark_no=1) at extra/../mark.c:1245
+#4  GC_mark_thread (id=<optimized out>) at extra/../win32_threads.c:1761
+#5  0x00007ffb5f2237b0 in wcsrchr () from C:\Windows\System32\ucrtbase.dll
+#6  0x00007ffb6104e8d7 in KERNEL32!BaseThreadInitThunk () from C:\Windows\System32\kernel32.dll
+#7  0x00007ffb61dac48c in ntdll!RtlUserThreadStart () from C:\Windows\SYSTEM32\ntdll.dll
+#8  0x0000000000000000 in ?? ()
+
+Thread 15 (Thread 34788.0x1868):
+#0  0x00007ffb61e81b14 in ntdll!ZwWaitForSingleObject () from C:\Windows\SYSTEM32\ntdll.dll
+#1  0x00007ffb5f3ab1bf in WaitForSingleObjectEx () from C:\Windows\System32\KernelBase.dll
+#2  0x00007ffad5e24e97 in GC_wait_marker () at extra/../win32_threads.c:2153
+#3  0x00007ffad5e2da55 in GC_help_marker (my_mark_no=1) at extra/../mark.c:1245
+#4  GC_mark_thread (id=<optimized out>) at extra/../win32_threads.c:1761
+#5  0x00007ffb5f2237b0 in wcsrchr () from C:\Windows\System32\ucrtbase.dll
+#6  0x00007ffb6104e8d7 in KERNEL32!BaseThreadInitThunk () from C:\Windows\System32\kernel32.dll
+#7  0x00007ffb61dac48c in ntdll!RtlUserThreadStart () from C:\Windows\SYSTEM32\ntdll.dll
+#8  0x0000000000000000 in ?? ()
+
+Thread 14 (Thread 34788.0x57e8):
+#0  0x00007ffb61e81b14 in ntdll!ZwWaitForSingleObject () from C:\Windows\SYSTEM32\ntdll.dll
+#1  0x00007ffb5f3ab1bf in WaitForSingleObjectEx () from C:\Windows\System32\KernelBase.dll
+#2  0x00007ffad5e24e97 in GC_wait_marker () at extra/../win32_threads.c:2153
+#3  0x00007ffad5e2da55 in GC_help_marker (my_mark_no=1) at extra/../mark.c:1245
+#4  GC_mark_thread (id=<optimized out>) at extra/../win32_threads.c:1761
+#5  0x00007ffb5f2237b0 in wcsrchr () from C:\Windows\System32\ucrtbase.dll
+#6  0x00007ffb6104e8d7 in KERNEL32!BaseThreadInitThunk () from C:\Windows\System32\kernel32.dll
+#7  0x00007ffb61dac48c in ntdll!RtlUserThreadStart () from C:\Windows\SYSTEM32\ntdll.dll
+#8  0x0000000000000000 in ?? ()
+
+Thread 13 (Thread 34788.0xc408):
+#0  0x00007ffb61e81b14 in ntdll!ZwWaitForSingleObject () from C:\Windows\SYSTEM32\ntdll.dll
+#1  0x00007ffb5f3ab1bf in WaitForSingleObjectEx () from C:\Windows\System32\KernelBase.dll
+#2  0x00007ffad5e24e97 in GC_wait_marker () at extra/../win32_threads.c:2153
+#3  0x00007ffad5e2da55 in GC_help_marker (my_mark_no=1) at extra/../mark.c:1245
+#4  GC_mark_thread (id=<optimized out>) at extra/../win32_threads.c:1761
+#5  0x00007ffb5f2237b0 in wcsrchr () from C:\Windows\System32\ucrtbase.dll
+#6  0x00007ffb6104e8d7 in KERNEL32!BaseThreadInitThunk () from C:\Windows\System32\kernel32.dll
+#7  0x00007ffb61dac48c in ntdll!RtlUserThreadStart () from C:\Windows\SYSTEM32\ntdll.dll
+#8  0x0000000000000000 in ?? ()
+
+Thread 12 (Thread 34788.0x3d0c):
+#0  0x00007ffb61e81b14 in ntdll!ZwWaitForSingleObject () from C:\Windows\SYSTEM32\ntdll.dll
+#1  0x00007ffb5f3ab1bf in WaitForSingleObjectEx () from C:\Windows\System32\KernelBase.dll
+#2  0x00007ffad5e24e97 in GC_wait_marker () at extra/../win32_threads.c:2153
+#3  0x00007ffad5e2da55 in GC_help_marker (my_mark_no=1) at extra/../mark.c:1245
+#4  GC_mark_thread (id=<optimized out>) at extra/../win32_threads.c:1761
+#5  0x00007ffb5f2237b0 in wcsrchr () from C:\Windows\System32\ucrtbase.dll
+#6  0x00007ffb6104e8d7 in KERNEL32!BaseThreadInitThunk () from C:\Windows\System32\kernel32.dll
+#7  0x00007ffb61dac48c in ntdll!RtlUserThreadStart () from C:\Windows\SYSTEM32\ntdll.dll
+#8  0x0000000000000000 in ?? ()
+
+Thread 11 (Thread 34788.0xbe64):
+#0  0x00007ffb61e81b14 in ntdll!ZwWaitForSingleObject () from C:\Windows\SYSTEM32\ntdll.dll
+#1  0x00007ffb5f3ab1bf in WaitForSingleObjectEx () from C:\Windows\System32\KernelBase.dll
+#2  0x00007ffad5e24e97 in GC_wait_marker () at extra/../win32_threads.c:2153
+#3  0x00007ffad5e2da55 in GC_help_marker (my_mark_no=1) at extra/../mark.c:1245
+#4  GC_mark_thread (id=<optimized out>) at extra/../win32_threads.c:1761
+#5  0x00007ffb5f2237b0 in wcsrchr () from C:\Windows\System32\ucrtbase.dll
+#6  0x00007ffb6104e8d7 in KERNEL32!BaseThreadInitThunk () from C:\Windows\System32\kernel32.dll
+#7  0x00007ffb61dac48c in ntdll!RtlUserThreadStart () from C:\Windows\SYSTEM32\ntdll.dll
+#8  0x0000000000000000 in ?? ()
+
+Thread 10 (Thread 34788.0x4870):
+#0  0x00007ffb61e81b14 in ntdll!ZwWaitForSingleObject () from C:\Windows\SYSTEM32\ntdll.dll
+#1  0x00007ffb5f3ab1bf in WaitForSingleObjectEx () from C:\Windows\System32\KernelBase.dll
+#2  0x00007ffad5e24e97 in GC_wait_marker () at extra/../win32_threads.c:2153
+#3  0x00007ffad5e2da55 in GC_help_marker (my_mark_no=1) at extra/../mark.c:1245
+#4  GC_mark_thread (id=<optimized out>) at extra/../win32_threads.c:1761
+#5  0x00007ffb5f2237b0 in wcsrchr () from C:\Windows\System32\ucrtbase.dll
+#6  0x00007ffb6104e8d7 in KERNEL32!BaseThreadInitThunk () from C:\Windows\System32\kernel32.dll
+#7  0x00007ffb61dac48c in ntdll!RtlUserThreadStart () from C:\Windows\SYSTEM32\ntdll.dll
+#8  0x0000000000000000 in ?? ()
+
+Thread 9 (Thread 34788.0x5148):
+#0  0x00007ffb61e81b14 in ntdll!ZwWaitForSingleObject () from C:\Windows\SYSTEM32\ntdll.dll
+#1  0x00007ffb5f3ab1bf in WaitForSingleObjectEx () from C:\Windows\System32\KernelBase.dll
+#2  0x00007ffad5e24e97 in GC_wait_marker () at extra/../win32_threads.c:2153
+#3  0x00007ffad5e2da55 in GC_help_marker (my_mark_no=1) at extra/../mark.c:1245
+#4  GC_mark_thread (id=<optimized out>) at extra/../win32_threads.c:1761
+#5  0x00007ffb5f2237b0 in wcsrchr () from C:\Windows\System32\ucrtbase.dll
+#6  0x00007ffb6104e8d7 in KERNEL32!BaseThreadInitThunk () from C:\Windows\System32\kernel32.dll
+#7  0x00007ffb61dac48c in ntdll!RtlUserThreadStart () from C:\Windows\SYSTEM32\ntdll.dll
+#8  0x0000000000000000 in ?? ()
+
+Thread 8 (Thread 34788.0x9820):
+#0  0x00007ffb61e81b14 in ntdll!ZwWaitForSingleObject () from C:\Windows\SYSTEM32\ntdll.dll
+#1  0x00007ffb5f3ab1bf in WaitForSingleObjectEx () from C:\Windows\System32\KernelBase.dll
+#2  0x00007ffad5e24e97 in GC_wait_marker () at extra/../win32_threads.c:2153
+#3  0x00007ffad5e2da55 in GC_help_marker (my_mark_no=1) at extra/../mark.c:1245
+#4  GC_mark_thread (id=<optimized out>) at extra/../win32_threads.c:1761
+#5  0x00007ffb5f2237b0 in wcsrchr () from C:\Windows\System32\ucrtbase.dll
+#6  0x00007ffb6104e8d7 in KERNEL32!BaseThreadInitThunk () from C:\Windows\System32\kernel32.dll
+#7  0x00007ffb61dac48c in ntdll!RtlUserThreadStart () from C:\Windows\SYSTEM32\ntdll.dll
+#8  0x0000000000000000 in ?? ()
+
+Thread 7 (Thread 34788.0xbc88):
+#0  0x00007ffb61e81b14 in ntdll!ZwWaitForSingleObject () from C:\Windows\SYSTEM32\ntdll.dll
+#1  0x00007ffb5f3ab1bf in WaitForSingleObjectEx () from C:\Windows\System32\KernelBase.dll
+#2  0x00007ffad5e24e97 in GC_wait_marker () at extra/../win32_threads.c:2153
+#3  0x00007ffad5e2da55 in GC_help_marker (my_mark_no=1) at extra/../mark.c:1245
+#4  GC_mark_thread (id=<optimized out>) at extra/../win32_threads.c:1761
+#5  0x00007ffb5f2237b0 in wcsrchr () from C:\Windows\System32\ucrtbase.dll
+#6  0x00007ffb6104e8d7 in KERNEL32!BaseThreadInitThunk () from C:\Windows\System32\kernel32.dll
+#7  0x00007ffb61dac48c in ntdll!RtlUserThreadStart () from C:\Windows\SYSTEM32\ntdll.dll
+#8  0x0000000000000000 in ?? ()
+
+Thread 6 (Thread 34788.0x6e14):
+#0  0x00007ffb61e81b14 in ntdll!ZwWaitForSingleObject () from C:\Windows\SYSTEM32\ntdll.dll
+#1  0x00007ffb5f3ab1bf in WaitForSingleObjectEx () from C:\Windows\System32\KernelBase.dll
+#2  0x00007ffad5e24e97 in GC_wait_marker () at extra/../win32_threads.c:2153
+#3  0x00007ffad5e2da55 in GC_help_marker (my_mark_no=1) at extra/../mark.c:1245
+#4  GC_mark_thread (id=<optimized out>) at extra/../win32_threads.c:1761
+#5  0x00007ffb5f2237b0 in wcsrchr () from C:\Windows\System32\ucrtbase.dll
+#6  0x00007ffb6104e8d7 in KERNEL32!BaseThreadInitThunk () from C:\Windows\System32\kernel32.dll
+#7  0x00007ffb61dac48c in ntdll!RtlUserThreadStart () from C:\Windows\SYSTEM32\ntdll.dll
+#8  0x0000000000000000 in ?? ()
+
+Thread 5 (Thread 34788.0x8088):
+#0  0x00007ffb61e81b14 in ntdll!ZwWaitForSingleObject () from C:\Windows\SYSTEM32\ntdll.dll
+#1  0x00007ffb5f3ab1bf in WaitForSingleObjectEx () from C:\Windows\System32\KernelBase.dll
+#2  0x00007ffad5e24e97 in GC_wait_marker () at extra/../win32_threads.c:2153
+#3  0x00007ffad5e2da55 in GC_help_marker (my_mark_no=1) at extra/../mark.c:1245
+#4  GC_mark_thread (id=<optimized out>) at extra/../win32_threads.c:1761
+#5  0x00007ffb5f2237b0 in wcsrchr () from C:\Windows\System32\ucrtbase.dll
+#6  0x00007ffb6104e8d7 in KERNEL32!BaseThreadInitThunk () from C:\Windows\System32\kernel32.dll
+#7  0x00007ffb61dac48c in ntdll!RtlUserThreadStart () from C:\Windows\SYSTEM32\ntdll.dll
+#8  0x0000000000000000 in ?? ()
+
+Thread 4 (Thread 34788.0x50d0):
+#0  0x00007ffb61e85744 in ntdll!ZwWaitForWorkViaWorkerFactory () from C:\Windows\SYSTEM32\ntdll.dll
+#1  0x00007ffb61d95e8e in ntdll!RtlSetThreadSubProcessTag () from C:\Windows\SYSTEM32\ntdll.dll
+#2  0x00007ffb6104e8d7 in KERNEL32!BaseThreadInitThunk () from C:\Windows\System32\kernel32.dll
+#3  0x00007ffb61dac48c in ntdll!RtlUserThreadStart () from C:\Windows\SYSTEM32\ntdll.dll
+#4  0x0000000000000000 in ?? ()
+
+Thread 3 (Thread 34788.0x6cdc):
+#0  0x00007ffb61e85744 in ntdll!ZwWaitForWorkViaWorkerFactory () from C:\Windows\SYSTEM32\ntdll.dll
+#1  0x00007ffb61d95e8e in ntdll!RtlSetThreadSubProcessTag () from C:\Windows\SYSTEM32\ntdll.dll
+#2  0x00007ffb6104e8d7 in KERNEL32!BaseThreadInitThunk () from C:\Windows\System32\kernel32.dll
+#3  0x00007ffb61dac48c in ntdll!RtlUserThreadStart () from C:\Windows\SYSTEM32\ntdll.dll
+#4  0x0000000000000000 in ?? ()
+
+Thread 2 (Thread 34788.0x9f98):
+#0  0x00007ffb61e85744 in ntdll!ZwWaitForWorkViaWorkerFactory () from C:\Windows\SYSTEM32\ntdll.dll
+#1  0x00007ffb61d95e8e in ntdll!RtlSetThreadSubProcessTag () from C:\Windows\SYSTEM32\ntdll.dll
+#2  0x00007ffb6104e8d7 in KERNEL32!BaseThreadInitThunk () from C:\Windows\System32\kernel32.dll
+#3  0x00007ffb61dac48c in ntdll!RtlUserThreadStart () from C:\Windows\SYSTEM32\ntdll.dll
+#4  0x0000000000000000 in ?? ()
+
+Thread 1 (Thread 34788.0x8b0c):
+#0  0x00007ffb61d2d853 in ntdll!RtlEnterCriticalSection () from C:\Windows\SYSTEM32\ntdll.dll
+#1  0x00007ffb5f28aa3a in ucrtbase!_o_towupper () from C:\Windows\System32\ucrtbase.dll
+#2  0x00007ffb5f28aa0f in ucrtbase!_o_towupper () from C:\Windows\System32\ucrtbase.dll
+#3  0x00007ffb5f28a933 in ucrtbase!_o_towupper () from C:\Windows\System32\ucrtbase.dll
+#4  0x00007ffb5f257ab8 in ucrtbase!_get_osfhandle () from C:\Windows\System32\ucrtbase.dll
+#5  0x00007ffb5f256922 in ucrtbase!fflush () from C:\Windows\System32\ucrtbase.dll
+#6  0x00007ffa3c9edb7d in messageText () from C:\OpenModelica\bin\libSimulationRuntimeC.dll
+#7  0x00007ffa3c9eddd6 in infoStreamPrint () from C:\OpenModelica\bin\libSimulationRuntimeC.dll
+#8  0x00007ffa3ca23598 in printRelations () from C:\OpenModelica\bin\libSimulationRuntimeC.dll
+#9  0x00007ffa3ca75ca7 in initialization () from C:\OpenModelica\bin\libSimulationRuntimeC.dll
+#10 0x00007ffa3ca2f38c in initializeModel () from C:\OpenModelica\bin\libSimulationRuntimeC.dll
+#11 0x00007ffa3ca3074b in solver_main () from C:\OpenModelica\bin\libSimulationRuntimeC.dll
+#12 0x00007ffa3caaec40 in callSolver(DATA*, threadData_s*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, char const*) () from C:\OpenModelica\bin\libSimulationRuntimeC.dll
+#13 0x00007ffa3caad999 in startNonInteractiveSimulation () from C:\OpenModelica\bin\libSimulationRuntimeC.dll
+#14 0x00007ffa3cab1875 in _main_SimulationRuntime () from C:\OpenModelica\bin\libSimulationRuntimeC.dll
+#15 0x00007ff6bb08a657 in wmain ()
+#16 0x00007ff6bb0712ea in __tmainCRTStartup () at C:/M/B/src/mingw-w64/mingw-w64-crt/crt/crtexe.c:259
+#17 0x00007ff6bb0713f6 in mainCRTStartup () at C:/M/B/src/mingw-w64/mingw-w64-crt/crt/crtexe.c:180

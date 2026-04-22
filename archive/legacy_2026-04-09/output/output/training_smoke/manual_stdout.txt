@@ -1,0 +1,106 @@
+LOG_SOLVER        | info    | NO override given on the command line.
+LOG_SOLVER        | info    | numberOfIntervals = 3
+LOG_SOLVER        | info    | Allocated simulation result data storage for method 'mat' and file='s000_baseline_res.mat'
+LOG_SOLVER        | info    | recognized solver: dassl
+LOG_SOLVER        | info    | Configuration of the dassl code:
+|                 | |       | | The relative tolerance is 1e-06. Following absolute tolerances are used for the states: 
+|                 | |       | | maximum step size not set
+|                 | |       | | initial step size not set
+|                 | |       | | maximum integration order 5
+|                 | |       | | use equidistant time grid YES
+|                 | |       | | jacobian is calculated by Colored numerical Jacobian, which is default for dassl and ida. Needs omc compiler flag --generateDynamicJacobian=numeric. With option -idaLS=klu a sparse matrix is used.
+|                 | |       | | dassl uses internal root finding method YES
+|                 | |       | | dassl performs an restart after an event occurs YES
+LOG_STDOUT        | warning | The default linear solver fails, the fallback solver with total pivoting is started at time 0.000000. That might raise performance issues, for more information use -lv LOG_LS.
+LOG_STDOUT        | warning | The default linear solver fails, the fallback solver with total pivoting is started at time 0.000000. That might raise performance issues, for more information use -lv LOG_LS.
+LOG_STDOUT        | warning | The default linear solver fails, the fallback solver with total pivoting is started at time 0.000000. That might raise performance issues, for more information use -lv LOG_LS.
+LOG_ASSERT        | warning | [C:/OMLibs/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/InfraredRadiationExchange.mo:63:3-68:36:writable]
+|                 | |       | The following assertion has been violated at time 0.000000
+|                 | |       | ((dc.roo.irRadExc.J[1] <= 0.0)) --> "Variable violating max constraint: dc.roo.irRadExc.J[1] <= 0.0, has value: 471112"
+LOG_ASSERT        | warning | [C:/OMLibs/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/InfraredRadiationExchange.mo:63:3-68:36:writable]
+|                 | |       | The following assertion has been violated at time 0.000000
+|                 | |       | ((dc.roo.irRadExc.J[2] <= 0.0)) --> "Variable violating max constraint: dc.roo.irRadExc.J[2] <= 0.0, has value: 471112"
+LOG_ASSERT        | warning | [C:/OMLibs/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/InfraredRadiationExchange.mo:63:3-68:36:writable]
+|                 | |       | The following assertion has been violated at time 0.000000
+|                 | |       | ((dc.roo.irRadExc.J[3] <= 0.0)) --> "Variable violating max constraint: dc.roo.irRadExc.J[3] <= 0.0, has value: 84800.1"
+LOG_ASSERT        | warning | [C:/OMLibs/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/InfraredRadiationExchange.mo:63:3-68:36:writable]
+|                 | |       | The following assertion has been violated at time 0.000000
+|                 | |       | ((dc.roo.irRadExc.J[4] <= 0.0)) --> "Variable violating max constraint: dc.roo.irRadExc.J[4] <= 0.0, has value: 84800.1"
+LOG_ASSERT        | warning | [C:/OMLibs/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/InfraredRadiationExchange.mo:63:3-68:36:writable]
+|                 | |       | The following assertion has been violated at time 0.000000
+|                 | |       | ((dc.roo.irRadExc.J[5] <= 0.0)) --> "Variable violating max constraint: dc.roo.irRadExc.J[5] <= 0.0, has value: 141333"
+LOG_ASSERT        | warning | [C:/OMLibs/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/InfraredRadiationExchange.mo:63:3-68:36:writable]
+|                 | |       | The following assertion has been violated at time 0.000000
+|                 | |       | ((dc.roo.irRadExc.J[6] <= 0.0)) --> "Variable violating max constraint: dc.roo.irRadExc.J[6] <= 0.0, has value: 141333"
+LOG_ASSERT        | warning | [C:/OMLibs/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/InfraredRadiationExchange.mo:70:3-74:37:writable]
+|                 | |       | The following assertion has been violated at time 0.000000
+|                 | |       | ((dc.roo.irRadExc.G[1] >= 0.0)) --> "Variable violating min constraint: 0.0 <= dc.roo.irRadExc.G[1], has value: -471112"
+LOG_ASSERT        | warning | [C:/OMLibs/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/InfraredRadiationExchange.mo:70:3-74:37:writable]
+|                 | |       | The following assertion has been violated at time 0.000000
+|                 | |       | ((dc.roo.irRadExc.G[2] >= 0.0)) --> "Variable violating min constraint: 0.0 <= dc.roo.irRadExc.G[2], has value: -471112"
+LOG_ASSERT        | warning | [C:/OMLibs/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/InfraredRadiationExchange.mo:70:3-74:37:writable]
+|                 | |       | The following assertion has been violated at time 0.000000
+|                 | |       | ((dc.roo.irRadExc.G[3] >= 0.0)) --> "Variable violating min constraint: 0.0 <= dc.roo.irRadExc.G[3], has value: -84800.1"
+LOG_ASSERT        | warning | [C:/OMLibs/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/InfraredRadiationExchange.mo:70:3-74:37:writable]
+|                 | |       | The following assertion has been violated at time 0.000000
+|                 | |       | ((dc.roo.irRadExc.G[4] >= 0.0)) --> "Variable violating min constraint: 0.0 <= dc.roo.irRadExc.G[4], has value: -84800.1"
+LOG_ASSERT        | warning | [C:/OMLibs/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/InfraredRadiationExchange.mo:70:3-74:37:writable]
+|                 | |       | The following assertion has been violated at time 0.000000
+|                 | |       | ((dc.roo.irRadExc.G[5] >= 0.0)) --> "Variable violating min constraint: 0.0 <= dc.roo.irRadExc.G[5], has value: -141333"
+LOG_ASSERT        | warning | [C:/OMLibs/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/InfraredRadiationExchange.mo:70:3-74:37:writable]
+|                 | |       | The following assertion has been violated at time 0.000000
+|                 | |       | ((dc.roo.irRadExc.G[6] >= 0.0)) --> "Variable violating min constraint: 0.0 <= dc.roo.irRadExc.G[6], has value: -141333"
+LOG_SUCCESS       | info    | The initialization finished successfully with 3 homotopy steps.
+LOG_SOLVER        | info    | Wrote parameters to the file after initialization (for output formats that support this)
+LOG_SOLVER        | info    | Start numerical solver from 0 to 30
+LOG_SOLVER        | info    | Sparse structure of ODE sparse pattern [size: 46x46]
+|                 | |       | | 818 non-zero elements
+|                 | |       | | Transposed sparse structure (rows: states)
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | |                 *             * * * * * *                                                 * 
+LOG_SOLVER        | info    | call solver from 0 to 0 (stepSize: 0)
+|                 | |       | | finished solver step 0

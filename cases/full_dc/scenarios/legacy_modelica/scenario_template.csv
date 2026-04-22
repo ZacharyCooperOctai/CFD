@@ -1,0 +1,18 @@
+# Data Centre FFD scenario template
+# ===================================
+# Each row defines CRAC setpoints for one 15-minute (900 s) simulation window.
+#
+# Columns:
+#   time_s         : simulation start time for this window (informational; always 0 inside each episode)
+#   crac{1-6}_fan  : fan speed fraction 0.0–1.0 (0 = off, 1 = rated 4.5 m³/s)
+#   crac{1-6}_Tsup : supply temperature setpoint in °C
+#
+# Notes:
+#   - Fan fractions below ~0.3 may cause flow instability; use with caution.
+#   - Tsup range 10–22 °C corresponds to typical CRAC operating range.
+#   - This file defines SETPOINTS, not time series; each row is one episode.
+#   - For time-varying setpoints within an episode, extend with additional rows
+#     and set time_s accordingly (the CombiTimeTable will interpolate).
+#
+time_s,crac1_fan,crac2_fan,crac3_fan,crac4_fan,crac5_fan,crac6_fan,crac1_Tsup,crac2_Tsup,crac3_Tsup,crac4_Tsup,crac5_Tsup,crac6_Tsup
+0,1.0,1.0,1.0,1.0,1.0,1.0,14.0,14.0,14.0,14.0,14.0,14.0

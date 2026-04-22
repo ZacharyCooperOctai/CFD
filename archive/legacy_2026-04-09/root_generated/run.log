@@ -1,0 +1,23 @@
+4 errors generated.
+
+Failed to build the program...Debug Information below:
+
+PROGRAM_BUILD_LOG
+error: /home/zachary-cooperbaldock/.cache/pocl/kcache/tempfile_2LzjYE.cl:749:23 <Spelling=/lib/x86_64-linux-gnu/../../share/pocl/include/_builtin_renames.h:140:24>: call to '_cl_max' is ambiguous
+error: /home/zachary-cooperbaldock/.cache/pocl/kcache/tempfile_2LzjYE.cl:750:23 <Spelling=/lib/x86_64-linux-gnu/../../share/pocl/include/_builtin_renames.h:140:24>: call to '_cl_max' is ambiguous
+error: /home/zachary-cooperbaldock/.cache/pocl/kcache/tempfile_2LzjYE.cl:752:23 <Spelling=/lib/x86_64-linux-gnu/../../share/pocl/include/_builtin_renames.h:140:24>: call to '_cl_max' is ambiguous
+error: /home/zachary-cooperbaldock/.cache/pocl/kcache/tempfile_2LzjYE.cl:754:23 <Spelling=/lib/x86_64-linux-gnu/../../share/pocl/include/_builtin_renames.h:140:24>: call to '_cl_max' is ambiguous
+Device cpu-haswell-Intel(R) Core(TM) Ultra 7 155H failed to build the program
+
+
+PROGRAM_BUILD_STATUS
+þÿÿÿr: /home/zachary-cooperbaldock/.cache/pocl/kcache/tempfile_2LzjYE.cl:749:23 <Spelling=/lib/x86_64-linux-gnu/../../share/pocl/include/_builtin_renames.h:140:24>: call to '_cl_max' is ambiguous
+error: /home/zachary-cooperbaldock/.cache/pocl/kcache/tempfile_2LzjYE.cl:750:23 <Spelling=/lib/x86_64-linux-gnu/../../share/pocl/include/_builtin_renames.h:140:24>: call to '_cl_max' is ambiguous
+error: /home/zachary-cooperbaldock/.cache/pocl/kcache/tempfile_2LzjYE.cl:752:23 <Spelling=/lib/x86_64-linux-gnu/../../share/pocl/include/_builtin_renames.h:140:24>: call to '_cl_max' is ambiguous
+error: /home/zachary-cooperbaldock/.cache/pocl/kcache/tempfile_2LzjYE.cl:754:23 <Spelling=/lib/x86_64-linux-gnu/../../share/pocl/include/_builtin_renames.h:140:24>: call to '_cl_max' is ambiguous
+Device cpu-haswell-Intel(R) Core(TM) Ultra 7 155H failed to build the program
+
+
+PROGRAM_BUILD_OPTIONS
+-I ./ -cl-std=CL1.2
+Kernel Will Not Run... hit [ENTER] to Exit . . .

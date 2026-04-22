@@ -1,0 +1,425 @@
+warning: Error disabling address space randomization: Operation not permitted
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[New Thread 0x7d6d08afb640 (LWP 37)]
+[New Thread 0x7d6d082fa640 (LWP 38)]
+[New Thread 0x7d6d07af9640 (LWP 39)]
+[New Thread 0x7d6d072f8640 (LWP 40)]
+[New Thread 0x7d6d06af7640 (LWP 41)]
+[New Thread 0x7d6d062f6640 (LWP 42)]
+[New Thread 0x7d6d05af5640 (LWP 43)]
+[New Thread 0x7d6d052f4640 (LWP 44)]
+[New Thread 0x7d6d04af3640 (LWP 45)]
+[New Thread 0x7d6d042f2640 (LWP 46)]
+[New Thread 0x7d6d03af1640 (LWP 47)]
+[New Thread 0x7d6d032f0640 (LWP 48)]
+[New Thread 0x7d6d02aef640 (LWP 49)]
+[New Thread 0x7d6d022ee640 (LWP 50)]
+[New Thread 0x7d6d01aed640 (LWP 51)]
+LOG_SOLVER        | info    | NO override given on the command line.
+LOG_SOLVER        | info    | numberOfIntervals = 3
+LOG_SOLVER        | info    | Allocated simulation result data storage for method 'mat' and file='manual_run.mat'
+LOG_SOLVER        | info    | recognized solver: dassl
+LOG_SOLVER        | info    | Configuration of the dassl code:
+|                 | |       | | The relative tolerance is 1e-06. Following absolute tolerances are used for the states: 
+|                 | |       | | maximum step size not set
+|                 | |       | | initial step size not set
+|                 | |       | | maximum integration order 5
+|                 | |       | | use equidistant time grid YES
+|                 | |       | | jacobian is calculated by Colored numerical Jacobian, which is default for dassl and ida. Needs omc compiler flag --generateDynamicJacobian=numeric. With option -idaLS=klu a sparse matrix is used.
+|                 | |       | | dassl uses internal root finding method YES
+|                 | |       | | dassl performs an restart after an event occurs YES
+LOG_STDOUT        | warning | The default linear solver fails, the fallback solver with total pivoting is started at time 0.000000. That might raise performance issues, for more information use -lv LOG_LS.
+LOG_STDOUT        | warning | The default linear solver fails, the fallback solver with total pivoting is started at time 0.000000. That might raise performance issues, for more information use -lv LOG_LS.
+[New Thread 0x7d6d007dc640 (LWP 52)]
+Start Fast Fluid Dynamics Simulation with Thread
+LOG_STDOUT        | warning | The default linear solver fails, the fallback solver with total pivoting is started at time 0.000000. That might raise performance issues, for more information use -lv LOG_LS.
+LOG_ASSERT        | warning | [/workspace/external/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/InfraredRadiationExchange.mo:63:3-68:36:writable]
+|                 | |       | The following assertion has been violated at time 0.000000
+|                 | |       | ((dc.roo.irRadExc.J[1] <= 0.0)) --> "Variable violating max constraint: dc.roo.irRadExc.J[1] <= 0.0, has value: 471112"
+LOG_ASSERT        | warning | [/workspace/external/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/InfraredRadiationExchange.mo:63:3-68:36:writable]
+|                 | |       | The following assertion has been violated at time 0.000000
+|                 | |       | ((dc.roo.irRadExc.J[2] <= 0.0)) --> "Variable violating max constraint: dc.roo.irRadExc.J[2] <= 0.0, has value: 471112"
+LOG_ASSERT        | warning | [/workspace/external/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/InfraredRadiationExchange.mo:63:3-68:36:writable]
+|                 | |       | The following assertion has been violated at time 0.000000
+|                 | |       | ((dc.roo.irRadExc.J[3] <= 0.0)) --> "Variable violating max constraint: dc.roo.irRadExc.J[3] <= 0.0, has value: 84800.1"
+LOG_ASSERT        | warning | [/workspace/external/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/InfraredRadiationExchange.mo:63:3-68:36:writable]
+|                 | |       | The following assertion has been violated at time 0.000000
+|                 | |       | ((dc.roo.irRadExc.J[4] <= 0.0)) --> "Variable violating max constraint: dc.roo.irRadExc.J[4] <= 0.0, has value: 84800.1"
+LOG_ASSERT        | warning | [/workspace/external/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/InfraredRadiationExchange.mo:63:3-68:36:writable]
+|                 | |       | The following assertion has been violated at time 0.000000
+|                 | |       | ((dc.roo.irRadExc.J[5] <= 0.0)) --> "Variable violating max constraint: dc.roo.irRadExc.J[5] <= 0.0, has value: 136264"
+LOG_ASSERT        | warning | [/workspace/external/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/InfraredRadiationExchange.mo:63:3-68:36:writable]
+|                 | |       | The following assertion has been violated at time 0.000000
+|                 | |       | ((dc.roo.irRadExc.J[6] <= 0.0)) --> "Variable violating max constraint: dc.roo.irRadExc.J[6] <= 0.0, has value: 136264"
+LOG_ASSERT        | warning | [/workspace/external/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/InfraredRadiationExchange.mo:70:3-74:37:writable]
+|                 | |       | The following assertion has been violated at time 0.000000
+|                 | |       | ((dc.roo.irRadExc.G[1] >= 0.0)) --> "Variable violating min constraint: 0.0 <= dc.roo.irRadExc.G[1], has value: -471112"
+LOG_ASSERT        | warning | [/workspace/external/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/InfraredRadiationExchange.mo:70:3-74:37:writable]
+|                 | |       | The following assertion has been violated at time 0.000000
+|                 | |       | ((dc.roo.irRadExc.G[2] >= 0.0)) --> "Variable violating min constraint: 0.0 <= dc.roo.irRadExc.G[2], has value: -471112"
+LOG_ASSERT        | warning | [/workspace/external/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/InfraredRadiationExchange.mo:70:3-74:37:writable]
+|                 | |       | The following assertion has been violated at time 0.000000
+|                 | |       | ((dc.roo.irRadExc.G[3] >= 0.0)) --> "Variable violating min constraint: 0.0 <= dc.roo.irRadExc.G[3], has value: -84800.1"
+LOG_ASSERT        | warning | [/workspace/external/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/InfraredRadiationExchange.mo:70:3-74:37:writable]
+|                 | |       | The following assertion has been violated at time 0.000000
+|                 | |       | ((dc.roo.irRadExc.G[4] >= 0.0)) --> "Variable violating min constraint: 0.0 <= dc.roo.irRadExc.G[4], has value: -84800.1"
+LOG_ASSERT        | warning | [/workspace/external/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/InfraredRadiationExchange.mo:70:3-74:37:writable]
+|                 | |       | The following assertion has been violated at time 0.000000
+|                 | |       | ((dc.roo.irRadExc.G[5] >= 0.0)) --> "Variable violating min constraint: 0.0 <= dc.roo.irRadExc.G[5], has value: -136264"
+LOG_ASSERT        | warning | [/workspace/external/modelica-buildings/Buildings/ThermalZones/Detailed/BaseClasses/InfraredRadiationExchange.mo:70:3-74:37:writable]
+|                 | |       | The following assertion has been violated at time 0.000000
+|                 | |       | ((dc.roo.irRadExc.G[6] >= 0.0)) --> "Variable violating min constraint: 0.0 <= dc.roo.irRadExc.G[6], has value: -136264"
+LOG_SUCCESS       | info    | The initialization finished successfully with 3 homotopy steps.
+LOG_SOLVER        | info    | Wrote parameters to the file after initialization (for output formats that support this)
+LOG_SOLVER        | info    | Start numerical solver from 0 to 30
+LOG_SOLVER        | info    | Sparse structure of ODE sparse pattern [size: 46x46]
+|                 | |       | | 818 non-zero elements
+|                 | |       | | Transposed sparse structure (rows: states)
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | | * * * * * *                                           * * * * * *             * * * * * * 
+|                 | |       | | |                 *             * * * * * *                                                 * 
+LOG_SOLVER        | info    | call solver from 0 to 10 (stepSize: 10)
+|                 | |       | | finished solver step 6.59203e-14
+LOG_SOLVER        | info    | offset value for the next step: 6.592027476874421e-14
+LOG_SOLVER        | info    | call solver from 6.59203e-14 to 10 (stepSize: 9.99999999999993)
+|                 | |       | | finished solver step 10
+
+Thread 17 "s000_baseline" received signal SIGSEGV, Segmentation fault.
+[Switching to Thread 0x7d6d007dc640 (LWP 52)]
+0x00007d6d0bab9c81 in set_sensor_data () from /workspace/external/modelica-buildings/Buildings/Resources/Library/linux64/libffd.so
+
+Thread 17 (Thread 0x7d6d007dc640 (LWP 52) "s000_baseline"):
+#0  0x00007d6d0bab9c81 in set_sensor_data () from /workspace/external/modelica-buildings/Buildings/Resources/Library/linux64/libffd.so
+No symbol table info available.
+#1  0x00007d6d0bab7896 in write_cosim_data () from /workspace/external/modelica-buildings/Buildings/Resources/Library/linux64/libffd.so
+No symbol table info available.
+#2  0x00007d6d0bac4566 in set_initial_data () from /workspace/external/modelica-buildings/Buildings/Resources/Library/linux64/libffd.so
+No symbol table info available.
+#3  0x00007d6d0bac1a37 in ffd () from /workspace/external/modelica-buildings/Buildings/Resources/Library/linux64/libffd.so
+No symbol table info available.
+#4  0x00007d6d0bac18a9 in ffd_cosimulation () from /workspace/external/modelica-buildings/Buildings/Resources/Library/linux64/libffd.so
+No symbol table info available.
+#5  0x00007d6d0bac21b7 in ffd_thread () from /workspace/external/modelica-buildings/Buildings/Resources/Library/linux64/libffd.so
+No symbol table info available.
+#6  0x00007d6d0a4adac3 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#7  0x00007d6d0a53ea84 in clone () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+
+Thread 16 (Thread 0x7d6d01aed640 (LWP 51) "s000_baseline"):
+#0  0x00007d6d0a4aa117 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007d6d0a4aca41 in pthread_cond_wait () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007d6d0a655796 in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#3  0x00007d6d0a6557db in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#4  0x00007d6d0a65b84c in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#5  0x00007d6d0a4adac3 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#6  0x00007d6d0a53ea84 in clone () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+
+Thread 15 (Thread 0x7d6d022ee640 (LWP 50) "s000_baseline"):
+#0  0x00007d6d0a4aa117 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007d6d0a4aca41 in pthread_cond_wait () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007d6d0a655796 in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#3  0x00007d6d0a6557db in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#4  0x00007d6d0a65b84c in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#5  0x00007d6d0a4adac3 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#6  0x00007d6d0a53ea84 in clone () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+
+Thread 14 (Thread 0x7d6d02aef640 (LWP 49) "s000_baseline"):
+#0  0x00007d6d0a4aa117 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007d6d0a4aca41 in pthread_cond_wait () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007d6d0a655796 in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#3  0x00007d6d0a6557db in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#4  0x00007d6d0a65b84c in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#5  0x00007d6d0a4adac3 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#6  0x00007d6d0a53ea84 in clone () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+
+Thread 13 (Thread 0x7d6d032f0640 (LWP 48) "s000_baseline"):
+#0  0x00007d6d0a4aa117 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007d6d0a4aca41 in pthread_cond_wait () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007d6d0a655796 in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#3  0x00007d6d0a6557db in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#4  0x00007d6d0a65b84c in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#5  0x00007d6d0a4adac3 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#6  0x00007d6d0a53ea84 in clone () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+
+Thread 12 (Thread 0x7d6d03af1640 (LWP 47) "s000_baseline"):
+#0  0x00007d6d0a4aa117 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007d6d0a4aca41 in pthread_cond_wait () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007d6d0a655796 in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#3  0x00007d6d0a6557db in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#4  0x00007d6d0a65b84c in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#5  0x00007d6d0a4adac3 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#6  0x00007d6d0a53ea84 in clone () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+
+Thread 11 (Thread 0x7d6d042f2640 (LWP 46) "s000_baseline"):
+#0  0x00007d6d0a4aa117 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007d6d0a4aca41 in pthread_cond_wait () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007d6d0a655796 in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#3  0x00007d6d0a6557db in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#4  0x00007d6d0a65b84c in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#5  0x00007d6d0a4adac3 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#6  0x00007d6d0a53ea84 in clone () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+
+Thread 10 (Thread 0x7d6d04af3640 (LWP 45) "s000_baseline"):
+#0  0x00007d6d0a4aa117 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007d6d0a4aca41 in pthread_cond_wait () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007d6d0a655796 in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#3  0x00007d6d0a6557db in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#4  0x00007d6d0a65b84c in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#5  0x00007d6d0a4adac3 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#6  0x00007d6d0a53ea84 in clone () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+
+Thread 9 (Thread 0x7d6d052f4640 (LWP 44) "s000_baseline"):
+#0  0x00007d6d0a4aa117 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007d6d0a4aca41 in pthread_cond_wait () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007d6d0a655796 in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#3  0x00007d6d0a6557db in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#4  0x00007d6d0a65b84c in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#5  0x00007d6d0a4adac3 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#6  0x00007d6d0a53ea84 in clone () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+
+Thread 8 (Thread 0x7d6d05af5640 (LWP 43) "s000_baseline"):
+#0  0x00007d6d0a4aa117 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007d6d0a4aca41 in pthread_cond_wait () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007d6d0a655796 in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#3  0x00007d6d0a6557db in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#4  0x00007d6d0a65b84c in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#5  0x00007d6d0a4adac3 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#6  0x00007d6d0a53ea84 in clone () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+
+Thread 7 (Thread 0x7d6d062f6640 (LWP 42) "s000_baseline"):
+#0  0x00007d6d0a4aa117 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007d6d0a4aca41 in pthread_cond_wait () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007d6d0a655796 in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#3  0x00007d6d0a6557db in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#4  0x00007d6d0a65b84c in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#5  0x00007d6d0a4adac3 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#6  0x00007d6d0a53ea84 in clone () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+
+Thread 6 (Thread 0x7d6d06af7640 (LWP 41) "s000_baseline"):
+#0  0x00007d6d0a4aa117 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007d6d0a4aca41 in pthread_cond_wait () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007d6d0a655796 in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#3  0x00007d6d0a6557db in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#4  0x00007d6d0a65b84c in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#5  0x00007d6d0a4adac3 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#6  0x00007d6d0a53ea84 in clone () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+
+Thread 5 (Thread 0x7d6d072f8640 (LWP 40) "s000_baseline"):
+#0  0x00007d6d0a4aa117 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007d6d0a4aca41 in pthread_cond_wait () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007d6d0a655796 in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#3  0x00007d6d0a6557db in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#4  0x00007d6d0a65b84c in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#5  0x00007d6d0a4adac3 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#6  0x00007d6d0a53ea84 in clone () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+
+Thread 4 (Thread 0x7d6d07af9640 (LWP 39) "s000_baseline"):
+#0  0x00007d6d0a4aa117 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007d6d0a4aca41 in pthread_cond_wait () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007d6d0a655796 in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#3  0x00007d6d0a6557db in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#4  0x00007d6d0a65b84c in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#5  0x00007d6d0a4adac3 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#6  0x00007d6d0a53ea84 in clone () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+
+Thread 3 (Thread 0x7d6d082fa640 (LWP 38) "s000_baseline"):
+#0  0x00007d6d0a4aa117 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007d6d0a4aca41 in pthread_cond_wait () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007d6d0a655796 in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#3  0x00007d6d0a6557db in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#4  0x00007d6d0a65b84c in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#5  0x00007d6d0a4adac3 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#6  0x00007d6d0a53ea84 in clone () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+
+Thread 2 (Thread 0x7d6d08afb640 (LWP 37) "s000_baseline"):
+#0  0x00007d6d0a4aa117 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007d6d0a4aca41 in pthread_cond_wait () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007d6d0a655796 in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#3  0x00007d6d0a6557db in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#4  0x00007d6d0a65b84c in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#5  0x00007d6d0a4adac3 in ?? () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#6  0x00007d6d0a53ea84 in clone () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+
+Thread 1 (Thread 0x7d6d08bfee80 (LWP 34) "s000_baseline"):
+#0  0x00007d6d0a4fe7f8 in clock_nanosleep () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#1  0x00007d6d0a503677 in nanosleep () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#2  0x00007d6d0a5035ae in sleep () from /lib/x86_64-linux-gnu/libc.so.6
+No symbol table info available.
+#3  0x00005ed31fa518f5 in cfdExchangeData ()
+No symbol table info available.
+#4  0x00005ed31fa52a4f in omc_Buildings_ThermalZones_Detailed_BaseClasses_cfdExchangeData ()
+No symbol table info available.
+#5  0x00005ed31fa546c6 in omc_Scenario__s000__baseline_dc_roo_air_cfd_exchange ()
+No symbol table info available.
+#6  0x00005ed31fa43b60 in s000_baseline_eqFunction_1938 ()
+No symbol table info available.
+#7  0x00005ed31fa50405 in s000_baseline_functionDAE ()
+No symbol table info available.
+#8  0x00007d6d0b29c208 in updateDiscreteSystem () from /usr/bin/../lib/x86_64-linux-gnu/omc/libSimulationRuntimeC.so
+No symbol table info available.
+#9  0x00007d6d0b2a3598 in handleEvents () from /usr/bin/../lib/x86_64-linux-gnu/omc/libSimulationRuntimeC.so
+No symbol table info available.
+#10 0x00005ed31fa3a71c in s000_baseline_performSimulation ()
+No symbol table info available.
+#11 0x00007d6d0b2a60f8 in solver_main () from /usr/bin/../lib/x86_64-linux-gnu/omc/libSimulationRuntimeC.so
+No symbol table info available.
+#12 0x00007d6d0b3085ec in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libSimulationRuntimeC.so
+No symbol table info available.
+#13 0x00007d6d0b307a2b in startNonInteractiveSimulation () from /usr/bin/../lib/x86_64-linux-gnu/omc/libSimulationRuntimeC.so
+No symbol table info available.
+#14 0x00007d6d0b30a5f7 in _main_SimulationRuntime () from /usr/bin/../lib/x86_64-linux-gnu/omc/libSimulationRuntimeC.so
+No symbol table info available.
+#15 0x00005ed31fa50931 in main ()
+No symbol table info available.

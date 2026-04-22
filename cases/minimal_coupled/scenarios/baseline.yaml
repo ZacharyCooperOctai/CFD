@@ -1,0 +1,6 @@
+name: baseline
+controls:
+  fan_fraction:
+  - 1.0
+  supply_temp_k:
+  - 283.15

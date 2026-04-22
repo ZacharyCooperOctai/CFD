@@ -1,0 +1,5 @@
+set pagination off
+run -lv=LOG_STATS,LOG_SOLVER,LOG_EVENTS
+bt
+info registers
+thread apply all bt

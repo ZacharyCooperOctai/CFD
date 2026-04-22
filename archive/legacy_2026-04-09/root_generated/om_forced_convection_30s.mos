@@ -1,0 +1,10 @@
+loadFile("C:/OMLibs/modelica-buildings/Buildings/package.mo");
+cd("C:/Users/ZacharyCooper-Baldoc/Desktop/Repositories/CFD/output/om_buildings_example");
+simulate(Buildings.ThermalZones.Detailed.Examples.FFD.ForcedConvection,
+  stopTime=30,
+  numberOfIntervals=5,
+  tolerance=1e-6,
+  outputFormat="mat",
+  fileNamePrefix="ForcedConvection_30s",
+  simflags="-r=ForcedConvection_30s.mat -lv=LOG_STATS,LOG_INIT,LOG_SOLVER,LOG_EVENTS");
+getErrorString();

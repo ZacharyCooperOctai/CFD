@@ -1,0 +1,8 @@
+cd("/workspace/output/manual_smoke_10s");
+loadModel(Modelica);
+loadFile("/workspace/external/modelica-buildings/Buildings/package.mo");
+loadFile("/workspace/dc_model.mo");
+loadFile("/workspace/scenarios/s000_baseline.mo");
+buildModel(Scenario_s000_baseline, startTime=0, stopTime=10, numberOfIntervals=1, tolerance=1e-6, method="dassl", outputFormat="mat", fileNamePrefix="s000_baseline_10s");
+getErrorString();
+quit();

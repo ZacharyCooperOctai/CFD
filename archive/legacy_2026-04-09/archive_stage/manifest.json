@@ -1,0 +1,15 @@
+{
+  "case_id": "system",
+  "command": [
+    "python",
+    "-m",
+    "cfd_pipeline.cli",
+    "archive"
+  ],
+  "cwd": "/workspace",
+  "docker_image": "cfd-openmodelica:local",
+  "inputs": [],
+  "run_id": "legacy_2026-04-09",
+  "stage": "archive",
+  "started_at": "2026-04-09T17:48:35.084205+00:00"
+}

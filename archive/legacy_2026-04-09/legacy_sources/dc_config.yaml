@@ -1,0 +1,332 @@
+# =============================================================================
+# Data Centre FFD Parametric Configuration
+# =============================================================================
+# This file defines the complete geometry and simulation parameters for
+# generating FFD mesh and input files for a raised-floor data centre.
+#
+# Coordinate system:
+#   Origin (0,0,0) at the top-left corner of the room at floor level (top of plenum slab).
+#   X: left to right (room width, 15 m)
+#   Y: top to bottom in plan view (room length, 25 m)
+#   Z: vertical upward from raised floor surface
+#
+# The domain has two vertical zones:
+#   - Plenum: Z = -plenum_depth to Z = 0  (below raised floor)
+#   - White space: Z = 0 to Z = white_space_height (above raised floor)
+# =============================================================================
+
+# --- Room envelope -----------------------------------------------------------
+room:
+  length_x: 15.0          # m, room width (X direction)
+  length_y: 25.0          # m, room depth (Y direction)
+  white_space_height: 3.9 # m, raised floor to ceiling (4.5 - 0.6)
+  plenum_depth: 0.6       # m, slab to underside of raised floor tiles
+  slab_to_ceiling: 4.5    # m, total height (informational)
+  walls_adiabatic: true   # IT load >> envelope loss; treat walls as adiabatic
+
+# --- Rack rows ---------------------------------------------------------------
+# Each row is modelled as a single rectangular block.
+# cold_face: direction the cold aisle faces (+y or -y).
+# Racks draw air in through the cold face and exhaust through the hot face.
+rack_defaults:
+  rack_width: 0.700       # m, individual rack width along the row
+  rack_depth: 1.100       # m, rack depth (perpendicular to row)
+  rack_height: 2.260      # m, rack height
+  racks_per_row: 13
+  default_heat_per_rack_kw: 5.0   # kW per rack (adjust to your actual IT load)
+
+rack_rows:
+  - id: row_1
+    origin_x: 2.3         # m, X position of the row start (left edge)
+    origin_y: 2.6         # m, Y position of the row start (north edge)
+    row_length: 11.3       # m, total row length along X (13 racks + gaps)
+    cold_face: "-y"        # cold aisle is north of this row
+    heat_per_rack_kw: 5.0
+
+  - id: row_2
+    origin_x: 2.3
+    origin_y: 5.2
+    row_length: 11.3
+    cold_face: "+y"        # cold aisle is south of this row
+    heat_per_rack_kw: 5.0
+
+  - id: row_3
+    origin_x: 2.3
+    origin_y: 7.8
+    row_length: 11.3
+    cold_face: "-y"
+    heat_per_rack_kw: 5.0
+
+  - id: row_4
+    origin_x: 2.3
+    origin_y: 10.4
+    row_length: 11.3
+    cold_face: "+y"
+    heat_per_rack_kw: 5.0
+
+  - id: row_5
+    origin_x: 2.3
+    origin_y: 13.0
+    row_length: 11.3
+    cold_face: "-y"
+    heat_per_rack_kw: 5.0
+
+  - id: row_6
+    origin_x: 2.3
+    origin_y: 15.6
+    row_length: 11.3
+    cold_face: "+y"
+    heat_per_rack_kw: 5.0
+
+  - id: row_7
+    origin_x: 2.3
+    origin_y: 18.2
+    row_length: 11.3
+    cold_face: "-y"
+    heat_per_rack_kw: 5.0
+
+  - id: row_8
+    origin_x: 2.3
+    origin_y: 20.8
+    row_length: 11.3
+    cold_face: "+y"
+    heat_per_rack_kw: 5.0
+
+# --- Aisle definitions -------------------------------------------------------
+# Derived from rack_rows above. Listed here for clarity and for containment.
+# Hot aisles have glass containment enclosures (modelled as solid thin walls
+# at the ends of the aisle, with the top sealed).
+aisles:
+  hot_aisles:
+    - id: ha_12
+      between: [row_1, row_2]
+      containment: true       # glass enclosure with end doors
+
+    - id: ha_34
+      between: [row_3, row_4]
+      containment: true
+
+    - id: ha_56
+      between: [row_5, row_6]
+      containment: true
+
+    - id: ha_78
+      between: [row_7, row_8]
+      containment: true
+
+  # Cold aisles are open (no containment)
+  cold_aisles:
+    - id: ca_north
+      location: north_of_row_1
+    - id: ca_23
+      between: [row_2, row_3]
+    - id: ca_45
+      between: [row_4, row_5]
+    - id: ca_67
+      between: [row_6, row_7]
+    - id: ca_south
+      location: south_of_row_8
+
+# --- Perforated tiles --------------------------------------------------------
+# Tiles sit at Z=0 (the raised floor plane) in the cold aisles, directly in
+# front of each rack row's cold face. Modelled as rectangular openings with
+# a specified open area ratio for pressure drop / flow resistance.
+perforated_tiles:
+  open_area_ratio: 0.25    # 25% open area (standard perforated tile)
+  tile_strip_width: 0.6    # m, width of perforated tile strip in front of racks
+  # Tile strips are auto-generated along each rack row's cold face
+
+# --- CRAC units --------------------------------------------------------------
+# All CRACs sit outside the room walls and discharge cooled air into the plenum.
+# The supply opening is on the room wall face, injecting into the plenum zone.
+# The return grille draws air from the white space near the top of the unit.
+crac_units:
+  - id: crac_1
+    wall: west             # which room wall the CRAC is on
+    discharge_y: 4.45      # m, Y position of plenum discharge (midline of HA 1-2)
+    supply_opening_width: 1.0   # m, width of plenum supply opening
+    supply_opening_height: 0.5  # m, height of supply opening (within plenum)
+    return_grille_y: 4.45       # m, Y position of return grille in white space
+    return_grille_z_centre: 3.0 # m, height of return grille centre
+    return_grille_width: 1.0    # m
+    return_grille_height: 0.6   # m
+    rated_flow_m3s: 4.5         # m³/s rated volumetric flow
+    supply_temp_c: 14.0         # °C nominal supply temperature
+
+  - id: crac_2
+    wall: east
+    discharge_y: 4.45
+    supply_opening_width: 1.0
+    supply_opening_height: 0.5
+    return_grille_y: 4.45
+    return_grille_z_centre: 3.0
+    return_grille_width: 1.0
+    return_grille_height: 0.6
+    rated_flow_m3s: 4.5
+    supply_temp_c: 14.0
+
+  - id: crac_3
+    wall: west
+    discharge_y: 12.25     # midline between Row 4 and Row 5
+    supply_opening_width: 1.0
+    supply_opening_height: 0.5
+    return_grille_y: 12.25
+    return_grille_z_centre: 3.0
+    return_grille_width: 1.0
+    return_grille_height: 0.6
+    rated_flow_m3s: 4.5
+    supply_temp_c: 14.0
+
+  - id: crac_4
+    wall: east
+    discharge_y: 12.25
+    supply_opening_width: 1.0
+    supply_opening_height: 0.5
+    return_grille_y: 12.25
+    return_grille_z_centre: 3.0
+    return_grille_width: 1.0
+    return_grille_height: 0.6
+    rated_flow_m3s: 4.5
+    supply_temp_c: 14.0
+
+  - id: crac_5
+    wall: west
+    discharge_y: 20.05     # midline of HA 7-8
+    supply_opening_width: 1.0
+    supply_opening_height: 0.5
+    return_grille_y: 20.05
+    return_grille_z_centre: 3.0
+    return_grille_width: 1.0
+    return_grille_height: 0.6
+    rated_flow_m3s: 4.5
+    supply_temp_c: 14.0
+
+  - id: crac_6
+    wall: east
+    discharge_y: 20.05
+    supply_opening_width: 1.0
+    supply_opening_height: 0.5
+    return_grille_y: 20.05
+    return_grille_z_centre: 3.0
+    return_grille_width: 1.0
+    return_grille_height: 0.6
+    rated_flow_m3s: 4.5
+    supply_temp_c: 14.0
+
+# --- Virtual sensors ---------------------------------------------------------
+# Sensors placed in the FFD domain to extract temperatures at key locations.
+# These values are passed to Modelica during coupled simulation.
+sensors:
+  rack_inlet_heights: [0.75, 1.13, 1.51]   # m above floor (1/3, 1/2, 2/3 of rack height)
+  rack_inlet_offset: 0.025                   # m in front of cold face
+  # Additional point sensors:
+  # CRAC return air sensors — in white space near return grille of each unit.
+  # These are the primary feedback signals for CRAC control.
+  # CRAC supply air sensors — in plenum just inside the discharge opening.
+  # Used to verify supply air temperature reaching the room.
+  extra_sensors:
+    # CRAC 1 (west wall, Y=4.45)
+    - id: crac_1_return
+      x: 0.15
+      y: 4.45
+      z: 3.0
+    - id: crac_1_supply
+      x: 0.15
+      y: 4.45
+      z: -0.30
+
+    # CRAC 2 (east wall, Y=4.45)
+    - id: crac_2_return
+      x: 14.85
+      y: 4.45
+      z: 3.0
+    - id: crac_2_supply
+      x: 14.85
+      y: 4.45
+      z: -0.30
+
+    # CRAC 3 (west wall, Y=12.25)
+    - id: crac_3_return
+      x: 0.15
+      y: 12.25
+      z: 3.0
+    - id: crac_3_supply
+      x: 0.15
+      y: 12.25
+      z: -0.30
+
+    # CRAC 4 (east wall, Y=12.25)
+    - id: crac_4_return
+      x: 14.85
+      y: 12.25
+      z: 3.0
+    - id: crac_4_supply
+      x: 14.85
+      y: 12.25
+      z: -0.30
+
+    # CRAC 5 (west wall, Y=20.05)
+    - id: crac_5_return
+      x: 0.15
+      y: 20.05
+      z: 3.0
+    - id: crac_5_supply
+      x: 0.15
+      y: 20.05
+      z: -0.30
+
+    # CRAC 6 (east wall, Y=20.05)
+    - id: crac_6_return
+      x: 14.85
+      y: 20.05
+      z: 3.0
+    - id: crac_6_supply
+      x: 14.85
+      y: 20.05
+      z: -0.30
+
+    # General room monitoring
+    - id: room_centre
+      x: 7.5
+      y: 12.5
+      z: 1.5
+
+# --- Mesh settings -----------------------------------------------------------
+mesh:
+  base_cell_size: 0.15     # m, default cell size (6 inches, per Han et al. 2021)
+  # Refinement regions: cells near these features use min_cell_size
+  refinement:
+    rack_faces:
+      min_cell_size: 0.05  # m, near rack inlet/outlet faces
+      depth: 0.3           # m, how far the refinement extends from the face
+    tile_openings:
+      min_cell_size: 0.05  # m, near perforated tile plane
+      depth: 0.2           # m, above and below the tile plane
+    crac_openings:
+      min_cell_size: 0.075 # m, near CRAC supply/return openings
+      depth: 0.3
+
+# --- FFD solver settings -----------------------------------------------------
+ffd:
+  time_step: 0.1           # s, FFD internal time step
+  sync_interval: 10.0      # s, data exchange interval with Modelica
+  total_time: 900.0         # s, 15-minute window per simulation segment
+  turbulence_model: zero_equation   # simplified turbulence (standard for FFD)
+  initial_temp_c: 22.0     # °C, initial air temperature
+
+# --- Fluid properties (air at ~20°C) ----------------------------------------
+fluid:
+  density: 1.204            # kg/m³
+  kinematic_viscosity: 1.516e-5   # m²/s
+  thermal_conductivity: 0.0257    # W/(m·K)
+  specific_heat: 1006.0     # J/(kg·K)
+  thermal_expansion: 3.43e-3      # 1/K
+  thermal_diffusivity: 2.14e-5    # m²/s
+  gravity_z: -9.81          # m/s²
+
+# --- Output settings ---------------------------------------------------------
+output:
+  ffd_file: dc_model.ffd
+  mesh_file: dc_model.cfd
+  obstacle_file: dc_model.dat
+  sensor_file: dc_sensors.csv

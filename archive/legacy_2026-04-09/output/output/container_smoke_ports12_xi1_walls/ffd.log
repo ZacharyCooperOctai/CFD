@@ -1,0 +1,1226 @@
+Start Fast Fluid Dynamics Simulation with Thread
+fileName="/workspace/output/container_smoke_ports12_xi1_walls/dc_model.ffd"
+read_parameter(): Opened file /workspace/output/container_smoke_ports12_xi1_walls/dc_model.ffd for FFD parameters with base directory /workspace/output/container_smoke_ports12_xi1_walls/
+assign_parameter(): inpu.parameter_file_format=SCI
+assign_parameter(): inpu.parameter_file_name=/workspace/output/container_smoke_ports12_xi1_walls/dc_model.cfd
+assign_parameter(): inpu.block_file_name=/workspace/output/container_smoke_ports12_xi1_walls/dc_model.dat
+assign_parameter(): prob.nu=0.000015
+assign_parameter(): prob.rho=1.204000
+assign_parameter(): prob.gravx=0.000000
+assign_parameter(): prob.gravy=0.000000
+assign_parameter(): prob.gravz=-9.810000
+assign_parameter(): prob.cond=0.025700
+assign_parameter(): prob.Cp=1006.000000
+assign_parameter(): prob.beta=0.003430
+assign_parameter(): prob.diff=0.000010
+assign_parameter(): prob.coeff_h=0.004000
+assign_parameter(): prob.Temp_Buoyancy=22.000000
+assign_parameter(): init.T=22.000000
+assign_parameter(): init.u=0.000000
+assign_parameter(): init.v=0.000000
+assign_parameter(): init.w=0.000000
+assign_parameter(): bc.nb_Xi=1
+assign_parameter(): bc.nb_C=0
+read_sci_input(): Start to read sci input file /workspace/output/container_smoke_ports12_xi1_walls/dc_model.cfd
+read_sci_input(): para->bc->nb_bc=12
+read_sci_input(): para->bc->nb_inlet=6
+read_sci_input(): para->bc->inletName[0]=crac_1_supply
+read_sci_input(): VX=9.000000, VY=0.000000, VZ=0.000000, T=14.000000, Xi=0.000000
+read_sci_input(): get inlet cell[0,42,1]=0.0
+read_sci_input(): get inlet cell[0,42,2]=0.0
+read_sci_input(): get inlet cell[0,42,3]=0.0
+read_sci_input(): get inlet cell[0,42,4]=0.0
+read_sci_input(): get inlet cell[0,42,5]=0.0
+read_sci_input(): get inlet cell[0,42,6]=0.0
+read_sci_input(): get inlet cell[0,43,1]=0.0
+read_sci_input(): get inlet cell[0,43,2]=0.0
+read_sci_input(): get inlet cell[0,43,3]=0.0
+read_sci_input(): get inlet cell[0,43,4]=0.0
+read_sci_input(): get inlet cell[0,43,5]=0.0
+read_sci_input(): get inlet cell[0,43,6]=0.0
+read_sci_input(): get inlet cell[0,44,1]=0.0
+read_sci_input(): get inlet cell[0,44,2]=0.0
+read_sci_input(): get inlet cell[0,44,3]=0.0
+read_sci_input(): get inlet cell[0,44,4]=0.0
+read_sci_input(): get inlet cell[0,44,5]=0.0
+read_sci_input(): get inlet cell[0,44,6]=0.0
+read_sci_input(): get inlet cell[0,45,1]=0.0
+read_sci_input(): get inlet cell[0,45,2]=0.0
+read_sci_input(): get inlet cell[0,45,3]=0.0
+read_sci_input(): get inlet cell[0,45,4]=0.0
+read_sci_input(): get inlet cell[0,45,5]=0.0
+read_sci_input(): get inlet cell[0,45,6]=0.0
+read_sci_input(): get inlet cell[0,46,1]=0.0
+read_sci_input(): get inlet cell[0,46,2]=0.0
+read_sci_input(): get inlet cell[0,46,3]=0.0
+read_sci_input(): get inlet cell[0,46,4]=0.0
+read_sci_input(): get inlet cell[0,46,5]=0.0
+read_sci_input(): get inlet cell[0,46,6]=0.0
+read_sci_input(): get inlet cell[0,47,1]=0.0
+read_sci_input(): get inlet cell[0,47,2]=0.0
+read_sci_input(): get inlet cell[0,47,3]=0.0
+read_sci_input(): get inlet cell[0,47,4]=0.0
+read_sci_input(): get inlet cell[0,47,5]=0.0
+read_sci_input(): get inlet cell[0,47,6]=0.0
+read_sci_input(): get inlet cell[0,48,1]=0.0
+read_sci_input(): get inlet cell[0,48,2]=0.0
+read_sci_input(): get inlet cell[0,48,3]=0.0
+read_sci_input(): get inlet cell[0,48,4]=0.0
+read_sci_input(): get inlet cell[0,48,5]=0.0
+read_sci_input(): get inlet cell[0,48,6]=0.0
+read_sci_input(): get inlet cell[0,49,1]=0.0
+read_sci_input(): get inlet cell[0,49,2]=0.0
+read_sci_input(): get inlet cell[0,49,3]=0.0
+read_sci_input(): get inlet cell[0,49,4]=0.0
+read_sci_input(): get inlet cell[0,49,5]=0.0
+read_sci_input(): get inlet cell[0,49,6]=0.0
+read_sci_input(): get inlet cell[0,50,1]=0.0
+read_sci_input(): get inlet cell[0,50,2]=0.0
+read_sci_input(): get inlet cell[0,50,3]=0.0
+read_sci_input(): get inlet cell[0,50,4]=0.0
+read_sci_input(): get inlet cell[0,50,5]=0.0
+read_sci_input(): get inlet cell[0,50,6]=0.0
+read_sci_input(): get inlet cell[0,51,1]=0.0
+read_sci_input(): get inlet cell[0,51,2]=0.0
+read_sci_input(): get inlet cell[0,51,3]=0.0
+read_sci_input(): get inlet cell[0,51,4]=0.0
+read_sci_input(): get inlet cell[0,51,5]=0.0
+read_sci_input(): get inlet cell[0,51,6]=0.0
+read_sci_input(): get inlet cell[0,52,1]=0.0
+read_sci_input(): get inlet cell[0,52,2]=0.0
+read_sci_input(): get inlet cell[0,52,3]=0.0
+read_sci_input(): get inlet cell[0,52,4]=0.0
+read_sci_input(): get inlet cell[0,52,5]=0.0
+read_sci_input(): get inlet cell[0,52,6]=0.0
+read_sci_input(): get inlet cell[0,53,1]=0.0
+read_sci_input(): get inlet cell[0,53,2]=0.0
+read_sci_input(): get inlet cell[0,53,3]=0.0
+read_sci_input(): get inlet cell[0,53,4]=0.0
+read_sci_input(): get inlet cell[0,53,5]=0.0
+read_sci_input(): get inlet cell[0,53,6]=0.0
+read_sci_input(): para->bc->inletName[1]=crac_2_supply
+read_sci_input(): VX=-9.000000, VY=0.000000, VZ=0.000000, T=14.000000, Xi=0.000000
+read_sci_input(): get inlet cell[101,42,1]=0.0
+read_sci_input(): get inlet cell[101,42,2]=0.0
+read_sci_input(): get inlet cell[101,42,3]=0.0
+read_sci_input(): get inlet cell[101,42,4]=0.0
+read_sci_input(): get inlet cell[101,42,5]=0.0
+read_sci_input(): get inlet cell[101,42,6]=0.0
+read_sci_input(): get inlet cell[101,43,1]=0.0
+read_sci_input(): get inlet cell[101,43,2]=0.0
+read_sci_input(): get inlet cell[101,43,3]=0.0
+read_sci_input(): get inlet cell[101,43,4]=0.0
+read_sci_input(): get inlet cell[101,43,5]=0.0
+read_sci_input(): get inlet cell[101,43,6]=0.0
+read_sci_input(): get inlet cell[101,44,1]=0.0
+read_sci_input(): get inlet cell[101,44,2]=0.0
+read_sci_input(): get inlet cell[101,44,3]=0.0
+read_sci_input(): get inlet cell[101,44,4]=0.0
+read_sci_input(): get inlet cell[101,44,5]=0.0
+read_sci_input(): get inlet cell[101,44,6]=0.0
+read_sci_input(): get inlet cell[101,45,1]=0.0
+read_sci_input(): get inlet cell[101,45,2]=0.0
+read_sci_input(): get inlet cell[101,45,3]=0.0
+read_sci_input(): get inlet cell[101,45,4]=0.0
+read_sci_input(): get inlet cell[101,45,5]=0.0
+read_sci_input(): get inlet cell[101,45,6]=0.0
+read_sci_input(): get inlet cell[101,46,1]=0.0
+read_sci_input(): get inlet cell[101,46,2]=0.0
+read_sci_input(): get inlet cell[101,46,3]=0.0
+read_sci_input(): get inlet cell[101,46,4]=0.0
+read_sci_input(): get inlet cell[101,46,5]=0.0
+read_sci_input(): get inlet cell[101,46,6]=0.0
+read_sci_input(): get inlet cell[101,47,1]=0.0
+read_sci_input(): get inlet cell[101,47,2]=0.0
+read_sci_input(): get inlet cell[101,47,3]=0.0
+read_sci_input(): get inlet cell[101,47,4]=0.0
+read_sci_input(): get inlet cell[101,47,5]=0.0
+read_sci_input(): get inlet cell[101,47,6]=0.0
+read_sci_input(): get inlet cell[101,48,1]=0.0
+read_sci_input(): get inlet cell[101,48,2]=0.0
+read_sci_input(): get inlet cell[101,48,3]=0.0
+read_sci_input(): get inlet cell[101,48,4]=0.0
+read_sci_input(): get inlet cell[101,48,5]=0.0
+read_sci_input(): get inlet cell[101,48,6]=0.0
+read_sci_input(): get inlet cell[101,49,1]=0.0
+read_sci_input(): get inlet cell[101,49,2]=0.0
+read_sci_input(): get inlet cell[101,49,3]=0.0
+read_sci_input(): get inlet cell[101,49,4]=0.0
+read_sci_input(): get inlet cell[101,49,5]=0.0
+read_sci_input(): get inlet cell[101,49,6]=0.0
+read_sci_input(): get inlet cell[101,50,1]=0.0
+read_sci_input(): get inlet cell[101,50,2]=0.0
+read_sci_input(): get inlet cell[101,50,3]=0.0
+read_sci_input(): get inlet cell[101,50,4]=0.0
+read_sci_input(): get inlet cell[101,50,5]=0.0
+read_sci_input(): get inlet cell[101,50,6]=0.0
+read_sci_input(): get inlet cell[101,51,1]=0.0
+read_sci_input(): get inlet cell[101,51,2]=0.0
+read_sci_input(): get inlet cell[101,51,3]=0.0
+read_sci_input(): get inlet cell[101,51,4]=0.0
+read_sci_input(): get inlet cell[101,51,5]=0.0
+read_sci_input(): get inlet cell[101,51,6]=0.0
+read_sci_input(): get inlet cell[101,52,1]=0.0
+read_sci_input(): get inlet cell[101,52,2]=0.0
+read_sci_input(): get inlet cell[101,52,3]=0.0
+read_sci_input(): get inlet cell[101,52,4]=0.0
+read_sci_input(): get inlet cell[101,52,5]=0.0
+read_sci_input(): get inlet cell[101,52,6]=0.0
+read_sci_input(): get inlet cell[101,53,1]=0.0
+read_sci_input(): get inlet cell[101,53,2]=0.0
+read_sci_input(): get inlet cell[101,53,3]=0.0
+read_sci_input(): get inlet cell[101,53,4]=0.0
+read_sci_input(): get inlet cell[101,53,5]=0.0
+read_sci_input(): get inlet cell[101,53,6]=0.0
+read_sci_input(): para->bc->inletName[2]=crac_3_supply
+read_sci_input(): VX=9.000000, VY=0.000000, VZ=0.000000, T=14.000000, Xi=0.000000
+read_sci_input(): get inlet cell[0,147,1]=0.0
+read_sci_input(): get inlet cell[0,147,2]=0.0
+read_sci_input(): get inlet cell[0,147,3]=0.0
+read_sci_input(): get inlet cell[0,147,4]=0.0
+read_sci_input(): get inlet cell[0,147,5]=0.0
+read_sci_input(): get inlet cell[0,147,6]=0.0
+read_sci_input(): get inlet cell[0,148,1]=0.0
+read_sci_input(): get inlet cell[0,148,2]=0.0
+read_sci_input(): get inlet cell[0,148,3]=0.0
+read_sci_input(): get inlet cell[0,148,4]=0.0
+read_sci_input(): get inlet cell[0,148,5]=0.0
+read_sci_input(): get inlet cell[0,148,6]=0.0
+read_sci_input(): get inlet cell[0,149,1]=0.0
+read_sci_input(): get inlet cell[0,149,2]=0.0
+read_sci_input(): get inlet cell[0,149,3]=0.0
+read_sci_input(): get inlet cell[0,149,4]=0.0
+read_sci_input(): get inlet cell[0,149,5]=0.0
+read_sci_input(): get inlet cell[0,149,6]=0.0
+read_sci_input(): get inlet cell[0,150,1]=0.0
+read_sci_input(): get inlet cell[0,150,2]=0.0
+read_sci_input(): get inlet cell[0,150,3]=0.0
+read_sci_input(): get inlet cell[0,150,4]=0.0
+read_sci_input(): get inlet cell[0,150,5]=0.0
+read_sci_input(): get inlet cell[0,150,6]=0.0
+read_sci_input(): get inlet cell[0,151,1]=0.0
+read_sci_input(): get inlet cell[0,151,2]=0.0
+read_sci_input(): get inlet cell[0,151,3]=0.0
+read_sci_input(): get inlet cell[0,151,4]=0.0
+read_sci_input(): get inlet cell[0,151,5]=0.0
+read_sci_input(): get inlet cell[0,151,6]=0.0
+read_sci_input(): get inlet cell[0,152,1]=0.0
+read_sci_input(): get inlet cell[0,152,2]=0.0
+read_sci_input(): get inlet cell[0,152,3]=0.0
+read_sci_input(): get inlet cell[0,152,4]=0.0
+read_sci_input(): get inlet cell[0,152,5]=0.0
+read_sci_input(): get inlet cell[0,152,6]=0.0
+read_sci_input(): get inlet cell[0,153,1]=0.0
+read_sci_input(): get inlet cell[0,153,2]=0.0
+read_sci_input(): get inlet cell[0,153,3]=0.0
+read_sci_input(): get inlet cell[0,153,4]=0.0
+read_sci_input(): get inlet cell[0,153,5]=0.0
+read_sci_input(): get inlet cell[0,153,6]=0.0
+read_sci_input(): get inlet cell[0,154,1]=0.0
+read_sci_input(): get inlet cell[0,154,2]=0.0
+read_sci_input(): get inlet cell[0,154,3]=0.0
+read_sci_input(): get inlet cell[0,154,4]=0.0
+read_sci_input(): get inlet cell[0,154,5]=0.0
+read_sci_input(): get inlet cell[0,154,6]=0.0
+read_sci_input(): get inlet cell[0,155,1]=0.0
+read_sci_input(): get inlet cell[0,155,2]=0.0
+read_sci_input(): get inlet cell[0,155,3]=0.0
+read_sci_input(): get inlet cell[0,155,4]=0.0
+read_sci_input(): get inlet cell[0,155,5]=0.0
+read_sci_input(): get inlet cell[0,155,6]=0.0
+read_sci_input(): get inlet cell[0,156,1]=0.0
+read_sci_input(): get inlet cell[0,156,2]=0.0
+read_sci_input(): get inlet cell[0,156,3]=0.0
+read_sci_input(): get inlet cell[0,156,4]=0.0
+read_sci_input(): get inlet cell[0,156,5]=0.0
+read_sci_input(): get inlet cell[0,156,6]=0.0
+read_sci_input(): get inlet cell[0,157,1]=0.0
+read_sci_input(): get inlet cell[0,157,2]=0.0
+read_sci_input(): get inlet cell[0,157,3]=0.0
+read_sci_input(): get inlet cell[0,157,4]=0.0
+read_sci_input(): get inlet cell[0,157,5]=0.0
+read_sci_input(): get inlet cell[0,157,6]=0.0
+read_sci_input(): get inlet cell[0,158,1]=0.0
+read_sci_input(): get inlet cell[0,158,2]=0.0
+read_sci_input(): get inlet cell[0,158,3]=0.0
+read_sci_input(): get inlet cell[0,158,4]=0.0
+read_sci_input(): get inlet cell[0,158,5]=0.0
+read_sci_input(): get inlet cell[0,158,6]=0.0
+read_sci_input(): get inlet cell[0,159,1]=0.0
+read_sci_input(): get inlet cell[0,159,2]=0.0
+read_sci_input(): get inlet cell[0,159,3]=0.0
+read_sci_input(): get inlet cell[0,159,4]=0.0
+read_sci_input(): get inlet cell[0,159,5]=0.0
+read_sci_input(): get inlet cell[0,159,6]=0.0
+read_sci_input(): get inlet cell[0,160,1]=0.0
+read_sci_input(): get inlet cell[0,160,2]=0.0
+read_sci_input(): get inlet cell[0,160,3]=0.0
+read_sci_input(): get inlet cell[0,160,4]=0.0
+read_sci_input(): get inlet cell[0,160,5]=0.0
+read_sci_input(): get inlet cell[0,160,6]=0.0
+read_sci_input(): get inlet cell[0,161,1]=0.0
+read_sci_input(): get inlet cell[0,161,2]=0.0
+read_sci_input(): get inlet cell[0,161,3]=0.0
+read_sci_input(): get inlet cell[0,161,4]=0.0
+read_sci_input(): get inlet cell[0,161,5]=0.0
+read_sci_input(): get inlet cell[0,161,6]=0.0
+read_sci_input(): para->bc->inletName[3]=crac_4_supply
+read_sci_input(): VX=-9.000000, VY=0.000000, VZ=0.000000, T=14.000000, Xi=0.000000
+read_sci_input(): get inlet cell[101,147,1]=0.0
+read_sci_input(): get inlet cell[101,147,2]=0.0
+read_sci_input(): get inlet cell[101,147,3]=0.0
+read_sci_input(): get inlet cell[101,147,4]=0.0
+read_sci_input(): get inlet cell[101,147,5]=0.0
+read_sci_input(): get inlet cell[101,147,6]=0.0
+read_sci_input(): get inlet cell[101,148,1]=0.0
+read_sci_input(): get inlet cell[101,148,2]=0.0
+read_sci_input(): get inlet cell[101,148,3]=0.0
+read_sci_input(): get inlet cell[101,148,4]=0.0
+read_sci_input(): get inlet cell[101,148,5]=0.0
+read_sci_input(): get inlet cell[101,148,6]=0.0
+read_sci_input(): get inlet cell[101,149,1]=0.0
+read_sci_input(): get inlet cell[101,149,2]=0.0
+read_sci_input(): get inlet cell[101,149,3]=0.0
+read_sci_input(): get inlet cell[101,149,4]=0.0
+read_sci_input(): get inlet cell[101,149,5]=0.0
+read_sci_input(): get inlet cell[101,149,6]=0.0
+read_sci_input(): get inlet cell[101,150,1]=0.0
+read_sci_input(): get inlet cell[101,150,2]=0.0
+read_sci_input(): get inlet cell[101,150,3]=0.0
+read_sci_input(): get inlet cell[101,150,4]=0.0
+read_sci_input(): get inlet cell[101,150,5]=0.0
+read_sci_input(): get inlet cell[101,150,6]=0.0
+read_sci_input(): get inlet cell[101,151,1]=0.0
+read_sci_input(): get inlet cell[101,151,2]=0.0
+read_sci_input(): get inlet cell[101,151,3]=0.0
+read_sci_input(): get inlet cell[101,151,4]=0.0
+read_sci_input(): get inlet cell[101,151,5]=0.0
+read_sci_input(): get inlet cell[101,151,6]=0.0
+read_sci_input(): get inlet cell[101,152,1]=0.0
+read_sci_input(): get inlet cell[101,152,2]=0.0
+read_sci_input(): get inlet cell[101,152,3]=0.0
+read_sci_input(): get inlet cell[101,152,4]=0.0
+read_sci_input(): get inlet cell[101,152,5]=0.0
+read_sci_input(): get inlet cell[101,152,6]=0.0
+read_sci_input(): get inlet cell[101,153,1]=0.0
+read_sci_input(): get inlet cell[101,153,2]=0.0
+read_sci_input(): get inlet cell[101,153,3]=0.0
+read_sci_input(): get inlet cell[101,153,4]=0.0
+read_sci_input(): get inlet cell[101,153,5]=0.0
+read_sci_input(): get inlet cell[101,153,6]=0.0
+read_sci_input(): get inlet cell[101,154,1]=0.0
+read_sci_input(): get inlet cell[101,154,2]=0.0
+read_sci_input(): get inlet cell[101,154,3]=0.0
+read_sci_input(): get inlet cell[101,154,4]=0.0
+read_sci_input(): get inlet cell[101,154,5]=0.0
+read_sci_input(): get inlet cell[101,154,6]=0.0
+read_sci_input(): get inlet cell[101,155,1]=0.0
+read_sci_input(): get inlet cell[101,155,2]=0.0
+read_sci_input(): get inlet cell[101,155,3]=0.0
+read_sci_input(): get inlet cell[101,155,4]=0.0
+read_sci_input(): get inlet cell[101,155,5]=0.0
+read_sci_input(): get inlet cell[101,155,6]=0.0
+read_sci_input(): get inlet cell[101,156,1]=0.0
+read_sci_input(): get inlet cell[101,156,2]=0.0
+read_sci_input(): get inlet cell[101,156,3]=0.0
+read_sci_input(): get inlet cell[101,156,4]=0.0
+read_sci_input(): get inlet cell[101,156,5]=0.0
+read_sci_input(): get inlet cell[101,156,6]=0.0
+read_sci_input(): get inlet cell[101,157,1]=0.0
+read_sci_input(): get inlet cell[101,157,2]=0.0
+read_sci_input(): get inlet cell[101,157,3]=0.0
+read_sci_input(): get inlet cell[101,157,4]=0.0
+read_sci_input(): get inlet cell[101,157,5]=0.0
+read_sci_input(): get inlet cell[101,157,6]=0.0
+read_sci_input(): get inlet cell[101,158,1]=0.0
+read_sci_input(): get inlet cell[101,158,2]=0.0
+read_sci_input(): get inlet cell[101,158,3]=0.0
+read_sci_input(): get inlet cell[101,158,4]=0.0
+read_sci_input(): get inlet cell[101,158,5]=0.0
+read_sci_input(): get inlet cell[101,158,6]=0.0
+read_sci_input(): get inlet cell[101,159,1]=0.0
+read_sci_input(): get inlet cell[101,159,2]=0.0
+read_sci_input(): get inlet cell[101,159,3]=0.0
+read_sci_input(): get inlet cell[101,159,4]=0.0
+read_sci_input(): get inlet cell[101,159,5]=0.0
+read_sci_input(): get inlet cell[101,159,6]=0.0
+read_sci_input(): get inlet cell[101,160,1]=0.0
+read_sci_input(): get inlet cell[101,160,2]=0.0
+read_sci_input(): get inlet cell[101,160,3]=0.0
+read_sci_input(): get inlet cell[101,160,4]=0.0
+read_sci_input(): get inlet cell[101,160,5]=0.0
+read_sci_input(): get inlet cell[101,160,6]=0.0
+read_sci_input(): get inlet cell[101,161,1]=0.0
+read_sci_input(): get inlet cell[101,161,2]=0.0
+read_sci_input(): get inlet cell[101,161,3]=0.0
+read_sci_input(): get inlet cell[101,161,4]=0.0
+read_sci_input(): get inlet cell[101,161,5]=0.0
+read_sci_input(): get inlet cell[101,161,6]=0.0
+read_sci_input(): para->bc->inletName[4]=crac_5_supply
+read_sci_input(): VX=9.000000, VY=0.000000, VZ=0.000000, T=14.000000, Xi=0.000000
+read_sci_input(): get inlet cell[0,257,1]=0.0
+read_sci_input(): get inlet cell[0,257,2]=0.0
+read_sci_input(): get inlet cell[0,257,3]=0.0
+read_sci_input(): get inlet cell[0,257,4]=0.0
+read_sci_input(): get inlet cell[0,257,5]=0.0
+read_sci_input(): get inlet cell[0,257,6]=0.0
+read_sci_input(): get inlet cell[0,258,1]=0.0
+read_sci_input(): get inlet cell[0,258,2]=0.0
+read_sci_input(): get inlet cell[0,258,3]=0.0
+read_sci_input(): get inlet cell[0,258,4]=0.0
+read_sci_input(): get inlet cell[0,258,5]=0.0
+read_sci_input(): get inlet cell[0,258,6]=0.0
+read_sci_input(): get inlet cell[0,259,1]=0.0
+read_sci_input(): get inlet cell[0,259,2]=0.0
+read_sci_input(): get inlet cell[0,259,3]=0.0
+read_sci_input(): get inlet cell[0,259,4]=0.0
+read_sci_input(): get inlet cell[0,259,5]=0.0
+read_sci_input(): get inlet cell[0,259,6]=0.0
+read_sci_input(): get inlet cell[0,260,1]=0.0
+read_sci_input(): get inlet cell[0,260,2]=0.0
+read_sci_input(): get inlet cell[0,260,3]=0.0
+read_sci_input(): get inlet cell[0,260,4]=0.0
+read_sci_input(): get inlet cell[0,260,5]=0.0
+read_sci_input(): get inlet cell[0,260,6]=0.0
+read_sci_input(): get inlet cell[0,261,1]=0.0
+read_sci_input(): get inlet cell[0,261,2]=0.0
+read_sci_input(): get inlet cell[0,261,3]=0.0
+read_sci_input(): get inlet cell[0,261,4]=0.0
+read_sci_input(): get inlet cell[0,261,5]=0.0
+read_sci_input(): get inlet cell[0,261,6]=0.0
+read_sci_input(): get inlet cell[0,262,1]=0.0
+read_sci_input(): get inlet cell[0,262,2]=0.0
+read_sci_input(): get inlet cell[0,262,3]=0.0
+read_sci_input(): get inlet cell[0,262,4]=0.0
+read_sci_input(): get inlet cell[0,262,5]=0.0
+read_sci_input(): get inlet cell[0,262,6]=0.0
+read_sci_input(): get inlet cell[0,263,1]=0.0
+read_sci_input(): get inlet cell[0,263,2]=0.0
+read_sci_input(): get inlet cell[0,263,3]=0.0
+read_sci_input(): get inlet cell[0,263,4]=0.0
+read_sci_input(): get inlet cell[0,263,5]=0.0
+read_sci_input(): get inlet cell[0,263,6]=0.0
+read_sci_input(): get inlet cell[0,264,1]=0.0
+read_sci_input(): get inlet cell[0,264,2]=0.0
+read_sci_input(): get inlet cell[0,264,3]=0.0
+read_sci_input(): get inlet cell[0,264,4]=0.0
+read_sci_input(): get inlet cell[0,264,5]=0.0
+read_sci_input(): get inlet cell[0,264,6]=0.0
+read_sci_input(): get inlet cell[0,265,1]=0.0
+read_sci_input(): get inlet cell[0,265,2]=0.0
+read_sci_input(): get inlet cell[0,265,3]=0.0
+read_sci_input(): get inlet cell[0,265,4]=0.0
+read_sci_input(): get inlet cell[0,265,5]=0.0
+read_sci_input(): get inlet cell[0,265,6]=0.0
+read_sci_input(): get inlet cell[0,266,1]=0.0
+read_sci_input(): get inlet cell[0,266,2]=0.0
+read_sci_input(): get inlet cell[0,266,3]=0.0
+read_sci_input(): get inlet cell[0,266,4]=0.0
+read_sci_input(): get inlet cell[0,266,5]=0.0
+read_sci_input(): get inlet cell[0,266,6]=0.0
+read_sci_input(): get inlet cell[0,267,1]=0.0
+read_sci_input(): get inlet cell[0,267,2]=0.0
+read_sci_input(): get inlet cell[0,267,3]=0.0
+read_sci_input(): get inlet cell[0,267,4]=0.0
+read_sci_input(): get inlet cell[0,267,5]=0.0
+read_sci_input(): get inlet cell[0,267,6]=0.0
+read_sci_input(): get inlet cell[0,268,1]=0.0
+read_sci_input(): get inlet cell[0,268,2]=0.0
+read_sci_input(): get inlet cell[0,268,3]=0.0
+read_sci_input(): get inlet cell[0,268,4]=0.0
+read_sci_input(): get inlet cell[0,268,5]=0.0
+read_sci_input(): get inlet cell[0,268,6]=0.0
+read_sci_input(): get inlet cell[0,269,1]=0.0
+read_sci_input(): get inlet cell[0,269,2]=0.0
+read_sci_input(): get inlet cell[0,269,3]=0.0
+read_sci_input(): get inlet cell[0,269,4]=0.0
+read_sci_input(): get inlet cell[0,269,5]=0.0
+read_sci_input(): get inlet cell[0,269,6]=0.0
+read_sci_input(): get inlet cell[0,270,1]=0.0
+read_sci_input(): get inlet cell[0,270,2]=0.0
+read_sci_input(): get inlet cell[0,270,3]=0.0
+read_sci_input(): get inlet cell[0,270,4]=0.0
+read_sci_input(): get inlet cell[0,270,5]=0.0
+read_sci_input(): get inlet cell[0,270,6]=0.0
+read_sci_input(): get inlet cell[0,271,1]=0.0
+read_sci_input(): get inlet cell[0,271,2]=0.0
+read_sci_input(): get inlet cell[0,271,3]=0.0
+read_sci_input(): get inlet cell[0,271,4]=0.0
+read_sci_input(): get inlet cell[0,271,5]=0.0
+read_sci_input(): get inlet cell[0,271,6]=0.0
+read_sci_input(): para->bc->inletName[5]=crac_6_supply
+read_sci_input(): VX=-9.000000, VY=0.000000, VZ=0.000000, T=14.000000, Xi=0.000000
+read_sci_input(): get inlet cell[101,257,1]=0.0
+read_sci_input(): get inlet cell[101,257,2]=0.0
+read_sci_input(): get inlet cell[101,257,3]=0.0
+read_sci_input(): get inlet cell[101,257,4]=0.0
+read_sci_input(): get inlet cell[101,257,5]=0.0
+read_sci_input(): get inlet cell[101,257,6]=0.0
+read_sci_input(): get inlet cell[101,258,1]=0.0
+read_sci_input(): get inlet cell[101,258,2]=0.0
+read_sci_input(): get inlet cell[101,258,3]=0.0
+read_sci_input(): get inlet cell[101,258,4]=0.0
+read_sci_input(): get inlet cell[101,258,5]=0.0
+read_sci_input(): get inlet cell[101,258,6]=0.0
+read_sci_input(): get inlet cell[101,259,1]=0.0
+read_sci_input(): get inlet cell[101,259,2]=0.0
+read_sci_input(): get inlet cell[101,259,3]=0.0
+read_sci_input(): get inlet cell[101,259,4]=0.0
+read_sci_input(): get inlet cell[101,259,5]=0.0
+read_sci_input(): get inlet cell[101,259,6]=0.0
+read_sci_input(): get inlet cell[101,260,1]=0.0
+read_sci_input(): get inlet cell[101,260,2]=0.0
+read_sci_input(): get inlet cell[101,260,3]=0.0
+read_sci_input(): get inlet cell[101,260,4]=0.0
+read_sci_input(): get inlet cell[101,260,5]=0.0
+read_sci_input(): get inlet cell[101,260,6]=0.0
+read_sci_input(): get inlet cell[101,261,1]=0.0
+read_sci_input(): get inlet cell[101,261,2]=0.0
+read_sci_input(): get inlet cell[101,261,3]=0.0
+read_sci_input(): get inlet cell[101,261,4]=0.0
+read_sci_input(): get inlet cell[101,261,5]=0.0
+read_sci_input(): get inlet cell[101,261,6]=0.0
+read_sci_input(): get inlet cell[101,262,1]=0.0
+read_sci_input(): get inlet cell[101,262,2]=0.0
+read_sci_input(): get inlet cell[101,262,3]=0.0
+read_sci_input(): get inlet cell[101,262,4]=0.0
+read_sci_input(): get inlet cell[101,262,5]=0.0
+read_sci_input(): get inlet cell[101,262,6]=0.0
+read_sci_input(): get inlet cell[101,263,1]=0.0
+read_sci_input(): get inlet cell[101,263,2]=0.0
+read_sci_input(): get inlet cell[101,263,3]=0.0
+read_sci_input(): get inlet cell[101,263,4]=0.0
+read_sci_input(): get inlet cell[101,263,5]=0.0
+read_sci_input(): get inlet cell[101,263,6]=0.0
+read_sci_input(): get inlet cell[101,264,1]=0.0
+read_sci_input(): get inlet cell[101,264,2]=0.0
+read_sci_input(): get inlet cell[101,264,3]=0.0
+read_sci_input(): get inlet cell[101,264,4]=0.0
+read_sci_input(): get inlet cell[101,264,5]=0.0
+read_sci_input(): get inlet cell[101,264,6]=0.0
+read_sci_input(): get inlet cell[101,265,1]=0.0
+read_sci_input(): get inlet cell[101,265,2]=0.0
+read_sci_input(): get inlet cell[101,265,3]=0.0
+read_sci_input(): get inlet cell[101,265,4]=0.0
+read_sci_input(): get inlet cell[101,265,5]=0.0
+read_sci_input(): get inlet cell[101,265,6]=0.0
+read_sci_input(): get inlet cell[101,266,1]=0.0
+read_sci_input(): get inlet cell[101,266,2]=0.0
+read_sci_input(): get inlet cell[101,266,3]=0.0
+read_sci_input(): get inlet cell[101,266,4]=0.0
+read_sci_input(): get inlet cell[101,266,5]=0.0
+read_sci_input(): get inlet cell[101,266,6]=0.0
+read_sci_input(): get inlet cell[101,267,1]=0.0
+read_sci_input(): get inlet cell[101,267,2]=0.0
+read_sci_input(): get inlet cell[101,267,3]=0.0
+read_sci_input(): get inlet cell[101,267,4]=0.0
+read_sci_input(): get inlet cell[101,267,5]=0.0
+read_sci_input(): get inlet cell[101,267,6]=0.0
+read_sci_input(): get inlet cell[101,268,1]=0.0
+read_sci_input(): get inlet cell[101,268,2]=0.0
+read_sci_input(): get inlet cell[101,268,3]=0.0
+read_sci_input(): get inlet cell[101,268,4]=0.0
+read_sci_input(): get inlet cell[101,268,5]=0.0
+read_sci_input(): get inlet cell[101,268,6]=0.0
+read_sci_input(): get inlet cell[101,269,1]=0.0
+read_sci_input(): get inlet cell[101,269,2]=0.0
+read_sci_input(): get inlet cell[101,269,3]=0.0
+read_sci_input(): get inlet cell[101,269,4]=0.0
+read_sci_input(): get inlet cell[101,269,5]=0.0
+read_sci_input(): get inlet cell[101,269,6]=0.0
+read_sci_input(): get inlet cell[101,270,1]=0.0
+read_sci_input(): get inlet cell[101,270,2]=0.0
+read_sci_input(): get inlet cell[101,270,3]=0.0
+read_sci_input(): get inlet cell[101,270,4]=0.0
+read_sci_input(): get inlet cell[101,270,5]=0.0
+read_sci_input(): get inlet cell[101,270,6]=0.0
+read_sci_input(): get inlet cell[101,271,1]=0.0
+read_sci_input(): get inlet cell[101,271,2]=0.0
+read_sci_input(): get inlet cell[101,271,3]=0.0
+read_sci_input(): get inlet cell[101,271,4]=0.0
+read_sci_input(): get inlet cell[101,271,5]=0.0
+read_sci_input(): get inlet cell[101,271,6]=0.0
+read_sci_input(): para->bc->nb_outlet=6
+read_sci_input(): para->bc->outletName[0]=crac_1_return
+read_sci_input(): VX=-7.500000, VY=0.000000, VX=0.000000, T=22.000000, Xi=0.000000
+read_sci_input(): get outlet cell[0,42,29]=2.0
+read_sci_input(): get outlet cell[0,42,30]=2.0
+read_sci_input(): get outlet cell[0,42,31]=2.0
+read_sci_input(): get outlet cell[0,42,32]=2.0
+read_sci_input(): get outlet cell[0,42,33]=2.0
+read_sci_input(): get outlet cell[0,43,29]=2.0
+read_sci_input(): get outlet cell[0,43,30]=2.0
+read_sci_input(): get outlet cell[0,43,31]=2.0
+read_sci_input(): get outlet cell[0,43,32]=2.0
+read_sci_input(): get outlet cell[0,43,33]=2.0
+read_sci_input(): get outlet cell[0,44,29]=2.0
+read_sci_input(): get outlet cell[0,44,30]=2.0
+read_sci_input(): get outlet cell[0,44,31]=2.0
+read_sci_input(): get outlet cell[0,44,32]=2.0
+read_sci_input(): get outlet cell[0,44,33]=2.0
+read_sci_input(): get outlet cell[0,45,29]=2.0
+read_sci_input(): get outlet cell[0,45,30]=2.0
+read_sci_input(): get outlet cell[0,45,31]=2.0
+read_sci_input(): get outlet cell[0,45,32]=2.0
+read_sci_input(): get outlet cell[0,45,33]=2.0
+read_sci_input(): get outlet cell[0,46,29]=2.0
+read_sci_input(): get outlet cell[0,46,30]=2.0
+read_sci_input(): get outlet cell[0,46,31]=2.0
+read_sci_input(): get outlet cell[0,46,32]=2.0
+read_sci_input(): get outlet cell[0,46,33]=2.0
+read_sci_input(): get outlet cell[0,47,29]=2.0
+read_sci_input(): get outlet cell[0,47,30]=2.0
+read_sci_input(): get outlet cell[0,47,31]=2.0
+read_sci_input(): get outlet cell[0,47,32]=2.0
+read_sci_input(): get outlet cell[0,47,33]=2.0
+read_sci_input(): get outlet cell[0,48,29]=2.0
+read_sci_input(): get outlet cell[0,48,30]=2.0
+read_sci_input(): get outlet cell[0,48,31]=2.0
+read_sci_input(): get outlet cell[0,48,32]=2.0
+read_sci_input(): get outlet cell[0,48,33]=2.0
+read_sci_input(): get outlet cell[0,49,29]=2.0
+read_sci_input(): get outlet cell[0,49,30]=2.0
+read_sci_input(): get outlet cell[0,49,31]=2.0
+read_sci_input(): get outlet cell[0,49,32]=2.0
+read_sci_input(): get outlet cell[0,49,33]=2.0
+read_sci_input(): get outlet cell[0,50,29]=2.0
+read_sci_input(): get outlet cell[0,50,30]=2.0
+read_sci_input(): get outlet cell[0,50,31]=2.0
+read_sci_input(): get outlet cell[0,50,32]=2.0
+read_sci_input(): get outlet cell[0,50,33]=2.0
+read_sci_input(): get outlet cell[0,51,29]=2.0
+read_sci_input(): get outlet cell[0,51,30]=2.0
+read_sci_input(): get outlet cell[0,51,31]=2.0
+read_sci_input(): get outlet cell[0,51,32]=2.0
+read_sci_input(): get outlet cell[0,51,33]=2.0
+read_sci_input(): get outlet cell[0,52,29]=2.0
+read_sci_input(): get outlet cell[0,52,30]=2.0
+read_sci_input(): get outlet cell[0,52,31]=2.0
+read_sci_input(): get outlet cell[0,52,32]=2.0
+read_sci_input(): get outlet cell[0,52,33]=2.0
+read_sci_input(): get outlet cell[0,53,29]=2.0
+read_sci_input(): get outlet cell[0,53,30]=2.0
+read_sci_input(): get outlet cell[0,53,31]=2.0
+read_sci_input(): get outlet cell[0,53,32]=2.0
+read_sci_input(): get outlet cell[0,53,33]=2.0
+read_sci_input(): para->bc->outletName[1]=crac_2_return
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, T=22.000000, Xi=0.000000
+read_sci_input(): get outlet cell[101,42,29]=2.0
+read_sci_input(): get outlet cell[101,42,30]=2.0
+read_sci_input(): get outlet cell[101,42,31]=2.0
+read_sci_input(): get outlet cell[101,42,32]=2.0
+read_sci_input(): get outlet cell[101,42,33]=2.0
+read_sci_input(): get outlet cell[101,43,29]=2.0
+read_sci_input(): get outlet cell[101,43,30]=2.0
+read_sci_input(): get outlet cell[101,43,31]=2.0
+read_sci_input(): get outlet cell[101,43,32]=2.0
+read_sci_input(): get outlet cell[101,43,33]=2.0
+read_sci_input(): get outlet cell[101,44,29]=2.0
+read_sci_input(): get outlet cell[101,44,30]=2.0
+read_sci_input(): get outlet cell[101,44,31]=2.0
+read_sci_input(): get outlet cell[101,44,32]=2.0
+read_sci_input(): get outlet cell[101,44,33]=2.0
+read_sci_input(): get outlet cell[101,45,29]=2.0
+read_sci_input(): get outlet cell[101,45,30]=2.0
+read_sci_input(): get outlet cell[101,45,31]=2.0
+read_sci_input(): get outlet cell[101,45,32]=2.0
+read_sci_input(): get outlet cell[101,45,33]=2.0
+read_sci_input(): get outlet cell[101,46,29]=2.0
+read_sci_input(): get outlet cell[101,46,30]=2.0
+read_sci_input(): get outlet cell[101,46,31]=2.0
+read_sci_input(): get outlet cell[101,46,32]=2.0
+read_sci_input(): get outlet cell[101,46,33]=2.0
+read_sci_input(): get outlet cell[101,47,29]=2.0
+read_sci_input(): get outlet cell[101,47,30]=2.0
+read_sci_input(): get outlet cell[101,47,31]=2.0
+read_sci_input(): get outlet cell[101,47,32]=2.0
+read_sci_input(): get outlet cell[101,47,33]=2.0
+read_sci_input(): get outlet cell[101,48,29]=2.0
+read_sci_input(): get outlet cell[101,48,30]=2.0
+read_sci_input(): get outlet cell[101,48,31]=2.0
+read_sci_input(): get outlet cell[101,48,32]=2.0
+read_sci_input(): get outlet cell[101,48,33]=2.0
+read_sci_input(): get outlet cell[101,49,29]=2.0
+read_sci_input(): get outlet cell[101,49,30]=2.0
+read_sci_input(): get outlet cell[101,49,31]=2.0
+read_sci_input(): get outlet cell[101,49,32]=2.0
+read_sci_input(): get outlet cell[101,49,33]=2.0
+read_sci_input(): get outlet cell[101,50,29]=2.0
+read_sci_input(): get outlet cell[101,50,30]=2.0
+read_sci_input(): get outlet cell[101,50,31]=2.0
+read_sci_input(): get outlet cell[101,50,32]=2.0
+read_sci_input(): get outlet cell[101,50,33]=2.0
+read_sci_input(): get outlet cell[101,51,29]=2.0
+read_sci_input(): get outlet cell[101,51,30]=2.0
+read_sci_input(): get outlet cell[101,51,31]=2.0
+read_sci_input(): get outlet cell[101,51,32]=2.0
+read_sci_input(): get outlet cell[101,51,33]=2.0
+read_sci_input(): get outlet cell[101,52,29]=2.0
+read_sci_input(): get outlet cell[101,52,30]=2.0
+read_sci_input(): get outlet cell[101,52,31]=2.0
+read_sci_input(): get outlet cell[101,52,32]=2.0
+read_sci_input(): get outlet cell[101,52,33]=2.0
+read_sci_input(): get outlet cell[101,53,29]=2.0
+read_sci_input(): get outlet cell[101,53,30]=2.0
+read_sci_input(): get outlet cell[101,53,31]=2.0
+read_sci_input(): get outlet cell[101,53,32]=2.0
+read_sci_input(): get outlet cell[101,53,33]=2.0
+read_sci_input(): para->bc->outletName[2]=crac_3_return
+read_sci_input(): VX=-7.500000, VY=0.000000, VX=0.000000, T=22.000000, Xi=0.000000
+read_sci_input(): get outlet cell[0,147,29]=2.0
+read_sci_input(): get outlet cell[0,147,30]=2.0
+read_sci_input(): get outlet cell[0,147,31]=2.0
+read_sci_input(): get outlet cell[0,147,32]=2.0
+read_sci_input(): get outlet cell[0,147,33]=2.0
+read_sci_input(): get outlet cell[0,148,29]=2.0
+read_sci_input(): get outlet cell[0,148,30]=2.0
+read_sci_input(): get outlet cell[0,148,31]=2.0
+read_sci_input(): get outlet cell[0,148,32]=2.0
+read_sci_input(): get outlet cell[0,148,33]=2.0
+read_sci_input(): get outlet cell[0,149,29]=2.0
+read_sci_input(): get outlet cell[0,149,30]=2.0
+read_sci_input(): get outlet cell[0,149,31]=2.0
+read_sci_input(): get outlet cell[0,149,32]=2.0
+read_sci_input(): get outlet cell[0,149,33]=2.0
+read_sci_input(): get outlet cell[0,150,29]=2.0
+read_sci_input(): get outlet cell[0,150,30]=2.0
+read_sci_input(): get outlet cell[0,150,31]=2.0
+read_sci_input(): get outlet cell[0,150,32]=2.0
+read_sci_input(): get outlet cell[0,150,33]=2.0
+read_sci_input(): get outlet cell[0,151,29]=2.0
+read_sci_input(): get outlet cell[0,151,30]=2.0
+read_sci_input(): get outlet cell[0,151,31]=2.0
+read_sci_input(): get outlet cell[0,151,32]=2.0
+read_sci_input(): get outlet cell[0,151,33]=2.0
+read_sci_input(): get outlet cell[0,152,29]=2.0
+read_sci_input(): get outlet cell[0,152,30]=2.0
+read_sci_input(): get outlet cell[0,152,31]=2.0
+read_sci_input(): get outlet cell[0,152,32]=2.0
+read_sci_input(): get outlet cell[0,152,33]=2.0
+read_sci_input(): get outlet cell[0,153,29]=2.0
+read_sci_input(): get outlet cell[0,153,30]=2.0
+read_sci_input(): get outlet cell[0,153,31]=2.0
+read_sci_input(): get outlet cell[0,153,32]=2.0
+read_sci_input(): get outlet cell[0,153,33]=2.0
+read_sci_input(): get outlet cell[0,154,29]=2.0
+read_sci_input(): get outlet cell[0,154,30]=2.0
+read_sci_input(): get outlet cell[0,154,31]=2.0
+read_sci_input(): get outlet cell[0,154,32]=2.0
+read_sci_input(): get outlet cell[0,154,33]=2.0
+read_sci_input(): get outlet cell[0,155,29]=2.0
+read_sci_input(): get outlet cell[0,155,30]=2.0
+read_sci_input(): get outlet cell[0,155,31]=2.0
+read_sci_input(): get outlet cell[0,155,32]=2.0
+read_sci_input(): get outlet cell[0,155,33]=2.0
+read_sci_input(): get outlet cell[0,156,29]=2.0
+read_sci_input(): get outlet cell[0,156,30]=2.0
+read_sci_input(): get outlet cell[0,156,31]=2.0
+read_sci_input(): get outlet cell[0,156,32]=2.0
+read_sci_input(): get outlet cell[0,156,33]=2.0
+read_sci_input(): get outlet cell[0,157,29]=2.0
+read_sci_input(): get outlet cell[0,157,30]=2.0
+read_sci_input(): get outlet cell[0,157,31]=2.0
+read_sci_input(): get outlet cell[0,157,32]=2.0
+read_sci_input(): get outlet cell[0,157,33]=2.0
+read_sci_input(): get outlet cell[0,158,29]=2.0
+read_sci_input(): get outlet cell[0,158,30]=2.0
+read_sci_input(): get outlet cell[0,158,31]=2.0
+read_sci_input(): get outlet cell[0,158,32]=2.0
+read_sci_input(): get outlet cell[0,158,33]=2.0
+read_sci_input(): get outlet cell[0,159,29]=2.0
+read_sci_input(): get outlet cell[0,159,30]=2.0
+read_sci_input(): get outlet cell[0,159,31]=2.0
+read_sci_input(): get outlet cell[0,159,32]=2.0
+read_sci_input(): get outlet cell[0,159,33]=2.0
+read_sci_input(): get outlet cell[0,160,29]=2.0
+read_sci_input(): get outlet cell[0,160,30]=2.0
+read_sci_input(): get outlet cell[0,160,31]=2.0
+read_sci_input(): get outlet cell[0,160,32]=2.0
+read_sci_input(): get outlet cell[0,160,33]=2.0
+read_sci_input(): get outlet cell[0,161,29]=2.0
+read_sci_input(): get outlet cell[0,161,30]=2.0
+read_sci_input(): get outlet cell[0,161,31]=2.0
+read_sci_input(): get outlet cell[0,161,32]=2.0
+read_sci_input(): get outlet cell[0,161,33]=2.0
+read_sci_input(): para->bc->outletName[3]=crac_4_return
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, T=22.000000, Xi=0.000000
+read_sci_input(): get outlet cell[101,147,29]=2.0
+read_sci_input(): get outlet cell[101,147,30]=2.0
+read_sci_input(): get outlet cell[101,147,31]=2.0
+read_sci_input(): get outlet cell[101,147,32]=2.0
+read_sci_input(): get outlet cell[101,147,33]=2.0
+read_sci_input(): get outlet cell[101,148,29]=2.0
+read_sci_input(): get outlet cell[101,148,30]=2.0
+read_sci_input(): get outlet cell[101,148,31]=2.0
+read_sci_input(): get outlet cell[101,148,32]=2.0
+read_sci_input(): get outlet cell[101,148,33]=2.0
+read_sci_input(): get outlet cell[101,149,29]=2.0
+read_sci_input(): get outlet cell[101,149,30]=2.0
+read_sci_input(): get outlet cell[101,149,31]=2.0
+read_sci_input(): get outlet cell[101,149,32]=2.0
+read_sci_input(): get outlet cell[101,149,33]=2.0
+read_sci_input(): get outlet cell[101,150,29]=2.0
+read_sci_input(): get outlet cell[101,150,30]=2.0
+read_sci_input(): get outlet cell[101,150,31]=2.0
+read_sci_input(): get outlet cell[101,150,32]=2.0
+read_sci_input(): get outlet cell[101,150,33]=2.0
+read_sci_input(): get outlet cell[101,151,29]=2.0
+read_sci_input(): get outlet cell[101,151,30]=2.0
+read_sci_input(): get outlet cell[101,151,31]=2.0
+read_sci_input(): get outlet cell[101,151,32]=2.0
+read_sci_input(): get outlet cell[101,151,33]=2.0
+read_sci_input(): get outlet cell[101,152,29]=2.0
+read_sci_input(): get outlet cell[101,152,30]=2.0
+read_sci_input(): get outlet cell[101,152,31]=2.0
+read_sci_input(): get outlet cell[101,152,32]=2.0
+read_sci_input(): get outlet cell[101,152,33]=2.0
+read_sci_input(): get outlet cell[101,153,29]=2.0
+read_sci_input(): get outlet cell[101,153,30]=2.0
+read_sci_input(): get outlet cell[101,153,31]=2.0
+read_sci_input(): get outlet cell[101,153,32]=2.0
+read_sci_input(): get outlet cell[101,153,33]=2.0
+read_sci_input(): get outlet cell[101,154,29]=2.0
+read_sci_input(): get outlet cell[101,154,30]=2.0
+read_sci_input(): get outlet cell[101,154,31]=2.0
+read_sci_input(): get outlet cell[101,154,32]=2.0
+read_sci_input(): get outlet cell[101,154,33]=2.0
+read_sci_input(): get outlet cell[101,155,29]=2.0
+read_sci_input(): get outlet cell[101,155,30]=2.0
+read_sci_input(): get outlet cell[101,155,31]=2.0
+read_sci_input(): get outlet cell[101,155,32]=2.0
+read_sci_input(): get outlet cell[101,155,33]=2.0
+read_sci_input(): get outlet cell[101,156,29]=2.0
+read_sci_input(): get outlet cell[101,156,30]=2.0
+read_sci_input(): get outlet cell[101,156,31]=2.0
+read_sci_input(): get outlet cell[101,156,32]=2.0
+read_sci_input(): get outlet cell[101,156,33]=2.0
+read_sci_input(): get outlet cell[101,157,29]=2.0
+read_sci_input(): get outlet cell[101,157,30]=2.0
+read_sci_input(): get outlet cell[101,157,31]=2.0
+read_sci_input(): get outlet cell[101,157,32]=2.0
+read_sci_input(): get outlet cell[101,157,33]=2.0
+read_sci_input(): get outlet cell[101,158,29]=2.0
+read_sci_input(): get outlet cell[101,158,30]=2.0
+read_sci_input(): get outlet cell[101,158,31]=2.0
+read_sci_input(): get outlet cell[101,158,32]=2.0
+read_sci_input(): get outlet cell[101,158,33]=2.0
+read_sci_input(): get outlet cell[101,159,29]=2.0
+read_sci_input(): get outlet cell[101,159,30]=2.0
+read_sci_input(): get outlet cell[101,159,31]=2.0
+read_sci_input(): get outlet cell[101,159,32]=2.0
+read_sci_input(): get outlet cell[101,159,33]=2.0
+read_sci_input(): get outlet cell[101,160,29]=2.0
+read_sci_input(): get outlet cell[101,160,30]=2.0
+read_sci_input(): get outlet cell[101,160,31]=2.0
+read_sci_input(): get outlet cell[101,160,32]=2.0
+read_sci_input(): get outlet cell[101,160,33]=2.0
+read_sci_input(): get outlet cell[101,161,29]=2.0
+read_sci_input(): get outlet cell[101,161,30]=2.0
+read_sci_input(): get outlet cell[101,161,31]=2.0
+read_sci_input(): get outlet cell[101,161,32]=2.0
+read_sci_input(): get outlet cell[101,161,33]=2.0
+read_sci_input(): para->bc->outletName[4]=crac_5_return
+read_sci_input(): VX=-7.500000, VY=0.000000, VX=0.000000, T=22.000000, Xi=0.000000
+read_sci_input(): get outlet cell[0,257,29]=2.0
+read_sci_input(): get outlet cell[0,257,30]=2.0
+read_sci_input(): get outlet cell[0,257,31]=2.0
+read_sci_input(): get outlet cell[0,257,32]=2.0
+read_sci_input(): get outlet cell[0,257,33]=2.0
+read_sci_input(): get outlet cell[0,258,29]=2.0
+read_sci_input(): get outlet cell[0,258,30]=2.0
+read_sci_input(): get outlet cell[0,258,31]=2.0
+read_sci_input(): get outlet cell[0,258,32]=2.0
+read_sci_input(): get outlet cell[0,258,33]=2.0
+read_sci_input(): get outlet cell[0,259,29]=2.0
+read_sci_input(): get outlet cell[0,259,30]=2.0
+read_sci_input(): get outlet cell[0,259,31]=2.0
+read_sci_input(): get outlet cell[0,259,32]=2.0
+read_sci_input(): get outlet cell[0,259,33]=2.0
+read_sci_input(): get outlet cell[0,260,29]=2.0
+read_sci_input(): get outlet cell[0,260,30]=2.0
+read_sci_input(): get outlet cell[0,260,31]=2.0
+read_sci_input(): get outlet cell[0,260,32]=2.0
+read_sci_input(): get outlet cell[0,260,33]=2.0
+read_sci_input(): get outlet cell[0,261,29]=2.0
+read_sci_input(): get outlet cell[0,261,30]=2.0
+read_sci_input(): get outlet cell[0,261,31]=2.0
+read_sci_input(): get outlet cell[0,261,32]=2.0
+read_sci_input(): get outlet cell[0,261,33]=2.0
+read_sci_input(): get outlet cell[0,262,29]=2.0
+read_sci_input(): get outlet cell[0,262,30]=2.0
+read_sci_input(): get outlet cell[0,262,31]=2.0
+read_sci_input(): get outlet cell[0,262,32]=2.0
+read_sci_input(): get outlet cell[0,262,33]=2.0
+read_sci_input(): get outlet cell[0,263,29]=2.0
+read_sci_input(): get outlet cell[0,263,30]=2.0
+read_sci_input(): get outlet cell[0,263,31]=2.0
+read_sci_input(): get outlet cell[0,263,32]=2.0
+read_sci_input(): get outlet cell[0,263,33]=2.0
+read_sci_input(): get outlet cell[0,264,29]=2.0
+read_sci_input(): get outlet cell[0,264,30]=2.0
+read_sci_input(): get outlet cell[0,264,31]=2.0
+read_sci_input(): get outlet cell[0,264,32]=2.0
+read_sci_input(): get outlet cell[0,264,33]=2.0
+read_sci_input(): get outlet cell[0,265,29]=2.0
+read_sci_input(): get outlet cell[0,265,30]=2.0
+read_sci_input(): get outlet cell[0,265,31]=2.0
+read_sci_input(): get outlet cell[0,265,32]=2.0
+read_sci_input(): get outlet cell[0,265,33]=2.0
+read_sci_input(): get outlet cell[0,266,29]=2.0
+read_sci_input(): get outlet cell[0,266,30]=2.0
+read_sci_input(): get outlet cell[0,266,31]=2.0
+read_sci_input(): get outlet cell[0,266,32]=2.0
+read_sci_input(): get outlet cell[0,266,33]=2.0
+read_sci_input(): get outlet cell[0,267,29]=2.0
+read_sci_input(): get outlet cell[0,267,30]=2.0
+read_sci_input(): get outlet cell[0,267,31]=2.0
+read_sci_input(): get outlet cell[0,267,32]=2.0
+read_sci_input(): get outlet cell[0,267,33]=2.0
+read_sci_input(): get outlet cell[0,268,29]=2.0
+read_sci_input(): get outlet cell[0,268,30]=2.0
+read_sci_input(): get outlet cell[0,268,31]=2.0
+read_sci_input(): get outlet cell[0,268,32]=2.0
+read_sci_input(): get outlet cell[0,268,33]=2.0
+read_sci_input(): get outlet cell[0,269,29]=2.0
+read_sci_input(): get outlet cell[0,269,30]=2.0
+read_sci_input(): get outlet cell[0,269,31]=2.0
+read_sci_input(): get outlet cell[0,269,32]=2.0
+read_sci_input(): get outlet cell[0,269,33]=2.0
+read_sci_input(): get outlet cell[0,270,29]=2.0
+read_sci_input(): get outlet cell[0,270,30]=2.0
+read_sci_input(): get outlet cell[0,270,31]=2.0
+read_sci_input(): get outlet cell[0,270,32]=2.0
+read_sci_input(): get outlet cell[0,270,33]=2.0
+read_sci_input(): get outlet cell[0,271,29]=2.0
+read_sci_input(): get outlet cell[0,271,30]=2.0
+read_sci_input(): get outlet cell[0,271,31]=2.0
+read_sci_input(): get outlet cell[0,271,32]=2.0
+read_sci_input(): get outlet cell[0,271,33]=2.0
+read_sci_input(): para->bc->outletName[5]=crac_6_return
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, T=22.000000, Xi=0.000000
+read_sci_input(): get outlet cell[101,257,29]=2.0
+read_sci_input(): get outlet cell[101,257,30]=2.0
+read_sci_input(): get outlet cell[101,257,31]=2.0
+read_sci_input(): get outlet cell[101,257,32]=2.0
+read_sci_input(): get outlet cell[101,257,33]=2.0
+read_sci_input(): get outlet cell[101,258,29]=2.0
+read_sci_input(): get outlet cell[101,258,30]=2.0
+read_sci_input(): get outlet cell[101,258,31]=2.0
+read_sci_input(): get outlet cell[101,258,32]=2.0
+read_sci_input(): get outlet cell[101,258,33]=2.0
+read_sci_input(): get outlet cell[101,259,29]=2.0
+read_sci_input(): get outlet cell[101,259,30]=2.0
+read_sci_input(): get outlet cell[101,259,31]=2.0
+read_sci_input(): get outlet cell[101,259,32]=2.0
+read_sci_input(): get outlet cell[101,259,33]=2.0
+read_sci_input(): get outlet cell[101,260,29]=2.0
+read_sci_input(): get outlet cell[101,260,30]=2.0
+read_sci_input(): get outlet cell[101,260,31]=2.0
+read_sci_input(): get outlet cell[101,260,32]=2.0
+read_sci_input(): get outlet cell[101,260,33]=2.0
+read_sci_input(): get outlet cell[101,261,29]=2.0
+read_sci_input(): get outlet cell[101,261,30]=2.0
+read_sci_input(): get outlet cell[101,261,31]=2.0
+read_sci_input(): get outlet cell[101,261,32]=2.0
+read_sci_input(): get outlet cell[101,261,33]=2.0
+read_sci_input(): get outlet cell[101,262,29]=2.0
+read_sci_input(): get outlet cell[101,262,30]=2.0
+read_sci_input(): get outlet cell[101,262,31]=2.0
+read_sci_input(): get outlet cell[101,262,32]=2.0
+read_sci_input(): get outlet cell[101,262,33]=2.0
+read_sci_input(): get outlet cell[101,263,29]=2.0
+read_sci_input(): get outlet cell[101,263,30]=2.0
+read_sci_input(): get outlet cell[101,263,31]=2.0
+read_sci_input(): get outlet cell[101,263,32]=2.0
+read_sci_input(): get outlet cell[101,263,33]=2.0
+read_sci_input(): get outlet cell[101,264,29]=2.0
+read_sci_input(): get outlet cell[101,264,30]=2.0
+read_sci_input(): get outlet cell[101,264,31]=2.0
+read_sci_input(): get outlet cell[101,264,32]=2.0
+read_sci_input(): get outlet cell[101,264,33]=2.0
+read_sci_input(): get outlet cell[101,265,29]=2.0
+read_sci_input(): get outlet cell[101,265,30]=2.0
+read_sci_input(): get outlet cell[101,265,31]=2.0
+read_sci_input(): get outlet cell[101,265,32]=2.0
+read_sci_input(): get outlet cell[101,265,33]=2.0
+read_sci_input(): get outlet cell[101,266,29]=2.0
+read_sci_input(): get outlet cell[101,266,30]=2.0
+read_sci_input(): get outlet cell[101,266,31]=2.0
+read_sci_input(): get outlet cell[101,266,32]=2.0
+read_sci_input(): get outlet cell[101,266,33]=2.0
+read_sci_input(): get outlet cell[101,267,29]=2.0
+read_sci_input(): get outlet cell[101,267,30]=2.0
+read_sci_input(): get outlet cell[101,267,31]=2.0
+read_sci_input(): get outlet cell[101,267,32]=2.0
+read_sci_input(): get outlet cell[101,267,33]=2.0
+read_sci_input(): get outlet cell[101,268,29]=2.0
+read_sci_input(): get outlet cell[101,268,30]=2.0
+read_sci_input(): get outlet cell[101,268,31]=2.0
+read_sci_input(): get outlet cell[101,268,32]=2.0
+read_sci_input(): get outlet cell[101,268,33]=2.0
+read_sci_input(): get outlet cell[101,269,29]=2.0
+read_sci_input(): get outlet cell[101,269,30]=2.0
+read_sci_input(): get outlet cell[101,269,31]=2.0
+read_sci_input(): get outlet cell[101,269,32]=2.0
+read_sci_input(): get outlet cell[101,269,33]=2.0
+read_sci_input(): get outlet cell[101,270,29]=2.0
+read_sci_input(): get outlet cell[101,270,30]=2.0
+read_sci_input(): get outlet cell[101,270,31]=2.0
+read_sci_input(): get outlet cell[101,270,32]=2.0
+read_sci_input(): get outlet cell[101,270,33]=2.0
+read_sci_input(): get outlet cell[101,271,29]=2.0
+read_sci_input(): get outlet cell[101,271,30]=2.0
+read_sci_input(): get outlet cell[101,271,31]=2.0
+read_sci_input(): get outlet cell[101,271,32]=2.0
+read_sci_input(): get outlet cell[101,271,33]=2.0
+read_sci_input(): Port[0]:crac_1_supply
+read_sci_input(): Port[1]:crac_2_supply
+read_sci_input(): Port[2]:crac_3_supply
+read_sci_input(): Port[3]:crac_4_supply
+read_sci_input(): Port[4]:crac_5_supply
+read_sci_input(): Port[5]:crac_6_supply
+read_sci_input(): Port[6]:crac_1_return
+read_sci_input(): Port[7]:crac_2_return
+read_sci_input(): Port[8]:crac_3_return
+read_sci_input(): Port[9]:crac_4_return
+read_sci_input(): Port[10]:crac_5_return
+read_sci_input(): Port[11]:crac_6_return
+read_sci_input(): para->bc->nb_block=20
+read_sci_input(): para->bc->blockName[0]=Rack 2 65000.0 5.899343e-05 row_1
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=2545.226700, Xi=0.000000
+read_sci_input(): para->bc->blockName[1]=Rack -2 65000.0 5.899343e-05 row_2
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=2545.226700, Xi=0.000000
+read_sci_input(): para->bc->blockName[2]=Rack 2 65000.0 5.899343e-05 row_3
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=2545.226700, Xi=0.000000
+read_sci_input(): para->bc->blockName[3]=Rack -2 65000.0 5.899343e-05 row_4
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=2545.226700, Xi=0.000000
+read_sci_input(): para->bc->blockName[4]=Rack 2 65000.0 5.899343e-05 row_5
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=2545.226700, Xi=0.000000
+read_sci_input(): para->bc->blockName[5]=Rack -2 65000.0 5.899343e-05 row_6
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=2545.226700, Xi=0.000000
+read_sci_input(): para->bc->blockName[6]=Rack 2 65000.0 5.899343e-05 row_7
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=2545.226700, Xi=0.000000
+read_sci_input(): para->bc->blockName[7]=Rack -2 65000.0 5.899343e-05 row_8
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=2545.226700, Xi=0.000000
+read_sci_input(): para->bc->blockName[8]=ha_12_end_west
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[9]=ha_12_end_east
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[10]=ha_12_roof
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[11]=ha_34_end_west
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[12]=ha_34_end_east
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[13]=ha_34_roof
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[14]=ha_56_end_west
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[15]=ha_56_end_east
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[16]=ha_56_roof
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[17]=ha_78_end_west
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[18]=ha_78_end_east
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->blockName[19]=ha_78_roof
+read_sci_input(): VX=7.500000, VY=0.000000, VX=0.000000, ThermalBC=0, T/q_dot=0.000000, Xi=0.000000
+read_sci_input(): para->bc->nb_wall=6
+read_sci_input(): para->bc->wallName[0]="West wall"
+read_sci_input(): ThermalBC=0, T/q_dot=0.000000
+read_sci_input(): para->bc->wallName[1]="East wall"
+read_sci_input(): ThermalBC=0, T/q_dot=0.000000
+read_sci_input(): para->bc->wallName[2]="South wall"
+read_sci_input(): ThermalBC=0, T/q_dot=0.000000
+read_sci_input(): para->bc->wallName[3]="North wall"
+read_sci_input(): ThermalBC=0, T/q_dot=0.000000
+read_sci_input(): para->bc->wallName[4]="Floor"
+read_sci_input(): ThermalBC=0, T/q_dot=0.000000
+read_sci_input(): para->bc->wallName[5]="Ceiling"
+read_sci_input(): ThermalBC=0, T/q_dot=0.000000
+read_sci_input(): para->bc->nb_source=0
+read_sci_input(): para->mytime->t_start=0.000000
+read_sci_input(): para->mytime->dt=0.100000
+read_sci_input(): para->mytime->step_total=9000
+read_sci_input(): Read sci input file /workspace/output/container_smoke_ports12_xi1_walls/dc_model.cfd
+read_sci_input(): start to read block information from "/workspace/output/container_smoke_ports12_xi1_walls/dc_model.dat".
+read_sci_input(): end of reading zeroone.dat.
+Allocated memory for Xi
+No C in the simulation
+bounary_area(): Calculated surface area for FFD boundaries are:
+	Wall boundaries:
+		West wall: 108.464512[m2]
+		East wall: 108.464512[m2]
+		South wall: 67.500000[m2]
+		North wall: 67.500000[m2]
+		Floor: 375.000000[m2]
+		Ceiling: 375.000000[m2]
+	Inlet boundaries:
+		crac_1_supply: 0.533333[m2]
+		crac_2_supply: 0.533333[m2]
+		crac_3_supply: 0.578462[m2]
+		crac_4_supply: 0.578462[m2]
+		crac_5_supply: 0.578462[m2]
+		crac_6_supply: 0.578462[m2]
+	Outlet boundaries:
+		crac_1_return: 0.740000[m2]
+		crac_2_return: 0.740000[m2]
+		crac_3_return: 0.802616[m2]
+		crac_4_return: 0.802616[m2]
+		crac_5_return: 0.802616[m2]
+		crac_6_return: 0.802616[m2]
+-------------------------------------------------------------------
+read_cosim_parameter(): Received the following coupled simulation parameters:
+	nSur=6
+	nPorts=12
+	nSen=0
+	nXi=1
+	nC=0
+	nConExtWin=1
+	sha=0
+	Surface 0: Floor
+		Area:375.000000[m2],	 Tilt:3.141593[deg]
+		Thermal boundary: Fixed heat flux
+	Surface 1: Ceiling
+		Area:375.000000[m2],	 Tilt:0.000000[deg]
+		Thermal boundary: Fixed heat flux
+	Surface 2: South wall
+		Area:67.500000[m2],	 Tilt:1.570796[deg]
+		Thermal boundary: Fixed heat flux
+	Surface 3: North wall
+		Area:67.500000[m2],	 Tilt:1.570796[deg]
+		Thermal boundary: Fixed heat flux
+	Surface 4: West wall
+		Area:112.500000[m2],	 Tilt:1.570796[deg]
+		Thermal boundary: Fixed heat flux
+	Surface 5: East wall
+		Area:112.500000[m2],	 Tilt:1.570796[deg]
+		Thermal boundary: Fixed heat flux
+	Fluid Ports 0: crac_1_supply
+	Fluid Ports 1: crac_2_supply
+	Fluid Ports 2: crac_3_supply
+	Fluid Ports 3: crac_4_supply
+	Fluid Ports 4: crac_5_supply
+	Fluid Ports 5: crac_6_supply
+	Fluid Ports 6: crac_1_return
+	Fluid Ports 7: crac_2_return
+	Fluid Ports 8: crac_3_return
+	Fluid Ports 9: crac_4_return
+	Fluid Ports 10: crac_5_return
+	Fluid Ports 11: crac_6_return
+compare_boundary_names(): Matched boundary name "Floor".
+compare_boundary_names(): Matched boundary name "Ceiling".
+compare_boundary_names(): Matched boundary name "South wall".
+compare_boundary_names(): Matched boundary name "North wall".
+compare_boundary_names(): Matched boundary name "West wall".
+compare_boundary_names(): Matched boundary name "East wall".
+Start to compare port names
+	Modelica: port[0]=crac_1_supply
+	FFD: port[0]=crac_1_supply
+compare_boundary_names(): Matched boundary name "crac_1_supply".
+	Modelica: port[1]=crac_2_supply
+	FFD: port[0]=crac_1_supply
+	FFD: port[1]=crac_2_supply
+compare_boundary_names(): Matched boundary name "crac_2_supply".
+	Modelica: port[2]=crac_3_supply
+	FFD: port[0]=crac_1_supply
+	FFD: port[1]=crac_2_supply
+	FFD: port[2]=crac_3_supply
+compare_boundary_names(): Matched boundary name "crac_3_supply".
+	Modelica: port[3]=crac_4_supply
+	FFD: port[0]=crac_1_supply
+	FFD: port[1]=crac_2_supply
+	FFD: port[2]=crac_3_supply
+	FFD: port[3]=crac_4_supply
+compare_boundary_names(): Matched boundary name "crac_4_supply".
+	Modelica: port[4]=crac_5_supply
+	FFD: port[0]=crac_1_supply
+	FFD: port[1]=crac_2_supply
+	FFD: port[2]=crac_3_supply
+	FFD: port[3]=crac_4_supply
+	FFD: port[4]=crac_5_supply
+compare_boundary_names(): Matched boundary name "crac_5_supply".
+	Modelica: port[5]=crac_6_supply
+	FFD: port[0]=crac_1_supply
+	FFD: port[1]=crac_2_supply
+	FFD: port[2]=crac_3_supply
+	FFD: port[3]=crac_4_supply
+	FFD: port[4]=crac_5_supply
+	FFD: port[5]=crac_6_supply
+compare_boundary_names(): Matched boundary name "crac_6_supply".
+	Modelica: port[6]=crac_1_return
+	FFD: port[0]=crac_1_supply
+	FFD: port[1]=crac_2_supply
+	FFD: port[2]=crac_3_supply
+	FFD: port[3]=crac_4_supply
+	FFD: port[4]=crac_5_supply
+	FFD: port[5]=crac_6_supply
+	FFD: port[6]=crac_1_return
+compare_boundary_names(): Matched boundary name "crac_1_return".
+	Modelica: port[7]=crac_2_return
+	FFD: port[0]=crac_1_supply
+	FFD: port[1]=crac_2_supply
+	FFD: port[2]=crac_3_supply
+	FFD: port[3]=crac_4_supply
+	FFD: port[4]=crac_5_supply
+	FFD: port[5]=crac_6_supply
+	FFD: port[6]=crac_1_return
+	FFD: port[7]=crac_2_return
+compare_boundary_names(): Matched boundary name "crac_2_return".
+	Modelica: port[8]=crac_3_return
+	FFD: port[0]=crac_1_supply
+	FFD: port[1]=crac_2_supply
+	FFD: port[2]=crac_3_supply
+	FFD: port[3]=crac_4_supply
+	FFD: port[4]=crac_5_supply
+	FFD: port[5]=crac_6_supply
+	FFD: port[6]=crac_1_return
+	FFD: port[7]=crac_2_return
+	FFD: port[8]=crac_3_return
+compare_boundary_names(): Matched boundary name "crac_3_return".
+	Modelica: port[9]=crac_4_return
+	FFD: port[0]=crac_1_supply
+	FFD: port[1]=crac_2_supply
+	FFD: port[2]=crac_3_supply
+	FFD: port[3]=crac_4_supply
+	FFD: port[4]=crac_5_supply
+	FFD: port[5]=crac_6_supply
+	FFD: port[6]=crac_1_return
+	FFD: port[7]=crac_2_return
+	FFD: port[8]=crac_3_return
+	FFD: port[9]=crac_4_return
+compare_boundary_names(): Matched boundary name "crac_4_return".
+	Modelica: port[10]=crac_5_return
+	FFD: port[0]=crac_1_supply
+	FFD: port[1]=crac_2_supply
+	FFD: port[2]=crac_3_supply
+	FFD: port[3]=crac_4_supply
+	FFD: port[4]=crac_5_supply
+	FFD: port[5]=crac_6_supply
+	FFD: port[6]=crac_1_return
+	FFD: port[7]=crac_2_return
+	FFD: port[8]=crac_3_return
+	FFD: port[9]=crac_4_return
+	FFD: port[10]=crac_5_return
+compare_boundary_names(): Matched boundary name "crac_5_return".
+	Modelica: port[11]=crac_6_return
+	FFD: port[0]=crac_1_supply
+	FFD: port[1]=crac_2_supply
+	FFD: port[2]=crac_3_supply
+	FFD: port[3]=crac_4_supply
+	FFD: port[4]=crac_5_supply
+	FFD: port[5]=crac_6_supply
+	FFD: port[6]=crac_1_return
+	FFD: port[7]=crac_2_return
+	FFD: port[8]=crac_3_return
+	FFD: port[9]=crac_4_return
+	FFD: port[10]=crac_5_return
+	FFD: port[11]=crac_6_return
+compare_boundary_names(): Matched boundary name "crac_6_return".
+compare_boundary_area(): Start to compare the area of solid surfaces.
+ERROR in compare_boundary_area(): Area of surface West wall are different: Modelica (112.500000[m2]) and FFD (108.464512[m2])
+ERROR in read_cosim_parameter(): The boundary areas were not consistent.
+ERROR in set_initial_data(): Could not read cosimulation parameters.
+ERROR in ffd(): Could not set initial data.
+ERROR in ffd_thread(): Cosimulation failed

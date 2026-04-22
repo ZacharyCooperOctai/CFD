@@ -1,0 +1,128 @@
+Start Fast Fluid Dynamics Simulation with Thread
+fileName="/workspace/external/modelica-buildings/Buildings/Resources/Data/ThermalZones/Detailed/Examples/FFD/ForcedConvection.ffd"
+read_parameter(): Opened file /workspace/external/modelica-buildings/Buildings/Resources/Data/ThermalZones/Detailed/Examples/FFD/ForcedConvection.ffd for FFD parameters with base directory /workspace/external/modelica-buildings/Buildings/Resources/Data/ThermalZones/Detailed/Examples/FFD/
+assign_parameter(): inpu.parameter_file_format=SCI
+assign_parameter(): inpu.parameter_file_name=/workspace/external/modelica-buildings/Buildings/Resources/Data/ThermalZones/Detailed/Examples/FFD/ForcedConvection.cfd
+assign_parameter(): inpu.block_file_name=/workspace/external/modelica-buildings/Buildings/Resources/Data/ThermalZones/Detailed/Examples/FFD/EmptyRoom.dat
+assign_parameter(): geom.Lx=1.000000
+assign_parameter(): geom.Ly=1.000000
+assign_parameter(): geom.Lz=1.000000
+assign_parameter(): geom.imax=10
+assign_parameter(): geom.jmax=10
+assign_parameter(): geom.kmax=10
+assign_parameter(): geom.index=600
+assign_parameter(): inpu.read_old_ffd_file=0
+assign_parameter(): geom.dx=0.100000
+assign_parameter(): geom.dy=0.100000
+assign_parameter(): geom.dz=0.100000
+assign_parameter(): geom.uniform=1
+assign_parameter(): outp.version=RUN
+assign_parameter(): prob.nu=0.000015
+assign_parameter(): prob.rho=1.205000
+assign_parameter(): prob.gravx=0.000000
+assign_parameter(): prob.gravy=0.000000
+assign_parameter(): prob.gravz=-9.810000
+assign_parameter(): prob.cond=0.025700
+assign_parameter(): prob.Cp=1006.000000
+assign_parameter(): prob.beta=0.003430
+assign_parameter(): prob.diff=0.000010
+assign_parameter(): prob.coeff_h=0.000400
+assign_parameter(): prob.force=1.000000
+assign_parameter(): prob.source=1.000000
+assign_parameter(): prob.movie=0
+assign_parameter(): prob.tur_model=LAM
+assign_parameter(): prob.chen_a=0.038740
+assign_parameter(): prob.Prt=0.900000
+assign_parameter(): prob.Temp_Buoyancy=10.000000
+assign_parameter(): mytime.t_steady=100.000000
+assign_parameter(): bc.nb_Xi=1
+assign_parameter(): solv.solver=GS
+assign_parameter(): solv.check_residual=0
+assign_parameter(): solv.advection_solver=SEMI
+assign_parameter(): solv.interpolation=BILINEAR
+assign_parameter(): solv.cosimulation=1
+assign_parameter(): sensor.nb_sensor=2
+assign_parameter(): sensor.name=OccupiedZoneAirTemperature
+assign_parameter(): sensor.name=Velocity
+assign_parameter(): init.T=10.000000
+assign_parameter(): init.u=0.000000
+assign_parameter(): init.v=0.000000
+assign_parameter(): init.w=0.000000
+read_sci_input(): Start to read sci input file /workspace/external/modelica-buildings/Buildings/Resources/Data/ThermalZones/Detailed/Examples/FFD/ForcedConvection.cfd
+read_sci_input(): para->bc->nb_bc=8
+read_sci_input(): para->bc->nb_inlet=1
+read_sci_input(): para->bc->inletName[0]=Inlet
+read_sci_input(): VX=0.000000, VY=0.000000, VZ=0.000000, T=0.000000, Xi=0.000000
+read_sci_input(): para->bc->nb_outlet=1
+read_sci_input(): para->bc->outletName[0]=Outlet
+read_sci_input(): VX=0.000000, VY=0.000000, VX=0.000000, T=0.000000, Xi=0.000000
+read_sci_input(): Port[0]:Inlet
+read_sci_input(): Port[1]:Outlet
+read_sci_input(): para->bc->nb_block=0
+read_sci_input(): para->bc->nb_wall=6
+read_sci_input(): para->bc->wallName[0]="South Wall"
+read_sci_input(): ThermalBC=1, T/q_dot=0.000000
+read_sci_input(): para->bc->wallName[1]="North Wall"
+read_sci_input(): ThermalBC=1, T/q_dot=0.000000
+read_sci_input(): para->bc->wallName[2]="Ceiling"
+read_sci_input(): ThermalBC=1, T/q_dot=0.000000
+read_sci_input(): para->bc->wallName[3]="Floor"
+read_sci_input(): ThermalBC=1, T/q_dot=0.000000
+read_sci_input(): para->bc->wallName[4]="West Wall"
+read_sci_input(): ThermalBC=1, T/q_dot=0.000000
+read_sci_input(): para->bc->wallName[5]="East Wall"
+read_sci_input(): ThermalBC=1, T/q_dot=0.000000
+read_sci_input(): para->bc->nb_source=0
+read_sci_input(): para->mytime->t_start=0.000000
+read_sci_input(): para->mytime->dt=0.100000
+read_sci_input(): para->mytime->step_total=1000
+read_sci_input(): Read sci input file /workspace/external/modelica-buildings/Buildings/Resources/Data/ThermalZones/Detailed/Examples/FFD/ForcedConvection.cfd
+read_sci_input(): start to read block information from "/workspace/external/modelica-buildings/Buildings/Resources/Data/ThermalZones/Detailed/Examples/FFD/EmptyRoom.dat".
+read_sci_input(): end of reading zeroone.dat.
+bounary_area(): Calculated surface area for FFD boundaries are:
+	Wall boundaries:
+		South Wall: 1.000000[m2]
+		North Wall: 1.000000[m2]
+		Ceiling: 1.000000[m2]
+		Floor: 1.000000[m2]
+		West Wall: 0.900000[m2]
+		East Wall: 0.900000[m2]
+	Inlet boundaries:
+		Inlet: 0.100000[m2]
+	Outlet boundaries:
+		Outlet: 0.100000[m2]
+-------------------------------------------------------------------
+	nSur=6
+	nPorts=2
+	nSen=2
+	nXi=1
+	nC=0
+	nConExtWin=1
+	sha=0
+	Surface 0: East Wall
+		Area:0.900000[m2],	 Tilt:1.570796[deg]
+		Thermal boundary: Fixed temperature
+	Surface 1: West Wall
+		Area:0.900000[m2],	 Tilt:1.570796[deg]
+		Thermal boundary: Fixed temperature
+	Surface 2: North Wall
+		Area:1.000000[m2],	 Tilt:1.570796[deg]
+		Thermal boundary: Fixed temperature
+	Surface 3: South Wall
+		Area:1.000000[m2],	 Tilt:1.570796[deg]
+		Thermal boundary: Fixed temperature
+	Surface 4: Ceiling
+		Area:1.000000[m2],	 Tilt:0.000000[deg]
+		Thermal boundary: Fixed temperature
+	Surface 5: Floor
+		Area:1.000000[m2],	 Tilt:3.141593[deg]
+		Thermal boundary: Fixed temperature
+	Fluid Ports 0: Inlet
+	Fluid Ports 1: Outlet
+	Sensor 0: Occupied zone air temperature
+	Sensor 1: Velocity
+ERROR in compare_boundary_names(): Could not find the Modelica  wall boundary "East Wall" in FFD.
+ERROR in read_cosim_parameter(): The boundary names were not consistent.
+ERROR in set_initial_data(): Could not read cosimulation parameters.
+ERROR in ffd(): Could not set initial data.
+ERROR in ffd_thread(): Cosimulation failed

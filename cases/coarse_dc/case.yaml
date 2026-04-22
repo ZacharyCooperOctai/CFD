@@ -1,0 +1,325 @@
+room:
+  length_x: 15.0
+  length_y: 25.0
+  white_space_height: 3.9
+  plenum_depth: 0.6
+  slab_to_ceiling: 4.5
+  walls_adiabatic: true
+rack_defaults:
+  rack_width: 0.7
+  rack_depth: 1.1
+  rack_height: 2.26
+  racks_per_row: 13
+  default_heat_per_rack_kw: 5.0
+rack_rows:
+- id: row_1
+  origin_x: 2.3
+  origin_y: 2.6
+  row_length: 11.3
+  cold_face: -y
+  heat_per_rack_kw: 5.0
+- id: row_2
+  origin_x: 2.3
+  origin_y: 5.2
+  row_length: 11.3
+  cold_face: +y
+  heat_per_rack_kw: 5.0
+- id: row_3
+  origin_x: 2.3
+  origin_y: 7.8
+  row_length: 11.3
+  cold_face: -y
+  heat_per_rack_kw: 5.0
+- id: row_4
+  origin_x: 2.3
+  origin_y: 10.4
+  row_length: 11.3
+  cold_face: +y
+  heat_per_rack_kw: 5.0
+- id: row_5
+  origin_x: 2.3
+  origin_y: 13.0
+  row_length: 11.3
+  cold_face: -y
+  heat_per_rack_kw: 5.0
+- id: row_6
+  origin_x: 2.3
+  origin_y: 15.6
+  row_length: 11.3
+  cold_face: +y
+  heat_per_rack_kw: 5.0
+- id: row_7
+  origin_x: 2.3
+  origin_y: 18.2
+  row_length: 11.3
+  cold_face: -y
+  heat_per_rack_kw: 5.0
+- id: row_8
+  origin_x: 2.3
+  origin_y: 20.8
+  row_length: 11.3
+  cold_face: +y
+  heat_per_rack_kw: 5.0
+aisles:
+  hot_aisles:
+  - id: ha_12
+    between:
+    - row_1
+    - row_2
+    containment: true
+  - id: ha_34
+    between:
+    - row_3
+    - row_4
+    containment: true
+  - id: ha_56
+    between:
+    - row_5
+    - row_6
+    containment: true
+  - id: ha_78
+    between:
+    - row_7
+    - row_8
+    containment: true
+  cold_aisles:
+  - id: ca_north
+    location: north_of_row_1
+  - id: ca_23
+    between:
+    - row_2
+    - row_3
+  - id: ca_45
+    between:
+    - row_4
+    - row_5
+  - id: ca_67
+    between:
+    - row_6
+    - row_7
+  - id: ca_south
+    location: south_of_row_8
+perforated_tiles:
+  open_area_ratio: 0.25
+  tile_strip_width: 0.6
+crac_units:
+- id: crac_1
+  wall: west
+  discharge_y: 4.45
+  supply_opening_width: 1.0
+  supply_opening_height: 0.5
+  return_grille_y: 4.45
+  return_grille_z_centre: 3.0
+  return_grille_width: 1.0
+  return_grille_height: 0.6
+  rated_flow_m3s: 4.5
+  supply_temp_c: 14.0
+- id: crac_2
+  wall: east
+  discharge_y: 4.45
+  supply_opening_width: 1.0
+  supply_opening_height: 0.5
+  return_grille_y: 4.45
+  return_grille_z_centre: 3.0
+  return_grille_width: 1.0
+  return_grille_height: 0.6
+  rated_flow_m3s: 4.5
+  supply_temp_c: 14.0
+- id: crac_3
+  wall: west
+  discharge_y: 12.25
+  supply_opening_width: 1.0
+  supply_opening_height: 0.5
+  return_grille_y: 12.25
+  return_grille_z_centre: 3.0
+  return_grille_width: 1.0
+  return_grille_height: 0.6
+  rated_flow_m3s: 4.5
+  supply_temp_c: 14.0
+- id: crac_4
+  wall: east
+  discharge_y: 12.25
+  supply_opening_width: 1.0
+  supply_opening_height: 0.5
+  return_grille_y: 12.25
+  return_grille_z_centre: 3.0
+  return_grille_width: 1.0
+  return_grille_height: 0.6
+  rated_flow_m3s: 4.5
+  supply_temp_c: 14.0
+- id: crac_5
+  wall: west
+  discharge_y: 20.05
+  supply_opening_width: 1.0
+  supply_opening_height: 0.5
+  return_grille_y: 20.05
+  return_grille_z_centre: 3.0
+  return_grille_width: 1.0
+  return_grille_height: 0.6
+  rated_flow_m3s: 4.5
+  supply_temp_c: 14.0
+- id: crac_6
+  wall: east
+  discharge_y: 20.05
+  supply_opening_width: 1.0
+  supply_opening_height: 0.5
+  return_grille_y: 20.05
+  return_grille_z_centre: 3.0
+  return_grille_width: 1.0
+  return_grille_height: 0.6
+  rated_flow_m3s: 4.5
+  supply_temp_c: 14.0
+sensors:
+  rack_inlet_heights:
+  - 0.75
+  - 1.13
+  - 1.51
+  rack_inlet_offset: 0.025
+  extra_sensors:
+  - id: crac_1_return
+    x: 0.15
+    y: 4.45
+    z: 3.0
+  - id: crac_1_supply
+    x: 0.15
+    y: 4.45
+    z: -0.3
+  - id: crac_2_return
+    x: 14.85
+    y: 4.45
+    z: 3.0
+  - id: crac_2_supply
+    x: 14.85
+    y: 4.45
+    z: -0.3
+  - id: crac_3_return
+    x: 0.15
+    y: 12.25
+    z: 3.0
+  - id: crac_3_supply
+    x: 0.15
+    y: 12.25
+    z: -0.3
+  - id: crac_4_return
+    x: 14.85
+    y: 12.25
+    z: 3.0
+  - id: crac_4_supply
+    x: 14.85
+    y: 12.25
+    z: -0.3
+  - id: crac_5_return
+    x: 0.15
+    y: 20.05
+    z: 3.0
+  - id: crac_5_supply
+    x: 0.15
+    y: 20.05
+    z: -0.3
+  - id: crac_6_return
+    x: 14.85
+    y: 20.05
+    z: 3.0
+  - id: crac_6_supply
+    x: 14.85
+    y: 20.05
+    z: -0.3
+  - id: room_centre
+    x: 7.5
+    y: 12.5
+    z: 1.5
+mesh:
+  base_cell_size: 0.4
+  refinement:
+    rack_faces:
+      min_cell_size: 0.2
+      depth: 0.2
+    tile_openings:
+      min_cell_size: 0.2
+      depth: 0.15
+    crac_openings:
+      min_cell_size: 0.2
+      depth: 0.2
+ffd:
+  time_step: 0.1
+  sync_interval: 10.0
+  total_time: 30.0
+  turbulence_model: zero_equation
+  initial_temp_c: 22.0
+fluid:
+  density: 1.204
+  kinematic_viscosity: 1.516e-05
+  thermal_conductivity: 0.0257
+  specific_heat: 1006.0
+  thermal_expansion: 0.00343
+  thermal_diffusivity: 2.14e-05
+  gravity_z: -9.81
+output:
+  ffd_file: case.ffd
+  mesh_file: case.cfd
+  obstacle_file: case.dat
+  sensor_file: case_sensors.csv
+case:
+  id: coarse_dc
+  generator: legacy_dc
+  model_name: DataCentreFFD
+  controls:
+    fan_count: 6
+    supply_temp_count: 6
+  defaults:
+    scenario: baseline
+    stop_time: 30.0
+    sync_dt: 10.0
+  validation:
+    mat_required: true
+    fail_on_stdout_patterns:
+    - Segmentation fault
+    - Execution failed
+    - LOG_ASSERT
+    - Variable violating
+    fail_on_stderr_patterns:
+    - 'error:'
+    - assertion
+    - segmentation fault
+    fail_on_ffd_patterns:
+    - ERROR in
+    - Could not
+    - different number
+    - Segmentation fault
+    variable_bounds:
+    - name: dc.T_sup_out[1]
+      min: 270.0
+      max: 320.0
+    - name: dc.T_sup_out[2]
+      min: 270.0
+      max: 320.0
+    - name: dc.T_sup_out[3]
+      min: 270.0
+      max: 320.0
+    - name: dc.T_sup_out[4]
+      min: 270.0
+      max: 320.0
+    - name: dc.T_sup_out[5]
+      min: 270.0
+      max: 320.0
+    - name: dc.T_sup_out[6]
+      min: 270.0
+      max: 320.0
+    - name: dc.T_ret_out[1]
+      min: 270.0
+      max: 350.0
+    - name: dc.T_ret_out[2]
+      min: 270.0
+      max: 350.0
+    - name: dc.T_ret_out[3]
+      min: 270.0
+      max: 350.0
+    - name: dc.T_ret_out[4]
+      min: 270.0
+      max: 350.0
+    - name: dc.T_ret_out[5]
+      min: 270.0
+      max: 350.0
+    - name: dc.T_ret_out[6]
+      min: 270.0
+      max: 350.0

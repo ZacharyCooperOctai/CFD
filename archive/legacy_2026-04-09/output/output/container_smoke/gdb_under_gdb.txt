@@ -1,0 +1,1645 @@
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[New Thread 0x7ffff4dd1640 (LWP 697)]
+[New Thread 0x7ffff45d0640 (LWP 698)]
+[New Thread 0x7ffff3dcf640 (LWP 699)]
+[New Thread 0x7ffff35ce640 (LWP 700)]
+[New Thread 0x7ffff2dcd640 (LWP 701)]
+[New Thread 0x7ffff25cc640 (LWP 702)]
+[New Thread 0x7ffff1dcb640 (LWP 703)]
+[New Thread 0x7ffff15ca640 (LWP 704)]
+[New Thread 0x7ffff0dc9640 (LWP 705)]
+[New Thread 0x7ffff05c8640 (LWP 706)]
+[New Thread 0x7fffefdc7640 (LWP 707)]
+[New Thread 0x7fffef5c6640 (LWP 708)]
+[New Thread 0x7fffeedc5640 (LWP 709)]
+[New Thread 0x7fffee5c4640 (LWP 710)]
+[New Thread 0x7fffeddc3640 (LWP 711)]
+LOG_SOLVER        | info    | NO override given on the command line.
+LOG_LS            | info    | initialize linear system solvers
+|                 | |       | | 3 linear systems
+LOG_NLS           | info    | initialize non-linear system solvers
+|                 | |       | | 15 non-linear systems
+LOG_SOLVER        | info    | numberOfIntervals = 3
+LOG_SOLVER        | info    | Allocated simulation result data storage for method 'mat' and file='gdb_under_gdb.mat'
+LOG_SOLVER        | info    | recognized solver: dassl
+LOG_SOLVER        | info    | Configuration of the dassl code:
+|                 | |       | | The relative tolerance is 1e-06. Following absolute tolerances are used for the states: 
+|                 | |       | | maximum step size not set
+|                 | |       | | initial step size not set
+|                 | |       | | maximum integration order 5
+|                 | |       | | use equidistant time grid YES
+|                 | |       | | jacobian is calculated by Colored numerical Jacobian, which is default for dassl and ida. Needs omc compiler flag --generateDynamicJacobian=numeric. With option -idaLS=klu a sparse matrix is used.
+|                 | |       | | dassl uses internal root finding method YES
+|                 | |       | | dassl performs an restart after an event occurs YES
+LOG_INIT          | info    | ### START INITIALIZATION ###
+LOG_INIT          | info    | updating min-values
+LOG_INIT          | info    | updating max-values
+LOG_INIT          | info    | updating nominal-values
+LOG_INIT          | info    | updating primary start-values
+LOG_NLS           | info    | update static data of non-linear system solvers
+LOG_INIT          | info    | initialization method: symbolic        [solves the initialization problem symbolically - default]
+LOG_INIT_HOMOTOPY | info    | Model contains homotopy operator: Use adaptive homotopy method to solve initialization problem. To disable initialization with homotopy operator use "-noHomotopyOnFirstTry".
+LOG_INIT_HOMOTOPY | info    | Global homotopy with equidistant step size started.
+LOG_INIT_HOMOTOPY | info    | The homotopy path will be exported to s000_baseline_equidistant_global_homotopy.csv.
+LOG_INIT_HOMOTOPY | info    | homotopy process
+|                 | |       | ---------------------------
+LOG_INIT_HOMOTOPY | info    | homotopy parameter lambda = 0
+LOG_LS            | info    | Start solving Linear System 1190 (size 5) at time 0 with Lapack Solver
+LOG_LS            | warning | Failed to solve linear system of equations (no. 1190) at time 0.000000. Residual norm is 4.9766697611642.
+LOG_STDOUT        | warning | The default linear solver fails, the fallback solver with total pivoting is started at time 0.000000. That might raise performance issues, for more information use -lv LOG_LS.
+LOG_LS            | info    | Start solving Linear System 1190 (size 5) at time 0 with Total Pivot Solver
+LOG_NLS           | info    | ############ Solve nonlinear system 1594 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]       dc.weaDat.weaBus.TWetBul  =           291.15		 nom =                1
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 6
+|                 | |       | | |  number of function evaluations : 7
+|                 | |       | | |  number of jacobian evaluations : 6
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]       dc.weaDat.weaBus.TWetBul  =        260.17477
+LOG_INIT_HOMOTOPY | info    | homotopy parameter lambda = 0 done
+|                 | |       | ---------------------------
+LOG_INIT_HOMOTOPY | info    | homotopy parameter lambda = 0.333333
+LOG_LS            | info    | Start solving Linear System 255 (size 5) at time 0 with Lapack Solver
+LOG_LS            | warning | Failed to solve linear system of equations (no. 255) at time 0.000000. Residual norm is 4.9766697611642.
+LOG_STDOUT        | warning | The default linear solver fails, the fallback solver with total pivoting is started at time 0.000000. That might raise performance issues, for more information use -lv LOG_LS.
+LOG_LS            | info    | Start solving Linear System 255 (size 5) at time 0 with Total Pivot Solver
+LOG_NLS           | info    | ############ Solve nonlinear system 410 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[21]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 1
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[21]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 414 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[20]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 1
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[20]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 418 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[19]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 1
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[19]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 422 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[18]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 1
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[18]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 426 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[17]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 1
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[17]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 430 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[16]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 1
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[16]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 665 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]       dc.weaDat.weaBus.TWetBul  =        260.17477		 nom =                1
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 1
+|                 | |       | | |  number of function evaluations : 2
+|                 | |       | | |  number of jacobian evaluations : 1
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]       dc.weaDat.weaBus.TWetBul  =        260.17477
+[New Thread 0x7fffecab2640 (LWP 712)]
+Start Fast Fluid Dynamics Simulation with Thread
+LOG_INIT_HOMOTOPY | info    | homotopy parameter lambda = 0.333333 done
+|                 | |       | ---------------------------
+LOG_INIT_HOMOTOPY | info    | homotopy parameter lambda = 0.666667
+LOG_LS            | info    | Start solving Linear System 255 (size 5) at time 0 with Lapack Solver
+LOG_LS            | warning | Failed to solve linear system of equations (no. 255) at time 0.000000. Residual norm is 4.9766697611642.
+LOG_LS            | warning | The default linear solver fails, the fallback solver with total pivoting is started at time 0.000000. That might raise performance issues, for more information use -lv LOG_LS.
+LOG_LS            | info    | Start solving Linear System 255 (size 5) at time 0 with Total Pivot Solver
+LOG_NLS           | info    | ############ Solve nonlinear system 410 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[21]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 2
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[21]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 414 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[20]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 2
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[20]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 418 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[19]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 2
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[19]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 422 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[18]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 2
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[18]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 426 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[17]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 2
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[17]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 430 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[16]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 2
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[16]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 665 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]       dc.weaDat.weaBus.TWetBul  =        260.17477		 nom =                1
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 1
+|                 | |       | | |  number of function evaluations : 3
+|                 | |       | | |  number of jacobian evaluations : 1
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]       dc.weaDat.weaBus.TWetBul  =        260.17477
+[New Thread 0x7fffe7fff640 (LWP 713)]
+Start Fast Fluid Dynamics Simulation with Thread
+LOG_INIT_HOMOTOPY | info    | homotopy parameter lambda = 0.666667 done
+|                 | |       | ---------------------------
+LOG_INIT_HOMOTOPY | info    | homotopy parameter lambda = 1
+LOG_LS            | info    | Start solving Linear System 255 (size 5) at time 0 with Lapack Solver
+LOG_LS            | warning | Failed to solve linear system of equations (no. 255) at time 0.000000. Residual norm is 4.9766697611642.
+LOG_LS            | info    | Too many warnings, reached display limit of 3. Suppressing further warning messages of the same type.
+LOG_LS            | info    | Change limit with simulation flag -lvMaxWarn=<newLimit>
+LOG_LS            | warning | The default linear solver fails, the fallback solver with total pivoting is started at time 0.000000. That might raise performance issues, for more information use -lv LOG_LS.
+LOG_LS            | info    | Too many warnings, reached display limit of 3. Suppressing further warning messages of the same type.
+LOG_LS            | info    | Change limit with simulation flag -lvMaxWarn=<newLimit>
+LOG_LS            | info    | Start solving Linear System 255 (size 5) at time 0 with Total Pivot Solver
+LOG_NLS           | info    | ############ Solve nonlinear system 410 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[21]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 3
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[21]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 414 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[20]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 3
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[20]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 418 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[19]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 3
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[19]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 422 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[18]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 3
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[18]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 426 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[17]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 3
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[17]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 430 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[16]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 3
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[16]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 665 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]       dc.weaDat.weaBus.TWetBul  =        260.17477		 nom =                1
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 1
+|                 | |       | | |  number of function evaluations : 4
+|                 | |       | | |  number of jacobian evaluations : 1
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]       dc.weaDat.weaBus.TWetBul  =        260.17477
+[New Thread 0x7fffe77fe640 (LWP 714)]
+Start Fast Fluid Dynamics Simulation with Thread
+LOG_INIT_HOMOTOPY | info    | homotopy parameter lambda = 1 done
+|                 | |       | ---------------------------
+LOG_INIT          | info    | ### END INITIALIZATION ###
+LOG_LS            | info    | Start solving Linear System 1996 (size 5) at time 0 with Lapack Solver
+LOG_LS            | warning | Failed to solve linear system of equations (no. 1996) at time 0.000000. Residual norm is 9.18755268720378.
+LOG_STDOUT        | warning | The default linear solver fails, the fallback solver with total pivoting is started at time 0.000000. That might raise performance issues, for more information use -lv LOG_LS.
+LOG_LS            | info    | Start solving Linear System 1996 (size 5) at time 0 with Total Pivot Solver
+LOG_NLS           | info    | ############ Solve nonlinear system 2051 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[16]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 1
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[16]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 2057 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[17]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 1
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[17]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 2063 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[18]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 1
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[18]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 2069 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[19]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 1
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[19]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 2075 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[20]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 1
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[20]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 2081 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[21]  =               -0		 nom =            5.418
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 0
+|                 | |       | | |  number of function evaluations : 1
+|                 | |       | | |  number of jacobian evaluations : 0
+|                 | |       | | | solution values:
+|                 | |       | | | [ 1]           dc.roo.air.cfd.u[21]  =               -0
+LOG_NLS           | info    | ############ Solve nonlinear system 2209 at time 0 ############
+|                 | |       | | initial variable values:
+|                 | |       | | | [ 1]       dc.weaDat.weaBus.TWetBul  =        260.17477		 nom =                1
+|                 | |       | | Solution status: SOLVED
+|                 | |       | | |  number of iterations           : 1
+
+Thread 17 "s000_baseline" received signal SIGSEGV, Segmentation fault.
+[Switching to Thread 0x7fffecab2640 (LWP 712)]
+__memchr_avx2 () at ../sysdeps/x86_64/multiarch/memchr-avx2.S:81
+81	../sysdeps/x86_64/multiarch/memchr-avx2.S: No such file or directory.
+  Id   Target Id                                       Frame 
+  1    Thread 0x7ffff4ed7080 (LWP 694) "s000_baseline" __GI___libc_write (nbytes=70, buf=0x555555773ee0, fd=1) at ../sysdeps/unix/sysv/linux/write.c:26
+  2    Thread 0x7ffff4dd1640 (LWP 697) "s000_baseline" __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:57
+  3    Thread 0x7ffff45d0640 (LWP 698) "s000_baseline" __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:57
+  4    Thread 0x7ffff3dcf640 (LWP 699) "s000_baseline" __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:57
+  5    Thread 0x7ffff35ce640 (LWP 700) "s000_baseline" __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:57
+  6    Thread 0x7ffff2dcd640 (LWP 701) "s000_baseline" __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:57
+  7    Thread 0x7ffff25cc640 (LWP 702) "s000_baseline" __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:57
+  8    Thread 0x7ffff1dcb640 (LWP 703) "s000_baseline" __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:57
+  9    Thread 0x7ffff15ca640 (LWP 704) "s000_baseline" __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:57
+  10   Thread 0x7ffff0dc9640 (LWP 705) "s000_baseline" __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:57
+  11   Thread 0x7ffff05c8640 (LWP 706) "s000_baseline" __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:57
+  12   Thread 0x7fffefdc7640 (LWP 707) "s000_baseline" __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:57
+  13   Thread 0x7fffef5c6640 (LWP 708) "s000_baseline" __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:57
+  14   Thread 0x7fffeedc5640 (LWP 709) "s000_baseline" __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:57
+  15   Thread 0x7fffee5c4640 (LWP 710) "s000_baseline" __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:57
+  16   Thread 0x7fffeddc3640 (LWP 711) "s000_baseline" __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:57
+* 17   Thread 0x7fffecab2640 (LWP 712) "s000_baseline" __memchr_avx2 () at ../sysdeps/x86_64/multiarch/memchr-avx2.S:81
+  18   Thread 0x7fffe7fff640 (LWP 713) "s000_baseline" futex_wait (private=0, expected=2, futex_word=0x7fffe0000c50) at ../sysdeps/nptl/futex-internal.h:146
+  19   Thread 0x7fffe77fe640 (LWP 714) "s000_baseline" futex_wait (private=0, expected=2, futex_word=0x7ffff683ba50 <list_all_lock>) at ../sysdeps/nptl/futex-internal.h:146
+
+Thread 19 (Thread 0x7fffe77fe640 (LWP 714) "s000_baseline"):
+#0  futex_wait (private=0, expected=2, futex_word=0x7ffff683ba50 <list_all_lock>) at ../sysdeps/nptl/futex-internal.h:146
+        __ret = -512
+        err = <optimized out>
+        err = <optimized out>
+        __ret = <optimized out>
+        resultvar = <optimized out>
+        __arg4 = <optimized out>
+        __arg3 = <optimized out>
+        __arg2 = <optimized out>
+        __arg1 = <optimized out>
+        _a4 = <optimized out>
+        _a3 = <optimized out>
+        _a2 = <optimized out>
+        _a1 = <optimized out>
+#1  __GI___lll_lock_wait_private (futex=futex@entry=0x7ffff683ba50 <list_all_lock>) at ./nptl/lowlevellock.c:34
+No locals.
+#2  0x00007ffff66ac278 in __GI__IO_un_link (fp=0x7fffd8000b70) at ./libio/genops.c:59
+        __futex = 0x7ffff683ba50 <list_all_lock>
+        __self = 0x7fffe77fe640
+        _cleanup_start_doit = true
+        _buffer = {__routine = 0x7ffff66abfe0 <flush_cleanup>, __arg = 0x0, __canceltype = 0, __prev = 0x0}
+        _cleanup_routine = 0x7ffff66abfe0 <flush_cleanup>
+        f = <optimized out>
+#3  0x00007ffff66ac2c5 in __GI__IO_un_link (fp=<optimized out>) at ./libio/genops.c:82
+        f = <optimized out>
+        _cleanup_start_doit = <optimized out>
+        _buffer = <optimized out>
+        _cleanup_routine = <optimized out>
+        __self = <optimized out>
+        __futex = <optimized out>
+        __self = <optimized out>
+        __futex = <optimized out>
+        __futex = <optimized out>
+        __private = <optimized out>
+        __oldval = <optimized out>
+        result = <optimized out>
+        __futex = <optimized out>
+        __private = <optimized out>
+        __oldval = <optimized out>
+        result = <optimized out>
+#4  0x00007ffff669dd35 in _IO_new_fclose (fp=0x7fffd8000b70) at ./libio/iofclose.c:49
+        status = <optimized out>
+#5  0x00007ffff7c2b5ee in ffd_log () from /workspace/external/modelica-buildings/Buildings/Resources/Library/linux64/libffd.so
+No symbol table info available.
+#6  0x00007ffff7c1b11f in ffd_thread () from /workspace/external/modelica-buildings/Buildings/Resources/Library/linux64/libffd.so
+No symbol table info available.
+#7  0x00007ffff66b3ac3 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+        ret = <optimized out>
+        pd = <optimized out>
+        out = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140737488339136, -7139168445740450217, 140737077306944, 22, 140737327609808, 140737488339488, 7139149753106202199, 7139182642996739671}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+#8  0x00007ffff67458d0 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+No locals.
+
+Thread 18 (Thread 0x7fffe7fff640 (LWP 713) "s000_baseline"):
+#0  futex_wait (private=0, expected=2, futex_word=0x7fffe0000c50) at ../sysdeps/nptl/futex-internal.h:146
+        __ret = -512
+        err = <optimized out>
+        err = <optimized out>
+        __ret = <optimized out>
+        resultvar = <optimized out>
+        __arg4 = <optimized out>
+        __arg3 = <optimized out>
+        __arg2 = <optimized out>
+        __arg1 = <optimized out>
+        _a4 = <optimized out>
+        _a3 = <optimized out>
+        _a2 = <optimized out>
+        _a1 = <optimized out>
+#1  __GI___lll_lock_wait_private (futex=0x7fffe0000c50) at ./nptl/lowlevellock.c:34
+No locals.
+#2  0x00007ffff669e4c5 in _IO_fgets (buf=0x7fffe7ffe990 " \302\377\377\377\177", n=400, fp=0x7fffe0000b70) at ./libio/iofgets.c:47
+        __futex = <optimized out>
+        __self = 0x7fffe7fff640
+        _IO_acquire_lock_file = 0x7fffe0000b70
+        count = <optimized out>
+        result = <optimized out>
+        old_error = <optimized out>
+#3  0x00007ffff7c20791 in read_parameter () from /workspace/external/modelica-buildings/Buildings/Resources/Library/linux64/libffd.so
+No symbol table info available.
+#4  0x00007ffff7c1bdd1 in initialize () from /workspace/external/modelica-buildings/Buildings/Resources/Library/linux64/libffd.so
+No symbol table info available.
+#5  0x00007ffff7c1a8e3 in ffd () from /workspace/external/modelica-buildings/Buildings/Resources/Library/linux64/libffd.so
+No symbol table info available.
+#6  0x00007ffff7c1a821 in ffd_cosimulation () from /workspace/external/modelica-buildings/Buildings/Resources/Library/linux64/libffd.so
+No symbol table info available.
+#7  0x00007ffff7c1b12b in ffd_thread () from /workspace/external/modelica-buildings/Buildings/Resources/Library/linux64/libffd.so
+No symbol table info available.
+#8  0x00007ffff66b3ac3 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+        ret = <optimized out>
+        pd = <optimized out>
+        out = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140737488339136, -7139168445740450217, 140737085699648, 22, 140737327609808, 140737488339488, 7139150853154700887, 7139182642996739671}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+#9  0x00007ffff67458d0 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+No locals.
+
+Thread 17 (Thread 0x7fffecab2640 (LWP 712) "s000_baseline"):
+#0  __memchr_avx2 () at ../sysdeps/x86_64/multiarch/memchr-avx2.S:81
+No locals.
+#1  0x00007ffff669f3dc in __GI__IO_getline_info (fp=fp@entry=0x7fffe0000b70, buf=buf@entry=0x7fffecab1990 "inpu.parameter_file_name dc_model.cfd\r\n", n=n@entry=399, delim=delim@entry=10, extract_delim=extract_delim@entry=1, eof=eof@entry=0x0) at ./libio/iogetline.c:85
+        t = <optimized out>
+        len = <optimized out>
+        ptr = 0x7fffecab1990 "inpu.parameter_file_name dc_model.cfd\r\n"
+#2  0x00007ffff669f51c in __GI__IO_getline (fp=fp@entry=0x7fffe0000b70, buf=buf@entry=0x7fffecab1990 "inpu.parameter_file_name dc_model.cfd\r\n", n=n@entry=399, delim=delim@entry=10, extract_delim=extract_delim@entry=1) at ./libio/iogetline.c:34
+No locals.
+#3  0x00007ffff669e410 in _IO_fgets (buf=0x7fffecab1990 "inpu.parameter_file_name dc_model.cfd\r\n", n=400, fp=0x7fffe0000b70) at ./libio/iofgets.c:53
+        _IO_acquire_lock_file = 0x7fffe0000b70
+        count = <optimized out>
+        result = <optimized out>
+        old_error = 0
+#4  0x00007ffff7c20791 in read_parameter () from /workspace/external/modelica-buildings/Buildings/Resources/Library/linux64/libffd.so
+No symbol table info available.
+#5  0x00007ffff7c1bdd1 in initialize () from /workspace/external/modelica-buildings/Buildings/Resources/Library/linux64/libffd.so
+No symbol table info available.
+#6  0x00007ffff7c1a8e3 in ffd () from /workspace/external/modelica-buildings/Buildings/Resources/Library/linux64/libffd.so
+No symbol table info available.
+#7  0x00007ffff7c1a821 in ffd_cosimulation () from /workspace/external/modelica-buildings/Buildings/Resources/Library/linux64/libffd.so
+No symbol table info available.
+#8  0x00007ffff7c1b12b in ffd_thread () from /workspace/external/modelica-buildings/Buildings/Resources/Library/linux64/libffd.so
+No symbol table info available.
+#9  0x00007ffff66b3ac3 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+        ret = <optimized out>
+        pd = <optimized out>
+        out = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140737488339136, -7139168445740450217, 140737164027456, 22, 140737327609808, 140737488339488, 7139134813062463063, 7139182642996739671}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+#10 0x00007ffff67458d0 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+No locals.
+
+Thread 16 (Thread 0x7fffeddc3640 (LWP 711) "s000_baseline"):
+#0  __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:57
+        sc_cancel_oldtype = 0
+        sc_ret = <optimized out>
+        resultvar = <optimized out>
+        __arg6 = <optimized out>
+        __arg5 = <optimized out>
+        __arg4 = <optimized out>
+        __arg3 = <optimized out>
+        __arg2 = <optimized out>
+        __arg1 = <optimized out>
+        _a6 = <optimized out>
+        _a5 = <optimized out>
+        _a4 = <optimized out>
+        _a3 = <optimized out>
+        _a2 = <optimized out>
+        _a1 = <optimized out>
+#1  __futex_abstimed_wait_common (cancel=true, private=0, abstime=0x0, clockid=0, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:87
+        err = <optimized out>
+        clockbit = 256
+        op = 393
+        err = <optimized out>
+        clockbit = <optimized out>
+        op = <optimized out>
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x7ffff6ac1638, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at ./nptl/futex-internal.c:139
+No locals.
+#3  0x00007ffff66b2a41 in __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7ffff6ac19b0, cond=0x7ffff6ac1610) at ./nptl/pthread_cond_wait.c:503
+        spin = 0
+        buffer = {__routine = 0x7ffff66b2720 <__condvar_cleanup_waiting>, __arg = 0x7fffeddb2b20, __canceltype = -186039104, __prev = 0x0}
+        cbuffer = {wseq = 174, cond = 0x7ffff6ac1610, mutex = 0x7ffff6ac19b0, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        g1_start = <optimized out>
+        maxspin = 0
+        signals = <optimized out>
+        result = 0
+        wseq = 174
+        seq = 87
+        private = 0
+        maxspin = <optimized out>
+        err = <optimized out>
+        result = <optimized out>
+        wseq = <optimized out>
+        g = <optimized out>
+        seq = <optimized out>
+        flags = <optimized out>
+        private = <optimized out>
+        signals = <optimized out>
+        done = <optimized out>
+        g1_start = <optimized out>
+        spin = <optimized out>
+        buffer = <optimized out>
+        cbuffer = <optimized out>
+        s = <optimized out>
+#4  ___pthread_cond_wait (cond=0x7ffff6ac1610, mutex=0x7ffff6ac19b0) at ./nptl/pthread_cond_wait.c:627
+No locals.
+#5  0x00007ffff685b796 in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#6  0x00007ffff685b7db in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#7  0x00007ffff686184c in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#8  0x00007ffff66b3ac3 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+        ret = <optimized out>
+        pd = <optimized out>
+        out = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140737488346240, -7139168445740450217, 140737184020032, 2, 140737327609808, 140737488346592, 7139137416349515351, 7139182642996739671}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+#9  0x00007ffff67458d0 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+No locals.
+
+Thread 15 (Thread 0x7fffee5c4640 (LWP 710) "s000_baseline"):
+#0  __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:57
+        sc_cancel_oldtype = 0
+        sc_ret = <optimized out>
+        resultvar = <optimized out>
+        __arg6 = <optimized out>
+        __arg5 = <optimized out>
+        __arg4 = <optimized out>
+        __arg3 = <optimized out>
+        __arg2 = <optimized out>
+        __arg1 = <optimized out>
+        _a6 = <optimized out>
+        _a5 = <optimized out>
+        _a4 = <optimized out>
+        _a3 = <optimized out>
+        _a2 = <optimized out>
+        _a1 = <optimized out>
+#1  __futex_abstimed_wait_common (cancel=true, private=0, abstime=0x0, clockid=0, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:87
+        err = <optimized out>
+        clockbit = 256
+        op = 393
+        err = <optimized out>
+        clockbit = <optimized out>
+        op = <optimized out>
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x7ffff6ac1638, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at ./nptl/futex-internal.c:139
+No locals.
+#3  0x00007ffff66b2a41 in __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7ffff6ac19b0, cond=0x7ffff6ac1610) at ./nptl/pthread_cond_wait.c:503
+        spin = 0
+        buffer = {__routine = 0x7ffff66b2720 <__condvar_cleanup_waiting>, __arg = 0x7fffee5b3b20, __canceltype = -186039104, __prev = 0x0}
+        cbuffer = {wseq = 168, cond = 0x7ffff6ac1610, mutex = 0x7ffff6ac19b0, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        g1_start = <optimized out>
+        maxspin = 0
+        signals = <optimized out>
+        result = 0
+        wseq = 168
+        seq = 84
+        private = 0
+        maxspin = <optimized out>
+        err = <optimized out>
+        result = <optimized out>
+        wseq = <optimized out>
+        g = <optimized out>
+        seq = <optimized out>
+        flags = <optimized out>
+        private = <optimized out>
+        signals = <optimized out>
+        done = <optimized out>
+        g1_start = <optimized out>
+        spin = <optimized out>
+        buffer = <optimized out>
+        cbuffer = <optimized out>
+        s = <optimized out>
+#4  ___pthread_cond_wait (cond=0x7ffff6ac1610, mutex=0x7ffff6ac19b0) at ./nptl/pthread_cond_wait.c:627
+No locals.
+#5  0x00007ffff685b796 in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#6  0x00007ffff685b7db in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#7  0x00007ffff686184c in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#8  0x00007ffff66b3ac3 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+        ret = <optimized out>
+        pd = <optimized out>
+        out = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140737488346240, -7139168445740450217, 140737192412736, 2, 140737327609808, 140737488346592, 7139129720304991831, 7139182642996739671}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+#9  0x00007ffff67458d0 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+No locals.
+
+Thread 14 (Thread 0x7fffeedc5640 (LWP 709) "s000_baseline"):
+#0  __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:57
+        sc_cancel_oldtype = 0
+        sc_ret = <optimized out>
+        resultvar = <optimized out>
+        __arg6 = <optimized out>
+        __arg5 = <optimized out>
+        __arg4 = <optimized out>
+        __arg3 = <optimized out>
+        __arg2 = <optimized out>
+        __arg1 = <optimized out>
+        _a6 = <optimized out>
+        _a5 = <optimized out>
+        _a4 = <optimized out>
+        _a3 = <optimized out>
+        _a2 = <optimized out>
+        _a1 = <optimized out>
+#1  __futex_abstimed_wait_common (cancel=true, private=0, abstime=0x0, clockid=0, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:87
+        err = <optimized out>
+        clockbit = 256
+        op = 393
+        err = <optimized out>
+        clockbit = <optimized out>
+        op = <optimized out>
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x7ffff6ac1638, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at ./nptl/futex-internal.c:139
+No locals.
+#3  0x00007ffff66b2a41 in __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7ffff6ac19b0, cond=0x7ffff6ac1610) at ./nptl/pthread_cond_wait.c:503
+        spin = 0
+        buffer = {__routine = 0x7ffff66b2720 <__condvar_cleanup_waiting>, __arg = 0x7fffeedb4b20, __canceltype = -186039136, __prev = 0x0}
+        cbuffer = {wseq = 160, cond = 0x7ffff6ac1610, mutex = 0x7ffff6ac19b0, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        g1_start = <optimized out>
+        maxspin = 0
+        signals = <optimized out>
+        result = 0
+        wseq = 160
+        seq = 80
+        private = 0
+        maxspin = <optimized out>
+        err = <optimized out>
+        result = <optimized out>
+        wseq = <optimized out>
+        g = <optimized out>
+        seq = <optimized out>
+        flags = <optimized out>
+        private = <optimized out>
+        signals = <optimized out>
+        done = <optimized out>
+        g1_start = <optimized out>
+        spin = <optimized out>
+        buffer = <optimized out>
+        cbuffer = <optimized out>
+        s = <optimized out>
+#4  ___pthread_cond_wait (cond=0x7ffff6ac1610, mutex=0x7ffff6ac19b0) at ./nptl/pthread_cond_wait.c:627
+No locals.
+#5  0x00007ffff685b796 in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#6  0x00007ffff685b7db in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#7  0x00007ffff686184c in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#8  0x00007ffff66b3ac3 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+        ret = <optimized out>
+        pd = <optimized out>
+        out = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140737488346240, -7139168445740450217, 140737200805440, 2, 140737327609808, 140737488346592, 7139130816058523223, 7139182642996739671}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+#9  0x00007ffff67458d0 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+No locals.
+
+Thread 13 (Thread 0x7fffef5c6640 (LWP 708) "s000_baseline"):
+#0  __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:57
+        sc_cancel_oldtype = 0
+        sc_ret = <optimized out>
+        resultvar = <optimized out>
+        __arg6 = <optimized out>
+        __arg5 = <optimized out>
+        __arg4 = <optimized out>
+        __arg3 = <optimized out>
+        __arg2 = <optimized out>
+        __arg1 = <optimized out>
+        _a6 = <optimized out>
+        _a5 = <optimized out>
+        _a4 = <optimized out>
+        _a3 = <optimized out>
+        _a2 = <optimized out>
+        _a1 = <optimized out>
+#1  __futex_abstimed_wait_common (cancel=true, private=0, abstime=0x0, clockid=0, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:87
+        err = <optimized out>
+        clockbit = 256
+        op = 393
+        err = <optimized out>
+        clockbit = <optimized out>
+        op = <optimized out>
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x7ffff6ac1638, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at ./nptl/futex-internal.c:139
+No locals.
+#3  0x00007ffff66b2a41 in __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7ffff6ac19b0, cond=0x7ffff6ac1610) at ./nptl/pthread_cond_wait.c:503
+        spin = 0
+        buffer = {__routine = 0x7ffff66b2720 <__condvar_cleanup_waiting>, __arg = 0x7fffef5b5b20, __canceltype = -186039120, __prev = 0x0}
+        cbuffer = {wseq = 158, cond = 0x7ffff6ac1610, mutex = 0x7ffff6ac19b0, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        g1_start = <optimized out>
+        maxspin = 0
+        signals = <optimized out>
+        result = 0
+        wseq = 158
+        seq = 79
+        private = 0
+        maxspin = <optimized out>
+        err = <optimized out>
+        result = <optimized out>
+        wseq = <optimized out>
+        g = <optimized out>
+        seq = <optimized out>
+        flags = <optimized out>
+        private = <optimized out>
+        signals = <optimized out>
+        done = <optimized out>
+        g1_start = <optimized out>
+        spin = <optimized out>
+        buffer = <optimized out>
+        cbuffer = <optimized out>
+        s = <optimized out>
+#4  ___pthread_cond_wait (cond=0x7ffff6ac1610, mutex=0x7ffff6ac19b0) at ./nptl/pthread_cond_wait.c:627
+No locals.
+#5  0x00007ffff685b796 in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#6  0x00007ffff685b7db in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#7  0x00007ffff686184c in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#8  0x00007ffff66b3ac3 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+        ret = <optimized out>
+        pd = <optimized out>
+        out = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140737488346240, -7139168445740450217, 140737209198144, 2, 140737327609808, 140737488346592, 7139131916107021911, 7139182642996739671}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+#9  0x00007ffff67458d0 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+No locals.
+
+Thread 12 (Thread 0x7fffefdc7640 (LWP 707) "s000_baseline"):
+#0  __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:57
+        sc_cancel_oldtype = 0
+        sc_ret = <optimized out>
+        resultvar = <optimized out>
+        __arg6 = <optimized out>
+        __arg5 = <optimized out>
+        __arg4 = <optimized out>
+        __arg3 = <optimized out>
+        __arg2 = <optimized out>
+        __arg1 = <optimized out>
+        _a6 = <optimized out>
+        _a5 = <optimized out>
+        _a4 = <optimized out>
+        _a3 = <optimized out>
+        _a2 = <optimized out>
+        _a1 = <optimized out>
+#1  __futex_abstimed_wait_common (cancel=true, private=0, abstime=0x0, clockid=0, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:87
+        err = <optimized out>
+        clockbit = 256
+        op = 393
+        err = <optimized out>
+        clockbit = <optimized out>
+        op = <optimized out>
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x7ffff6ac1638, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at ./nptl/futex-internal.c:139
+No locals.
+#3  0x00007ffff66b2a41 in __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7ffff6ac19b0, cond=0x7ffff6ac1610) at ./nptl/pthread_cond_wait.c:503
+        spin = 0
+        buffer = {__routine = 0x7ffff66b2720 <__condvar_cleanup_waiting>, __arg = 0x7fffefdb6b20, __canceltype = -186039120, __prev = 0x0}
+        cbuffer = {wseq = 180, cond = 0x7ffff6ac1610, mutex = 0x7ffff6ac19b0, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        g1_start = <optimized out>
+        maxspin = 0
+        signals = <optimized out>
+        result = 0
+        wseq = 180
+        seq = 90
+        private = 0
+        maxspin = <optimized out>
+        err = <optimized out>
+        result = <optimized out>
+        wseq = <optimized out>
+        g = <optimized out>
+        seq = <optimized out>
+        flags = <optimized out>
+        private = <optimized out>
+        signals = <optimized out>
+        done = <optimized out>
+        g1_start = <optimized out>
+        spin = <optimized out>
+        buffer = <optimized out>
+        cbuffer = <optimized out>
+        s = <optimized out>
+#4  ___pthread_cond_wait (cond=0x7ffff6ac1610, mutex=0x7ffff6ac19b0) at ./nptl/pthread_cond_wait.c:627
+No locals.
+#5  0x00007ffff685b796 in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#6  0x00007ffff685b7db in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#7  0x00007ffff686184c in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#8  0x00007ffff66b3ac3 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+        ret = <optimized out>
+        pd = <optimized out>
+        out = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140737488346240, -7139168445740450217, 140737217590848, 2, 140737327609808, 140737488346592, 7139133016155520599, 7139182642996739671}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+#9  0x00007ffff67458d0 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+No locals.
+
+Thread 11 (Thread 0x7ffff05c8640 (LWP 706) "s000_baseline"):
+#0  __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:57
+        sc_cancel_oldtype = 0
+        sc_ret = <optimized out>
+        resultvar = <optimized out>
+        __arg6 = <optimized out>
+        __arg5 = <optimized out>
+        __arg4 = <optimized out>
+        __arg3 = <optimized out>
+        __arg2 = <optimized out>
+        __arg1 = <optimized out>
+        _a6 = <optimized out>
+        _a5 = <optimized out>
+        _a4 = <optimized out>
+        _a3 = <optimized out>
+        _a2 = <optimized out>
+        _a1 = <optimized out>
+#1  __futex_abstimed_wait_common (cancel=true, private=0, abstime=0x0, clockid=0, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:87
+        err = <optimized out>
+        clockbit = 256
+        op = 393
+        err = <optimized out>
+        clockbit = <optimized out>
+        op = <optimized out>
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x7ffff6ac1638, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at ./nptl/futex-internal.c:139
+No locals.
+#3  0x00007ffff66b2a41 in __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7ffff6ac19b0, cond=0x7ffff6ac1610) at ./nptl/pthread_cond_wait.c:503
+        spin = 0
+        buffer = {__routine = 0x7ffff66b2720 <__condvar_cleanup_waiting>, __arg = 0x7ffff05b7b20, __canceltype = -186039120, __prev = 0x0}
+        cbuffer = {wseq = 182, cond = 0x7ffff6ac1610, mutex = 0x7ffff6ac19b0, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        g1_start = <optimized out>
+        maxspin = 0
+        signals = <optimized out>
+        result = 0
+        wseq = 182
+        seq = 91
+        private = 0
+        maxspin = <optimized out>
+        err = <optimized out>
+        result = <optimized out>
+        wseq = <optimized out>
+        g = <optimized out>
+        seq = <optimized out>
+        flags = <optimized out>
+        private = <optimized out>
+        signals = <optimized out>
+        done = <optimized out>
+        g1_start = <optimized out>
+        spin = <optimized out>
+        buffer = <optimized out>
+        cbuffer = <optimized out>
+        s = <optimized out>
+#4  ___pthread_cond_wait (cond=0x7ffff6ac1610, mutex=0x7ffff6ac19b0) at ./nptl/pthread_cond_wait.c:627
+No locals.
+#5  0x00007ffff685b796 in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#6  0x00007ffff685b7db in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#7  0x00007ffff686184c in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#8  0x00007ffff66b3ac3 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+        ret = <optimized out>
+        pd = <optimized out>
+        out = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140737488346240, -7139168445740450217, 140737225983552, 2, 140737327609808, 140737488346592, 7139178096669130327, 7139182642996739671}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+#9  0x00007ffff67458d0 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+No locals.
+
+Thread 10 (Thread 0x7ffff0dc9640 (LWP 705) "s000_baseline"):
+#0  __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:57
+        sc_cancel_oldtype = 0
+        sc_ret = <optimized out>
+        resultvar = <optimized out>
+        __arg6 = <optimized out>
+        __arg5 = <optimized out>
+        __arg4 = <optimized out>
+        __arg3 = <optimized out>
+        __arg2 = <optimized out>
+        __arg1 = <optimized out>
+        _a6 = <optimized out>
+        _a5 = <optimized out>
+        _a4 = <optimized out>
+        _a3 = <optimized out>
+        _a2 = <optimized out>
+        _a1 = <optimized out>
+#1  __futex_abstimed_wait_common (cancel=true, private=0, abstime=0x0, clockid=0, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:87
+        err = <optimized out>
+        clockbit = 256
+        op = 393
+        err = <optimized out>
+        clockbit = <optimized out>
+        op = <optimized out>
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x7ffff6ac1638, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at ./nptl/futex-internal.c:139
+No locals.
+#3  0x00007ffff66b2a41 in __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7ffff6ac19b0, cond=0x7ffff6ac1610) at ./nptl/pthread_cond_wait.c:503
+        spin = 0
+        buffer = {__routine = 0x7ffff66b2720 <__condvar_cleanup_waiting>, __arg = 0x7ffff0db8b20, __canceltype = -186039120, __prev = 0x0}
+        cbuffer = {wseq = 164, cond = 0x7ffff6ac1610, mutex = 0x7ffff6ac19b0, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        g1_start = <optimized out>
+        maxspin = 0
+        signals = <optimized out>
+        result = 0
+        wseq = 164
+        seq = 82
+        private = 0
+        maxspin = <optimized out>
+        err = <optimized out>
+        result = <optimized out>
+        wseq = <optimized out>
+        g = <optimized out>
+        seq = <optimized out>
+        flags = <optimized out>
+        private = <optimized out>
+        signals = <optimized out>
+        done = <optimized out>
+        g1_start = <optimized out>
+        spin = <optimized out>
+        buffer = <optimized out>
+        cbuffer = <optimized out>
+        s = <optimized out>
+#4  ___pthread_cond_wait (cond=0x7ffff6ac1610, mutex=0x7ffff6ac19b0) at ./nptl/pthread_cond_wait.c:627
+No locals.
+#5  0x00007ffff685b796 in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#6  0x00007ffff685b7db in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#7  0x00007ffff686184c in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#8  0x00007ffff66b3ac3 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+        ret = <optimized out>
+        pd = <optimized out>
+        out = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140737488346240, -7139168445740450217, 140737234376256, 2, 140737327609808, 140737488346592, 7139179192422661719, 7139182642996739671}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+#9  0x00007ffff67458d0 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+No locals.
+
+Thread 9 (Thread 0x7ffff15ca640 (LWP 704) "s000_baseline"):
+#0  __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:57
+        sc_cancel_oldtype = 0
+        sc_ret = <optimized out>
+        resultvar = <optimized out>
+        __arg6 = <optimized out>
+        __arg5 = <optimized out>
+        __arg4 = <optimized out>
+        __arg3 = <optimized out>
+        __arg2 = <optimized out>
+        __arg1 = <optimized out>
+        _a6 = <optimized out>
+        _a5 = <optimized out>
+        _a4 = <optimized out>
+        _a3 = <optimized out>
+        _a2 = <optimized out>
+        _a1 = <optimized out>
+#1  __futex_abstimed_wait_common (cancel=true, private=0, abstime=0x0, clockid=0, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:87
+        err = <optimized out>
+        clockbit = 256
+        op = 393
+        err = <optimized out>
+        clockbit = <optimized out>
+        op = <optimized out>
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x7ffff6ac1638, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at ./nptl/futex-internal.c:139
+No locals.
+#3  0x00007ffff66b2a41 in __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7ffff6ac19b0, cond=0x7ffff6ac1610) at ./nptl/pthread_cond_wait.c:503
+        spin = 0
+        buffer = {__routine = 0x7ffff66b2720 <__condvar_cleanup_waiting>, __arg = 0x7ffff15b9b20, __canceltype = -186039120, __prev = 0x0}
+        cbuffer = {wseq = 178, cond = 0x7ffff6ac1610, mutex = 0x7ffff6ac19b0, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        g1_start = <optimized out>
+        maxspin = 0
+        signals = <optimized out>
+        result = 0
+        wseq = 178
+        seq = 89
+        private = 0
+        maxspin = <optimized out>
+        err = <optimized out>
+        result = <optimized out>
+        wseq = <optimized out>
+        g = <optimized out>
+        seq = <optimized out>
+        flags = <optimized out>
+        private = <optimized out>
+        signals = <optimized out>
+        done = <optimized out>
+        g1_start = <optimized out>
+        spin = <optimized out>
+        buffer = <optimized out>
+        cbuffer = <optimized out>
+        s = <optimized out>
+#4  ___pthread_cond_wait (cond=0x7ffff6ac1610, mutex=0x7ffff6ac19b0) at ./nptl/pthread_cond_wait.c:627
+No locals.
+#5  0x00007ffff685b796 in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#6  0x00007ffff685b7db in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#7  0x00007ffff686184c in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#8  0x00007ffff66b3ac3 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+        ret = <optimized out>
+        pd = <optimized out>
+        out = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140737488346240, -7139168445740450217, 140737242768960, 2, 140737327609808, 140737488346592, 7139180292471160407, 7139182642996739671}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+#9  0x00007ffff67458d0 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+No locals.
+
+Thread 8 (Thread 0x7ffff1dcb640 (LWP 703) "s000_baseline"):
+#0  __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:57
+        sc_cancel_oldtype = 0
+        sc_ret = <optimized out>
+        resultvar = <optimized out>
+        __arg6 = <optimized out>
+        __arg5 = <optimized out>
+        __arg4 = <optimized out>
+        __arg3 = <optimized out>
+        __arg2 = <optimized out>
+        __arg1 = <optimized out>
+        _a6 = <optimized out>
+        _a5 = <optimized out>
+        _a4 = <optimized out>
+        _a3 = <optimized out>
+        _a2 = <optimized out>
+        _a1 = <optimized out>
+#1  __futex_abstimed_wait_common (cancel=true, private=0, abstime=0x0, clockid=0, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:87
+        err = <optimized out>
+        clockbit = 256
+        op = 393
+        err = <optimized out>
+        clockbit = <optimized out>
+        op = <optimized out>
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x7ffff6ac1638, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at ./nptl/futex-internal.c:139
+No locals.
+#3  0x00007ffff66b2a41 in __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7ffff6ac19b0, cond=0x7ffff6ac1610) at ./nptl/pthread_cond_wait.c:503
+        spin = 0
+        buffer = {__routine = 0x7ffff66b2720 <__condvar_cleanup_waiting>, __arg = 0x7ffff1dbab20, __canceltype = -186039120, __prev = 0x0}
+        cbuffer = {wseq = 166, cond = 0x7ffff6ac1610, mutex = 0x7ffff6ac19b0, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        g1_start = <optimized out>
+        maxspin = 0
+        signals = <optimized out>
+        result = 0
+        wseq = 166
+        seq = 83
+        private = 0
+        maxspin = <optimized out>
+        err = <optimized out>
+        result = <optimized out>
+        wseq = <optimized out>
+        g = <optimized out>
+        seq = <optimized out>
+        flags = <optimized out>
+        private = <optimized out>
+        signals = <optimized out>
+        done = <optimized out>
+        g1_start = <optimized out>
+        spin = <optimized out>
+        buffer = <optimized out>
+        cbuffer = <optimized out>
+        s = <optimized out>
+#4  ___pthread_cond_wait (cond=0x7ffff6ac1610, mutex=0x7ffff6ac19b0) at ./nptl/pthread_cond_wait.c:627
+No locals.
+#5  0x00007ffff685b796 in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#6  0x00007ffff685b7db in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#7  0x00007ffff686184c in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#8  0x00007ffff66b3ac3 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+        ret = <optimized out>
+        pd = <optimized out>
+        out = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140737488346240, -7139168445740450217, 140737251161664, 2, 140737327609808, 140737488346592, 7139181392519659095, 7139182642996739671}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+#9  0x00007ffff67458d0 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+No locals.
+
+Thread 7 (Thread 0x7ffff25cc640 (LWP 702) "s000_baseline"):
+#0  __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:57
+        sc_cancel_oldtype = 0
+        sc_ret = <optimized out>
+        resultvar = <optimized out>
+        __arg6 = <optimized out>
+        __arg5 = <optimized out>
+        __arg4 = <optimized out>
+        __arg3 = <optimized out>
+        __arg2 = <optimized out>
+        __arg1 = <optimized out>
+        _a6 = <optimized out>
+        _a5 = <optimized out>
+        _a4 = <optimized out>
+        _a3 = <optimized out>
+        _a2 = <optimized out>
+        _a1 = <optimized out>
+#1  __futex_abstimed_wait_common (cancel=true, private=0, abstime=0x0, clockid=0, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:87
+        err = <optimized out>
+        clockbit = 256
+        op = 393
+        err = <optimized out>
+        clockbit = <optimized out>
+        op = <optimized out>
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x7ffff6ac1638, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at ./nptl/futex-internal.c:139
+No locals.
+#3  0x00007ffff66b2a41 in __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7ffff6ac19b0, cond=0x7ffff6ac1610) at ./nptl/pthread_cond_wait.c:503
+        spin = 0
+        buffer = {__routine = 0x7ffff66b2720 <__condvar_cleanup_waiting>, __arg = 0x7ffff25bbb20, __canceltype = -186039120, __prev = 0x0}
+        cbuffer = {wseq = 154, cond = 0x7ffff6ac1610, mutex = 0x7ffff6ac19b0, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        g1_start = <optimized out>
+        maxspin = 0
+        signals = <optimized out>
+        result = 0
+        wseq = 154
+        seq = 77
+        private = 0
+        maxspin = <optimized out>
+        err = <optimized out>
+        result = <optimized out>
+        wseq = <optimized out>
+        g = <optimized out>
+        seq = <optimized out>
+        flags = <optimized out>
+        private = <optimized out>
+        signals = <optimized out>
+        done = <optimized out>
+        g1_start = <optimized out>
+        spin = <optimized out>
+        buffer = <optimized out>
+        cbuffer = <optimized out>
+        s = <optimized out>
+#4  ___pthread_cond_wait (cond=0x7ffff6ac1610, mutex=0x7ffff6ac19b0) at ./nptl/pthread_cond_wait.c:627
+No locals.
+#5  0x00007ffff685b796 in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#6  0x00007ffff685b7db in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#7  0x00007ffff686184c in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#8  0x00007ffff66b3ac3 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+        ret = <optimized out>
+        pd = <optimized out>
+        out = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140737488346240, -7139168445740450217, 140737259554368, 2, 140737327609808, 140737488346592, 7139173696475135575, 7139182642996739671}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+#9  0x00007ffff67458d0 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+No locals.
+
+Thread 6 (Thread 0x7ffff2dcd640 (LWP 701) "s000_baseline"):
+#0  __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:57
+        sc_cancel_oldtype = 0
+        sc_ret = <optimized out>
+        resultvar = <optimized out>
+        __arg6 = <optimized out>
+        __arg5 = <optimized out>
+        __arg4 = <optimized out>
+        __arg3 = <optimized out>
+        __arg2 = <optimized out>
+        __arg1 = <optimized out>
+        _a6 = <optimized out>
+        _a5 = <optimized out>
+        _a4 = <optimized out>
+        _a3 = <optimized out>
+        _a2 = <optimized out>
+        _a1 = <optimized out>
+#1  __futex_abstimed_wait_common (cancel=true, private=0, abstime=0x0, clockid=0, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:87
+        err = <optimized out>
+        clockbit = 256
+        op = 393
+        err = <optimized out>
+        clockbit = <optimized out>
+        op = <optimized out>
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x7ffff6ac1638, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at ./nptl/futex-internal.c:139
+No locals.
+#3  0x00007ffff66b2a41 in __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7ffff6ac19b0, cond=0x7ffff6ac1610) at ./nptl/pthread_cond_wait.c:503
+        spin = 0
+        buffer = {__routine = 0x7ffff66b2720 <__condvar_cleanup_waiting>, __arg = 0x7ffff2dbcb20, __canceltype = -186039120, __prev = 0x0}
+        cbuffer = {wseq = 176, cond = 0x7ffff6ac1610, mutex = 0x7ffff6ac19b0, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        g1_start = <optimized out>
+        maxspin = 0
+        signals = <optimized out>
+        result = 0
+        wseq = 176
+        seq = 88
+        private = 0
+        maxspin = <optimized out>
+        err = <optimized out>
+        result = <optimized out>
+        wseq = <optimized out>
+        g = <optimized out>
+        seq = <optimized out>
+        flags = <optimized out>
+        private = <optimized out>
+        signals = <optimized out>
+        done = <optimized out>
+        g1_start = <optimized out>
+        spin = <optimized out>
+        buffer = <optimized out>
+        cbuffer = <optimized out>
+        s = <optimized out>
+#4  ___pthread_cond_wait (cond=0x7ffff6ac1610, mutex=0x7ffff6ac19b0) at ./nptl/pthread_cond_wait.c:627
+No locals.
+#5  0x00007ffff685b796 in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#6  0x00007ffff685b7db in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#7  0x00007ffff686184c in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#8  0x00007ffff66b3ac3 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+        ret = <optimized out>
+        pd = <optimized out>
+        out = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140737488346240, -7139168445740450217, 140737267947072, 2, 140737327609808, 140737488346592, 7139174792228666967, 7139182642996739671}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+#9  0x00007ffff67458d0 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+No locals.
+
+Thread 5 (Thread 0x7ffff35ce640 (LWP 700) "s000_baseline"):
+#0  __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:57
+        sc_cancel_oldtype = 0
+        sc_ret = <optimized out>
+        resultvar = <optimized out>
+        __arg6 = <optimized out>
+        __arg5 = <optimized out>
+        __arg4 = <optimized out>
+        __arg3 = <optimized out>
+        __arg2 = <optimized out>
+        __arg1 = <optimized out>
+        _a6 = <optimized out>
+        _a5 = <optimized out>
+        _a4 = <optimized out>
+        _a3 = <optimized out>
+        _a2 = <optimized out>
+        _a1 = <optimized out>
+#1  __futex_abstimed_wait_common (cancel=true, private=0, abstime=0x0, clockid=0, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:87
+        err = <optimized out>
+        clockbit = 256
+        op = 393
+        err = <optimized out>
+        clockbit = <optimized out>
+        op = <optimized out>
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x7ffff6ac1638, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at ./nptl/futex-internal.c:139
+No locals.
+#3  0x00007ffff66b2a41 in __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7ffff6ac19b0, cond=0x7ffff6ac1610) at ./nptl/pthread_cond_wait.c:503
+        spin = 0
+        buffer = {__routine = 0x7ffff66b2720 <__condvar_cleanup_waiting>, __arg = 0x7ffff35bdb20, __canceltype = -186039120, __prev = 0x0}
+        cbuffer = {wseq = 172, cond = 0x7ffff6ac1610, mutex = 0x7ffff6ac19b0, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        g1_start = <optimized out>
+        maxspin = 0
+        signals = <optimized out>
+        result = 0
+        wseq = 172
+        seq = 86
+        private = 0
+        maxspin = <optimized out>
+        err = <optimized out>
+        result = <optimized out>
+        wseq = <optimized out>
+        g = <optimized out>
+        seq = <optimized out>
+        flags = <optimized out>
+        private = <optimized out>
+        signals = <optimized out>
+        done = <optimized out>
+        g1_start = <optimized out>
+        spin = <optimized out>
+        buffer = <optimized out>
+        cbuffer = <optimized out>
+        s = <optimized out>
+#4  ___pthread_cond_wait (cond=0x7ffff6ac1610, mutex=0x7ffff6ac19b0) at ./nptl/pthread_cond_wait.c:627
+No locals.
+#5  0x00007ffff685b796 in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#6  0x00007ffff685b7db in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#7  0x00007ffff686184c in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#8  0x00007ffff66b3ac3 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+        ret = <optimized out>
+        pd = <optimized out>
+        out = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140737488346240, -7139168445740450217, 140737276339776, 2, 140737327609808, 140737488346592, 7139175892277165655, 7139182642996739671}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+#9  0x00007ffff67458d0 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+No locals.
+
+Thread 4 (Thread 0x7ffff3dcf640 (LWP 699) "s000_baseline"):
+#0  __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:57
+        sc_cancel_oldtype = 0
+        sc_ret = <optimized out>
+        resultvar = <optimized out>
+        __arg6 = <optimized out>
+        __arg5 = <optimized out>
+        __arg4 = <optimized out>
+        __arg3 = <optimized out>
+        __arg2 = <optimized out>
+        __arg1 = <optimized out>
+        _a6 = <optimized out>
+        _a5 = <optimized out>
+        _a4 = <optimized out>
+        _a3 = <optimized out>
+        _a2 = <optimized out>
+        _a1 = <optimized out>
+#1  __futex_abstimed_wait_common (cancel=true, private=0, abstime=0x0, clockid=0, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:87
+        err = <optimized out>
+        clockbit = 256
+        op = 393
+        err = <optimized out>
+        clockbit = <optimized out>
+        op = <optimized out>
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x7ffff6ac1638, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at ./nptl/futex-internal.c:139
+No locals.
+#3  0x00007ffff66b2a41 in __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7ffff6ac19b0, cond=0x7ffff6ac1610) at ./nptl/pthread_cond_wait.c:503
+        spin = 0
+        buffer = {__routine = 0x7ffff66b2720 <__condvar_cleanup_waiting>, __arg = 0x7ffff3dbeb20, __canceltype = -186039136, __prev = 0x0}
+        cbuffer = {wseq = 170, cond = 0x7ffff6ac1610, mutex = 0x7ffff6ac19b0, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        g1_start = <optimized out>
+        maxspin = 0
+        signals = <optimized out>
+        result = 0
+        wseq = 170
+        seq = 85
+        private = 0
+        maxspin = <optimized out>
+        err = <optimized out>
+        result = <optimized out>
+        wseq = <optimized out>
+        g = <optimized out>
+        seq = <optimized out>
+        flags = <optimized out>
+        private = <optimized out>
+        signals = <optimized out>
+        done = <optimized out>
+        g1_start = <optimized out>
+        spin = <optimized out>
+        buffer = <optimized out>
+        cbuffer = <optimized out>
+        s = <optimized out>
+#4  ___pthread_cond_wait (cond=0x7ffff6ac1610, mutex=0x7ffff6ac19b0) at ./nptl/pthread_cond_wait.c:627
+No locals.
+#5  0x00007ffff685b796 in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#6  0x00007ffff685b7db in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#7  0x00007ffff686184c in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#8  0x00007ffff66b3ac3 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+        ret = <optimized out>
+        pd = <optimized out>
+        out = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140737488346240, -7139168445740450217, 140737284732480, 2, 140737327609808, 140737488346592, 7139176992325664343, 7139182642996739671}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+#9  0x00007ffff67458d0 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+No locals.
+
+Thread 3 (Thread 0x7ffff45d0640 (LWP 698) "s000_baseline"):
+#0  __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:57
+        sc_cancel_oldtype = 0
+        sc_ret = <optimized out>
+        resultvar = <optimized out>
+        __arg6 = <optimized out>
+        __arg5 = <optimized out>
+        __arg4 = <optimized out>
+        __arg3 = <optimized out>
+        __arg2 = <optimized out>
+        __arg1 = <optimized out>
+        _a6 = <optimized out>
+        _a5 = <optimized out>
+        _a4 = <optimized out>
+        _a3 = <optimized out>
+        _a2 = <optimized out>
+        _a1 = <optimized out>
+#1  __futex_abstimed_wait_common (cancel=true, private=0, abstime=0x0, clockid=0, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:87
+        err = <optimized out>
+        clockbit = 256
+        op = 393
+        err = <optimized out>
+        clockbit = <optimized out>
+        op = <optimized out>
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x7ffff6ac1638, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at ./nptl/futex-internal.c:139
+No locals.
+#3  0x00007ffff66b2a41 in __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7ffff6ac19b0, cond=0x7ffff6ac1610) at ./nptl/pthread_cond_wait.c:503
+        spin = 0
+        buffer = {__routine = 0x7ffff66b2720 <__condvar_cleanup_waiting>, __arg = 0x7ffff45bfb20, __canceltype = -186039136, __prev = 0x0}
+        cbuffer = {wseq = 162, cond = 0x7ffff6ac1610, mutex = 0x7ffff6ac19b0, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        g1_start = <optimized out>
+        maxspin = 0
+        signals = <optimized out>
+        result = 0
+        wseq = 162
+        seq = 81
+        private = 0
+        maxspin = <optimized out>
+        err = <optimized out>
+        result = <optimized out>
+        wseq = <optimized out>
+        g = <optimized out>
+        seq = <optimized out>
+        flags = <optimized out>
+        private = <optimized out>
+        signals = <optimized out>
+        done = <optimized out>
+        g1_start = <optimized out>
+        spin = <optimized out>
+        buffer = <optimized out>
+        cbuffer = <optimized out>
+        s = <optimized out>
+#4  ___pthread_cond_wait (cond=0x7ffff6ac1610, mutex=0x7ffff6ac19b0) at ./nptl/pthread_cond_wait.c:627
+No locals.
+#5  0x00007ffff685b796 in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#6  0x00007ffff685b7db in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#7  0x00007ffff686184c in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#8  0x00007ffff66b3ac3 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+        ret = <optimized out>
+        pd = <optimized out>
+        out = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140737488346240, -7139168445740450217, 140737293125184, 2, 140737327609808, 140737488346592, 7139186888467185239, 7139182642996739671}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+#9  0x00007ffff67458d0 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+No locals.
+
+Thread 2 (Thread 0x7ffff4dd1640 (LWP 697) "s000_baseline"):
+#0  __futex_abstimed_wait_common64 (private=0, cancel=true, abstime=0x0, op=393, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:57
+        sc_cancel_oldtype = 0
+        sc_ret = <optimized out>
+        resultvar = <optimized out>
+        __arg6 = <optimized out>
+        __arg5 = <optimized out>
+        __arg4 = <optimized out>
+        __arg3 = <optimized out>
+        __arg2 = <optimized out>
+        __arg1 = <optimized out>
+        _a6 = <optimized out>
+        _a5 = <optimized out>
+        _a4 = <optimized out>
+        _a3 = <optimized out>
+        _a2 = <optimized out>
+        _a1 = <optimized out>
+#1  __futex_abstimed_wait_common (cancel=true, private=0, abstime=0x0, clockid=0, expected=0, futex_word=0x7ffff6ac1638) at ./nptl/futex-internal.c:87
+        err = <optimized out>
+        clockbit = 256
+        op = 393
+        err = <optimized out>
+        clockbit = <optimized out>
+        op = <optimized out>
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x7ffff6ac1638, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at ./nptl/futex-internal.c:139
+No locals.
+#3  0x00007ffff66b2a41 in __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7ffff6ac19b0, cond=0x7ffff6ac1610) at ./nptl/pthread_cond_wait.c:503
+        spin = 0
+        buffer = {__routine = 0x7ffff66b2720 <__condvar_cleanup_waiting>, __arg = 0x7ffff4dc0b20, __canceltype = -186039120, __prev = 0x0}
+        cbuffer = {wseq = 156, cond = 0x7ffff6ac1610, mutex = 0x7ffff6ac19b0, private = 0}
+        err = <optimized out>
+        g = 0
+        flags = <optimized out>
+        g1_start = <optimized out>
+        maxspin = 0
+        signals = <optimized out>
+        result = 0
+        wseq = 156
+        seq = 78
+        private = 0
+        maxspin = <optimized out>
+        err = <optimized out>
+        result = <optimized out>
+        wseq = <optimized out>
+        g = <optimized out>
+        seq = <optimized out>
+        flags = <optimized out>
+        private = <optimized out>
+        signals = <optimized out>
+        done = <optimized out>
+        g1_start = <optimized out>
+        spin = <optimized out>
+        buffer = <optimized out>
+        cbuffer = <optimized out>
+        s = <optimized out>
+#4  ___pthread_cond_wait (cond=0x7ffff6ac1610, mutex=0x7ffff6ac19b0) at ./nptl/pthread_cond_wait.c:627
+No locals.
+#5  0x00007ffff685b796 in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#6  0x00007ffff685b7db in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#7  0x00007ffff686184c in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libomcgc.so.1
+No symbol table info available.
+#8  0x00007ffff66b3ac3 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+        ret = <optimized out>
+        pd = <optimized out>
+        out = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140737488346240, -7139168445740450217, 140737301517888, 2, 140737327609808, 140737488346592, 7139187984220716631, 7139182642996739671}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = <optimized out>
+#9  0x00007ffff67458d0 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+No locals.
+
+Thread 1 (Thread 0x7ffff4ed7080 (LWP 694) "s000_baseline"):
+#0  __GI___libc_write (nbytes=70, buf=0x555555773ee0, fd=1) at ../sysdeps/unix/sysv/linux/write.c:26
+        sc_ret = 70
+        sc_cancel_oldtype = 0
+        __arg3 = <optimized out>
+        _a2 = <optimized out>
+        sc_ret = <optimized out>
+        __value = <optimized out>
+        sc_ret = <optimized out>
+        __arg1 = <optimized out>
+        _a3 = <optimized out>
+        resultvar = <optimized out>
+        __arg2 = <optimized out>
+        _a1 = <optimized out>
+#1  __GI___libc_write (fd=1, buf=0x555555773ee0, nbytes=70) at ../sysdeps/unix/sysv/linux/write.c:24
+No locals.
+#2  0x00007ffff66a9eed in _IO_new_file_write (f=0x7ffff683a780 <_IO_2_1_stdout_>, data=0x555555773ee0, n=70) at ./libio/fileops.c:1180
+        count = <optimized out>
+        to_do = 70
+#3  0x00007ffff66ab9e1 in new_do_write (to_do=70, data=0x555555773ee0 "|", ' ' <repeats 17 times>, "| |       | | |  number of iterations", ' ' <repeats 11 times>, ": 1\n =        260.17477\t\t nom =", ' ' <repeats 16 times>, "1\nt time 0.000000. That might raise performance issues, for more information use -lv LO"..., fp=0x7ffff683a780 <_IO_2_1_stdout_>) at ./libio/libioP.h:947
+        count = <optimized out>
+        count = <optimized out>
+        new_pos = <optimized out>
+#4  _IO_new_do_write (to_do=70, data=0x555555773ee0 "|", ' ' <repeats 17 times>, "| |       | | |  number of iterations", ' ' <repeats 11 times>, ": 1\n =        260.17477\t\t nom =", ' ' <repeats 16 times>, "1\nt time 0.000000. That might raise performance issues, for more information use -lv LO"..., fp=0x7ffff683a780 <_IO_2_1_stdout_>) at ./libio/fileops.c:425
+No locals.
+#5  _IO_new_do_write (fp=0x7ffff683a780 <_IO_2_1_stdout_>, data=0x555555773ee0 "|", ' ' <repeats 17 times>, "| |       | | |  number of iterations", ' ' <repeats 11 times>, ": 1\n =        260.17477\t\t nom =", ' ' <repeats 16 times>, "1\nt time 0.000000. That might raise performance issues, for more information use -lv LO"..., to_do=70) at ./libio/fileops.c:422
+No locals.
+#6  0x00007ffff66ad9c2 in _IO_flush_all_lockp (do_lock=1) at ./libio/libioP.h:947
+        _cleanup_start_doit = true
+        _buffer = {__routine = 0x7ffff66abfe0 <flush_cleanup>, __arg = 0x0, __canceltype = 0, __prev = 0x0}
+        _cleanup_routine = 0x7ffff66abfe0 <flush_cleanup>
+        result = 0
+        fp = 0x7ffff683a780 <_IO_2_1_stdout_>
+#7  0x00007ffff73d4410 in messageText () from /usr/bin/../lib/x86_64-linux-gnu/omc/libSimulationRuntimeC.so
+No symbol table info available.
+#8  0x00007ffff73d46b2 in infoStreamPrint () from /usr/bin/../lib/x86_64-linux-gnu/omc/libSimulationRuntimeC.so
+No symbol table info available.
+#9  0x00007ffff73f41a6 in printNonLinearFinishInfo () from /usr/bin/../lib/x86_64-linux-gnu/omc/libSimulationRuntimeC.so
+No symbol table info available.
+#10 0x00007ffff73f5188 in solve_nonlinear_system () from /usr/bin/../lib/x86_64-linux-gnu/omc/libSimulationRuntimeC.so
+No symbol table info available.
+#11 0x00005555555a4bc2 in s000_baseline_eqFunction_2209 ()
+No symbol table info available.
+#12 0x00005555555a7405 in s000_baseline_functionDAE ()
+No symbol table info available.
+#13 0x00007ffff73f6208 in updateDiscreteSystem () from /usr/bin/../lib/x86_64-linux-gnu/omc/libSimulationRuntimeC.so
+No symbol table info available.
+#14 0x00007ffff742d338 in initialization () from /usr/bin/../lib/x86_64-linux-gnu/omc/libSimulationRuntimeC.so
+No symbol table info available.
+#15 0x00007ffff73fed5e in initializeModel () from /usr/bin/../lib/x86_64-linux-gnu/omc/libSimulationRuntimeC.so
+No symbol table info available.
+#16 0x00007ffff73fff31 in solver_main () from /usr/bin/../lib/x86_64-linux-gnu/omc/libSimulationRuntimeC.so
+No symbol table info available.
+#17 0x00007ffff74625ec in ?? () from /usr/bin/../lib/x86_64-linux-gnu/omc/libSimulationRuntimeC.so
+No symbol table info available.
+#18 0x00007ffff7461a2b in startNonInteractiveSimulation () from /usr/bin/../lib/x86_64-linux-gnu/omc/libSimulationRuntimeC.so
+No symbol table info available.
+#19 0x00007ffff74645f7 in _main_SimulationRuntime () from /usr/bin/../lib/x86_64-linux-gnu/omc/libSimulationRuntimeC.so
+No symbol table info available.
+#20 0x00005555555a7931 in main ()
+No symbol table info available.

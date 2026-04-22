@@ -1,0 +1,5 @@
+# Minimal Ingest Summary
+
+- Source template: `ForcedConvection` from Buildings library
+- Generated files: `case.ffd`, `case.cfd`, `case.dat`, `sensor_locations.csv`
+- Sensors disabled for this regression case

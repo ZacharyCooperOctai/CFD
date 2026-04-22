@@ -1,0 +1,56 @@
+// =============================================================================
+// validation/run_steady.ffd
+// FFD parameter file for standalone steady-state validation run.
+//
+// This is a copy of dc_model.ffd with paths adjusted to point back to the
+// parent directory.  Run from the validation/ directory with:
+//
+//     ./ffd run_steady.ffd
+//
+// or from the project root:
+//
+//     ./ffd validation/run_steady.ffd
+//
+// Differences from dc_model.ffd:
+//   - inpu.parameter_file_name and inpu.block_file_name point to parent dir
+//   - No Modelica coupling (standalone FFD run with fixed BCs)
+//   - Longer run time to reach quasi-steady state
+// =============================================================================
+
+inpu.parameter_file_format SCI
+inpu.parameter_file_name ../dc_model.cfd
+inpu.block_file_name ../dc_model.dat
+
+// --- Fluid properties (air at ~20 deg C) ------------------------------------
+prob.nu          1.516e-05
+prob.rho         1.204
+prob.gravx       0
+prob.gravy       0
+prob.gravz       -9.81
+prob.cond        0.0257
+prob.Cp          1006.0
+prob.beta        0.00343
+prob.diff        0.00001
+prob.alpha       2.14e-05
+prob.coeff_h     0.004
+prob.Temp_Buoyancy 22.0
+
+// --- Solver settings --------------------------------------------------------
+// Run for 900 s (15-minute window) to reach near-steady state under fixed BCs
+solv.dt          0.1
+solv.t_start     0.0
+solv.t_end       900.0
+solv.max_iter    50
+solv.conv_tol    1e-6
+
+// --- Initial conditions (all CRACs on at rated flow, 14 deg C supply) -------
+init.T           22.0
+init.u           0.0
+init.v           0.0
+init.w           0.0
+
+// --- Output settings --------------------------------------------------------
+// Write field snapshots every 90 s for post-processing
+outp.write_field   1
+outp.field_interval  90.0
+outp.write_log     1

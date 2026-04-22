@@ -1,0 +1,4 @@
+ffd_dll.c:49:10: warning: address of stack memory associated with local variable 'workerThreadHandle' returned [-Wreturn-stack-address]
+   49 |   return workerThreadHandle;
+      |          ^~~~~~~~~~~~~~~~~~
+1 warning generated.
