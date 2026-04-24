@@ -20,10 +20,63 @@
       "cold_face": "-y",
       "total_heat_w": 65000.0,
       "heat_flux_w_m2": 2545.2267209648367,
+      "active_rack_count": 13,
       "fan_q_max_m3s": 3.835,
       "fan_dp_max_pa": 80.0,
       "fan_q_ref_m3s": 1.9175,
-      "fan_dp_ref_pa": 60.0
+      "fan_dp_ref_pa": 60.0,
+      "body_bounds": {
+        "x_min": 2.2996774193548393,
+        "x_max": 13.600322580645162,
+        "y_min": 2.6,
+        "y_max": 3.6900000000000004,
+        "z_min": -0.0014925373134326847,
+        "z_max": 2.25
+      },
+      "cold_face_bounds": {
+        "x_min": 2.2996774193548393,
+        "x_max": 13.600322580645162,
+        "y_min": 2.573076923076923,
+        "y_max": 2.6,
+        "z_min": -0.0014925373134326847,
+        "z_max": 2.25
+      },
+      "hot_face_bounds": {
+        "x_min": 2.2996774193548393,
+        "x_max": 13.600322580645162,
+        "y_min": 3.6900000000000004,
+        "y_max": 3.95,
+        "z_min": -0.0014925373134326847,
+        "z_max": 2.25
+      },
+      "plume_bounds": {
+        "x_min": 2.2996774193548393,
+        "x_max": 13.600322580645162,
+        "y_min": 3.95,
+        "y_max": 4.5600000000000005,
+        "z_min": -0.0014925373134326847,
+        "z_max": 2.25
+      },
+      "flow_direction": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "airflow_m3s": 1.9175,
+      "face_area_m2": 25.443318247472316,
+      "target_velocity_m_s": 0.07536359767816429,
+      "hot_face_depth_m": 0.2599999999999998,
+      "hot_face_volume_m3": 6.615262744342797,
+      "plume_depth_m": 0.6100000000000003,
+      "momentum_damping_s_inv": 15.0,
+      "thermal_damping_s_inv": 5.0,
+      "plume_mixing_s_inv": 1.5,
+      "max_source_delta_t_per_step_c": 2.0,
+      "max_delta_t_c": 60.0,
+      "body_cell_count": 131370,
+      "cold_face_cell_count": 8758,
+      "hot_face_cell_count": 61306,
+      "plume_cell_count": 140128
     },
     {
       "id": "row_2",
@@ -37,10 +90,63 @@
       "cold_face": "+y",
       "total_heat_w": 65000.0,
       "heat_flux_w_m2": 2545.2267209648367,
+      "active_rack_count": 13,
       "fan_q_max_m3s": 3.835,
       "fan_dp_max_pa": 80.0,
       "fan_q_ref_m3s": 1.9175,
-      "fan_dp_ref_pa": 60.0
+      "fan_dp_ref_pa": 60.0,
+      "body_bounds": {
+        "x_min": 2.2996774193548393,
+        "x_max": 13.600322580645162,
+        "y_min": 5.2,
+        "y_max": 6.288461538461539,
+        "z_min": -0.0014925373134326847,
+        "z_max": 2.25
+      },
+      "cold_face_bounds": {
+        "x_min": 2.2996774193548393,
+        "x_max": 13.600322580645162,
+        "y_min": 6.288461538461539,
+        "y_max": 6.3269230769230775,
+        "z_min": -0.0014925373134326847,
+        "z_max": 2.25
+      },
+      "hot_face_bounds": {
+        "x_min": 2.2996774193548393,
+        "x_max": 13.600322580645162,
+        "y_min": 4.95,
+        "y_max": 5.2,
+        "z_min": -0.0014925373134326847,
+        "z_max": 2.25
+      },
+      "plume_bounds": {
+        "x_min": 2.2996774193548393,
+        "x_max": 13.600322580645162,
+        "y_min": 4.33,
+        "y_max": 4.95,
+        "z_min": -0.0014925373134326847,
+        "z_max": 2.25
+      },
+      "flow_direction": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "airflow_m3s": 1.9175,
+      "face_area_m2": 25.443318247472316,
+      "target_velocity_m_s": 0.07536359767816429,
+      "hot_face_depth_m": 0.25,
+      "hot_face_volume_m3": 6.360829561868079,
+      "plume_depth_m": 0.6200000000000001,
+      "momentum_damping_s_inv": 15.0,
+      "thermal_damping_s_inv": 5.0,
+      "plume_mixing_s_inv": 1.5,
+      "max_source_delta_t_per_step_c": 2.0,
+      "max_delta_t_c": 60.0,
+      "body_cell_count": 131370,
+      "cold_face_cell_count": 8758,
+      "hot_face_cell_count": 61306,
+      "plume_cell_count": 140128
     },
     {
       "id": "row_3",
@@ -54,10 +160,63 @@
       "cold_face": "-y",
       "total_heat_w": 65000.0,
       "heat_flux_w_m2": 2545.2267209648367,
+      "active_rack_count": 13,
       "fan_q_max_m3s": 3.835,
       "fan_dp_max_pa": 80.0,
       "fan_q_ref_m3s": 1.9175,
-      "fan_dp_ref_pa": 60.0
+      "fan_dp_ref_pa": 60.0,
+      "body_bounds": {
+        "x_min": 2.2996774193548393,
+        "x_max": 13.600322580645162,
+        "y_min": 7.8,
+        "y_max": 8.923076923076923,
+        "z_min": -0.0014925373134326847,
+        "z_max": 2.25
+      },
+      "cold_face_bounds": {
+        "x_min": 2.2996774193548393,
+        "x_max": 13.600322580645162,
+        "y_min": 7.773076923076923,
+        "y_max": 7.8,
+        "z_min": -0.0014925373134326847,
+        "z_max": 2.25
+      },
+      "hot_face_bounds": {
+        "x_min": 2.2996774193548393,
+        "x_max": 13.600322580645162,
+        "y_min": 8.923076923076923,
+        "y_max": 9.200000000000001,
+        "z_min": -0.0014925373134326847,
+        "z_max": 2.25
+      },
+      "plume_bounds": {
+        "x_min": 2.2996774193548393,
+        "x_max": 13.600322580645162,
+        "y_min": 9.200000000000001,
+        "y_max": 9.825609756097561,
+        "z_min": -0.0014925373134326847,
+        "z_max": 2.25
+      },
+      "flow_direction": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "airflow_m3s": 1.9175,
+      "face_area_m2": 25.443318247472316,
+      "target_velocity_m_s": 0.07536359767816429,
+      "hot_face_depth_m": 0.2769230769230777,
+      "hot_face_volume_m3": 7.045841976223123,
+      "plume_depth_m": 0.6256097560975604,
+      "momentum_damping_s_inv": 15.0,
+      "thermal_damping_s_inv": 5.0,
+      "plume_mixing_s_inv": 1.5,
+      "max_source_delta_t_per_step_c": 2.0,
+      "max_delta_t_c": 60.0,
+      "body_cell_count": 140128,
+      "cold_face_cell_count": 8758,
+      "hot_face_cell_count": 61306,
+      "plume_cell_count": 140128
     },
     {
       "id": "row_4",
@@ -71,10 +230,63 @@
       "cold_face": "+y",
       "total_heat_w": 65000.0,
       "heat_flux_w_m2": 2545.2267209648367,
+      "active_rack_count": 13,
       "fan_q_max_m3s": 3.835,
       "fan_dp_max_pa": 80.0,
       "fan_q_ref_m3s": 1.9175,
-      "fan_dp_ref_pa": 60.0
+      "fan_dp_ref_pa": 60.0,
+      "body_bounds": {
+        "x_min": 2.2996774193548393,
+        "x_max": 13.600322580645162,
+        "y_min": 10.410975609756099,
+        "y_max": 11.523076923076923,
+        "z_min": -0.0014925373134326847,
+        "z_max": 2.25
+      },
+      "cold_face_bounds": {
+        "x_min": 2.2996774193548393,
+        "x_max": 13.600322580645162,
+        "y_min": 11.523076923076923,
+        "y_max": 11.565384615384614,
+        "z_min": -0.0014925373134326847,
+        "z_max": 2.25
+      },
+      "hot_face_bounds": {
+        "x_min": 2.2996774193548393,
+        "x_max": 13.600322580645162,
+        "y_min": 10.137804878048781,
+        "y_max": 10.410975609756099,
+        "z_min": -0.0014925373134326847,
+        "z_max": 2.25
+      },
+      "plume_bounds": {
+        "x_min": 2.2996774193548393,
+        "x_max": 13.600322580645162,
+        "y_min": 9.513414634146342,
+        "y_max": 10.137804878048781,
+        "z_min": -0.0014925373134326847,
+        "z_max": 2.25
+      },
+      "flow_direction": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "airflow_m3s": 1.9175,
+      "face_area_m2": 25.443318247472316,
+      "target_velocity_m_s": 0.07536359767816429,
+      "hot_face_depth_m": 0.2731707317073173,
+      "hot_face_volume_m3": 6.950369862724151,
+      "plume_depth_m": 0.6243902439024396,
+      "momentum_damping_s_inv": 15.0,
+      "thermal_damping_s_inv": 5.0,
+      "plume_mixing_s_inv": 1.5,
+      "max_source_delta_t_per_step_c": 2.0,
+      "max_delta_t_c": 60.0,
+      "body_cell_count": 140128,
+      "cold_face_cell_count": 8758,
+      "hot_face_cell_count": 61306,
+      "plume_cell_count": 140128
     },
     {
       "id": "row_5",
@@ -88,10 +300,63 @@
       "cold_face": "-y",
       "total_heat_w": 65000.0,
       "heat_flux_w_m2": 2545.2267209648367,
+      "active_rack_count": 13,
       "fan_q_max_m3s": 3.835,
       "fan_dp_max_pa": 80.0,
       "fan_q_ref_m3s": 1.9175,
-      "fan_dp_ref_pa": 60.0
+      "fan_dp_ref_pa": 60.0,
+      "body_bounds": {
+        "x_min": 2.2996774193548393,
+        "x_max": 13.600322580645162,
+        "y_min": 13.011538461538462,
+        "y_max": 14.123076923076923,
+        "z_min": -0.0014925373134326847,
+        "z_max": 2.25
+      },
+      "cold_face_bounds": {
+        "x_min": 2.2996774193548393,
+        "x_max": 13.600322580645162,
+        "y_min": 12.973076923076924,
+        "y_max": 13.011538461538462,
+        "z_min": -0.0014925373134326847,
+        "z_max": 2.25
+      },
+      "hot_face_bounds": {
+        "x_min": 2.2996774193548393,
+        "x_max": 13.600322580645162,
+        "y_min": 14.123076923076923,
+        "y_max": 14.4,
+        "z_min": -0.0014925373134326847,
+        "z_max": 2.25
+      },
+      "plume_bounds": {
+        "x_min": 2.2996774193548393,
+        "x_max": 13.600322580645162,
+        "y_min": 14.4,
+        "y_max": 15.02560975609756,
+        "z_min": -0.0014925373134326847,
+        "z_max": 2.25
+      },
+      "flow_direction": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "airflow_m3s": 1.9175,
+      "face_area_m2": 25.443318247472316,
+      "target_velocity_m_s": 0.07536359767816429,
+      "hot_face_depth_m": 0.2769230769230777,
+      "hot_face_volume_m3": 7.045841976223123,
+      "plume_depth_m": 0.6256097560975604,
+      "momentum_damping_s_inv": 15.0,
+      "thermal_damping_s_inv": 5.0,
+      "plume_mixing_s_inv": 1.5,
+      "max_source_delta_t_per_step_c": 2.0,
+      "max_delta_t_c": 60.0,
+      "body_cell_count": 140128,
+      "cold_face_cell_count": 8758,
+      "hot_face_cell_count": 61306,
+      "plume_cell_count": 140128
     },
     {
       "id": "row_6",
@@ -105,10 +370,63 @@
       "cold_face": "+y",
       "total_heat_w": 65000.0,
       "heat_flux_w_m2": 2545.2267209648367,
+      "active_rack_count": 13,
       "fan_q_max_m3s": 3.835,
       "fan_dp_max_pa": 80.0,
       "fan_q_ref_m3s": 1.9175,
-      "fan_dp_ref_pa": 60.0
+      "fan_dp_ref_pa": 60.0,
+      "body_bounds": {
+        "x_min": 2.2996774193548393,
+        "x_max": 13.600322580645162,
+        "y_min": 15.610975609756098,
+        "y_max": 16.723076923076924,
+        "z_min": -0.0014925373134326847,
+        "z_max": 2.25
+      },
+      "cold_face_bounds": {
+        "x_min": 2.2996774193548393,
+        "x_max": 13.600322580645162,
+        "y_min": 16.723076923076924,
+        "y_max": 16.765384615384615,
+        "z_min": -0.0014925373134326847,
+        "z_max": 2.25
+      },
+      "hot_face_bounds": {
+        "x_min": 2.2996774193548393,
+        "x_max": 13.600322580645162,
+        "y_min": 15.33780487804878,
+        "y_max": 15.610975609756098,
+        "z_min": -0.0014925373134326847,
+        "z_max": 2.25
+      },
+      "plume_bounds": {
+        "x_min": 2.2996774193548393,
+        "x_max": 13.600322580645162,
+        "y_min": 14.713414634146341,
+        "y_max": 15.33780487804878,
+        "z_min": -0.0014925373134326847,
+        "z_max": 2.25
+      },
+      "flow_direction": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "airflow_m3s": 1.9175,
+      "face_area_m2": 25.443318247472316,
+      "target_velocity_m_s": 0.07536359767816429,
+      "hot_face_depth_m": 0.2731707317073173,
+      "hot_face_volume_m3": 6.950369862724151,
+      "plume_depth_m": 0.6243902439024396,
+      "momentum_damping_s_inv": 15.0,
+      "thermal_damping_s_inv": 5.0,
+      "plume_mixing_s_inv": 1.5,
+      "max_source_delta_t_per_step_c": 2.0,
+      "max_delta_t_c": 60.0,
+      "body_cell_count": 140128,
+      "cold_face_cell_count": 8758,
+      "hot_face_cell_count": 61306,
+      "plume_cell_count": 140128
     },
     {
       "id": "row_7",
@@ -122,10 +440,63 @@
       "cold_face": "-y",
       "total_heat_w": 65000.0,
       "heat_flux_w_m2": 2545.2267209648367,
+      "active_rack_count": 13,
       "fan_q_max_m3s": 3.835,
       "fan_dp_max_pa": 80.0,
       "fan_q_ref_m3s": 1.9175,
-      "fan_dp_ref_pa": 60.0
+      "fan_dp_ref_pa": 60.0,
+      "body_bounds": {
+        "x_min": 2.2996774193548393,
+        "x_max": 13.600322580645162,
+        "y_min": 18.21153846153846,
+        "y_max": 19.323076923076925,
+        "z_min": -0.0014925373134326847,
+        "z_max": 2.25
+      },
+      "cold_face_bounds": {
+        "x_min": 2.2996774193548393,
+        "x_max": 13.600322580645162,
+        "y_min": 18.173076923076923,
+        "y_max": 18.21153846153846,
+        "z_min": -0.0014925373134326847,
+        "z_max": 2.25
+      },
+      "hot_face_bounds": {
+        "x_min": 2.2996774193548393,
+        "x_max": 13.600322580645162,
+        "y_min": 19.323076923076925,
+        "y_max": 19.6,
+        "z_min": -0.0014925373134326847,
+        "z_max": 2.25
+      },
+      "plume_bounds": {
+        "x_min": 2.2996774193548393,
+        "x_max": 13.600322580645162,
+        "y_min": 19.6,
+        "y_max": 20.225609756097562,
+        "z_min": -0.0014925373134326847,
+        "z_max": 2.25
+      },
+      "flow_direction": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "airflow_m3s": 1.9175,
+      "face_area_m2": 25.443318247472316,
+      "target_velocity_m_s": 0.07536359767816429,
+      "hot_face_depth_m": 0.27692307692307594,
+      "hot_face_volume_m3": 7.045841976223078,
+      "plume_depth_m": 0.6256097560975604,
+      "momentum_damping_s_inv": 15.0,
+      "thermal_damping_s_inv": 5.0,
+      "plume_mixing_s_inv": 1.5,
+      "max_source_delta_t_per_step_c": 2.0,
+      "max_delta_t_c": 60.0,
+      "body_cell_count": 140128,
+      "cold_face_cell_count": 8758,
+      "hot_face_cell_count": 61306,
+      "plume_cell_count": 140128
     },
     {
       "id": "row_8",
@@ -139,10 +510,63 @@
       "cold_face": "+y",
       "total_heat_w": 65000.0,
       "heat_flux_w_m2": 2545.2267209648367,
+      "active_rack_count": 13,
       "fan_q_max_m3s": 3.835,
       "fan_dp_max_pa": 80.0,
       "fan_q_ref_m3s": 1.9175,
-      "fan_dp_ref_pa": 60.0
+      "fan_dp_ref_pa": 60.0,
+      "body_bounds": {
+        "x_min": 2.2996774193548393,
+        "x_max": 13.600322580645162,
+        "y_min": 20.8109756097561,
+        "y_max": 21.923076923076927,
+        "z_min": -0.0014925373134326847,
+        "z_max": 2.25
+      },
+      "cold_face_bounds": {
+        "x_min": 2.2996774193548393,
+        "x_max": 13.600322580645162,
+        "y_min": 21.923076923076927,
+        "y_max": 21.965384615384618,
+        "z_min": -0.0014925373134326847,
+        "z_max": 2.25
+      },
+      "hot_face_bounds": {
+        "x_min": 2.2996774193548393,
+        "x_max": 13.600322580645162,
+        "y_min": 20.526666666666667,
+        "y_max": 20.8109756097561,
+        "z_min": -0.0014925373134326847,
+        "z_max": 2.25
+      },
+      "plume_bounds": {
+        "x_min": 2.2996774193548393,
+        "x_max": 13.600322580645162,
+        "y_min": 19.913414634146342,
+        "y_max": 20.526666666666667,
+        "z_min": -0.0014925373134326847,
+        "z_max": 2.25
+      },
+      "flow_direction": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "airflow_m3s": 1.9175,
+      "face_area_m2": 25.443318247472316,
+      "target_velocity_m_s": 0.07536359767816429,
+      "hot_face_depth_m": 0.28430894308943166,
+      "hot_face_volume_m3": 7.233762919626905,
+      "plume_depth_m": 0.6132520325203252,
+      "momentum_damping_s_inv": 15.0,
+      "thermal_damping_s_inv": 5.0,
+      "plume_mixing_s_inv": 1.5,
+      "max_source_delta_t_per_step_c": 2.0,
+      "max_delta_t_c": 60.0,
+      "body_cell_count": 140128,
+      "cold_face_cell_count": 8758,
+      "hot_face_cell_count": 61306,
+      "plume_cell_count": 140128
     }
   ],
   "containment_blocks": [
@@ -167,9 +591,19 @@
       "z_max": 2.26
     },
     {
-      "id": "ha_12_roof",
+      "id": "ha_12_roof_west",
       "type": "containment",
       "x_min": 2.3,
+      "x_max": 7.313870967741936,
+      "y_min": 3.7,
+      "y_max": 5.2,
+      "z_min": 2.26,
+      "z_max": 2.3099999999999996
+    },
+    {
+      "id": "ha_12_roof_east",
+      "type": "containment",
+      "x_min": 8.586129032258066,
       "x_max": 13.600000000000001,
       "y_min": 3.7,
       "y_max": 5.2,
@@ -197,9 +631,19 @@
       "z_max": 2.26
     },
     {
-      "id": "ha_34_roof",
+      "id": "ha_34_roof_west",
       "type": "containment",
       "x_min": 2.3,
+      "x_max": 7.313870967741936,
+      "y_min": 8.9,
+      "y_max": 10.4,
+      "z_min": 2.26,
+      "z_max": 2.3099999999999996
+    },
+    {
+      "id": "ha_34_roof_east",
+      "type": "containment",
+      "x_min": 8.586129032258066,
       "x_max": 13.600000000000001,
       "y_min": 8.9,
       "y_max": 10.4,
@@ -227,9 +671,19 @@
       "z_max": 2.26
     },
     {
-      "id": "ha_56_roof",
+      "id": "ha_56_roof_west",
       "type": "containment",
       "x_min": 2.3,
+      "x_max": 7.313870967741936,
+      "y_min": 14.1,
+      "y_max": 15.6,
+      "z_min": 2.26,
+      "z_max": 2.3099999999999996
+    },
+    {
+      "id": "ha_56_roof_east",
+      "type": "containment",
+      "x_min": 8.586129032258066,
       "x_max": 13.600000000000001,
       "y_min": 14.1,
       "y_max": 15.6,
@@ -257,14 +711,183 @@
       "z_max": 2.26
     },
     {
-      "id": "ha_78_roof",
+      "id": "ha_78_roof_west",
       "type": "containment",
       "x_min": 2.3,
+      "x_max": 7.313870967741936,
+      "y_min": 19.3,
+      "y_max": 20.8,
+      "z_min": 2.26,
+      "z_max": 2.3099999999999996
+    },
+    {
+      "id": "ha_78_roof_east",
+      "type": "containment",
+      "x_min": 8.586129032258066,
       "x_max": 13.600000000000001,
       "y_min": 19.3,
       "y_max": 20.8,
       "z_min": 2.26,
       "z_max": 2.3099999999999996
+    }
+  ],
+  "solid_blocks": [],
+  "hot_aisle_extractors": [
+    {
+      "id": "ha_12_extractor",
+      "type": "hot_aisle_extractor",
+      "hot_aisle_id": "ha_12",
+      "between": [
+        "row_1",
+        "row_2"
+      ],
+      "bounds": {
+        "x_min": 7.313870967741936,
+        "x_max": 8.586129032258066,
+        "y_min": 3.6900000000000004,
+        "y_max": 5.2,
+        "z_min": 1.943880597014925,
+        "z_max": 3.9
+      },
+      "opening_bounds": {
+        "x_min": 7.313870967741936,
+        "x_max": 8.586129032258066,
+        "y_min": 3.6900000000000004,
+        "y_max": 5.2,
+        "z_min": 2.26,
+        "z_max": 2.3099999999999996
+      },
+      "connected_return_ids": [
+        "crac_1_return",
+        "crac_2_return"
+      ],
+      "target_flow_m3s": 3.835,
+      "target_velocity_m_s": 1.996242091264456,
+      "direction": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "max_velocity_m_s": 3.0,
+      "damping_s_inv": 3.0,
+      "slot_area_m2": 1.9211096774193561
+    },
+    {
+      "id": "ha_34_extractor",
+      "type": "hot_aisle_extractor",
+      "hot_aisle_id": "ha_34",
+      "between": [
+        "row_3",
+        "row_4"
+      ],
+      "bounds": {
+        "x_min": 7.313870967741936,
+        "x_max": 8.586129032258066,
+        "y_min": 8.876923076923077,
+        "y_max": 10.410975609756099,
+        "z_min": 1.943880597014925,
+        "z_max": 3.9
+      },
+      "opening_bounds": {
+        "x_min": 7.313870967741936,
+        "x_max": 8.586129032258066,
+        "y_min": 8.876923076923077,
+        "y_max": 10.410975609756099,
+        "z_min": 2.26,
+        "z_max": 2.3099999999999996
+      },
+      "connected_return_ids": [
+        "crac_3_return",
+        "crac_4_return"
+      ],
+      "target_flow_m3s": 3.835,
+      "target_velocity_m_s": 1.96494285123509,
+      "direction": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "max_velocity_m_s": 3.0,
+      "damping_s_inv": 3.0,
+      "slot_area_m2": 1.9517107062882066
+    },
+    {
+      "id": "ha_56_extractor",
+      "type": "hot_aisle_extractor",
+      "hot_aisle_id": "ha_56",
+      "between": [
+        "row_5",
+        "row_6"
+      ],
+      "bounds": {
+        "x_min": 7.313870967741936,
+        "x_max": 8.586129032258066,
+        "y_min": 14.076923076923077,
+        "y_max": 15.610975609756098,
+        "z_min": 1.943880597014925,
+        "z_max": 3.9
+      },
+      "opening_bounds": {
+        "x_min": 7.313870967741936,
+        "x_max": 8.586129032258066,
+        "y_min": 14.076923076923077,
+        "y_max": 15.610975609756098,
+        "z_min": 2.26,
+        "z_max": 2.3099999999999996
+      },
+      "connected_return_ids": [
+        "crac_3_return",
+        "crac_4_return"
+      ],
+      "target_flow_m3s": 3.835,
+      "target_velocity_m_s": 1.96494285123509,
+      "direction": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "max_velocity_m_s": 3.0,
+      "damping_s_inv": 3.0,
+      "slot_area_m2": 1.9517107062882066
+    },
+    {
+      "id": "ha_78_extractor",
+      "type": "hot_aisle_extractor",
+      "hot_aisle_id": "ha_78",
+      "between": [
+        "row_7",
+        "row_8"
+      ],
+      "bounds": {
+        "x_min": 7.313870967741936,
+        "x_max": 8.586129032258066,
+        "y_min": 19.276923076923076,
+        "y_max": 20.8109756097561,
+        "z_min": 1.943880597014925,
+        "z_max": 3.9
+      },
+      "opening_bounds": {
+        "x_min": 7.313870967741936,
+        "x_max": 8.586129032258066,
+        "y_min": 19.276923076923076,
+        "y_max": 20.8109756097561,
+        "z_min": 2.26,
+        "z_max": 2.3099999999999996
+      },
+      "connected_return_ids": [
+        "crac_5_return",
+        "crac_6_return"
+      ],
+      "target_flow_m3s": 3.835,
+      "target_velocity_m_s": 1.9649428512350875,
+      "direction": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "max_velocity_m_s": 3.0,
+      "damping_s_inv": 3.0,
+      "slot_area_m2": 1.951710706288209
     }
   ],
   "tile_zones": [
@@ -369,8 +992,16 @@
     {
       "id": "crac_1_supply",
       "type": "crac_supply",
-      "wall": "west",
-      "x": 0.0,
+      "axis": "x",
+      "face_coordinate": 0.0,
+      "face_side": "positive",
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x_min": 0.0,
+      "x_max": 0.0,
       "y_min": 3.95,
       "y_max": 4.95,
       "z_min": -0.6,
@@ -381,18 +1012,35 @@
     {
       "id": "crac_1_return",
       "type": "crac_return",
-      "wall": "west",
-      "x": 0.0,
+      "axis": "x",
+      "face_coordinate": 0.0,
+      "face_side": "positive",
+      "normal": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "x_min": 0.0,
+      "x_max": 0.0,
       "y_min": 3.95,
       "y_max": 4.95,
-      "z_min": 2.7,
-      "z_max": 3.3
+      "z_min": 3.1999999999999997,
+      "z_max": 3.9,
+      "rated_flow_m3s": 4.5
     },
     {
       "id": "crac_2_supply",
       "type": "crac_supply",
-      "wall": "east",
-      "x": 15.0,
+      "axis": "x",
+      "face_coordinate": 15.0,
+      "face_side": "negative",
+      "normal": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "x_min": 15.0,
+      "x_max": 15.0,
       "y_min": 3.95,
       "y_max": 4.95,
       "z_min": -0.6,
@@ -403,18 +1051,35 @@
     {
       "id": "crac_2_return",
       "type": "crac_return",
-      "wall": "east",
-      "x": 15.0,
+      "axis": "x",
+      "face_coordinate": 15.0,
+      "face_side": "negative",
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x_min": 15.0,
+      "x_max": 15.0,
       "y_min": 3.95,
       "y_max": 4.95,
-      "z_min": 2.7,
-      "z_max": 3.3
+      "z_min": 3.1999999999999997,
+      "z_max": 3.9,
+      "rated_flow_m3s": 4.5
     },
     {
       "id": "crac_3_supply",
       "type": "crac_supply",
-      "wall": "west",
-      "x": 0.0,
+      "axis": "x",
+      "face_coordinate": 0.0,
+      "face_side": "positive",
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x_min": 0.0,
+      "x_max": 0.0,
       "y_min": 11.75,
       "y_max": 12.75,
       "z_min": -0.6,
@@ -425,18 +1090,35 @@
     {
       "id": "crac_3_return",
       "type": "crac_return",
-      "wall": "west",
-      "x": 0.0,
+      "axis": "x",
+      "face_coordinate": 0.0,
+      "face_side": "positive",
+      "normal": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "x_min": 0.0,
+      "x_max": 0.0,
       "y_min": 11.75,
       "y_max": 12.75,
-      "z_min": 2.7,
-      "z_max": 3.3
+      "z_min": 3.1999999999999997,
+      "z_max": 3.9,
+      "rated_flow_m3s": 4.5
     },
     {
       "id": "crac_4_supply",
       "type": "crac_supply",
-      "wall": "east",
-      "x": 15.0,
+      "axis": "x",
+      "face_coordinate": 15.0,
+      "face_side": "negative",
+      "normal": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "x_min": 15.0,
+      "x_max": 15.0,
       "y_min": 11.75,
       "y_max": 12.75,
       "z_min": -0.6,
@@ -447,18 +1129,35 @@
     {
       "id": "crac_4_return",
       "type": "crac_return",
-      "wall": "east",
-      "x": 15.0,
+      "axis": "x",
+      "face_coordinate": 15.0,
+      "face_side": "negative",
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x_min": 15.0,
+      "x_max": 15.0,
       "y_min": 11.75,
       "y_max": 12.75,
-      "z_min": 2.7,
-      "z_max": 3.3
+      "z_min": 3.1999999999999997,
+      "z_max": 3.9,
+      "rated_flow_m3s": 4.5
     },
     {
       "id": "crac_5_supply",
       "type": "crac_supply",
-      "wall": "west",
-      "x": 0.0,
+      "axis": "x",
+      "face_coordinate": 0.0,
+      "face_side": "positive",
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x_min": 0.0,
+      "x_max": 0.0,
       "y_min": 19.55,
       "y_max": 20.55,
       "z_min": -0.6,
@@ -469,18 +1168,35 @@
     {
       "id": "crac_5_return",
       "type": "crac_return",
-      "wall": "west",
-      "x": 0.0,
+      "axis": "x",
+      "face_coordinate": 0.0,
+      "face_side": "positive",
+      "normal": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "x_min": 0.0,
+      "x_max": 0.0,
       "y_min": 19.55,
       "y_max": 20.55,
-      "z_min": 2.7,
-      "z_max": 3.3
+      "z_min": 3.1999999999999997,
+      "z_max": 3.9,
+      "rated_flow_m3s": 4.5
     },
     {
       "id": "crac_6_supply",
       "type": "crac_supply",
-      "wall": "east",
-      "x": 15.0,
+      "axis": "x",
+      "face_coordinate": 15.0,
+      "face_side": "negative",
+      "normal": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "x_min": 15.0,
+      "x_max": 15.0,
       "y_min": 19.55,
       "y_max": 20.55,
       "z_min": -0.6,
@@ -491,12 +1207,21 @@
     {
       "id": "crac_6_return",
       "type": "crac_return",
-      "wall": "east",
-      "x": 15.0,
+      "axis": "x",
+      "face_coordinate": 15.0,
+      "face_side": "negative",
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x_min": 15.0,
+      "x_max": 15.0,
       "y_min": 19.55,
       "y_max": 20.55,
-      "z_min": 2.7,
-      "z_max": 3.3
+      "z_min": 3.1999999999999997,
+      "z_max": 3.9,
+      "rated_flow_m3s": 4.5
     }
   ],
   "sensors": [
@@ -2788,6 +3513,7 @@
     "8": "rack_hot_face",
     "9": "tile_opening",
     "10": "containment_wall",
-    "11": "rack_source"
+    "11": "rack_device_body",
+    "12": "hot_aisle_extractor"
   }
 }

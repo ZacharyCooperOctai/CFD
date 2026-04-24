@@ -41,6 +41,7 @@ RACK_HOT_FACE   = 8
 TILE_OPENING    = 9
 CONTAINMENT     = 10
 RACK_SOURCE     = 11  # rack interior: fluid (allows through-flow), not solid
+HOT_AISLE_EXTRACTOR = 12  # physics-v1 fluid guide region to CRAC returns
 
 # Default rack airflow rate per unit heat (125 CFM/kW → m³/(s·W))
 # 1 CFM = 0.00047194745 m³/s
@@ -126,6 +127,10 @@ def write_dat(flags, nodes_z, outpath, mode="coupled"):
         - rack rows are emitted as solid blocks in .dat so the legacy native
           solver can reinterpret them from the `Rack ...` block records
         - containment stays out of .dat and is provided by native BLOCK records
+      physics-v1:
+        - racks and tiles remain fluid/internal regions; case.sources owns
+          momentum, heat, and pressure-jump behavior
+        - containment is emitted as solid geometry in .dat
     """
     imax, jmax, kmax = flags.shape   # 0-based: [0..imax-1, 0..jmax-1, 0..kmax-1]
 
@@ -289,6 +294,53 @@ def wall_face_sci_indices(wall_side, nodes_x, nodes_y, nodes_z,
     return SI, SJ, SK, 0, EJ, EK
 
 
+def _adjacent_cell_index(nodes, coord, side, tol=1e-6):
+    """Return the 0-based cell index adjacent to a face coordinate."""
+    n_cells = len(nodes) - 1
+    for idx, node in enumerate(nodes):
+        if abs(node - coord) < tol:
+            cell = idx if side == "positive" else idx - 1
+            return max(0, min(n_cells - 1, cell))
+    for idx in range(n_cells):
+        if nodes[idx] <= coord < nodes[idx + 1]:
+            return idx
+    if abs(coord - nodes[-1]) < tol:
+        return n_cells - 1
+    if abs(coord - nodes[0]) < tol:
+        return 0
+    raise ValueError(f"Face coordinate {coord} does not intersect the grid.")
+
+
+def plane_face_sci_indices(nodes_x, nodes_y, nodes_z, opening):
+    """Return SCI indices for a face BC on an arbitrary X/Y/Z-aligned plane."""
+    axis = opening["axis"]
+    coord = float(opening["face_coordinate"])
+    side = opening.get("face_side", "positive")
+
+    if axis == "x":
+        ry = find_cell_range(nodes_y, opening["y_min"], opening["y_max"])
+        rz = find_cell_range(nodes_z, opening["z_min"], opening["z_max"])
+        if ry is None or rz is None:
+            raise ValueError(f"Opening {opening['id']} does not intersect the grid in Y/Z.")
+        i0 = _adjacent_cell_index(nodes_x, coord, side)
+        return i0 + 1, ry[0] + 1, rz[0] + 1, 0, ry[1], rz[1]
+    if axis == "y":
+        rx = find_cell_range(nodes_x, opening["x_min"], opening["x_max"])
+        rz = find_cell_range(nodes_z, opening["z_min"], opening["z_max"])
+        if rx is None or rz is None:
+            raise ValueError(f"Opening {opening['id']} does not intersect the grid in X/Z.")
+        j0 = _adjacent_cell_index(nodes_y, coord, side)
+        return rx[0] + 1, j0 + 1, rz[0] + 1, rx[1], 0, rz[1]
+    if axis == "z":
+        rx = find_cell_range(nodes_x, opening["x_min"], opening["x_max"])
+        ry = find_cell_range(nodes_y, opening["y_min"], opening["y_max"])
+        if rx is None or ry is None:
+            raise ValueError(f"Opening {opening['id']} does not intersect the grid in X/Y.")
+        k0 = _adjacent_cell_index(nodes_z, coord, side)
+        return rx[0] + 1, ry[0] + 1, k0 + 1, rx[1], ry[1], 0
+    raise ValueError(f"Unsupported opening axis: {axis!r}")
+
+
 def tile_sci_indices(nodes_x, nodes_y, nodes_z, xmin, xmax, ymin, ymax, k_tile_0based):
     """
     Return SCI outlet BC tokens for a horizontal tile face at k=k_tile_0based (0-based).
@@ -315,10 +367,9 @@ def write_cfd(cfg, geo, nodes_x, nodes_y, nodes_z, flags, outpath, mode="coupled
     jmax = len(nodes_y) - 1
     kmax = len(nodes_z) - 1
 
-    plenum_depth = cfg["room"]["plenum_depth"]       # 0.6 m
     Lx = cfg["room"]["length_x"]                     # 15.0 m
     Ly = cfg["room"]["length_y"]                     # 25.0 m
-    Lz = cfg["room"]["white_space_height"] + plenum_depth  # 4.5 m
+    Lz = float(nodes_z[-1] - nodes_z[0])
 
     del_x = cell_widths(nodes_x)
     del_y = cell_widths(nodes_y)
@@ -326,11 +377,11 @@ def write_cfd(cfg, geo, nodes_x, nodes_y, nodes_z, flags, outpath, mode="coupled
 
     # --- Find tile k-index (0-based) ---
     tile_ks = np.unique(np.where(flags == TILE_OPENING)[2])
-    if len(tile_ks) == 0:
-        raise RuntimeError("No TILE_OPENING cells found in cell_flags.npy")
-    k_tile = int(tile_ks[0])   # first (lowest) k-index of tile layer
-    print(f"  Tile layer: k={k_tile+1} (1-based), Z_python="
-          f"[{nodes_z[k_tile]:.4f}, {nodes_z[k_tile+1]:.4f}] m")
+    k_tile = None
+    if len(tile_ks) != 0:
+        k_tile = int(tile_ks[0])   # first (lowest) k-index of tile layer
+        print(f"  Tile layer: k={k_tile+1} (1-based), Z_python="
+              f"[{nodes_z[k_tile]:.4f}, {nodes_z[k_tile+1]:.4f}] m")
 
     # --- Gather BCs ---
     # Inlets: CRAC supply (into plenum)
@@ -341,6 +392,7 @@ def write_cfd(cfg, geo, nodes_x, nodes_y, nodes_z, flags, outpath, mode="coupled
     rack_blocks  = [b for b in geo["rack_blocks"]]
     containment_blocks = [b for b in geo.get("containment_blocks", [])]
     native_mode = (mode == "standalone-native")
+    physics_v1_mode = (mode == "physics-v1")
 
     nb_inlet   = len(crac_inlets)
     # For the coupled path, perforated tiles remain internal openings in
@@ -350,6 +402,8 @@ def write_cfd(cfg, geo, nodes_x, nodes_y, nodes_z, flags, outpath, mode="coupled
     # model instead of the effective-area approximation.
     nb_outlet  = len(crac_returns) + (len(tile_zones) if native_mode else 0)
     nb_block   = len(rack_blocks) + (len(containment_blocks) if native_mode else 0)
+    if physics_v1_mode:
+        nb_block = 0
     nb_wall    = 6
     nb_bc      = nb_inlet + nb_outlet
 
@@ -385,25 +439,21 @@ def write_cfd(cfg, geo, nodes_x, nodes_y, nodes_z, flags, outpath, mode="coupled
     lines.append(str(nb_inlet))
 
     for crac in crac_inlets:
-        wall = crac["wall"]
-        y_lo = crac["y_min"]
-        y_hi = crac["y_max"]
-        # z in Python coords (nodes_z also Python coords — no shift needed here)
-        z_lo = crac["z_min"]
-        z_hi = crac["z_max"]
+        SI, SJ, SK, EI, EJ, EK = plane_face_sci_indices(nodes_x, nodes_y, nodes_z, crac)
+        normal = [float(value) for value in crac.get("normal", [1.0, 0.0, 0.0])]
 
-        SI, SJ, SK, EI, EJ, EK = wall_face_sci_indices(
-            wall, nodes_x, nodes_y, nodes_z, y_lo, y_hi, z_lo, z_hi
-        )
-
-        # Inlet velocity (normal to wall face, into domain)
-        rated_q = crac["rated_flow_m3s"]
-        area = (y_hi - y_lo) * (z_hi - z_lo)
+        rated_q = float(crac["rated_flow_m3s"])
+        if crac["axis"] == "x":
+            area = (crac["y_max"] - crac["y_min"]) * (crac["z_max"] - crac["z_min"])
+        elif crac["axis"] == "y":
+            area = (crac["x_max"] - crac["x_min"]) * (crac["z_max"] - crac["z_min"])
+        else:
+            area = (crac["x_max"] - crac["x_min"]) * (crac["y_max"] - crac["y_min"])
         v = rated_q / area if area > 0 else 9.0
-        U = v  if wall == "west" else -v    # west: +X into domain
-        V = 0.0
-        W = 0.0
-        T = crac["supply_temp_c"]
+        U = normal[0] * v
+        V = normal[1] * v
+        W = normal[2] * v
+        T = float(crac["supply_temp_c"])
         Xi = 0.0   # no contaminant
 
         cid = crac["id"]
@@ -417,24 +467,24 @@ def write_cfd(cfg, geo, nodes_x, nodes_y, nodes_z, flags, outpath, mode="coupled
     lines.append(str(nb_outlet))
 
     for crac in crac_returns:
-        wall = crac["wall"]
-        y_lo = crac["y_min"]
-        y_hi = crac["y_max"]
-        # z in Python coords
-        z_lo = crac["z_min"]
-        z_hi = crac["z_max"]
+        SI, SJ, SK, EI, EJ, EK = plane_face_sci_indices(nodes_x, nodes_y, nodes_z, crac)
+        normal = [float(value) for value in crac.get("normal", [-1.0, 0.0, 0.0])]
 
-        SI, SJ, SK, EI, EJ, EK = wall_face_sci_indices(
-            wall, nodes_x, nodes_y, nodes_z, y_lo, y_hi, z_lo, z_hi
-        )
-
-        # Outlet: velocity sign points OUT of domain
-        rated_q = cfg["crac_units"][0]["rated_flow_m3s"]   # same for all
-        area = (y_hi - y_lo) * (z_hi - z_lo)
+        rated_q = float(crac["rated_flow_m3s"])
+        if crac["axis"] == "x":
+            area = (crac["y_max"] - crac["y_min"]) * (crac["z_max"] - crac["z_min"])
+        elif crac["axis"] == "y":
+            area = (crac["x_max"] - crac["x_min"]) * (crac["z_max"] - crac["z_min"])
+        else:
+            area = (crac["x_max"] - crac["x_min"]) * (crac["y_max"] - crac["y_min"])
         v = rated_q / area if area > 0 else 9.0
-        U = -v if wall == "west" else v   # west outlet: -X (leaving domain)
-        V = 0.0
-        W = 0.0
+        U = normal[0] * v
+        V = normal[1] * v
+        W = normal[2] * v
+        # Use the domain initial temperature as the outlet reference so no artificial
+        # Dirichlet constraint is imposed when return air deviates from the global mean.
+        # The FFD outlet BC advects the actual upstream temperature outward; this value
+        # is only consulted on reverse-flow cells, where a neutral reference is correct.
         T = cfg["ffd"]["initial_temp_c"]
         Xi = 0.0
 
@@ -443,7 +493,7 @@ def write_cfd(cfg, geo, nodes_x, nodes_y, nodes_z, flags, outpath, mode="coupled
         lines.append(f"{SI} {SJ} {SK} {EI} {EJ} {EK} {T:.2f} {Xi:.4f} "
                      f"{U:.4f} {V:.4f} {W:.4f}")
 
-    if native_mode:
+    if native_mode and k_tile is not None:
         for tz in tile_zones:
             SI, SJ, SK, EI, EJ, EK = tile_sci_indices(
                 nodes_x, nodes_y, nodes_z,
@@ -485,7 +535,7 @@ def write_cfd(cfg, geo, nodes_x, nodes_y, nodes_z, flags, outpath, mode="coupled
             )
             lines.append(block["id"])
             lines.append(f"{SI} {SJ} {SK} {EI} {EJ} {EK} 0 0.0000")
-    else:
+    elif not physics_v1_mode:
         for rack in rack_blocks:
             x_lo = rack["x_min"];  x_hi = rack["x_max"]
             z_lo = rack["z_min"];  z_hi = rack["z_max"]
@@ -542,7 +592,7 @@ def write_cfd(cfg, geo, nodes_x, nodes_y, nodes_z, flags, outpath, mode="coupled
         "0",                             # restart flag (0 = fresh start)
         "100",                           # print frequency
         "0",                             # pressure variable (0 = gauge)
-        "0 0",                           # steady-state flag, buoyancy flag
+        f"0 {1 if cfg['ffd'].get('buoyancy', False) else 0}",  # steady-state flag, buoyancy flag
     ]
     lines.extend(misc)
 
@@ -613,11 +663,11 @@ def main():
                     help="Output directory for .cfd and .dat files")
     ap.add_argument(
         "--mode",
-        choices=("coupled", "standalone-native"),
+        choices=("coupled", "standalone-native", "physics-v1"),
         default="coupled",
         help=(
-            "Choose coupled-compatible SCI emission or the native standalone "
-            "rack/tile format consumed by the legacy GPU FFD solver."
+            "Choose coupled-compatible SCI emission, the legacy native "
+            "rack/tile format, or physics-v1 source-region emission."
         ),
     )
     args = ap.parse_args()

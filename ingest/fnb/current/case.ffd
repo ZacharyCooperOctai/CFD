@@ -17,12 +17,12 @@ prob.force 1.0
 prob.source 1.0
 prob.movie 0
 prob.tur_model CHEN
-prob.chen_a 0.03874
+prob.chen_a 0.11000
 prob.Prt 0.9
 prob.Temp_Buoyancy 22.0
 mytime.t_steady 10.0
 solv.solver GS
-solv.check_residual 0
+solv.check_residual 1
 solv.advection_solver SEMI
 solv.interpolation BILINEAR
 solv.cosimulation 0

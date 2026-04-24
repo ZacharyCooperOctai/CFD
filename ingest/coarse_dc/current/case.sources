@@ -1,0 +1,408 @@
+{
+  "version": "physics-v1",
+  "fluid": {
+    "density_kg_m3": 1.204,
+    "specific_heat_j_kg_k": 1006.0
+  },
+  "rack_sources": [
+    {
+      "id": "row_1",
+      "type": "rack_fluid_momentum_heat_source",
+      "bounds": {
+        "x_min": 2.3,
+        "x_max": 13.600000000000001,
+        "y_min": 2.6,
+        "y_max": 3.7,
+        "z_min": 0.0,
+        "z_max": 2.26
+      },
+      "cold_face": "-y",
+      "flow_direction": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "total_heat_w": 65000.0,
+      "volume_m3": 28.0918,
+      "volumetric_heat_w_m3": 2313.842473604397,
+      "fan_q_max_m3s": 3.835,
+      "fan_dp_max_pa": 80.0,
+      "fan_q_ref_m3s": 1.9175,
+      "fan_dp_ref_pa": 60.0,
+      "target_velocity_m_s": 0.07508418826846268,
+      "momentum_model": "fan_curve_with_transverse_damping",
+      "transverse_damping_s_inv": 5.0
+    },
+    {
+      "id": "row_2",
+      "type": "rack_fluid_momentum_heat_source",
+      "bounds": {
+        "x_min": 2.3,
+        "x_max": 13.600000000000001,
+        "y_min": 5.2,
+        "y_max": 6.300000000000001,
+        "z_min": 0.0,
+        "z_max": 2.26
+      },
+      "cold_face": "+y",
+      "flow_direction": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "total_heat_w": 65000.0,
+      "volume_m3": 28.091800000000013,
+      "volumetric_heat_w_m3": 2313.8424736043958,
+      "fan_q_max_m3s": 3.835,
+      "fan_dp_max_pa": 80.0,
+      "fan_q_ref_m3s": 1.9175,
+      "fan_dp_ref_pa": 60.0,
+      "target_velocity_m_s": 0.07508418826846268,
+      "momentum_model": "fan_curve_with_transverse_damping",
+      "transverse_damping_s_inv": 5.0
+    },
+    {
+      "id": "row_3",
+      "type": "rack_fluid_momentum_heat_source",
+      "bounds": {
+        "x_min": 2.3,
+        "x_max": 13.600000000000001,
+        "y_min": 7.8,
+        "y_max": 8.9,
+        "z_min": 0.0,
+        "z_max": 2.26
+      },
+      "cold_face": "-y",
+      "flow_direction": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "total_heat_w": 65000.0,
+      "volume_m3": 28.091800000000013,
+      "volumetric_heat_w_m3": 2313.8424736043958,
+      "fan_q_max_m3s": 3.835,
+      "fan_dp_max_pa": 80.0,
+      "fan_q_ref_m3s": 1.9175,
+      "fan_dp_ref_pa": 60.0,
+      "target_velocity_m_s": 0.07508418826846268,
+      "momentum_model": "fan_curve_with_transverse_damping",
+      "transverse_damping_s_inv": 5.0
+    },
+    {
+      "id": "row_4",
+      "type": "rack_fluid_momentum_heat_source",
+      "bounds": {
+        "x_min": 2.3,
+        "x_max": 13.600000000000001,
+        "y_min": 10.4,
+        "y_max": 11.5,
+        "z_min": 0.0,
+        "z_max": 2.26
+      },
+      "cold_face": "+y",
+      "flow_direction": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "total_heat_w": 65000.0,
+      "volume_m3": 28.09179999999999,
+      "volumetric_heat_w_m3": 2313.842473604398,
+      "fan_q_max_m3s": 3.835,
+      "fan_dp_max_pa": 80.0,
+      "fan_q_ref_m3s": 1.9175,
+      "fan_dp_ref_pa": 60.0,
+      "target_velocity_m_s": 0.07508418826846268,
+      "momentum_model": "fan_curve_with_transverse_damping",
+      "transverse_damping_s_inv": 5.0
+    },
+    {
+      "id": "row_5",
+      "type": "rack_fluid_momentum_heat_source",
+      "bounds": {
+        "x_min": 2.3,
+        "x_max": 13.600000000000001,
+        "y_min": 13.0,
+        "y_max": 14.1,
+        "z_min": 0.0,
+        "z_max": 2.26
+      },
+      "cold_face": "-y",
+      "flow_direction": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "total_heat_w": 65000.0,
+      "volume_m3": 28.09179999999999,
+      "volumetric_heat_w_m3": 2313.842473604398,
+      "fan_q_max_m3s": 3.835,
+      "fan_dp_max_pa": 80.0,
+      "fan_q_ref_m3s": 1.9175,
+      "fan_dp_ref_pa": 60.0,
+      "target_velocity_m_s": 0.07508418826846268,
+      "momentum_model": "fan_curve_with_transverse_damping",
+      "transverse_damping_s_inv": 5.0
+    },
+    {
+      "id": "row_6",
+      "type": "rack_fluid_momentum_heat_source",
+      "bounds": {
+        "x_min": 2.3,
+        "x_max": 13.600000000000001,
+        "y_min": 15.6,
+        "y_max": 16.7,
+        "z_min": 0.0,
+        "z_max": 2.26
+      },
+      "cold_face": "+y",
+      "flow_direction": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "total_heat_w": 65000.0,
+      "volume_m3": 28.09179999999999,
+      "volumetric_heat_w_m3": 2313.842473604398,
+      "fan_q_max_m3s": 3.835,
+      "fan_dp_max_pa": 80.0,
+      "fan_q_ref_m3s": 1.9175,
+      "fan_dp_ref_pa": 60.0,
+      "target_velocity_m_s": 0.07508418826846268,
+      "momentum_model": "fan_curve_with_transverse_damping",
+      "transverse_damping_s_inv": 5.0
+    },
+    {
+      "id": "row_7",
+      "type": "rack_fluid_momentum_heat_source",
+      "bounds": {
+        "x_min": 2.3,
+        "x_max": 13.600000000000001,
+        "y_min": 18.2,
+        "y_max": 19.3,
+        "z_min": 0.0,
+        "z_max": 2.26
+      },
+      "cold_face": "-y",
+      "flow_direction": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "total_heat_w": 65000.0,
+      "volume_m3": 28.09180000000004,
+      "volumetric_heat_w_m3": 2313.842473604394,
+      "fan_q_max_m3s": 3.835,
+      "fan_dp_max_pa": 80.0,
+      "fan_q_ref_m3s": 1.9175,
+      "fan_dp_ref_pa": 60.0,
+      "target_velocity_m_s": 0.07508418826846268,
+      "momentum_model": "fan_curve_with_transverse_damping",
+      "transverse_damping_s_inv": 5.0
+    },
+    {
+      "id": "row_8",
+      "type": "rack_fluid_momentum_heat_source",
+      "bounds": {
+        "x_min": 2.3,
+        "x_max": 13.600000000000001,
+        "y_min": 20.8,
+        "y_max": 21.900000000000002,
+        "z_min": 0.0,
+        "z_max": 2.26
+      },
+      "cold_face": "+y",
+      "flow_direction": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "total_heat_w": 65000.0,
+      "volume_m3": 28.09180000000004,
+      "volumetric_heat_w_m3": 2313.842473604394,
+      "fan_q_max_m3s": 3.835,
+      "fan_dp_max_pa": 80.0,
+      "fan_q_ref_m3s": 1.9175,
+      "fan_dp_ref_pa": 60.0,
+      "target_velocity_m_s": 0.07508418826846268,
+      "momentum_model": "fan_curve_with_transverse_damping",
+      "transverse_damping_s_inv": 5.0
+    }
+  ],
+  "tile_pressure_jumps": [
+    {
+      "id": "row_1_tiles",
+      "type": "floor_tile_pressure_jump_region",
+      "bounds": {
+        "x_min": 2.3,
+        "x_max": 13.600000000000001,
+        "y_min": 2.0,
+        "y_max": 2.6,
+        "z": 0.0
+      },
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "open_area_ratio": 0.25,
+      "effective_open_fraction": 0.25,
+      "discharge_coefficient": 1.0,
+      "loss_coefficient": 15.0,
+      "pressure_jump_model": "delta_p_equals_K_half_rho_v2"
+    },
+    {
+      "id": "row_2_tiles",
+      "type": "floor_tile_pressure_jump_region",
+      "bounds": {
+        "x_min": 2.3,
+        "x_max": 13.600000000000001,
+        "y_min": 6.300000000000001,
+        "y_max": 6.9,
+        "z": 0.0
+      },
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "open_area_ratio": 0.25,
+      "effective_open_fraction": 0.25,
+      "discharge_coefficient": 1.0,
+      "loss_coefficient": 15.0,
+      "pressure_jump_model": "delta_p_equals_K_half_rho_v2"
+    },
+    {
+      "id": "row_3_tiles",
+      "type": "floor_tile_pressure_jump_region",
+      "bounds": {
+        "x_min": 2.3,
+        "x_max": 13.600000000000001,
+        "y_min": 7.2,
+        "y_max": 7.8,
+        "z": 0.0
+      },
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "open_area_ratio": 0.25,
+      "effective_open_fraction": 0.25,
+      "discharge_coefficient": 1.0,
+      "loss_coefficient": 15.0,
+      "pressure_jump_model": "delta_p_equals_K_half_rho_v2"
+    },
+    {
+      "id": "row_4_tiles",
+      "type": "floor_tile_pressure_jump_region",
+      "bounds": {
+        "x_min": 2.3,
+        "x_max": 13.600000000000001,
+        "y_min": 11.5,
+        "y_max": 12.1,
+        "z": 0.0
+      },
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "open_area_ratio": 0.25,
+      "effective_open_fraction": 0.25,
+      "discharge_coefficient": 1.0,
+      "loss_coefficient": 15.0,
+      "pressure_jump_model": "delta_p_equals_K_half_rho_v2"
+    },
+    {
+      "id": "row_5_tiles",
+      "type": "floor_tile_pressure_jump_region",
+      "bounds": {
+        "x_min": 2.3,
+        "x_max": 13.600000000000001,
+        "y_min": 12.4,
+        "y_max": 13.0,
+        "z": 0.0
+      },
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "open_area_ratio": 0.25,
+      "effective_open_fraction": 0.25,
+      "discharge_coefficient": 1.0,
+      "loss_coefficient": 15.0,
+      "pressure_jump_model": "delta_p_equals_K_half_rho_v2"
+    },
+    {
+      "id": "row_6_tiles",
+      "type": "floor_tile_pressure_jump_region",
+      "bounds": {
+        "x_min": 2.3,
+        "x_max": 13.600000000000001,
+        "y_min": 16.7,
+        "y_max": 17.3,
+        "z": 0.0
+      },
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "open_area_ratio": 0.25,
+      "effective_open_fraction": 0.25,
+      "discharge_coefficient": 1.0,
+      "loss_coefficient": 15.0,
+      "pressure_jump_model": "delta_p_equals_K_half_rho_v2"
+    },
+    {
+      "id": "row_7_tiles",
+      "type": "floor_tile_pressure_jump_region",
+      "bounds": {
+        "x_min": 2.3,
+        "x_max": 13.600000000000001,
+        "y_min": 17.599999999999998,
+        "y_max": 18.2,
+        "z": 0.0
+      },
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "open_area_ratio": 0.25,
+      "effective_open_fraction": 0.25,
+      "discharge_coefficient": 1.0,
+      "loss_coefficient": 15.0,
+      "pressure_jump_model": "delta_p_equals_K_half_rho_v2"
+    },
+    {
+      "id": "row_8_tiles",
+      "type": "floor_tile_pressure_jump_region",
+      "bounds": {
+        "x_min": 2.3,
+        "x_max": 13.600000000000001,
+        "y_min": 21.900000000000002,
+        "y_max": 22.500000000000004,
+        "z": 0.0
+      },
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "open_area_ratio": 0.25,
+      "effective_open_fraction": 0.25,
+      "discharge_coefficient": 1.0,
+      "loss_coefficient": 15.0,
+      "pressure_jump_model": "delta_p_equals_K_half_rho_v2"
+    }
+  ],
+  "totals": {
+    "rack_heat_w": 520000.0,
+    "rack_source_count": 8,
+    "tile_region_count": 8
+  }
+}

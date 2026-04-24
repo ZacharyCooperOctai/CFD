@@ -38,7 +38,8 @@ def _write_minimal_sensor_csv(path: Path) -> None:
     path.write_text('sensor_id,x,y,z\n', encoding='utf-8')
 
 
-def generate_ingest(case_id: str, recorder: StageRecorder | None = None) -> dict:
+def generate_ingest(case_id: str, recorder: StageRecorder | None = None,
+                    physics_model: str | None = None) -> dict:
     root = repo_root()
     cfg = load_case_config(case_id)
     cdir = case_dir(case_id)
@@ -48,6 +49,7 @@ def generate_ingest(case_id: str, recorder: StageRecorder | None = None) -> dict
     ingest_dir.mkdir(parents=True, exist_ok=True)
 
     generator = cfg['case']['generator']
+    physics_model = physics_model or cfg['case'].get('physics_model')
     if generator == 'buildings_forced_convection_template':
         template = cfg['template']
         base_ffd = root / template['base_ffd']
@@ -76,10 +78,13 @@ def generate_ingest(case_id: str, recorder: StageRecorder | None = None) -> dict
             '--config', str(cdir / 'case.yaml'),
             '--outdir', str(ingest_dir),
         ]
+        if physics_model:
+            cmd_gen.extend(['--physics-model', physics_model])
         if recorder is not None:
             recorder.run_command('generate_ffd_inputs', cmd_gen, cwd=root)
         else:
             subprocess.run(cmd_gen, cwd=str(root), check=True)
+        convert_mode = 'physics-v1' if physics_model == 'physics-v1' else 'coupled'
         cmd_sci = [
             sys.executable,
             str(root / 'convert_to_sci.py'),
@@ -87,13 +92,17 @@ def generate_ingest(case_id: str, recorder: StageRecorder | None = None) -> dict
             '--grid-dir', str(ingest_dir),
             '--geo', str(ingest_dir / 'geometry.json'),
             '--outdir', str(ingest_dir),
+            '--mode', convert_mode,
         ]
         if recorder is not None:
             recorder.run_command('convert_to_sci', cmd_sci, cwd=root)
         else:
             subprocess.run(cmd_sci, cwd=str(root), check=True)
         # Normalize the canonical runtime names for the staged pipeline.
-        for src_name, dst_name in [('case.ffd', 'case.ffd'), ('case.cfd', 'case.cfd'), ('case.dat', 'case.dat')]:
+        required = [('case.ffd', 'case.ffd'), ('case.cfd', 'case.cfd'), ('case.dat', 'case.dat')]
+        if physics_model == 'physics-v1':
+            required.append(('case.sources', 'case.sources'))
+        for src_name, dst_name in required:
             src = ingest_dir / src_name
             if not src.exists():
                 raise FileNotFoundError(f'Missing generated ingest file: {src}')

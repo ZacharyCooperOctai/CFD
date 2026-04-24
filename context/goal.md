@@ -35,7 +35,7 @@ convert_to_sci.py               ← Step 2: format conversion
     └── dc_model.dat             (zeroone solid-flag file for isat_ffd)
     │
     ▼
-isat_ffd  (WSL binary)          ← Step 3: standalone FFD validation
+isat_ffd  (native Linux binary) ← Step 3: standalone FFD validation
     │  reads: input.ffd → dc_model.cfd, dc_model.dat, Kernels_3D.cl
     │  writes: log_gpu.ffd, field output files
     │
@@ -107,9 +107,9 @@ FFD parameter file specifying solver settings (dt=0.1s, t_end=900s), fluid prope
 initial conditions, and output frequency. FFD reads this as `input.ffd` in standalone mode
 (symlinked or copied from `dc_model.ffd`).
 
-### `isat_ffd` (WSL binary)
+### `isat_ffd` (native Linux binary)
 Fast Fluid Dynamics solver from Han et al. 2021 (doetools/isat_ffd on GitHub). Compiled
-on WSL2 Ubuntu with OpenCL support via pocl (CPU fallback). Solves the incompressible
+on Ubuntu with OpenCL support. Solves the incompressible
 Navier-Stokes + energy equations on the structured grid using explicit time stepping.
 GPU kernels are in `Kernels_3D.cl`; mesh and data structures in `data_structure_gpu.h`.
 In coupled mode, Modelica drives boundary conditions every 10s via the Buildings library
@@ -161,10 +161,9 @@ compilation still fails. Next step: confirm whether pocl is reading the patched 
 checking the temp file contents, or investigate whether `fmax` is also ambiguous under pocl's
 `_builtin_renames.h` (which renames OpenCL built-ins).
 
-**WSL setup:** isat_ffd is compiled and located at `~/isat_ffd/` in the Ubuntu WSL2 distro.
-The working directory for FFD runs is `/mnt/c/Users/ZacharyCooper-Baldoc/Desktop/Repositories/CFD/`
-which contains: `input.ffd`, `dc_model.cfd`, `dc_model.dat`, `Kernels_3D.cl`, all `*.h` headers,
-and the `ffd_isat` binary.
+**Native Linux setup:** build `ffd_isat` into `build/native/ffd_isat`, or set
+`ISAT_FFD_BIN` to an existing native Linux binary. Runtime inputs are staged
+under `output/<case>/run/<run-id>/runtime/`.
 
 ---
 
@@ -183,9 +182,9 @@ The aggregated `training_dataset.npz` stacks all 37 episodes for use in model tr
 ## Dependencies
 
 ```
-Python (Windows .venv):    numpy, pyyaml, matplotlib, OMPython, BuildingsPy
-WSL2 Ubuntu:               gcc, libOpenCL-dev, pocl-opencl-icd, libpocl-dev
-OpenModelica:              install from openmodelica.org (Windows)
+Python (native venv):      numpy, pyyaml, matplotlib, OMPython, BuildingsPy
+Ubuntu:                    gcc, libOpenCL-dev, clinfo, NVIDIA OpenCL ICD
+OpenModelica:              optional for later coupled workflow
 Buildings library:         download from simulationresearch.lbl.gov/modelica
-isat_ffd source:           github.com/doetools/isat_ffd (built in WSL2)
+isat_ffd source:           vendored under external/isat_ffd
 ```

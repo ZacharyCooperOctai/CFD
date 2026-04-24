@@ -10,15 +10,15 @@ ROOM ENVELOPE
   Total Z domain: -0.60 to 3.90 m
 
 MESH
-  Grid nodes:  X=101, Y=318, Z=38
-  Grid cells:  X=100, Y=317, Z=37
-  Total cells: 1,172,900
-  Min cell size X: 0.1500 m
-  Max cell size X: 0.1500 m
-  Min cell size Y: 0.0462 m
+  Grid nodes:  X=183, Y=423, Z=115
+  Grid cells:  X=182, Y=422, Z=114
+  Total cells: 8,755,656
+  Min cell size X: 0.0600 m
+  Max cell size X: 0.1583 m
+  Min cell size Y: 0.0200 m
   Max cell size Y: 0.1667 m
-  Min cell size Z: 0.0444 m
-  Max cell size Z: 0.1480 m
+  Min cell size Z: 0.0200 m
+  Max cell size Z: 0.0625 m
 
 RACK ROWS
   row_1: X=[2.3, 13.6] Y=[2.6, 3.7] Z=[0.0, 2.26] heat=65000 W
@@ -30,14 +30,20 @@ RACK ROWS
   row_7: X=[2.3, 13.6] Y=[18.2, 19.3] Z=[0.0, 2.26] heat=65000 W
   row_8: X=[2.3, 13.6] Y=[20.8, 21.9] Z=[0.0, 2.26] heat=65000 W
 
-CONTAINMENT BLOCKS: 12
+CONTAINMENT BLOCKS: 16
+ADDITIONAL SOLID BLOCKS: 0
+HOT-AISLE EXTRACTORS: 4
 PERFORATED TILE ZONES: 8
+PHYSICS SOURCE FILE: case.sources
 CRAC OPENINGS: 12
 VIRTUAL SENSORS: 325
 
 CELL FLAG DISTRIBUTION
-  fluid                    :    868,933 cells ( 74.1%)
-  wall_adiabatic           :     92,450 cells (  7.9%)
-  tile_opening             :      5,396 cells (  0.5%)
-  containment_wall         :     18,009 cells (  1.5%)
-  rack_source              :    188,112 cells ( 16.0%)
+  fluid                    :  6,596,777 cells ( 75.3%)
+  wall_adiabatic           :    285,787 cells (  3.3%)
+  rack_cold_face           :     68,856 cells (  0.8%)
+  rack_hot_face            :    476,336 cells (  5.4%)
+  tile_opening             :     16,006 cells (  0.2%)
+  containment_wall         :     78,814 cells (  0.9%)
+  rack_device_body         :  1,102,299 cells ( 12.6%)
+  hot_aisle_extractor      :    130,781 cells (  1.5%)

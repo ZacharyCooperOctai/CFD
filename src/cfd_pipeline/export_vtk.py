@@ -137,9 +137,12 @@ def plt_to_vtk(
     #   nodes_x has NX+1 values;  searchsorted(...) - 1 gives the cell index.
     # Clamp to [0, N-1] to handle points exactly on the far boundary.
     # ------------------------------------------------------------------
+    # The FFD solver writes Z in domain-local coordinates (Z=0 at plenum floor).
+    # Grid node arrays use global coordinates where nodes_z[0] = -plenum_depth < 0.
+    # Shift PLT Z values by nodes_z[0] to align the two coordinate systems.
     ix = np.clip(np.searchsorted(nodes_x, data["X"], side="right") - 1, 0, nx - 1)
     iy = np.clip(np.searchsorted(nodes_y, data["Y"], side="right") - 1, 0, ny - 1)
-    iz = np.clip(np.searchsorted(nodes_z, data["Z"], side="right") - 1, 0, nz - 1)
+    iz = np.clip(np.searchsorted(nodes_z, data["Z"] + nodes_z[0], side="right") - 1, 0, nz - 1)
 
     # pyvista RectilinearGrid flattens cells in Fortran order: X fastest, Z slowest
     # flat_index = ix + nx*iy + nx*ny*iz

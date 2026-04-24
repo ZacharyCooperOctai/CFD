@@ -3,3 +3,8 @@
 
 # Ignore the data store
 output/
+
+# Native build and Python cache artifacts
+build/
+__pycache__/
+src/**/__pycache__/

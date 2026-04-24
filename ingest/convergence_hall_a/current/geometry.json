@@ -1,0 +1,6838 @@
+{
+  "room": {
+    "length_x": 18.3,
+    "length_y": 23.4,
+    "white_space_height": 5.0,
+    "plenum_depth": 0.0,
+    "slab_to_ceiling": 5.0,
+    "walls_adiabatic": true,
+    "domain_z_min": 0.0,
+    "domain_z_max": 5.0,
+    "false_ceiling_base_z": 4.0,
+    "false_ceiling_thickness": 0.05
+  },
+  "rack_blocks": [
+    {
+      "id": "row_1",
+      "type": "rack_row",
+      "x_min": 3.3,
+      "x_max": 16.5,
+      "y_min": 1.8,
+      "y_max": 3.0,
+      "z_min": 0.0,
+      "z_max": 1.95,
+      "cold_face": "-y",
+      "total_heat_w": 110000.0,
+      "heat_flux_w_m2": 4273.504273504273,
+      "active_rack_count": 22,
+      "fan_q_max_m3s": 6.49,
+      "fan_dp_max_pa": 80.0,
+      "fan_q_ref_m3s": 3.245,
+      "fan_dp_ref_pa": 60.0,
+      "body_bounds": {
+        "x_min": 3.3000000000000007,
+        "x_max": 16.5,
+        "y_min": 1.7999999999999998,
+        "y_max": 3.0,
+        "z_min": 0.0,
+        "z_max": 1.95
+      },
+      "cold_face_bounds": {
+        "x_min": 3.3000000000000007,
+        "x_max": 16.5,
+        "y_min": 1.7375,
+        "y_max": 1.7999999999999998,
+        "z_min": 0.0,
+        "z_max": 1.95
+      },
+      "hot_face_bounds": {
+        "x_min": 3.3000000000000007,
+        "x_max": 16.5,
+        "y_min": 3.0,
+        "y_max": 3.3045454545454547,
+        "z_min": 0.0,
+        "z_max": 1.95
+      },
+      "plume_bounds": {
+        "x_min": 3.3000000000000007,
+        "x_max": 16.5,
+        "y_min": 3.3045454545454547,
+        "y_max": 3.9499999999999997,
+        "z_min": 0.0,
+        "z_max": 1.95
+      },
+      "flow_direction": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "airflow_m3s": 3.245,
+      "face_area_m2": 25.74,
+      "target_velocity_m_s": 0.1260683760683761,
+      "hot_face_depth_m": 0.3045454545454547,
+      "hot_face_volume_m3": 7.839000000000003,
+      "plume_depth_m": 0.6454545454545451,
+      "momentum_damping_s_inv": 15.0,
+      "thermal_damping_s_inv": 5.0,
+      "plume_mixing_s_inv": 1.5,
+      "max_source_delta_t_per_step_c": 2.0,
+      "max_delta_t_c": 60.0,
+      "body_cell_count": 77220,
+      "cold_face_cell_count": 5148,
+      "hot_face_cell_count": 25740,
+      "plume_cell_count": 56628
+    },
+    {
+      "id": "row_2",
+      "type": "rack_row",
+      "x_min": 3.3,
+      "x_max": 16.5,
+      "y_min": 4.2,
+      "y_max": 5.4,
+      "z_min": 0.0,
+      "z_max": 1.95,
+      "cold_face": "+y",
+      "total_heat_w": 110000.0,
+      "heat_flux_w_m2": 4273.504273504273,
+      "active_rack_count": 22,
+      "fan_q_max_m3s": 6.49,
+      "fan_dp_max_pa": 80.0,
+      "fan_q_ref_m3s": 3.245,
+      "fan_dp_ref_pa": 60.0,
+      "body_bounds": {
+        "x_min": 3.3000000000000007,
+        "x_max": 16.5,
+        "y_min": 4.190909090909091,
+        "y_max": 5.39,
+        "z_min": 0.0,
+        "z_max": 1.95
+      },
+      "cold_face_bounds": {
+        "x_min": 3.3000000000000007,
+        "x_max": 16.5,
+        "y_min": 5.39,
+        "y_max": 5.4625,
+        "z_min": 0.0,
+        "z_max": 1.95
+      },
+      "hot_face_bounds": {
+        "x_min": 3.3000000000000007,
+        "x_max": 16.5,
+        "y_min": 3.8954545454545455,
+        "y_max": 4.190909090909091,
+        "z_min": 0.0,
+        "z_max": 1.95
+      },
+      "plume_bounds": {
+        "x_min": 3.3000000000000007,
+        "x_max": 16.5,
+        "y_min": 3.2454545454545456,
+        "y_max": 3.8954545454545455,
+        "z_min": 0.0,
+        "z_max": 1.95
+      },
+      "flow_direction": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "airflow_m3s": 3.245,
+      "face_area_m2": 25.74,
+      "target_velocity_m_s": 0.1260683760683761,
+      "hot_face_depth_m": 0.29545454545454586,
+      "hot_face_volume_m3": 7.60500000000001,
+      "plume_depth_m": 0.6499999999999999,
+      "momentum_damping_s_inv": 15.0,
+      "thermal_damping_s_inv": 5.0,
+      "plume_mixing_s_inv": 1.5,
+      "max_source_delta_t_per_step_c": 2.0,
+      "max_delta_t_c": 60.0,
+      "body_cell_count": 87516,
+      "cold_face_cell_count": 5148,
+      "hot_face_cell_count": 25740,
+      "plume_cell_count": 56628
+    },
+    {
+      "id": "row_3",
+      "type": "rack_row",
+      "x_min": 3.3,
+      "x_max": 16.5,
+      "y_min": 6.6,
+      "y_max": 7.8,
+      "z_min": 0.0,
+      "z_max": 1.95,
+      "cold_face": "-y",
+      "total_heat_w": 85000.0,
+      "heat_flux_w_m2": 3302.2533022533025,
+      "active_rack_count": 17,
+      "fan_q_max_m3s": 5.015,
+      "fan_dp_max_pa": 80.0,
+      "fan_q_ref_m3s": 2.5075,
+      "fan_dp_ref_pa": 60.0,
+      "body_bounds": {
+        "x_min": 3.3000000000000007,
+        "x_max": 16.5,
+        "y_min": 6.59,
+        "y_max": 7.789999999999999,
+        "z_min": 0.0,
+        "z_max": 1.95
+      },
+      "cold_face_bounds": {
+        "x_min": 3.3000000000000007,
+        "x_max": 16.5,
+        "y_min": 6.5375,
+        "y_max": 6.59,
+        "z_min": 0.0,
+        "z_max": 1.95
+      },
+      "hot_face_bounds": {
+        "x_min": 3.3000000000000007,
+        "x_max": 16.5,
+        "y_min": 7.789999999999999,
+        "y_max": 8.104545454545455,
+        "z_min": 0.0,
+        "z_max": 1.95
+      },
+      "plume_bounds": {
+        "x_min": 3.3000000000000007,
+        "x_max": 16.5,
+        "y_min": 8.104545454545455,
+        "y_max": 8.75,
+        "z_min": 0.0,
+        "z_max": 1.95
+      },
+      "flow_direction": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "airflow_m3s": 2.5075,
+      "face_area_m2": 25.74,
+      "target_velocity_m_s": 0.09741647241647242,
+      "hot_face_depth_m": 0.31454545454545624,
+      "hot_face_volume_m3": 8.096400000000044,
+      "plume_depth_m": 0.6454545454545446,
+      "momentum_damping_s_inv": 15.0,
+      "thermal_damping_s_inv": 5.0,
+      "plume_mixing_s_inv": 1.5,
+      "max_source_delta_t_per_step_c": 2.0,
+      "max_delta_t_c": 60.0,
+      "body_cell_count": 82368,
+      "cold_face_cell_count": 5148,
+      "hot_face_cell_count": 25740,
+      "plume_cell_count": 56628
+    },
+    {
+      "id": "row_4",
+      "type": "rack_row",
+      "x_min": 3.3,
+      "x_max": 16.5,
+      "y_min": 9.0,
+      "y_max": 10.2,
+      "z_min": 0.0,
+      "z_max": 1.95,
+      "cold_face": "+y",
+      "total_heat_w": 110000.0,
+      "heat_flux_w_m2": 4273.504273504273,
+      "active_rack_count": 22,
+      "fan_q_max_m3s": 6.49,
+      "fan_dp_max_pa": 80.0,
+      "fan_q_ref_m3s": 3.245,
+      "fan_dp_ref_pa": 60.0,
+      "body_bounds": {
+        "x_min": 3.3000000000000007,
+        "x_max": 16.5,
+        "y_min": 8.990909090909092,
+        "y_max": 10.170540540540541,
+        "z_min": 0.0,
+        "z_max": 1.95
+      },
+      "cold_face_bounds": {
+        "x_min": 3.3000000000000007,
+        "x_max": 16.5,
+        "y_min": 10.170540540540541,
+        "y_max": 10.2625,
+        "z_min": 0.0,
+        "z_max": 1.95
+      },
+      "hot_face_bounds": {
+        "x_min": 3.3000000000000007,
+        "x_max": 16.5,
+        "y_min": 8.695454545454545,
+        "y_max": 8.990909090909092,
+        "z_min": 0.0,
+        "z_max": 1.95
+      },
+      "plume_bounds": {
+        "x_min": 3.3000000000000007,
+        "x_max": 16.5,
+        "y_min": 8.03,
+        "y_max": 8.695454545454545,
+        "z_min": 0.0,
+        "z_max": 1.95
+      },
+      "flow_direction": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "airflow_m3s": 3.245,
+      "face_area_m2": 25.74,
+      "target_velocity_m_s": 0.1260683760683761,
+      "hot_face_depth_m": 0.29545454545454675,
+      "hot_face_volume_m3": 7.605000000000032,
+      "plume_depth_m": 0.665454545454546,
+      "momentum_damping_s_inv": 15.0,
+      "thermal_damping_s_inv": 5.0,
+      "plume_mixing_s_inv": 1.5,
+      "max_source_delta_t_per_step_c": 2.0,
+      "max_delta_t_c": 60.0,
+      "body_cell_count": 82368,
+      "cold_face_cell_count": 5148,
+      "hot_face_cell_count": 30888,
+      "plume_cell_count": 56628
+    },
+    {
+      "id": "row_5",
+      "type": "rack_row",
+      "x_min": 3.3,
+      "x_max": 16.5,
+      "y_min": 11.4,
+      "y_max": 12.6,
+      "z_min": 0.0,
+      "z_max": 1.95,
+      "cold_face": "-y",
+      "total_heat_w": 110000.0,
+      "heat_flux_w_m2": 4273.504273504273,
+      "active_rack_count": 22,
+      "fan_q_max_m3s": 6.49,
+      "fan_dp_max_pa": 80.0,
+      "fan_q_ref_m3s": 3.245,
+      "fan_dp_ref_pa": 60.0,
+      "body_bounds": {
+        "x_min": 3.3000000000000007,
+        "x_max": 16.5,
+        "y_min": 11.4,
+        "y_max": 12.6,
+        "z_min": 0.0,
+        "z_max": 1.95
+      },
+      "cold_face_bounds": {
+        "x_min": 3.3000000000000007,
+        "x_max": 16.5,
+        "y_min": 11.3375,
+        "y_max": 11.4,
+        "z_min": 0.0,
+        "z_max": 1.95
+      },
+      "hot_face_bounds": {
+        "x_min": 3.3000000000000007,
+        "x_max": 16.5,
+        "y_min": 12.6,
+        "y_max": 12.904545454545454,
+        "z_min": 0.0,
+        "z_max": 1.95
+      },
+      "plume_bounds": {
+        "x_min": 3.3000000000000007,
+        "x_max": 16.5,
+        "y_min": 12.904545454545454,
+        "y_max": 13.55,
+        "z_min": 0.0,
+        "z_max": 1.95
+      },
+      "flow_direction": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "airflow_m3s": 3.245,
+      "face_area_m2": 25.74,
+      "target_velocity_m_s": 0.1260683760683761,
+      "hot_face_depth_m": 0.3045454545454547,
+      "hot_face_volume_m3": 7.839000000000003,
+      "plume_depth_m": 0.6454545454545464,
+      "momentum_damping_s_inv": 15.0,
+      "thermal_damping_s_inv": 5.0,
+      "plume_mixing_s_inv": 1.5,
+      "max_source_delta_t_per_step_c": 2.0,
+      "max_delta_t_c": 60.0,
+      "body_cell_count": 77220,
+      "cold_face_cell_count": 5148,
+      "hot_face_cell_count": 25740,
+      "plume_cell_count": 56628
+    },
+    {
+      "id": "row_6",
+      "type": "rack_row",
+      "x_min": 3.3,
+      "x_max": 16.5,
+      "y_min": 13.8,
+      "y_max": 15.0,
+      "z_min": 0.0,
+      "z_max": 1.95,
+      "cold_face": "+y",
+      "total_heat_w": 110000.0,
+      "heat_flux_w_m2": 4273.504273504273,
+      "active_rack_count": 22,
+      "fan_q_max_m3s": 6.49,
+      "fan_dp_max_pa": 80.0,
+      "fan_q_ref_m3s": 3.245,
+      "fan_dp_ref_pa": 60.0,
+      "body_bounds": {
+        "x_min": 3.3000000000000007,
+        "x_max": 16.5,
+        "y_min": 13.790909090909091,
+        "y_max": 14.980810810810812,
+        "z_min": 0.0,
+        "z_max": 1.95
+      },
+      "cold_face_bounds": {
+        "x_min": 3.3000000000000007,
+        "x_max": 16.5,
+        "y_min": 14.980810810810812,
+        "y_max": 15.0625,
+        "z_min": 0.0,
+        "z_max": 1.95
+      },
+      "hot_face_bounds": {
+        "x_min": 3.3000000000000007,
+        "x_max": 16.5,
+        "y_min": 13.495454545454544,
+        "y_max": 13.790909090909091,
+        "z_min": 0.0,
+        "z_max": 1.95
+      },
+      "plume_bounds": {
+        "x_min": 3.3000000000000007,
+        "x_max": 16.5,
+        "y_min": 12.84027027027027,
+        "y_max": 13.495454545454544,
+        "z_min": 0.0,
+        "z_max": 1.95
+      },
+      "flow_direction": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "airflow_m3s": 3.245,
+      "face_area_m2": 25.74,
+      "target_velocity_m_s": 0.1260683760683761,
+      "hot_face_depth_m": 0.29545454545454675,
+      "hot_face_volume_m3": 7.605000000000032,
+      "plume_depth_m": 0.6551842751842738,
+      "momentum_damping_s_inv": 15.0,
+      "thermal_damping_s_inv": 5.0,
+      "plume_mixing_s_inv": 1.5,
+      "max_source_delta_t_per_step_c": 2.0,
+      "max_delta_t_c": 60.0,
+      "body_cell_count": 82368,
+      "cold_face_cell_count": 5148,
+      "hot_face_cell_count": 25740,
+      "plume_cell_count": 56628
+    },
+    {
+      "id": "row_7",
+      "type": "rack_row",
+      "x_min": 3.3,
+      "x_max": 16.5,
+      "y_min": 16.2,
+      "y_max": 17.4,
+      "z_min": 0.0,
+      "z_max": 1.95,
+      "cold_face": "-y",
+      "total_heat_w": 85000.0,
+      "heat_flux_w_m2": 3302.2533022533025,
+      "active_rack_count": 17,
+      "fan_q_max_m3s": 5.015,
+      "fan_dp_max_pa": 80.0,
+      "fan_q_ref_m3s": 2.5075,
+      "fan_dp_ref_pa": 60.0,
+      "body_bounds": {
+        "x_min": 3.3000000000000007,
+        "x_max": 16.5,
+        "y_min": 16.191081081081084,
+        "y_max": 17.4,
+        "z_min": 0.0,
+        "z_max": 1.95
+      },
+      "cold_face_bounds": {
+        "x_min": 3.3000000000000007,
+        "x_max": 16.5,
+        "y_min": 16.1375,
+        "y_max": 16.191081081081084,
+        "z_min": 0.0,
+        "z_max": 1.95
+      },
+      "hot_face_bounds": {
+        "x_min": 3.3000000000000007,
+        "x_max": 16.5,
+        "y_min": 17.4,
+        "y_max": 17.704545454545453,
+        "z_min": 0.0,
+        "z_max": 1.95
+      },
+      "plume_bounds": {
+        "x_min": 3.3000000000000007,
+        "x_max": 16.5,
+        "y_min": 17.704545454545453,
+        "y_max": 18.331621621621625,
+        "z_min": 0.0,
+        "z_max": 1.95
+      },
+      "flow_direction": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "airflow_m3s": 2.5075,
+      "face_area_m2": 25.74,
+      "target_velocity_m_s": 0.09741647241647242,
+      "hot_face_depth_m": 0.3045454545454547,
+      "hot_face_volume_m3": 7.839000000000003,
+      "plume_depth_m": 0.6270761670761722,
+      "momentum_damping_s_inv": 15.0,
+      "thermal_damping_s_inv": 5.0,
+      "plume_mixing_s_inv": 1.5,
+      "max_source_delta_t_per_step_c": 2.0,
+      "max_delta_t_c": 60.0,
+      "body_cell_count": 82368,
+      "cold_face_cell_count": 5148,
+      "hot_face_cell_count": 25740,
+      "plume_cell_count": 56628
+    },
+    {
+      "id": "row_8",
+      "type": "rack_row",
+      "x_min": 3.3,
+      "x_max": 16.5,
+      "y_min": 18.6,
+      "y_max": 19.8,
+      "z_min": 0.0,
+      "z_max": 1.95,
+      "cold_face": "+y",
+      "total_heat_w": 110000.0,
+      "heat_flux_w_m2": 4273.504273504273,
+      "active_rack_count": 22,
+      "fan_q_max_m3s": 6.49,
+      "fan_dp_max_pa": 80.0,
+      "fan_q_ref_m3s": 3.245,
+      "fan_dp_ref_pa": 60.0,
+      "body_bounds": {
+        "x_min": 3.3000000000000007,
+        "x_max": 16.5,
+        "y_min": 18.590909090909093,
+        "y_max": 19.8,
+        "z_min": 0.0,
+        "z_max": 1.95
+      },
+      "cold_face_bounds": {
+        "x_min": 3.3000000000000007,
+        "x_max": 16.5,
+        "y_min": 19.8,
+        "y_max": 19.8625,
+        "z_min": 0.0,
+        "z_max": 1.95
+      },
+      "hot_face_bounds": {
+        "x_min": 3.3000000000000007,
+        "x_max": 16.5,
+        "y_min": 18.331621621621625,
+        "y_max": 18.590909090909093,
+        "z_min": 0.0,
+        "z_max": 1.95
+      },
+      "plume_bounds": {
+        "x_min": 3.3000000000000007,
+        "x_max": 16.5,
+        "y_min": 17.704545454545453,
+        "y_max": 18.331621621621625,
+        "z_min": 0.0,
+        "z_max": 1.95
+      },
+      "flow_direction": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "airflow_m3s": 3.245,
+      "face_area_m2": 25.74,
+      "target_velocity_m_s": 0.1260683760683761,
+      "hot_face_depth_m": 0.25928746928746804,
+      "hot_face_volume_m3": 6.674059459459427,
+      "plume_depth_m": 0.6270761670761722,
+      "momentum_damping_s_inv": 15.0,
+      "thermal_damping_s_inv": 5.0,
+      "plume_mixing_s_inv": 1.5,
+      "max_source_delta_t_per_step_c": 2.0,
+      "max_delta_t_c": 60.0,
+      "body_cell_count": 77220,
+      "cold_face_cell_count": 5148,
+      "hot_face_cell_count": 20592,
+      "plume_cell_count": 56628
+    },
+    {
+      "id": "row_9",
+      "type": "rack_row",
+      "x_min": 3.3,
+      "x_max": 16.5,
+      "y_min": 21.0,
+      "y_max": 22.2,
+      "z_min": 0.0,
+      "z_max": 1.95,
+      "cold_face": "-y",
+      "total_heat_w": 110000.0,
+      "heat_flux_w_m2": 4273.504273504273,
+      "active_rack_count": 22,
+      "fan_q_max_m3s": 6.49,
+      "fan_dp_max_pa": 80.0,
+      "fan_q_ref_m3s": 3.245,
+      "fan_dp_ref_pa": 60.0,
+      "body_bounds": {
+        "x_min": 3.3000000000000007,
+        "x_max": 16.5,
+        "y_min": 21.0,
+        "y_max": 22.2,
+        "z_min": 0.0,
+        "z_max": 1.95
+      },
+      "cold_face_bounds": {
+        "x_min": 3.3000000000000007,
+        "x_max": 16.5,
+        "y_min": 20.9375,
+        "y_max": 21.0,
+        "z_min": 0.0,
+        "z_max": 1.95
+      },
+      "hot_face_bounds": {
+        "x_min": 3.3000000000000007,
+        "x_max": 16.5,
+        "y_min": 22.2,
+        "y_max": 22.507142857142856,
+        "z_min": 0.0,
+        "z_max": 1.95
+      },
+      "plume_bounds": {
+        "x_min": 3.3000000000000007,
+        "x_max": 16.5,
+        "y_min": 22.507142857142856,
+        "y_max": 23.16190476190476,
+        "z_min": 0.0,
+        "z_max": 1.95
+      },
+      "flow_direction": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "airflow_m3s": 3.245,
+      "face_area_m2": 25.74,
+      "target_velocity_m_s": 0.1260683760683761,
+      "hot_face_depth_m": 0.30714285714285694,
+      "hot_face_volume_m3": 7.905857142857137,
+      "plume_depth_m": 0.6547619047619051,
+      "momentum_damping_s_inv": 15.0,
+      "thermal_damping_s_inv": 5.0,
+      "plume_mixing_s_inv": 1.5,
+      "max_source_delta_t_per_step_c": 2.0,
+      "max_delta_t_c": 60.0,
+      "body_cell_count": 56628,
+      "cold_face_cell_count": 5148,
+      "hot_face_cell_count": 25740,
+      "plume_cell_count": 56628
+    }
+  ],
+  "containment_blocks": [
+    {
+      "id": "ha_12_end_west",
+      "type": "containment",
+      "x_min": 3.250000000000001,
+      "x_max": 3.3000000000000007,
+      "y_min": 3.0,
+      "y_max": 4.2,
+      "z_min": 0.0,
+      "z_max": 4.0
+    },
+    {
+      "id": "ha_12_end_east",
+      "type": "containment",
+      "x_min": 16.5,
+      "x_max": 16.55,
+      "y_min": 3.0,
+      "y_max": 4.2,
+      "z_min": 0.0,
+      "z_max": 4.0
+    },
+    {
+      "id": "ha_12_side_north",
+      "type": "containment",
+      "x_min": 3.3,
+      "x_max": 16.5,
+      "y_min": 2.95,
+      "y_max": 3.0,
+      "z_min": 1.95,
+      "z_max": 4.0
+    },
+    {
+      "id": "ha_12_side_south",
+      "type": "containment",
+      "x_min": 3.3,
+      "x_max": 16.5,
+      "y_min": 4.2,
+      "y_max": 4.25,
+      "z_min": 1.95,
+      "z_max": 4.0
+    },
+    {
+      "id": "ha_34_end_west",
+      "type": "containment",
+      "x_min": 3.250000000000001,
+      "x_max": 3.3000000000000007,
+      "y_min": 7.8,
+      "y_max": 9.0,
+      "z_min": 0.0,
+      "z_max": 4.0
+    },
+    {
+      "id": "ha_34_end_east",
+      "type": "containment",
+      "x_min": 16.5,
+      "x_max": 16.55,
+      "y_min": 7.8,
+      "y_max": 9.0,
+      "z_min": 0.0,
+      "z_max": 4.0
+    },
+    {
+      "id": "ha_34_side_north",
+      "type": "containment",
+      "x_min": 3.3,
+      "x_max": 16.5,
+      "y_min": 7.75,
+      "y_max": 7.8,
+      "z_min": 1.95,
+      "z_max": 4.0
+    },
+    {
+      "id": "ha_34_side_south",
+      "type": "containment",
+      "x_min": 3.3,
+      "x_max": 16.5,
+      "y_min": 9.0,
+      "y_max": 9.05,
+      "z_min": 1.95,
+      "z_max": 4.0
+    },
+    {
+      "id": "ha_34_row_3_gap06_07",
+      "type": "containment",
+      "subtype": "missing_rack_gap_panel",
+      "row_id": "row_3",
+      "x_min": 6.3,
+      "x_max": 7.5,
+      "y_min": 7.75,
+      "y_max": 7.8,
+      "z_min": 0.0,
+      "z_max": 4.0
+    },
+    {
+      "id": "ha_34_row_3_gap18_20",
+      "type": "containment",
+      "subtype": "missing_rack_gap_panel",
+      "row_id": "row_3",
+      "x_min": 13.5,
+      "x_max": 15.3,
+      "y_min": 7.75,
+      "y_max": 7.8,
+      "z_min": 0.0,
+      "z_max": 4.0
+    },
+    {
+      "id": "ha_56_end_west",
+      "type": "containment",
+      "x_min": 3.250000000000001,
+      "x_max": 3.3000000000000007,
+      "y_min": 12.6,
+      "y_max": 13.8,
+      "z_min": 0.0,
+      "z_max": 4.0
+    },
+    {
+      "id": "ha_56_end_east",
+      "type": "containment",
+      "x_min": 16.5,
+      "x_max": 16.55,
+      "y_min": 12.6,
+      "y_max": 13.8,
+      "z_min": 0.0,
+      "z_max": 4.0
+    },
+    {
+      "id": "ha_56_side_north",
+      "type": "containment",
+      "x_min": 3.3,
+      "x_max": 16.5,
+      "y_min": 12.549999999999999,
+      "y_max": 12.6,
+      "z_min": 1.95,
+      "z_max": 4.0
+    },
+    {
+      "id": "ha_56_side_south",
+      "type": "containment",
+      "x_min": 3.3,
+      "x_max": 16.5,
+      "y_min": 13.8,
+      "y_max": 13.850000000000001,
+      "z_min": 1.95,
+      "z_max": 4.0
+    },
+    {
+      "id": "ha_78_end_west",
+      "type": "containment",
+      "x_min": 3.250000000000001,
+      "x_max": 3.3000000000000007,
+      "y_min": 17.4,
+      "y_max": 18.6,
+      "z_min": 0.0,
+      "z_max": 4.0
+    },
+    {
+      "id": "ha_78_end_east",
+      "type": "containment",
+      "x_min": 16.5,
+      "x_max": 16.55,
+      "y_min": 17.4,
+      "y_max": 18.6,
+      "z_min": 0.0,
+      "z_max": 4.0
+    },
+    {
+      "id": "ha_78_side_north",
+      "type": "containment",
+      "x_min": 3.3,
+      "x_max": 16.5,
+      "y_min": 17.349999999999998,
+      "y_max": 17.4,
+      "z_min": 1.95,
+      "z_max": 4.0
+    },
+    {
+      "id": "ha_78_side_south",
+      "type": "containment",
+      "x_min": 3.3,
+      "x_max": 16.5,
+      "y_min": 18.6,
+      "y_max": 18.650000000000002,
+      "z_min": 1.95,
+      "z_max": 4.0
+    },
+    {
+      "id": "ha_78_row_7_gap06_07",
+      "type": "containment",
+      "subtype": "missing_rack_gap_panel",
+      "row_id": "row_7",
+      "x_min": 6.3,
+      "x_max": 7.5,
+      "y_min": 17.349999999999998,
+      "y_max": 17.4,
+      "z_min": 0.0,
+      "z_max": 4.0
+    },
+    {
+      "id": "ha_78_row_7_gap18_20",
+      "type": "containment",
+      "subtype": "missing_rack_gap_panel",
+      "row_id": "row_7",
+      "x_min": 13.5,
+      "x_max": 15.3,
+      "y_min": 17.349999999999998,
+      "y_max": 17.4,
+      "z_min": 0.0,
+      "z_max": 4.0
+    },
+    {
+      "id": "ha_9s_end_west",
+      "type": "containment",
+      "x_min": 3.250000000000001,
+      "x_max": 3.3000000000000007,
+      "y_min": 22.2,
+      "y_max": 23.4,
+      "z_min": 0.0,
+      "z_max": 4.0
+    },
+    {
+      "id": "ha_9s_end_east",
+      "type": "containment",
+      "x_min": 16.5,
+      "x_max": 16.55,
+      "y_min": 22.2,
+      "y_max": 23.4,
+      "z_min": 0.0,
+      "z_max": 4.0
+    },
+    {
+      "id": "ha_9s_side_north",
+      "type": "containment",
+      "x_min": 3.3,
+      "x_max": 16.5,
+      "y_min": 22.15,
+      "y_max": 22.2,
+      "z_min": 1.95,
+      "z_max": 4.0
+    },
+    {
+      "id": "ha_9s_side_south",
+      "type": "containment",
+      "x_min": 3.3,
+      "x_max": 16.5,
+      "y_min": 23.4,
+      "y_max": 23.45,
+      "z_min": 1.95,
+      "z_max": 4.0
+    }
+  ],
+  "solid_blocks": [
+    {
+      "id": "crac_1_body",
+      "type": "cooling_unit_body",
+      "x_min": 0.0,
+      "x_max": 1.08,
+      "y_min": 0.6,
+      "y_max": 4.1,
+      "z_min": 0.0,
+      "z_max": 2.65
+    },
+    {
+      "id": "crac_1_duct",
+      "type": "cooling_unit_duct",
+      "x_min": 0.0,
+      "x_max": 1.08,
+      "y_min": 0.6,
+      "y_max": 4.1,
+      "z_min": 2.65,
+      "z_max": 4.0
+    },
+    {
+      "id": "crac_2_body",
+      "type": "cooling_unit_body",
+      "x_min": 0.0,
+      "x_max": 1.08,
+      "y_min": 4.34,
+      "y_max": 7.84,
+      "z_min": 0.0,
+      "z_max": 2.65
+    },
+    {
+      "id": "crac_2_duct",
+      "type": "cooling_unit_duct",
+      "x_min": 0.0,
+      "x_max": 1.08,
+      "y_min": 4.34,
+      "y_max": 7.84,
+      "z_min": 2.65,
+      "z_max": 4.0
+    },
+    {
+      "id": "crac_3_body",
+      "type": "cooling_unit_body",
+      "x_min": 0.0,
+      "x_max": 1.08,
+      "y_min": 8.08,
+      "y_max": 11.58,
+      "z_min": 0.0,
+      "z_max": 2.65
+    },
+    {
+      "id": "crac_3_duct",
+      "type": "cooling_unit_duct",
+      "x_min": 0.0,
+      "x_max": 1.08,
+      "y_min": 8.08,
+      "y_max": 11.58,
+      "z_min": 2.65,
+      "z_max": 4.0
+    },
+    {
+      "id": "crac_4_body",
+      "type": "cooling_unit_body",
+      "x_min": 0.0,
+      "x_max": 1.08,
+      "y_min": 11.82,
+      "y_max": 15.32,
+      "z_min": 0.0,
+      "z_max": 2.65
+    },
+    {
+      "id": "crac_4_duct",
+      "type": "cooling_unit_duct",
+      "x_min": 0.0,
+      "x_max": 1.08,
+      "y_min": 11.82,
+      "y_max": 15.32,
+      "z_min": 2.65,
+      "z_max": 4.0
+    },
+    {
+      "id": "crac_5_body",
+      "type": "cooling_unit_body",
+      "x_min": 0.0,
+      "x_max": 1.08,
+      "y_min": 15.56,
+      "y_max": 19.060000000000002,
+      "z_min": 0.0,
+      "z_max": 2.65
+    },
+    {
+      "id": "crac_5_duct",
+      "type": "cooling_unit_duct",
+      "x_min": 0.0,
+      "x_max": 1.08,
+      "y_min": 15.56,
+      "y_max": 19.060000000000002,
+      "z_min": 2.65,
+      "z_max": 4.0
+    },
+    {
+      "id": "crac_6_body",
+      "type": "cooling_unit_body",
+      "x_min": 0.0,
+      "x_max": 1.08,
+      "y_min": 19.3,
+      "y_max": 22.8,
+      "z_min": 0.0,
+      "z_max": 2.65
+    },
+    {
+      "id": "crac_6_duct",
+      "type": "cooling_unit_duct",
+      "x_min": 0.0,
+      "x_max": 1.08,
+      "y_min": 19.3,
+      "y_max": 22.8,
+      "z_min": 2.65,
+      "z_max": 4.0
+    },
+    {
+      "id": "false_ceiling_00_00",
+      "type": "false_ceiling",
+      "x_min": 0.0,
+      "x_max": 1.08,
+      "y_min": 0.0,
+      "y_max": 0.6,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_00_03",
+      "type": "false_ceiling",
+      "x_min": 0.0,
+      "x_max": 1.08,
+      "y_min": 4.1,
+      "y_max": 4.190909091,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_00_04",
+      "type": "false_ceiling",
+      "x_min": 0.0,
+      "x_max": 1.08,
+      "y_min": 4.190909091,
+      "y_max": 4.34,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_00_07",
+      "type": "false_ceiling",
+      "x_min": 0.0,
+      "x_max": 1.08,
+      "y_min": 7.84,
+      "y_max": 8.08,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_00_10",
+      "type": "false_ceiling",
+      "x_min": 0.0,
+      "x_max": 1.08,
+      "y_min": 11.58,
+      "y_max": 11.82,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_00_14",
+      "type": "false_ceiling",
+      "x_min": 0.0,
+      "x_max": 1.08,
+      "y_min": 15.32,
+      "y_max": 15.56,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_00_18",
+      "type": "false_ceiling",
+      "x_min": 0.0,
+      "x_max": 1.08,
+      "y_min": 19.06,
+      "y_max": 22.2,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_00_19",
+      "type": "false_ceiling",
+      "x_min": 0.0,
+      "x_max": 1.08,
+      "y_min": 22.2,
+      "y_max": 23.4,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_01_00",
+      "type": "false_ceiling",
+      "x_min": 1.08,
+      "x_max": 8.5,
+      "y_min": 0.0,
+      "y_max": 0.6,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_01_01",
+      "type": "false_ceiling",
+      "x_min": 1.08,
+      "x_max": 8.5,
+      "y_min": 0.6,
+      "y_max": 3.0,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_01_02",
+      "type": "false_ceiling",
+      "x_min": 1.08,
+      "x_max": 8.5,
+      "y_min": 3.0,
+      "y_max": 4.1,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_01_03",
+      "type": "false_ceiling",
+      "x_min": 1.08,
+      "x_max": 8.5,
+      "y_min": 4.1,
+      "y_max": 4.190909091,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_01_04",
+      "type": "false_ceiling",
+      "x_min": 1.08,
+      "x_max": 8.5,
+      "y_min": 4.190909091,
+      "y_max": 4.34,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_01_05",
+      "type": "false_ceiling",
+      "x_min": 1.08,
+      "x_max": 8.5,
+      "y_min": 4.34,
+      "y_max": 7.79,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_01_06",
+      "type": "false_ceiling",
+      "x_min": 1.08,
+      "x_max": 8.5,
+      "y_min": 7.79,
+      "y_max": 7.84,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_01_07",
+      "type": "false_ceiling",
+      "x_min": 1.08,
+      "x_max": 8.5,
+      "y_min": 7.84,
+      "y_max": 8.08,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_01_08",
+      "type": "false_ceiling",
+      "x_min": 1.08,
+      "x_max": 8.5,
+      "y_min": 8.08,
+      "y_max": 8.990909091,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_01_09",
+      "type": "false_ceiling",
+      "x_min": 1.08,
+      "x_max": 8.5,
+      "y_min": 8.990909091,
+      "y_max": 11.58,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_01_10",
+      "type": "false_ceiling",
+      "x_min": 1.08,
+      "x_max": 8.5,
+      "y_min": 11.58,
+      "y_max": 11.82,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_01_11",
+      "type": "false_ceiling",
+      "x_min": 1.08,
+      "x_max": 8.5,
+      "y_min": 11.82,
+      "y_max": 12.6,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_01_12",
+      "type": "false_ceiling",
+      "x_min": 1.08,
+      "x_max": 8.5,
+      "y_min": 12.6,
+      "y_max": 13.790909091,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_01_13",
+      "type": "false_ceiling",
+      "x_min": 1.08,
+      "x_max": 8.5,
+      "y_min": 13.790909091,
+      "y_max": 15.32,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_01_14",
+      "type": "false_ceiling",
+      "x_min": 1.08,
+      "x_max": 8.5,
+      "y_min": 15.32,
+      "y_max": 15.56,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_01_15",
+      "type": "false_ceiling",
+      "x_min": 1.08,
+      "x_max": 8.5,
+      "y_min": 15.56,
+      "y_max": 17.4,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_01_16",
+      "type": "false_ceiling",
+      "x_min": 1.08,
+      "x_max": 8.5,
+      "y_min": 17.4,
+      "y_max": 18.590909091,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_01_17",
+      "type": "false_ceiling",
+      "x_min": 1.08,
+      "x_max": 8.5,
+      "y_min": 18.590909091,
+      "y_max": 19.06,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_01_18",
+      "type": "false_ceiling",
+      "x_min": 1.08,
+      "x_max": 8.5,
+      "y_min": 19.06,
+      "y_max": 22.2,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_01_19",
+      "type": "false_ceiling",
+      "x_min": 1.08,
+      "x_max": 8.5,
+      "y_min": 22.2,
+      "y_max": 23.4,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_02_00",
+      "type": "false_ceiling",
+      "x_min": 8.5,
+      "x_max": 8.7,
+      "y_min": 0.0,
+      "y_max": 0.6,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_02_01",
+      "type": "false_ceiling",
+      "x_min": 8.5,
+      "x_max": 8.7,
+      "y_min": 0.6,
+      "y_max": 3.0,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_02_04",
+      "type": "false_ceiling",
+      "x_min": 8.5,
+      "x_max": 8.7,
+      "y_min": 4.190909091,
+      "y_max": 4.34,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_02_05",
+      "type": "false_ceiling",
+      "x_min": 8.5,
+      "x_max": 8.7,
+      "y_min": 4.34,
+      "y_max": 7.79,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_02_06",
+      "type": "false_ceiling",
+      "x_min": 8.5,
+      "x_max": 8.7,
+      "y_min": 7.79,
+      "y_max": 7.84,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_02_07",
+      "type": "false_ceiling",
+      "x_min": 8.5,
+      "x_max": 8.7,
+      "y_min": 7.84,
+      "y_max": 8.08,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_02_08",
+      "type": "false_ceiling",
+      "x_min": 8.5,
+      "x_max": 8.7,
+      "y_min": 8.08,
+      "y_max": 8.990909091,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_02_09",
+      "type": "false_ceiling",
+      "x_min": 8.5,
+      "x_max": 8.7,
+      "y_min": 8.990909091,
+      "y_max": 11.58,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_02_10",
+      "type": "false_ceiling",
+      "x_min": 8.5,
+      "x_max": 8.7,
+      "y_min": 11.58,
+      "y_max": 11.82,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_02_11",
+      "type": "false_ceiling",
+      "x_min": 8.5,
+      "x_max": 8.7,
+      "y_min": 11.82,
+      "y_max": 12.6,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_02_13",
+      "type": "false_ceiling",
+      "x_min": 8.5,
+      "x_max": 8.7,
+      "y_min": 13.790909091,
+      "y_max": 15.32,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_02_14",
+      "type": "false_ceiling",
+      "x_min": 8.5,
+      "x_max": 8.7,
+      "y_min": 15.32,
+      "y_max": 15.56,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_02_15",
+      "type": "false_ceiling",
+      "x_min": 8.5,
+      "x_max": 8.7,
+      "y_min": 15.56,
+      "y_max": 17.4,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_02_16",
+      "type": "false_ceiling",
+      "x_min": 8.5,
+      "x_max": 8.7,
+      "y_min": 17.4,
+      "y_max": 18.590909091,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_02_17",
+      "type": "false_ceiling",
+      "x_min": 8.5,
+      "x_max": 8.7,
+      "y_min": 18.590909091,
+      "y_max": 19.06,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_02_18",
+      "type": "false_ceiling",
+      "x_min": 8.5,
+      "x_max": 8.7,
+      "y_min": 19.06,
+      "y_max": 22.2,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_02_19",
+      "type": "false_ceiling",
+      "x_min": 8.5,
+      "x_max": 8.7,
+      "y_min": 22.2,
+      "y_max": 23.4,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_03_00",
+      "type": "false_ceiling",
+      "x_min": 8.7,
+      "x_max": 9.2,
+      "y_min": 0.0,
+      "y_max": 0.6,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_03_01",
+      "type": "false_ceiling",
+      "x_min": 8.7,
+      "x_max": 9.2,
+      "y_min": 0.6,
+      "y_max": 3.0,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_03_04",
+      "type": "false_ceiling",
+      "x_min": 8.7,
+      "x_max": 9.2,
+      "y_min": 4.190909091,
+      "y_max": 4.34,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_03_05",
+      "type": "false_ceiling",
+      "x_min": 8.7,
+      "x_max": 9.2,
+      "y_min": 4.34,
+      "y_max": 7.79,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_03_09",
+      "type": "false_ceiling",
+      "x_min": 8.7,
+      "x_max": 9.2,
+      "y_min": 8.990909091,
+      "y_max": 11.58,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_03_10",
+      "type": "false_ceiling",
+      "x_min": 8.7,
+      "x_max": 9.2,
+      "y_min": 11.58,
+      "y_max": 11.82,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_03_11",
+      "type": "false_ceiling",
+      "x_min": 8.7,
+      "x_max": 9.2,
+      "y_min": 11.82,
+      "y_max": 12.6,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_03_13",
+      "type": "false_ceiling",
+      "x_min": 8.7,
+      "x_max": 9.2,
+      "y_min": 13.790909091,
+      "y_max": 15.32,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_03_14",
+      "type": "false_ceiling",
+      "x_min": 8.7,
+      "x_max": 9.2,
+      "y_min": 15.32,
+      "y_max": 15.56,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_03_15",
+      "type": "false_ceiling",
+      "x_min": 8.7,
+      "x_max": 9.2,
+      "y_min": 15.56,
+      "y_max": 17.4,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_03_17",
+      "type": "false_ceiling",
+      "x_min": 8.7,
+      "x_max": 9.2,
+      "y_min": 18.590909091,
+      "y_max": 19.06,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_03_18",
+      "type": "false_ceiling",
+      "x_min": 8.7,
+      "x_max": 9.2,
+      "y_min": 19.06,
+      "y_max": 22.2,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_03_19",
+      "type": "false_ceiling",
+      "x_min": 8.7,
+      "x_max": 9.2,
+      "y_min": 22.2,
+      "y_max": 23.4,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_04_00",
+      "type": "false_ceiling",
+      "x_min": 9.2,
+      "x_max": 10.6,
+      "y_min": 0.0,
+      "y_max": 0.6,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_04_01",
+      "type": "false_ceiling",
+      "x_min": 9.2,
+      "x_max": 10.6,
+      "y_min": 0.6,
+      "y_max": 3.0,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_04_04",
+      "type": "false_ceiling",
+      "x_min": 9.2,
+      "x_max": 10.6,
+      "y_min": 4.190909091,
+      "y_max": 4.34,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_04_05",
+      "type": "false_ceiling",
+      "x_min": 9.2,
+      "x_max": 10.6,
+      "y_min": 4.34,
+      "y_max": 7.79,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_04_09",
+      "type": "false_ceiling",
+      "x_min": 9.2,
+      "x_max": 10.6,
+      "y_min": 8.990909091,
+      "y_max": 11.58,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_04_10",
+      "type": "false_ceiling",
+      "x_min": 9.2,
+      "x_max": 10.6,
+      "y_min": 11.58,
+      "y_max": 11.82,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_04_11",
+      "type": "false_ceiling",
+      "x_min": 9.2,
+      "x_max": 10.6,
+      "y_min": 11.82,
+      "y_max": 12.6,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_04_13",
+      "type": "false_ceiling",
+      "x_min": 9.2,
+      "x_max": 10.6,
+      "y_min": 13.790909091,
+      "y_max": 15.32,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_04_14",
+      "type": "false_ceiling",
+      "x_min": 9.2,
+      "x_max": 10.6,
+      "y_min": 15.32,
+      "y_max": 15.56,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_04_15",
+      "type": "false_ceiling",
+      "x_min": 9.2,
+      "x_max": 10.6,
+      "y_min": 15.56,
+      "y_max": 17.4,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_04_17",
+      "type": "false_ceiling",
+      "x_min": 9.2,
+      "x_max": 10.6,
+      "y_min": 18.590909091,
+      "y_max": 19.06,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_04_18",
+      "type": "false_ceiling",
+      "x_min": 9.2,
+      "x_max": 10.6,
+      "y_min": 19.06,
+      "y_max": 22.2,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_05_00",
+      "type": "false_ceiling",
+      "x_min": 10.6,
+      "x_max": 11.1,
+      "y_min": 0.0,
+      "y_max": 0.6,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_05_01",
+      "type": "false_ceiling",
+      "x_min": 10.6,
+      "x_max": 11.1,
+      "y_min": 0.6,
+      "y_max": 3.0,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_05_04",
+      "type": "false_ceiling",
+      "x_min": 10.6,
+      "x_max": 11.1,
+      "y_min": 4.190909091,
+      "y_max": 4.34,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_05_05",
+      "type": "false_ceiling",
+      "x_min": 10.6,
+      "x_max": 11.1,
+      "y_min": 4.34,
+      "y_max": 7.79,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_05_09",
+      "type": "false_ceiling",
+      "x_min": 10.6,
+      "x_max": 11.1,
+      "y_min": 8.990909091,
+      "y_max": 11.58,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_05_10",
+      "type": "false_ceiling",
+      "x_min": 10.6,
+      "x_max": 11.1,
+      "y_min": 11.58,
+      "y_max": 11.82,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_05_11",
+      "type": "false_ceiling",
+      "x_min": 10.6,
+      "x_max": 11.1,
+      "y_min": 11.82,
+      "y_max": 12.6,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_05_13",
+      "type": "false_ceiling",
+      "x_min": 10.6,
+      "x_max": 11.1,
+      "y_min": 13.790909091,
+      "y_max": 15.32,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_05_14",
+      "type": "false_ceiling",
+      "x_min": 10.6,
+      "x_max": 11.1,
+      "y_min": 15.32,
+      "y_max": 15.56,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_05_15",
+      "type": "false_ceiling",
+      "x_min": 10.6,
+      "x_max": 11.1,
+      "y_min": 15.56,
+      "y_max": 17.4,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_05_17",
+      "type": "false_ceiling",
+      "x_min": 10.6,
+      "x_max": 11.1,
+      "y_min": 18.590909091,
+      "y_max": 19.06,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_05_18",
+      "type": "false_ceiling",
+      "x_min": 10.6,
+      "x_max": 11.1,
+      "y_min": 19.06,
+      "y_max": 22.2,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_05_19",
+      "type": "false_ceiling",
+      "x_min": 10.6,
+      "x_max": 11.1,
+      "y_min": 22.2,
+      "y_max": 23.4,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_06_00",
+      "type": "false_ceiling",
+      "x_min": 11.1,
+      "x_max": 11.2,
+      "y_min": 0.0,
+      "y_max": 0.6,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_06_01",
+      "type": "false_ceiling",
+      "x_min": 11.1,
+      "x_max": 11.2,
+      "y_min": 0.6,
+      "y_max": 3.0,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_06_04",
+      "type": "false_ceiling",
+      "x_min": 11.1,
+      "x_max": 11.2,
+      "y_min": 4.190909091,
+      "y_max": 4.34,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_06_05",
+      "type": "false_ceiling",
+      "x_min": 11.1,
+      "x_max": 11.2,
+      "y_min": 4.34,
+      "y_max": 7.79,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_06_06",
+      "type": "false_ceiling",
+      "x_min": 11.1,
+      "x_max": 11.2,
+      "y_min": 7.79,
+      "y_max": 7.84,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_06_07",
+      "type": "false_ceiling",
+      "x_min": 11.1,
+      "x_max": 11.2,
+      "y_min": 7.84,
+      "y_max": 8.08,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_06_08",
+      "type": "false_ceiling",
+      "x_min": 11.1,
+      "x_max": 11.2,
+      "y_min": 8.08,
+      "y_max": 8.990909091,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_06_09",
+      "type": "false_ceiling",
+      "x_min": 11.1,
+      "x_max": 11.2,
+      "y_min": 8.990909091,
+      "y_max": 11.58,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_06_10",
+      "type": "false_ceiling",
+      "x_min": 11.1,
+      "x_max": 11.2,
+      "y_min": 11.58,
+      "y_max": 11.82,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_06_11",
+      "type": "false_ceiling",
+      "x_min": 11.1,
+      "x_max": 11.2,
+      "y_min": 11.82,
+      "y_max": 12.6,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_06_13",
+      "type": "false_ceiling",
+      "x_min": 11.1,
+      "x_max": 11.2,
+      "y_min": 13.790909091,
+      "y_max": 15.32,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_06_14",
+      "type": "false_ceiling",
+      "x_min": 11.1,
+      "x_max": 11.2,
+      "y_min": 15.32,
+      "y_max": 15.56,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_06_15",
+      "type": "false_ceiling",
+      "x_min": 11.1,
+      "x_max": 11.2,
+      "y_min": 15.56,
+      "y_max": 17.4,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_06_17",
+      "type": "false_ceiling",
+      "x_min": 11.1,
+      "x_max": 11.2,
+      "y_min": 18.590909091,
+      "y_max": 19.06,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_06_18",
+      "type": "false_ceiling",
+      "x_min": 11.1,
+      "x_max": 11.2,
+      "y_min": 19.06,
+      "y_max": 22.2,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_06_19",
+      "type": "false_ceiling",
+      "x_min": 11.1,
+      "x_max": 11.2,
+      "y_min": 22.2,
+      "y_max": 23.4,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_07_00",
+      "type": "false_ceiling",
+      "x_min": 11.2,
+      "x_max": 11.3,
+      "y_min": 0.0,
+      "y_max": 0.6,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_07_01",
+      "type": "false_ceiling",
+      "x_min": 11.2,
+      "x_max": 11.3,
+      "y_min": 0.6,
+      "y_max": 3.0,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_07_04",
+      "type": "false_ceiling",
+      "x_min": 11.2,
+      "x_max": 11.3,
+      "y_min": 4.190909091,
+      "y_max": 4.34,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_07_05",
+      "type": "false_ceiling",
+      "x_min": 11.2,
+      "x_max": 11.3,
+      "y_min": 4.34,
+      "y_max": 7.79,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_07_06",
+      "type": "false_ceiling",
+      "x_min": 11.2,
+      "x_max": 11.3,
+      "y_min": 7.79,
+      "y_max": 7.84,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_07_07",
+      "type": "false_ceiling",
+      "x_min": 11.2,
+      "x_max": 11.3,
+      "y_min": 7.84,
+      "y_max": 8.08,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_07_08",
+      "type": "false_ceiling",
+      "x_min": 11.2,
+      "x_max": 11.3,
+      "y_min": 8.08,
+      "y_max": 8.990909091,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_07_09",
+      "type": "false_ceiling",
+      "x_min": 11.2,
+      "x_max": 11.3,
+      "y_min": 8.990909091,
+      "y_max": 11.58,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_07_10",
+      "type": "false_ceiling",
+      "x_min": 11.2,
+      "x_max": 11.3,
+      "y_min": 11.58,
+      "y_max": 11.82,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_07_11",
+      "type": "false_ceiling",
+      "x_min": 11.2,
+      "x_max": 11.3,
+      "y_min": 11.82,
+      "y_max": 12.6,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_07_13",
+      "type": "false_ceiling",
+      "x_min": 11.2,
+      "x_max": 11.3,
+      "y_min": 13.790909091,
+      "y_max": 15.32,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_07_14",
+      "type": "false_ceiling",
+      "x_min": 11.2,
+      "x_max": 11.3,
+      "y_min": 15.32,
+      "y_max": 15.56,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_07_15",
+      "type": "false_ceiling",
+      "x_min": 11.2,
+      "x_max": 11.3,
+      "y_min": 15.56,
+      "y_max": 17.4,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_07_16",
+      "type": "false_ceiling",
+      "x_min": 11.2,
+      "x_max": 11.3,
+      "y_min": 17.4,
+      "y_max": 18.590909091,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_07_17",
+      "type": "false_ceiling",
+      "x_min": 11.2,
+      "x_max": 11.3,
+      "y_min": 18.590909091,
+      "y_max": 19.06,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_07_18",
+      "type": "false_ceiling",
+      "x_min": 11.2,
+      "x_max": 11.3,
+      "y_min": 19.06,
+      "y_max": 22.2,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_07_19",
+      "type": "false_ceiling",
+      "x_min": 11.2,
+      "x_max": 11.3,
+      "y_min": 22.2,
+      "y_max": 23.4,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_08_00",
+      "type": "false_ceiling",
+      "x_min": 11.3,
+      "x_max": 18.3,
+      "y_min": 0.0,
+      "y_max": 0.6,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_08_01",
+      "type": "false_ceiling",
+      "x_min": 11.3,
+      "x_max": 18.3,
+      "y_min": 0.6,
+      "y_max": 3.0,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_08_02",
+      "type": "false_ceiling",
+      "x_min": 11.3,
+      "x_max": 18.3,
+      "y_min": 3.0,
+      "y_max": 4.1,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_08_03",
+      "type": "false_ceiling",
+      "x_min": 11.3,
+      "x_max": 18.3,
+      "y_min": 4.1,
+      "y_max": 4.190909091,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_08_04",
+      "type": "false_ceiling",
+      "x_min": 11.3,
+      "x_max": 18.3,
+      "y_min": 4.190909091,
+      "y_max": 4.34,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_08_05",
+      "type": "false_ceiling",
+      "x_min": 11.3,
+      "x_max": 18.3,
+      "y_min": 4.34,
+      "y_max": 7.79,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_08_06",
+      "type": "false_ceiling",
+      "x_min": 11.3,
+      "x_max": 18.3,
+      "y_min": 7.79,
+      "y_max": 7.84,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_08_07",
+      "type": "false_ceiling",
+      "x_min": 11.3,
+      "x_max": 18.3,
+      "y_min": 7.84,
+      "y_max": 8.08,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_08_08",
+      "type": "false_ceiling",
+      "x_min": 11.3,
+      "x_max": 18.3,
+      "y_min": 8.08,
+      "y_max": 8.990909091,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_08_09",
+      "type": "false_ceiling",
+      "x_min": 11.3,
+      "x_max": 18.3,
+      "y_min": 8.990909091,
+      "y_max": 11.58,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_08_10",
+      "type": "false_ceiling",
+      "x_min": 11.3,
+      "x_max": 18.3,
+      "y_min": 11.58,
+      "y_max": 11.82,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_08_11",
+      "type": "false_ceiling",
+      "x_min": 11.3,
+      "x_max": 18.3,
+      "y_min": 11.82,
+      "y_max": 12.6,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_08_12",
+      "type": "false_ceiling",
+      "x_min": 11.3,
+      "x_max": 18.3,
+      "y_min": 12.6,
+      "y_max": 13.790909091,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_08_13",
+      "type": "false_ceiling",
+      "x_min": 11.3,
+      "x_max": 18.3,
+      "y_min": 13.790909091,
+      "y_max": 15.32,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_08_14",
+      "type": "false_ceiling",
+      "x_min": 11.3,
+      "x_max": 18.3,
+      "y_min": 15.32,
+      "y_max": 15.56,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_08_15",
+      "type": "false_ceiling",
+      "x_min": 11.3,
+      "x_max": 18.3,
+      "y_min": 15.56,
+      "y_max": 17.4,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_08_16",
+      "type": "false_ceiling",
+      "x_min": 11.3,
+      "x_max": 18.3,
+      "y_min": 17.4,
+      "y_max": 18.590909091,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_08_17",
+      "type": "false_ceiling",
+      "x_min": 11.3,
+      "x_max": 18.3,
+      "y_min": 18.590909091,
+      "y_max": 19.06,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_08_18",
+      "type": "false_ceiling",
+      "x_min": 11.3,
+      "x_max": 18.3,
+      "y_min": 19.06,
+      "y_max": 22.2,
+      "z_min": 4.0,
+      "z_max": 4.05
+    },
+    {
+      "id": "false_ceiling_08_19",
+      "type": "false_ceiling",
+      "x_min": 11.3,
+      "x_max": 18.3,
+      "y_min": 22.2,
+      "y_max": 23.4,
+      "z_min": 4.0,
+      "z_max": 4.05
+    }
+  ],
+  "hot_aisle_extractors": [
+    {
+      "id": "ha_12_extractor",
+      "type": "hot_aisle_extractor",
+      "hot_aisle_id": "ha_12",
+      "between": [
+        "row_1",
+        "row_2"
+      ],
+      "bounds": {
+        "x_min": 8.5,
+        "x_max": 11.3,
+        "y_min": 3.0,
+        "y_max": 4.190909090909091,
+        "z_min": 4.012380952380952,
+        "z_max": 5.0
+      },
+      "opening_bounds": {
+        "x_min": 8.5,
+        "x_max": 11.3,
+        "y_min": 3.0,
+        "y_max": 4.190909090909091,
+        "z_min": 4.0,
+        "z_max": 4.05,
+        "axis": "z",
+        "face_coordinate": 4.0,
+        "face_side": "positive"
+      },
+      "connected_return_ids": [
+        "crac_1_return"
+      ],
+      "target_flow_m3s": 6.49,
+      "target_velocity_m_s": 1.9462922573609585,
+      "direction": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "max_velocity_m_s": 3.0,
+      "damping_s_inv": 3.0,
+      "slot_area_m2": 3.3345454545454567
+    },
+    {
+      "id": "ha_34_extractor",
+      "type": "hot_aisle_extractor",
+      "hot_aisle_id": "ha_34",
+      "between": [
+        "row_3",
+        "row_4"
+      ],
+      "bounds": {
+        "x_min": 8.7,
+        "x_max": 11.1,
+        "y_min": 7.789999999999999,
+        "y_max": 8.990909090909092,
+        "z_min": 4.012380952380952,
+        "z_max": 5.0
+      },
+      "opening_bounds": {
+        "x_min": 8.7,
+        "x_max": 11.1,
+        "y_min": 7.789999999999999,
+        "y_max": 8.990909090909092,
+        "z_min": 4.0,
+        "z_max": 4.05,
+        "axis": "z",
+        "face_coordinate": 4.0,
+        "face_side": "positive"
+      },
+      "connected_return_ids": [
+        "crac_3_return"
+      ],
+      "target_flow_m3s": 5.7524999999999995,
+      "target_velocity_m_s": 1.9958838001513968,
+      "direction": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "max_velocity_m_s": 3.0,
+      "damping_s_inv": 3.0,
+      "slot_area_m2": 2.8821818181818233
+    },
+    {
+      "id": "ha_56_extractor",
+      "type": "hot_aisle_extractor",
+      "hot_aisle_id": "ha_56",
+      "between": [
+        "row_5",
+        "row_6"
+      ],
+      "bounds": {
+        "x_min": 8.5,
+        "x_max": 11.3,
+        "y_min": 12.6,
+        "y_max": 13.790909090909091,
+        "z_min": 4.012380952380952,
+        "z_max": 5.0
+      },
+      "opening_bounds": {
+        "x_min": 8.5,
+        "x_max": 11.3,
+        "y_min": 12.6,
+        "y_max": 13.790909090909091,
+        "z_min": 4.0,
+        "z_max": 4.05,
+        "axis": "z",
+        "face_coordinate": 4.0,
+        "face_side": "positive"
+      },
+      "connected_return_ids": [
+        "crac_4_return"
+      ],
+      "target_flow_m3s": 6.49,
+      "target_velocity_m_s": 1.9462922573609585,
+      "direction": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "max_velocity_m_s": 3.0,
+      "damping_s_inv": 3.0,
+      "slot_area_m2": 3.3345454545454567
+    },
+    {
+      "id": "ha_78_extractor",
+      "type": "hot_aisle_extractor",
+      "hot_aisle_id": "ha_78",
+      "between": [
+        "row_7",
+        "row_8"
+      ],
+      "bounds": {
+        "x_min": 8.7,
+        "x_max": 11.2,
+        "y_min": 17.4,
+        "y_max": 18.590909090909093,
+        "z_min": 4.012380952380952,
+        "z_max": 5.0
+      },
+      "opening_bounds": {
+        "x_min": 8.7,
+        "x_max": 11.2,
+        "y_min": 17.4,
+        "y_max": 18.590909090909093,
+        "z_min": 4.0,
+        "z_max": 4.05,
+        "axis": "z",
+        "face_coordinate": 4.0,
+        "face_side": "positive"
+      },
+      "connected_return_ids": [
+        "crac_5_return"
+      ],
+      "target_flow_m3s": 5.7524999999999995,
+      "target_velocity_m_s": 1.932137404580146,
+      "direction": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "max_velocity_m_s": 3.0,
+      "damping_s_inv": 3.0,
+      "slot_area_m2": 2.9772727272727373
+    },
+    {
+      "id": "ha_9s_extractor",
+      "type": "hot_aisle_extractor",
+      "hot_aisle_id": "ha_9s",
+      "between": [
+        "row_9"
+      ],
+      "bounds": {
+        "x_min": 9.2,
+        "x_max": 10.6,
+        "y_min": 22.2,
+        "y_max": 23.4,
+        "z_min": 4.012380952380952,
+        "z_max": 5.0
+      },
+      "opening_bounds": {
+        "x_min": 9.2,
+        "x_max": 10.6,
+        "y_min": 22.2,
+        "y_max": 23.4,
+        "z_min": 4.0,
+        "z_max": 4.05,
+        "axis": "z",
+        "face_coordinate": 4.0,
+        "face_side": "positive"
+      },
+      "connected_return_ids": [
+        "crac_5_return"
+      ],
+      "target_flow_m3s": 3.245,
+      "target_velocity_m_s": 1.9315476190476197,
+      "direction": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "max_velocity_m_s": 3.0,
+      "damping_s_inv": 3.0,
+      "slot_area_m2": 1.6799999999999995
+    }
+  ],
+  "tile_zones": [],
+  "crac_openings": [
+    {
+      "id": "crac_1_supply",
+      "type": "crac_supply",
+      "axis": "x",
+      "face_coordinate": 1.08,
+      "face_side": "positive",
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x_min": 1.08,
+      "x_max": 1.08,
+      "y_min": 0.6,
+      "y_max": 4.1,
+      "z_min": 0.0,
+      "z_max": 2.65,
+      "rated_flow_m3s": 12.7778,
+      "supply_temp_c": 21.5
+    },
+    {
+      "id": "crac_1_return",
+      "type": "crac_return",
+      "axis": "z",
+      "face_coordinate": 4.0,
+      "face_side": "positive",
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "x_min": 0.0,
+      "x_max": 1.08,
+      "y_min": 0.6,
+      "y_max": 4.1,
+      "z_min": 4.0,
+      "z_max": 4.0,
+      "rated_flow_m3s": 12.7778
+    },
+    {
+      "id": "crac_2_supply",
+      "type": "crac_supply",
+      "axis": "x",
+      "face_coordinate": 1.08,
+      "face_side": "positive",
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x_min": 1.08,
+      "x_max": 1.08,
+      "y_min": 4.34,
+      "y_max": 7.84,
+      "z_min": 0.0,
+      "z_max": 2.65,
+      "rated_flow_m3s": 12.7778,
+      "supply_temp_c": 21.5
+    },
+    {
+      "id": "crac_2_return",
+      "type": "crac_return",
+      "axis": "z",
+      "face_coordinate": 4.0,
+      "face_side": "positive",
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "x_min": 0.0,
+      "x_max": 1.08,
+      "y_min": 4.34,
+      "y_max": 7.84,
+      "z_min": 4.0,
+      "z_max": 4.0,
+      "rated_flow_m3s": 12.7778
+    },
+    {
+      "id": "crac_3_supply",
+      "type": "crac_supply",
+      "axis": "x",
+      "face_coordinate": 1.08,
+      "face_side": "positive",
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x_min": 1.08,
+      "x_max": 1.08,
+      "y_min": 8.08,
+      "y_max": 11.58,
+      "z_min": 0.0,
+      "z_max": 2.65,
+      "rated_flow_m3s": 12.7778,
+      "supply_temp_c": 21.5
+    },
+    {
+      "id": "crac_3_return",
+      "type": "crac_return",
+      "axis": "z",
+      "face_coordinate": 4.0,
+      "face_side": "positive",
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "x_min": 0.0,
+      "x_max": 1.08,
+      "y_min": 8.08,
+      "y_max": 11.58,
+      "z_min": 4.0,
+      "z_max": 4.0,
+      "rated_flow_m3s": 12.7778
+    },
+    {
+      "id": "crac_4_supply",
+      "type": "crac_supply",
+      "axis": "x",
+      "face_coordinate": 1.08,
+      "face_side": "positive",
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x_min": 1.08,
+      "x_max": 1.08,
+      "y_min": 11.82,
+      "y_max": 15.32,
+      "z_min": 0.0,
+      "z_max": 2.65,
+      "rated_flow_m3s": 12.7778,
+      "supply_temp_c": 21.5
+    },
+    {
+      "id": "crac_4_return",
+      "type": "crac_return",
+      "axis": "z",
+      "face_coordinate": 4.0,
+      "face_side": "positive",
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "x_min": 0.0,
+      "x_max": 1.08,
+      "y_min": 11.82,
+      "y_max": 15.32,
+      "z_min": 4.0,
+      "z_max": 4.0,
+      "rated_flow_m3s": 12.7778
+    },
+    {
+      "id": "crac_5_supply",
+      "type": "crac_supply",
+      "axis": "x",
+      "face_coordinate": 1.08,
+      "face_side": "positive",
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "x_min": 1.08,
+      "x_max": 1.08,
+      "y_min": 15.56,
+      "y_max": 19.060000000000002,
+      "z_min": 0.0,
+      "z_max": 2.65,
+      "rated_flow_m3s": 12.7778,
+      "supply_temp_c": 21.5
+    },
+    {
+      "id": "crac_5_return",
+      "type": "crac_return",
+      "axis": "z",
+      "face_coordinate": 4.0,
+      "face_side": "positive",
+      "normal": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "x_min": 0.0,
+      "x_max": 1.08,
+      "y_min": 15.56,
+      "y_max": 19.060000000000002,
+      "z_min": 4.0,
+      "z_max": 4.0,
+      "rated_flow_m3s": 12.7778
+    }
+  ],
+  "sensors": [
+    {
+      "id": "row_1_rack01_h1",
+      "x": 3.6,
+      "y": 1.775,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack01_h2",
+      "x": 3.6,
+      "y": 1.775,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack01_h3",
+      "x": 3.6,
+      "y": 1.775,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack02_h1",
+      "x": 4.2,
+      "y": 1.775,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack02_h2",
+      "x": 4.2,
+      "y": 1.775,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack02_h3",
+      "x": 4.2,
+      "y": 1.775,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack03_h1",
+      "x": 4.8,
+      "y": 1.775,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack03_h2",
+      "x": 4.8,
+      "y": 1.775,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack03_h3",
+      "x": 4.8,
+      "y": 1.775,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack04_h1",
+      "x": 5.4,
+      "y": 1.775,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack04_h2",
+      "x": 5.4,
+      "y": 1.775,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack04_h3",
+      "x": 5.4,
+      "y": 1.775,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack05_h1",
+      "x": 6.0,
+      "y": 1.775,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack05_h2",
+      "x": 6.0,
+      "y": 1.775,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack05_h3",
+      "x": 6.0,
+      "y": 1.775,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack06_h1",
+      "x": 6.6,
+      "y": 1.775,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack06_h2",
+      "x": 6.6,
+      "y": 1.775,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack06_h3",
+      "x": 6.6,
+      "y": 1.775,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack07_h1",
+      "x": 7.2,
+      "y": 1.775,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack07_h2",
+      "x": 7.2,
+      "y": 1.775,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack07_h3",
+      "x": 7.2,
+      "y": 1.775,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack08_h1",
+      "x": 7.8,
+      "y": 1.775,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack08_h2",
+      "x": 7.8,
+      "y": 1.775,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack08_h3",
+      "x": 7.8,
+      "y": 1.775,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack09_h1",
+      "x": 8.4,
+      "y": 1.775,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack09_h2",
+      "x": 8.4,
+      "y": 1.775,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack09_h3",
+      "x": 8.4,
+      "y": 1.775,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack10_h1",
+      "x": 9.0,
+      "y": 1.775,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack10_h2",
+      "x": 9.0,
+      "y": 1.775,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack10_h3",
+      "x": 9.0,
+      "y": 1.775,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack11_h1",
+      "x": 9.6,
+      "y": 1.775,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack11_h2",
+      "x": 9.6,
+      "y": 1.775,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack11_h3",
+      "x": 9.6,
+      "y": 1.775,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack12_h1",
+      "x": 10.2,
+      "y": 1.775,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack12_h2",
+      "x": 10.2,
+      "y": 1.775,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack12_h3",
+      "x": 10.2,
+      "y": 1.775,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack13_h1",
+      "x": 10.8,
+      "y": 1.775,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack13_h2",
+      "x": 10.8,
+      "y": 1.775,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack13_h3",
+      "x": 10.8,
+      "y": 1.775,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack14_h1",
+      "x": 11.4,
+      "y": 1.775,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack14_h2",
+      "x": 11.4,
+      "y": 1.775,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack14_h3",
+      "x": 11.4,
+      "y": 1.775,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack15_h1",
+      "x": 12.0,
+      "y": 1.775,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack15_h2",
+      "x": 12.0,
+      "y": 1.775,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack15_h3",
+      "x": 12.0,
+      "y": 1.775,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack16_h1",
+      "x": 12.6,
+      "y": 1.775,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack16_h2",
+      "x": 12.6,
+      "y": 1.775,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack16_h3",
+      "x": 12.6,
+      "y": 1.775,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack17_h1",
+      "x": 13.2,
+      "y": 1.775,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack17_h2",
+      "x": 13.2,
+      "y": 1.775,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack17_h3",
+      "x": 13.2,
+      "y": 1.775,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack18_h1",
+      "x": 13.8,
+      "y": 1.775,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack18_h2",
+      "x": 13.8,
+      "y": 1.775,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack18_h3",
+      "x": 13.8,
+      "y": 1.775,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack19_h1",
+      "x": 14.4,
+      "y": 1.775,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack19_h2",
+      "x": 14.4,
+      "y": 1.775,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack19_h3",
+      "x": 14.4,
+      "y": 1.775,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack20_h1",
+      "x": 15.0,
+      "y": 1.775,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack20_h2",
+      "x": 15.0,
+      "y": 1.775,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack20_h3",
+      "x": 15.0,
+      "y": 1.775,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack21_h1",
+      "x": 15.6,
+      "y": 1.775,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack21_h2",
+      "x": 15.6,
+      "y": 1.775,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack21_h3",
+      "x": 15.6,
+      "y": 1.775,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack22_h1",
+      "x": 16.2,
+      "y": 1.775,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack22_h2",
+      "x": 16.2,
+      "y": 1.775,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_1_rack22_h3",
+      "x": 16.2,
+      "y": 1.775,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack01_h1",
+      "x": 3.6,
+      "y": 5.425,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack01_h2",
+      "x": 3.6,
+      "y": 5.425,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack01_h3",
+      "x": 3.6,
+      "y": 5.425,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack02_h1",
+      "x": 4.2,
+      "y": 5.425,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack02_h2",
+      "x": 4.2,
+      "y": 5.425,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack02_h3",
+      "x": 4.2,
+      "y": 5.425,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack03_h1",
+      "x": 4.8,
+      "y": 5.425,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack03_h2",
+      "x": 4.8,
+      "y": 5.425,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack03_h3",
+      "x": 4.8,
+      "y": 5.425,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack04_h1",
+      "x": 5.4,
+      "y": 5.425,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack04_h2",
+      "x": 5.4,
+      "y": 5.425,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack04_h3",
+      "x": 5.4,
+      "y": 5.425,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack05_h1",
+      "x": 6.0,
+      "y": 5.425,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack05_h2",
+      "x": 6.0,
+      "y": 5.425,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack05_h3",
+      "x": 6.0,
+      "y": 5.425,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack06_h1",
+      "x": 6.6,
+      "y": 5.425,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack06_h2",
+      "x": 6.6,
+      "y": 5.425,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack06_h3",
+      "x": 6.6,
+      "y": 5.425,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack07_h1",
+      "x": 7.2,
+      "y": 5.425,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack07_h2",
+      "x": 7.2,
+      "y": 5.425,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack07_h3",
+      "x": 7.2,
+      "y": 5.425,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack08_h1",
+      "x": 7.8,
+      "y": 5.425,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack08_h2",
+      "x": 7.8,
+      "y": 5.425,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack08_h3",
+      "x": 7.8,
+      "y": 5.425,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack09_h1",
+      "x": 8.4,
+      "y": 5.425,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack09_h2",
+      "x": 8.4,
+      "y": 5.425,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack09_h3",
+      "x": 8.4,
+      "y": 5.425,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack10_h1",
+      "x": 9.0,
+      "y": 5.425,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack10_h2",
+      "x": 9.0,
+      "y": 5.425,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack10_h3",
+      "x": 9.0,
+      "y": 5.425,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack11_h1",
+      "x": 9.6,
+      "y": 5.425,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack11_h2",
+      "x": 9.6,
+      "y": 5.425,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack11_h3",
+      "x": 9.6,
+      "y": 5.425,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack12_h1",
+      "x": 10.2,
+      "y": 5.425,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack12_h2",
+      "x": 10.2,
+      "y": 5.425,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack12_h3",
+      "x": 10.2,
+      "y": 5.425,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack13_h1",
+      "x": 10.8,
+      "y": 5.425,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack13_h2",
+      "x": 10.8,
+      "y": 5.425,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack13_h3",
+      "x": 10.8,
+      "y": 5.425,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack14_h1",
+      "x": 11.4,
+      "y": 5.425,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack14_h2",
+      "x": 11.4,
+      "y": 5.425,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack14_h3",
+      "x": 11.4,
+      "y": 5.425,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack15_h1",
+      "x": 12.0,
+      "y": 5.425,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack15_h2",
+      "x": 12.0,
+      "y": 5.425,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack15_h3",
+      "x": 12.0,
+      "y": 5.425,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack16_h1",
+      "x": 12.6,
+      "y": 5.425,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack16_h2",
+      "x": 12.6,
+      "y": 5.425,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack16_h3",
+      "x": 12.6,
+      "y": 5.425,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack17_h1",
+      "x": 13.2,
+      "y": 5.425,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack17_h2",
+      "x": 13.2,
+      "y": 5.425,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack17_h3",
+      "x": 13.2,
+      "y": 5.425,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack18_h1",
+      "x": 13.8,
+      "y": 5.425,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack18_h2",
+      "x": 13.8,
+      "y": 5.425,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack18_h3",
+      "x": 13.8,
+      "y": 5.425,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack19_h1",
+      "x": 14.4,
+      "y": 5.425,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack19_h2",
+      "x": 14.4,
+      "y": 5.425,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack19_h3",
+      "x": 14.4,
+      "y": 5.425,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack20_h1",
+      "x": 15.0,
+      "y": 5.425,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack20_h2",
+      "x": 15.0,
+      "y": 5.425,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack20_h3",
+      "x": 15.0,
+      "y": 5.425,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack21_h1",
+      "x": 15.6,
+      "y": 5.425,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack21_h2",
+      "x": 15.6,
+      "y": 5.425,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack21_h3",
+      "x": 15.6,
+      "y": 5.425,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack22_h1",
+      "x": 16.2,
+      "y": 5.425,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack22_h2",
+      "x": 16.2,
+      "y": 5.425,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_2_rack22_h3",
+      "x": 16.2,
+      "y": 5.425,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack01_h1",
+      "x": 3.6,
+      "y": 6.575,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack01_h2",
+      "x": 3.6,
+      "y": 6.575,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack01_h3",
+      "x": 3.6,
+      "y": 6.575,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack02_h1",
+      "x": 4.2,
+      "y": 6.575,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack02_h2",
+      "x": 4.2,
+      "y": 6.575,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack02_h3",
+      "x": 4.2,
+      "y": 6.575,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack03_h1",
+      "x": 4.8,
+      "y": 6.575,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack03_h2",
+      "x": 4.8,
+      "y": 6.575,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack03_h3",
+      "x": 4.8,
+      "y": 6.575,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack04_h1",
+      "x": 5.4,
+      "y": 6.575,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack04_h2",
+      "x": 5.4,
+      "y": 6.575,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack04_h3",
+      "x": 5.4,
+      "y": 6.575,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack05_h1",
+      "x": 6.0,
+      "y": 6.575,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack05_h2",
+      "x": 6.0,
+      "y": 6.575,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack05_h3",
+      "x": 6.0,
+      "y": 6.575,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack08_h1",
+      "x": 7.8,
+      "y": 6.575,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack08_h2",
+      "x": 7.8,
+      "y": 6.575,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack08_h3",
+      "x": 7.8,
+      "y": 6.575,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack09_h1",
+      "x": 8.4,
+      "y": 6.575,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack09_h2",
+      "x": 8.4,
+      "y": 6.575,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack09_h3",
+      "x": 8.4,
+      "y": 6.575,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack10_h1",
+      "x": 9.0,
+      "y": 6.575,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack10_h2",
+      "x": 9.0,
+      "y": 6.575,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack10_h3",
+      "x": 9.0,
+      "y": 6.575,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack11_h1",
+      "x": 9.6,
+      "y": 6.575,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack11_h2",
+      "x": 9.6,
+      "y": 6.575,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack11_h3",
+      "x": 9.6,
+      "y": 6.575,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack12_h1",
+      "x": 10.2,
+      "y": 6.575,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack12_h2",
+      "x": 10.2,
+      "y": 6.575,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack12_h3",
+      "x": 10.2,
+      "y": 6.575,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack13_h1",
+      "x": 10.8,
+      "y": 6.575,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack13_h2",
+      "x": 10.8,
+      "y": 6.575,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack13_h3",
+      "x": 10.8,
+      "y": 6.575,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack14_h1",
+      "x": 11.4,
+      "y": 6.575,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack14_h2",
+      "x": 11.4,
+      "y": 6.575,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack14_h3",
+      "x": 11.4,
+      "y": 6.575,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack15_h1",
+      "x": 12.0,
+      "y": 6.575,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack15_h2",
+      "x": 12.0,
+      "y": 6.575,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack15_h3",
+      "x": 12.0,
+      "y": 6.575,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack16_h1",
+      "x": 12.6,
+      "y": 6.575,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack16_h2",
+      "x": 12.6,
+      "y": 6.575,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack16_h3",
+      "x": 12.6,
+      "y": 6.575,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack17_h1",
+      "x": 13.2,
+      "y": 6.575,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack17_h2",
+      "x": 13.2,
+      "y": 6.575,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack17_h3",
+      "x": 13.2,
+      "y": 6.575,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack21_h1",
+      "x": 15.6,
+      "y": 6.575,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack21_h2",
+      "x": 15.6,
+      "y": 6.575,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack21_h3",
+      "x": 15.6,
+      "y": 6.575,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack22_h1",
+      "x": 16.2,
+      "y": 6.575,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack22_h2",
+      "x": 16.2,
+      "y": 6.575,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_3_rack22_h3",
+      "x": 16.2,
+      "y": 6.575,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack01_h1",
+      "x": 3.6,
+      "y": 10.225,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack01_h2",
+      "x": 3.6,
+      "y": 10.225,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack01_h3",
+      "x": 3.6,
+      "y": 10.225,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack02_h1",
+      "x": 4.2,
+      "y": 10.225,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack02_h2",
+      "x": 4.2,
+      "y": 10.225,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack02_h3",
+      "x": 4.2,
+      "y": 10.225,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack03_h1",
+      "x": 4.8,
+      "y": 10.225,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack03_h2",
+      "x": 4.8,
+      "y": 10.225,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack03_h3",
+      "x": 4.8,
+      "y": 10.225,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack04_h1",
+      "x": 5.4,
+      "y": 10.225,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack04_h2",
+      "x": 5.4,
+      "y": 10.225,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack04_h3",
+      "x": 5.4,
+      "y": 10.225,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack05_h1",
+      "x": 6.0,
+      "y": 10.225,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack05_h2",
+      "x": 6.0,
+      "y": 10.225,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack05_h3",
+      "x": 6.0,
+      "y": 10.225,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack06_h1",
+      "x": 6.6,
+      "y": 10.225,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack06_h2",
+      "x": 6.6,
+      "y": 10.225,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack06_h3",
+      "x": 6.6,
+      "y": 10.225,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack07_h1",
+      "x": 7.2,
+      "y": 10.225,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack07_h2",
+      "x": 7.2,
+      "y": 10.225,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack07_h3",
+      "x": 7.2,
+      "y": 10.225,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack08_h1",
+      "x": 7.8,
+      "y": 10.225,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack08_h2",
+      "x": 7.8,
+      "y": 10.225,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack08_h3",
+      "x": 7.8,
+      "y": 10.225,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack09_h1",
+      "x": 8.4,
+      "y": 10.225,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack09_h2",
+      "x": 8.4,
+      "y": 10.225,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack09_h3",
+      "x": 8.4,
+      "y": 10.225,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack10_h1",
+      "x": 9.0,
+      "y": 10.225,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack10_h2",
+      "x": 9.0,
+      "y": 10.225,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack10_h3",
+      "x": 9.0,
+      "y": 10.225,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack11_h1",
+      "x": 9.6,
+      "y": 10.225,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack11_h2",
+      "x": 9.6,
+      "y": 10.225,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack11_h3",
+      "x": 9.6,
+      "y": 10.225,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack12_h1",
+      "x": 10.2,
+      "y": 10.225,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack12_h2",
+      "x": 10.2,
+      "y": 10.225,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack12_h3",
+      "x": 10.2,
+      "y": 10.225,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack13_h1",
+      "x": 10.8,
+      "y": 10.225,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack13_h2",
+      "x": 10.8,
+      "y": 10.225,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack13_h3",
+      "x": 10.8,
+      "y": 10.225,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack14_h1",
+      "x": 11.4,
+      "y": 10.225,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack14_h2",
+      "x": 11.4,
+      "y": 10.225,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack14_h3",
+      "x": 11.4,
+      "y": 10.225,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack15_h1",
+      "x": 12.0,
+      "y": 10.225,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack15_h2",
+      "x": 12.0,
+      "y": 10.225,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack15_h3",
+      "x": 12.0,
+      "y": 10.225,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack16_h1",
+      "x": 12.6,
+      "y": 10.225,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack16_h2",
+      "x": 12.6,
+      "y": 10.225,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack16_h3",
+      "x": 12.6,
+      "y": 10.225,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack17_h1",
+      "x": 13.2,
+      "y": 10.225,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack17_h2",
+      "x": 13.2,
+      "y": 10.225,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack17_h3",
+      "x": 13.2,
+      "y": 10.225,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack18_h1",
+      "x": 13.8,
+      "y": 10.225,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack18_h2",
+      "x": 13.8,
+      "y": 10.225,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack18_h3",
+      "x": 13.8,
+      "y": 10.225,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack19_h1",
+      "x": 14.4,
+      "y": 10.225,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack19_h2",
+      "x": 14.4,
+      "y": 10.225,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack19_h3",
+      "x": 14.4,
+      "y": 10.225,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack20_h1",
+      "x": 15.0,
+      "y": 10.225,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack20_h2",
+      "x": 15.0,
+      "y": 10.225,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack20_h3",
+      "x": 15.0,
+      "y": 10.225,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack21_h1",
+      "x": 15.6,
+      "y": 10.225,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack21_h2",
+      "x": 15.6,
+      "y": 10.225,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack21_h3",
+      "x": 15.6,
+      "y": 10.225,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack22_h1",
+      "x": 16.2,
+      "y": 10.225,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack22_h2",
+      "x": 16.2,
+      "y": 10.225,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_4_rack22_h3",
+      "x": 16.2,
+      "y": 10.225,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack01_h1",
+      "x": 3.6,
+      "y": 11.375,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack01_h2",
+      "x": 3.6,
+      "y": 11.375,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack01_h3",
+      "x": 3.6,
+      "y": 11.375,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack02_h1",
+      "x": 4.2,
+      "y": 11.375,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack02_h2",
+      "x": 4.2,
+      "y": 11.375,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack02_h3",
+      "x": 4.2,
+      "y": 11.375,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack03_h1",
+      "x": 4.8,
+      "y": 11.375,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack03_h2",
+      "x": 4.8,
+      "y": 11.375,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack03_h3",
+      "x": 4.8,
+      "y": 11.375,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack04_h1",
+      "x": 5.4,
+      "y": 11.375,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack04_h2",
+      "x": 5.4,
+      "y": 11.375,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack04_h3",
+      "x": 5.4,
+      "y": 11.375,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack05_h1",
+      "x": 6.0,
+      "y": 11.375,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack05_h2",
+      "x": 6.0,
+      "y": 11.375,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack05_h3",
+      "x": 6.0,
+      "y": 11.375,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack06_h1",
+      "x": 6.6,
+      "y": 11.375,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack06_h2",
+      "x": 6.6,
+      "y": 11.375,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack06_h3",
+      "x": 6.6,
+      "y": 11.375,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack07_h1",
+      "x": 7.2,
+      "y": 11.375,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack07_h2",
+      "x": 7.2,
+      "y": 11.375,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack07_h3",
+      "x": 7.2,
+      "y": 11.375,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack08_h1",
+      "x": 7.8,
+      "y": 11.375,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack08_h2",
+      "x": 7.8,
+      "y": 11.375,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack08_h3",
+      "x": 7.8,
+      "y": 11.375,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack09_h1",
+      "x": 8.4,
+      "y": 11.375,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack09_h2",
+      "x": 8.4,
+      "y": 11.375,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack09_h3",
+      "x": 8.4,
+      "y": 11.375,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack10_h1",
+      "x": 9.0,
+      "y": 11.375,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack10_h2",
+      "x": 9.0,
+      "y": 11.375,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack10_h3",
+      "x": 9.0,
+      "y": 11.375,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack11_h1",
+      "x": 9.6,
+      "y": 11.375,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack11_h2",
+      "x": 9.6,
+      "y": 11.375,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack11_h3",
+      "x": 9.6,
+      "y": 11.375,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack12_h1",
+      "x": 10.2,
+      "y": 11.375,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack12_h2",
+      "x": 10.2,
+      "y": 11.375,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack12_h3",
+      "x": 10.2,
+      "y": 11.375,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack13_h1",
+      "x": 10.8,
+      "y": 11.375,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack13_h2",
+      "x": 10.8,
+      "y": 11.375,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack13_h3",
+      "x": 10.8,
+      "y": 11.375,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack14_h1",
+      "x": 11.4,
+      "y": 11.375,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack14_h2",
+      "x": 11.4,
+      "y": 11.375,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack14_h3",
+      "x": 11.4,
+      "y": 11.375,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack15_h1",
+      "x": 12.0,
+      "y": 11.375,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack15_h2",
+      "x": 12.0,
+      "y": 11.375,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack15_h3",
+      "x": 12.0,
+      "y": 11.375,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack16_h1",
+      "x": 12.6,
+      "y": 11.375,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack16_h2",
+      "x": 12.6,
+      "y": 11.375,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack16_h3",
+      "x": 12.6,
+      "y": 11.375,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack17_h1",
+      "x": 13.2,
+      "y": 11.375,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack17_h2",
+      "x": 13.2,
+      "y": 11.375,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack17_h3",
+      "x": 13.2,
+      "y": 11.375,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack18_h1",
+      "x": 13.8,
+      "y": 11.375,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack18_h2",
+      "x": 13.8,
+      "y": 11.375,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack18_h3",
+      "x": 13.8,
+      "y": 11.375,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack19_h1",
+      "x": 14.4,
+      "y": 11.375,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack19_h2",
+      "x": 14.4,
+      "y": 11.375,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack19_h3",
+      "x": 14.4,
+      "y": 11.375,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack20_h1",
+      "x": 15.0,
+      "y": 11.375,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack20_h2",
+      "x": 15.0,
+      "y": 11.375,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack20_h3",
+      "x": 15.0,
+      "y": 11.375,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack21_h1",
+      "x": 15.6,
+      "y": 11.375,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack21_h2",
+      "x": 15.6,
+      "y": 11.375,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack21_h3",
+      "x": 15.6,
+      "y": 11.375,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack22_h1",
+      "x": 16.2,
+      "y": 11.375,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack22_h2",
+      "x": 16.2,
+      "y": 11.375,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_5_rack22_h3",
+      "x": 16.2,
+      "y": 11.375,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack01_h1",
+      "x": 3.6,
+      "y": 15.025,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack01_h2",
+      "x": 3.6,
+      "y": 15.025,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack01_h3",
+      "x": 3.6,
+      "y": 15.025,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack02_h1",
+      "x": 4.2,
+      "y": 15.025,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack02_h2",
+      "x": 4.2,
+      "y": 15.025,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack02_h3",
+      "x": 4.2,
+      "y": 15.025,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack03_h1",
+      "x": 4.8,
+      "y": 15.025,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack03_h2",
+      "x": 4.8,
+      "y": 15.025,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack03_h3",
+      "x": 4.8,
+      "y": 15.025,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack04_h1",
+      "x": 5.4,
+      "y": 15.025,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack04_h2",
+      "x": 5.4,
+      "y": 15.025,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack04_h3",
+      "x": 5.4,
+      "y": 15.025,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack05_h1",
+      "x": 6.0,
+      "y": 15.025,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack05_h2",
+      "x": 6.0,
+      "y": 15.025,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack05_h3",
+      "x": 6.0,
+      "y": 15.025,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack06_h1",
+      "x": 6.6,
+      "y": 15.025,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack06_h2",
+      "x": 6.6,
+      "y": 15.025,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack06_h3",
+      "x": 6.6,
+      "y": 15.025,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack07_h1",
+      "x": 7.2,
+      "y": 15.025,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack07_h2",
+      "x": 7.2,
+      "y": 15.025,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack07_h3",
+      "x": 7.2,
+      "y": 15.025,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack08_h1",
+      "x": 7.8,
+      "y": 15.025,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack08_h2",
+      "x": 7.8,
+      "y": 15.025,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack08_h3",
+      "x": 7.8,
+      "y": 15.025,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack09_h1",
+      "x": 8.4,
+      "y": 15.025,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack09_h2",
+      "x": 8.4,
+      "y": 15.025,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack09_h3",
+      "x": 8.4,
+      "y": 15.025,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack10_h1",
+      "x": 9.0,
+      "y": 15.025,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack10_h2",
+      "x": 9.0,
+      "y": 15.025,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack10_h3",
+      "x": 9.0,
+      "y": 15.025,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack11_h1",
+      "x": 9.6,
+      "y": 15.025,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack11_h2",
+      "x": 9.6,
+      "y": 15.025,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack11_h3",
+      "x": 9.6,
+      "y": 15.025,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack12_h1",
+      "x": 10.2,
+      "y": 15.025,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack12_h2",
+      "x": 10.2,
+      "y": 15.025,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack12_h3",
+      "x": 10.2,
+      "y": 15.025,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack13_h1",
+      "x": 10.8,
+      "y": 15.025,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack13_h2",
+      "x": 10.8,
+      "y": 15.025,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack13_h3",
+      "x": 10.8,
+      "y": 15.025,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack14_h1",
+      "x": 11.4,
+      "y": 15.025,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack14_h2",
+      "x": 11.4,
+      "y": 15.025,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack14_h3",
+      "x": 11.4,
+      "y": 15.025,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack15_h1",
+      "x": 12.0,
+      "y": 15.025,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack15_h2",
+      "x": 12.0,
+      "y": 15.025,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack15_h3",
+      "x": 12.0,
+      "y": 15.025,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack16_h1",
+      "x": 12.6,
+      "y": 15.025,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack16_h2",
+      "x": 12.6,
+      "y": 15.025,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack16_h3",
+      "x": 12.6,
+      "y": 15.025,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack17_h1",
+      "x": 13.2,
+      "y": 15.025,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack17_h2",
+      "x": 13.2,
+      "y": 15.025,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack17_h3",
+      "x": 13.2,
+      "y": 15.025,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack18_h1",
+      "x": 13.8,
+      "y": 15.025,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack18_h2",
+      "x": 13.8,
+      "y": 15.025,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack18_h3",
+      "x": 13.8,
+      "y": 15.025,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack19_h1",
+      "x": 14.4,
+      "y": 15.025,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack19_h2",
+      "x": 14.4,
+      "y": 15.025,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack19_h3",
+      "x": 14.4,
+      "y": 15.025,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack20_h1",
+      "x": 15.0,
+      "y": 15.025,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack20_h2",
+      "x": 15.0,
+      "y": 15.025,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack20_h3",
+      "x": 15.0,
+      "y": 15.025,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack21_h1",
+      "x": 15.6,
+      "y": 15.025,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack21_h2",
+      "x": 15.6,
+      "y": 15.025,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack21_h3",
+      "x": 15.6,
+      "y": 15.025,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack22_h1",
+      "x": 16.2,
+      "y": 15.025,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack22_h2",
+      "x": 16.2,
+      "y": 15.025,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_6_rack22_h3",
+      "x": 16.2,
+      "y": 15.025,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack01_h1",
+      "x": 3.6,
+      "y": 16.175,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack01_h2",
+      "x": 3.6,
+      "y": 16.175,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack01_h3",
+      "x": 3.6,
+      "y": 16.175,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack02_h1",
+      "x": 4.2,
+      "y": 16.175,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack02_h2",
+      "x": 4.2,
+      "y": 16.175,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack02_h3",
+      "x": 4.2,
+      "y": 16.175,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack03_h1",
+      "x": 4.8,
+      "y": 16.175,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack03_h2",
+      "x": 4.8,
+      "y": 16.175,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack03_h3",
+      "x": 4.8,
+      "y": 16.175,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack04_h1",
+      "x": 5.4,
+      "y": 16.175,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack04_h2",
+      "x": 5.4,
+      "y": 16.175,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack04_h3",
+      "x": 5.4,
+      "y": 16.175,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack05_h1",
+      "x": 6.0,
+      "y": 16.175,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack05_h2",
+      "x": 6.0,
+      "y": 16.175,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack05_h3",
+      "x": 6.0,
+      "y": 16.175,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack08_h1",
+      "x": 7.8,
+      "y": 16.175,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack08_h2",
+      "x": 7.8,
+      "y": 16.175,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack08_h3",
+      "x": 7.8,
+      "y": 16.175,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack09_h1",
+      "x": 8.4,
+      "y": 16.175,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack09_h2",
+      "x": 8.4,
+      "y": 16.175,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack09_h3",
+      "x": 8.4,
+      "y": 16.175,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack10_h1",
+      "x": 9.0,
+      "y": 16.175,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack10_h2",
+      "x": 9.0,
+      "y": 16.175,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack10_h3",
+      "x": 9.0,
+      "y": 16.175,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack11_h1",
+      "x": 9.6,
+      "y": 16.175,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack11_h2",
+      "x": 9.6,
+      "y": 16.175,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack11_h3",
+      "x": 9.6,
+      "y": 16.175,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack12_h1",
+      "x": 10.2,
+      "y": 16.175,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack12_h2",
+      "x": 10.2,
+      "y": 16.175,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack12_h3",
+      "x": 10.2,
+      "y": 16.175,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack13_h1",
+      "x": 10.8,
+      "y": 16.175,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack13_h2",
+      "x": 10.8,
+      "y": 16.175,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack13_h3",
+      "x": 10.8,
+      "y": 16.175,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack14_h1",
+      "x": 11.4,
+      "y": 16.175,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack14_h2",
+      "x": 11.4,
+      "y": 16.175,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack14_h3",
+      "x": 11.4,
+      "y": 16.175,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack15_h1",
+      "x": 12.0,
+      "y": 16.175,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack15_h2",
+      "x": 12.0,
+      "y": 16.175,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack15_h3",
+      "x": 12.0,
+      "y": 16.175,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack16_h1",
+      "x": 12.6,
+      "y": 16.175,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack16_h2",
+      "x": 12.6,
+      "y": 16.175,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack16_h3",
+      "x": 12.6,
+      "y": 16.175,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack17_h1",
+      "x": 13.2,
+      "y": 16.175,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack17_h2",
+      "x": 13.2,
+      "y": 16.175,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack17_h3",
+      "x": 13.2,
+      "y": 16.175,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack21_h1",
+      "x": 15.6,
+      "y": 16.175,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack21_h2",
+      "x": 15.6,
+      "y": 16.175,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack21_h3",
+      "x": 15.6,
+      "y": 16.175,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack22_h1",
+      "x": 16.2,
+      "y": 16.175,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack22_h2",
+      "x": 16.2,
+      "y": 16.175,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_7_rack22_h3",
+      "x": 16.2,
+      "y": 16.175,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack01_h1",
+      "x": 3.6,
+      "y": 19.825,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack01_h2",
+      "x": 3.6,
+      "y": 19.825,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack01_h3",
+      "x": 3.6,
+      "y": 19.825,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack02_h1",
+      "x": 4.2,
+      "y": 19.825,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack02_h2",
+      "x": 4.2,
+      "y": 19.825,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack02_h3",
+      "x": 4.2,
+      "y": 19.825,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack03_h1",
+      "x": 4.8,
+      "y": 19.825,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack03_h2",
+      "x": 4.8,
+      "y": 19.825,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack03_h3",
+      "x": 4.8,
+      "y": 19.825,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack04_h1",
+      "x": 5.4,
+      "y": 19.825,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack04_h2",
+      "x": 5.4,
+      "y": 19.825,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack04_h3",
+      "x": 5.4,
+      "y": 19.825,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack05_h1",
+      "x": 6.0,
+      "y": 19.825,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack05_h2",
+      "x": 6.0,
+      "y": 19.825,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack05_h3",
+      "x": 6.0,
+      "y": 19.825,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack06_h1",
+      "x": 6.6,
+      "y": 19.825,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack06_h2",
+      "x": 6.6,
+      "y": 19.825,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack06_h3",
+      "x": 6.6,
+      "y": 19.825,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack07_h1",
+      "x": 7.2,
+      "y": 19.825,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack07_h2",
+      "x": 7.2,
+      "y": 19.825,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack07_h3",
+      "x": 7.2,
+      "y": 19.825,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack08_h1",
+      "x": 7.8,
+      "y": 19.825,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack08_h2",
+      "x": 7.8,
+      "y": 19.825,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack08_h3",
+      "x": 7.8,
+      "y": 19.825,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack09_h1",
+      "x": 8.4,
+      "y": 19.825,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack09_h2",
+      "x": 8.4,
+      "y": 19.825,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack09_h3",
+      "x": 8.4,
+      "y": 19.825,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack10_h1",
+      "x": 9.0,
+      "y": 19.825,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack10_h2",
+      "x": 9.0,
+      "y": 19.825,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack10_h3",
+      "x": 9.0,
+      "y": 19.825,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack11_h1",
+      "x": 9.6,
+      "y": 19.825,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack11_h2",
+      "x": 9.6,
+      "y": 19.825,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack11_h3",
+      "x": 9.6,
+      "y": 19.825,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack12_h1",
+      "x": 10.2,
+      "y": 19.825,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack12_h2",
+      "x": 10.2,
+      "y": 19.825,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack12_h3",
+      "x": 10.2,
+      "y": 19.825,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack13_h1",
+      "x": 10.8,
+      "y": 19.825,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack13_h2",
+      "x": 10.8,
+      "y": 19.825,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack13_h3",
+      "x": 10.8,
+      "y": 19.825,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack14_h1",
+      "x": 11.4,
+      "y": 19.825,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack14_h2",
+      "x": 11.4,
+      "y": 19.825,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack14_h3",
+      "x": 11.4,
+      "y": 19.825,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack15_h1",
+      "x": 12.0,
+      "y": 19.825,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack15_h2",
+      "x": 12.0,
+      "y": 19.825,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack15_h3",
+      "x": 12.0,
+      "y": 19.825,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack16_h1",
+      "x": 12.6,
+      "y": 19.825,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack16_h2",
+      "x": 12.6,
+      "y": 19.825,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack16_h3",
+      "x": 12.6,
+      "y": 19.825,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack17_h1",
+      "x": 13.2,
+      "y": 19.825,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack17_h2",
+      "x": 13.2,
+      "y": 19.825,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack17_h3",
+      "x": 13.2,
+      "y": 19.825,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack18_h1",
+      "x": 13.8,
+      "y": 19.825,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack18_h2",
+      "x": 13.8,
+      "y": 19.825,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack18_h3",
+      "x": 13.8,
+      "y": 19.825,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack19_h1",
+      "x": 14.4,
+      "y": 19.825,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack19_h2",
+      "x": 14.4,
+      "y": 19.825,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack19_h3",
+      "x": 14.4,
+      "y": 19.825,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack20_h1",
+      "x": 15.0,
+      "y": 19.825,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack20_h2",
+      "x": 15.0,
+      "y": 19.825,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack20_h3",
+      "x": 15.0,
+      "y": 19.825,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack21_h1",
+      "x": 15.6,
+      "y": 19.825,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack21_h2",
+      "x": 15.6,
+      "y": 19.825,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack21_h3",
+      "x": 15.6,
+      "y": 19.825,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack22_h1",
+      "x": 16.2,
+      "y": 19.825,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack22_h2",
+      "x": 16.2,
+      "y": 19.825,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_8_rack22_h3",
+      "x": 16.2,
+      "y": 19.825,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack01_h1",
+      "x": 3.6,
+      "y": 20.975,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack01_h2",
+      "x": 3.6,
+      "y": 20.975,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack01_h3",
+      "x": 3.6,
+      "y": 20.975,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack02_h1",
+      "x": 4.2,
+      "y": 20.975,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack02_h2",
+      "x": 4.2,
+      "y": 20.975,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack02_h3",
+      "x": 4.2,
+      "y": 20.975,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack03_h1",
+      "x": 4.8,
+      "y": 20.975,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack03_h2",
+      "x": 4.8,
+      "y": 20.975,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack03_h3",
+      "x": 4.8,
+      "y": 20.975,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack04_h1",
+      "x": 5.4,
+      "y": 20.975,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack04_h2",
+      "x": 5.4,
+      "y": 20.975,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack04_h3",
+      "x": 5.4,
+      "y": 20.975,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack05_h1",
+      "x": 6.0,
+      "y": 20.975,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack05_h2",
+      "x": 6.0,
+      "y": 20.975,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack05_h3",
+      "x": 6.0,
+      "y": 20.975,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack06_h1",
+      "x": 6.6,
+      "y": 20.975,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack06_h2",
+      "x": 6.6,
+      "y": 20.975,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack06_h3",
+      "x": 6.6,
+      "y": 20.975,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack07_h1",
+      "x": 7.2,
+      "y": 20.975,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack07_h2",
+      "x": 7.2,
+      "y": 20.975,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack07_h3",
+      "x": 7.2,
+      "y": 20.975,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack08_h1",
+      "x": 7.8,
+      "y": 20.975,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack08_h2",
+      "x": 7.8,
+      "y": 20.975,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack08_h3",
+      "x": 7.8,
+      "y": 20.975,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack09_h1",
+      "x": 8.4,
+      "y": 20.975,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack09_h2",
+      "x": 8.4,
+      "y": 20.975,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack09_h3",
+      "x": 8.4,
+      "y": 20.975,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack10_h1",
+      "x": 9.0,
+      "y": 20.975,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack10_h2",
+      "x": 9.0,
+      "y": 20.975,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack10_h3",
+      "x": 9.0,
+      "y": 20.975,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack11_h1",
+      "x": 9.6,
+      "y": 20.975,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack11_h2",
+      "x": 9.6,
+      "y": 20.975,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack11_h3",
+      "x": 9.6,
+      "y": 20.975,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack12_h1",
+      "x": 10.2,
+      "y": 20.975,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack12_h2",
+      "x": 10.2,
+      "y": 20.975,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack12_h3",
+      "x": 10.2,
+      "y": 20.975,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack13_h1",
+      "x": 10.8,
+      "y": 20.975,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack13_h2",
+      "x": 10.8,
+      "y": 20.975,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack13_h3",
+      "x": 10.8,
+      "y": 20.975,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack14_h1",
+      "x": 11.4,
+      "y": 20.975,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack14_h2",
+      "x": 11.4,
+      "y": 20.975,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack14_h3",
+      "x": 11.4,
+      "y": 20.975,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack15_h1",
+      "x": 12.0,
+      "y": 20.975,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack15_h2",
+      "x": 12.0,
+      "y": 20.975,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack15_h3",
+      "x": 12.0,
+      "y": 20.975,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack16_h1",
+      "x": 12.6,
+      "y": 20.975,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack16_h2",
+      "x": 12.6,
+      "y": 20.975,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack16_h3",
+      "x": 12.6,
+      "y": 20.975,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack17_h1",
+      "x": 13.2,
+      "y": 20.975,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack17_h2",
+      "x": 13.2,
+      "y": 20.975,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack17_h3",
+      "x": 13.2,
+      "y": 20.975,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack18_h1",
+      "x": 13.8,
+      "y": 20.975,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack18_h2",
+      "x": 13.8,
+      "y": 20.975,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack18_h3",
+      "x": 13.8,
+      "y": 20.975,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack19_h1",
+      "x": 14.4,
+      "y": 20.975,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack19_h2",
+      "x": 14.4,
+      "y": 20.975,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack19_h3",
+      "x": 14.4,
+      "y": 20.975,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack20_h1",
+      "x": 15.0,
+      "y": 20.975,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack20_h2",
+      "x": 15.0,
+      "y": 20.975,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack20_h3",
+      "x": 15.0,
+      "y": 20.975,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack21_h1",
+      "x": 15.6,
+      "y": 20.975,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack21_h2",
+      "x": 15.6,
+      "y": 20.975,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack21_h3",
+      "x": 15.6,
+      "y": 20.975,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack22_h1",
+      "x": 16.2,
+      "y": 20.975,
+      "z": 0.75,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack22_h2",
+      "x": 16.2,
+      "y": 20.975,
+      "z": 1.13,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "row_9_rack22_h3",
+      "x": 16.2,
+      "y": 20.975,
+      "z": 1.51,
+      "type": "rack_inlet_temperature"
+    },
+    {
+      "id": "crac_1_supply",
+      "x": 1.12,
+      "y": 2.35,
+      "z": 1.3,
+      "type": "point_sensor"
+    },
+    {
+      "id": "crac_1_return",
+      "x": 0.54,
+      "y": 2.35,
+      "z": 4.2,
+      "type": "point_sensor"
+    },
+    {
+      "id": "crac_2_supply",
+      "x": 1.12,
+      "y": 6.09,
+      "z": 1.3,
+      "type": "point_sensor"
+    },
+    {
+      "id": "crac_2_return",
+      "x": 0.54,
+      "y": 6.09,
+      "z": 4.2,
+      "type": "point_sensor"
+    },
+    {
+      "id": "crac_3_supply",
+      "x": 1.12,
+      "y": 9.83,
+      "z": 1.3,
+      "type": "point_sensor"
+    },
+    {
+      "id": "crac_3_return",
+      "x": 0.54,
+      "y": 9.83,
+      "z": 4.2,
+      "type": "point_sensor"
+    },
+    {
+      "id": "crac_4_supply",
+      "x": 1.12,
+      "y": 13.57,
+      "z": 1.3,
+      "type": "point_sensor"
+    },
+    {
+      "id": "crac_4_return",
+      "x": 0.54,
+      "y": 13.57,
+      "z": 4.2,
+      "type": "point_sensor"
+    },
+    {
+      "id": "crac_5_supply",
+      "x": 1.12,
+      "y": 17.31,
+      "z": 1.3,
+      "type": "point_sensor"
+    },
+    {
+      "id": "crac_5_return",
+      "x": 0.54,
+      "y": 17.31,
+      "z": 4.2,
+      "type": "point_sensor"
+    },
+    {
+      "id": "crac_6_supply_sealed",
+      "x": 1.12,
+      "y": 21.05,
+      "z": 1.3,
+      "type": "point_sensor"
+    },
+    {
+      "id": "room_centre",
+      "x": 9.15,
+      "y": 11.7,
+      "z": 1.5,
+      "type": "point_sensor"
+    },
+    {
+      "id": "roof_cavity_centre",
+      "x": 9.15,
+      "y": 11.7,
+      "z": 4.5,
+      "type": "point_sensor"
+    }
+  ],
+  "flag_codes": {
+    "0": "fluid",
+    "1": "solid",
+    "2": "inlet",
+    "3": "outlet",
+    "4": "wall_adiabatic",
+    "5": "wall_temperature",
+    "6": "wall_heatflux",
+    "7": "rack_cold_face",
+    "8": "rack_hot_face",
+    "9": "tile_opening",
+    "10": "containment_wall",
+    "11": "rack_device_body",
+    "12": "hot_aisle_extractor"
+  }
+}

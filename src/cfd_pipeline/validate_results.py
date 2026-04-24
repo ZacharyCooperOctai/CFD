@@ -3,8 +3,6 @@ from __future__ import annotations
 from pathlib import Path
 from math import isnan
 
-from buildingspy.io.outputfile import Reader
-
 from .common import default_run_id, load_case_config, repo_root, stage_dir
 from .logging_utils import StageRecorder, ensure_clean_dir, tail_lines
 from .manifests import write_json
@@ -37,6 +35,8 @@ def validate_results(case_id: str, run_id: str | None = None, stop_time: float |
         errors.append(f'Missing result file: {result_path}')
     else:
         try:
+            from buildingspy.io.outputfile import Reader
+
             reader = Reader(str(result_path), 'openmodelica')
             variables = reader.varNames()
             variable_set = set(variables)

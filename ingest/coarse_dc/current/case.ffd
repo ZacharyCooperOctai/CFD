@@ -25,7 +25,7 @@ solv.solver GS
 solv.check_residual 0
 solv.advection_solver SEMI
 solv.interpolation BILINEAR
-solv.cosimulation 1
+solv.cosimulation 0
 
 init.T 22.0
 init.u 0.0

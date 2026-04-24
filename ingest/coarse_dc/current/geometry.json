@@ -19,7 +19,11 @@
       "z_max": 2.26,
       "cold_face": "-y",
       "total_heat_w": 65000.0,
-      "heat_flux_w_m2": 2545.2267209648367
+      "heat_flux_w_m2": 2545.2267209648367,
+      "fan_q_max_m3s": 3.835,
+      "fan_dp_max_pa": 80.0,
+      "fan_q_ref_m3s": 1.9175,
+      "fan_dp_ref_pa": 60.0
     },
     {
       "id": "row_2",
@@ -32,7 +36,11 @@
       "z_max": 2.26,
       "cold_face": "+y",
       "total_heat_w": 65000.0,
-      "heat_flux_w_m2": 2545.2267209648367
+      "heat_flux_w_m2": 2545.2267209648367,
+      "fan_q_max_m3s": 3.835,
+      "fan_dp_max_pa": 80.0,
+      "fan_q_ref_m3s": 1.9175,
+      "fan_dp_ref_pa": 60.0
     },
     {
       "id": "row_3",
@@ -45,7 +53,11 @@
       "z_max": 2.26,
       "cold_face": "-y",
       "total_heat_w": 65000.0,
-      "heat_flux_w_m2": 2545.2267209648367
+      "heat_flux_w_m2": 2545.2267209648367,
+      "fan_q_max_m3s": 3.835,
+      "fan_dp_max_pa": 80.0,
+      "fan_q_ref_m3s": 1.9175,
+      "fan_dp_ref_pa": 60.0
     },
     {
       "id": "row_4",
@@ -58,7 +70,11 @@
       "z_max": 2.26,
       "cold_face": "+y",
       "total_heat_w": 65000.0,
-      "heat_flux_w_m2": 2545.2267209648367
+      "heat_flux_w_m2": 2545.2267209648367,
+      "fan_q_max_m3s": 3.835,
+      "fan_dp_max_pa": 80.0,
+      "fan_q_ref_m3s": 1.9175,
+      "fan_dp_ref_pa": 60.0
     },
     {
       "id": "row_5",
@@ -71,7 +87,11 @@
       "z_max": 2.26,
       "cold_face": "-y",
       "total_heat_w": 65000.0,
-      "heat_flux_w_m2": 2545.2267209648367
+      "heat_flux_w_m2": 2545.2267209648367,
+      "fan_q_max_m3s": 3.835,
+      "fan_dp_max_pa": 80.0,
+      "fan_q_ref_m3s": 1.9175,
+      "fan_dp_ref_pa": 60.0
     },
     {
       "id": "row_6",
@@ -84,7 +104,11 @@
       "z_max": 2.26,
       "cold_face": "+y",
       "total_heat_w": 65000.0,
-      "heat_flux_w_m2": 2545.2267209648367
+      "heat_flux_w_m2": 2545.2267209648367,
+      "fan_q_max_m3s": 3.835,
+      "fan_dp_max_pa": 80.0,
+      "fan_q_ref_m3s": 1.9175,
+      "fan_dp_ref_pa": 60.0
     },
     {
       "id": "row_7",
@@ -97,7 +121,11 @@
       "z_max": 2.26,
       "cold_face": "-y",
       "total_heat_w": 65000.0,
-      "heat_flux_w_m2": 2545.2267209648367
+      "heat_flux_w_m2": 2545.2267209648367,
+      "fan_q_max_m3s": 3.835,
+      "fan_dp_max_pa": 80.0,
+      "fan_q_ref_m3s": 1.9175,
+      "fan_dp_ref_pa": 60.0
     },
     {
       "id": "row_8",
@@ -110,7 +138,11 @@
       "z_max": 2.26,
       "cold_face": "+y",
       "total_heat_w": 65000.0,
-      "heat_flux_w_m2": 2545.2267209648367
+      "heat_flux_w_m2": 2545.2267209648367,
+      "fan_q_max_m3s": 3.835,
+      "fan_dp_max_pa": 80.0,
+      "fan_q_ref_m3s": 1.9175,
+      "fan_dp_ref_pa": 60.0
     }
   ],
   "containment_blocks": [
@@ -243,7 +275,10 @@
       "y_min": 2.0,
       "y_max": 2.6,
       "z": 0.0,
-      "open_area_ratio": 0.25
+      "open_area_ratio": 0.25,
+      "effective_open_fraction": 0.25,
+      "loss_coefficient": 15.0,
+      "native_pressure_jump": true
     },
     {
       "id": "row_2_tiles",
@@ -252,7 +287,10 @@
       "y_min": 6.300000000000001,
       "y_max": 6.9,
       "z": 0.0,
-      "open_area_ratio": 0.25
+      "open_area_ratio": 0.25,
+      "effective_open_fraction": 0.25,
+      "loss_coefficient": 15.0,
+      "native_pressure_jump": true
     },
     {
       "id": "row_3_tiles",
@@ -261,7 +299,10 @@
       "y_min": 7.2,
       "y_max": 7.8,
       "z": 0.0,
-      "open_area_ratio": 0.25
+      "open_area_ratio": 0.25,
+      "effective_open_fraction": 0.25,
+      "loss_coefficient": 15.0,
+      "native_pressure_jump": true
     },
     {
       "id": "row_4_tiles",
@@ -270,7 +311,10 @@
       "y_min": 11.5,
       "y_max": 12.1,
       "z": 0.0,
-      "open_area_ratio": 0.25
+      "open_area_ratio": 0.25,
+      "effective_open_fraction": 0.25,
+      "loss_coefficient": 15.0,
+      "native_pressure_jump": true
     },
     {
       "id": "row_5_tiles",
@@ -279,7 +323,10 @@
       "y_min": 12.4,
       "y_max": 13.0,
       "z": 0.0,
-      "open_area_ratio": 0.25
+      "open_area_ratio": 0.25,
+      "effective_open_fraction": 0.25,
+      "loss_coefficient": 15.0,
+      "native_pressure_jump": true
     },
     {
       "id": "row_6_tiles",
@@ -288,7 +335,10 @@
       "y_min": 16.7,
       "y_max": 17.3,
       "z": 0.0,
-      "open_area_ratio": 0.25
+      "open_area_ratio": 0.25,
+      "effective_open_fraction": 0.25,
+      "loss_coefficient": 15.0,
+      "native_pressure_jump": true
     },
     {
       "id": "row_7_tiles",
@@ -297,7 +347,10 @@
       "y_min": 17.599999999999998,
       "y_max": 18.2,
       "z": 0.0,
-      "open_area_ratio": 0.25
+      "open_area_ratio": 0.25,
+      "effective_open_fraction": 0.25,
+      "loss_coefficient": 15.0,
+      "native_pressure_jump": true
     },
     {
       "id": "row_8_tiles",
@@ -306,7 +359,10 @@
       "y_min": 21.900000000000002,
       "y_max": 22.500000000000004,
       "z": 0.0,
-      "open_area_ratio": 0.25
+      "open_area_ratio": 0.25,
+      "effective_open_fraction": 0.25,
+      "loss_coefficient": 15.0,
+      "native_pressure_jump": true
     }
   ],
   "crac_openings": [
@@ -2731,6 +2787,7 @@
     "7": "rack_cold_face",
     "8": "rack_hot_face",
     "9": "tile_opening",
-    "10": "containment_wall"
+    "10": "containment_wall",
+    "11": "rack_source"
   }
 }

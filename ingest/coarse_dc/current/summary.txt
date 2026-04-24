@@ -32,12 +32,13 @@ RACK ROWS
 
 CONTAINMENT BLOCKS: 12
 PERFORATED TILE ZONES: 8
+PHYSICS SOURCE FILE: case.sources
 CRAC OPENINGS: 12
 VIRTUAL SENSORS: 325
 
 CELL FLAG DISTRIBUTION
-  fluid                    :     25,226 cells ( 60.8%)
-  solid                    :      6,132 cells ( 14.8%)
+  fluid                    :     24,326 cells ( 58.6%)
   wall_adiabatic           :      9,456 cells ( 22.8%)
   tile_opening             :        532 cells (  1.3%)
-  containment_wall         :        150 cells (  0.4%)
+  containment_wall         :      1,050 cells (  2.5%)
+  rack_source              :      6,132 cells ( 14.8%)

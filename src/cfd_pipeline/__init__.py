@@ -1,1 +1,1 @@
-"""Docker-first CFD pipeline package."""
+"""Native Linux CFD pipeline package."""

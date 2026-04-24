@@ -68,7 +68,7 @@ class StageRecorder:
             'case_id': self.case_id,
             'stage': self.stage,
             'run_id': self.run_id,
-            'docker_image': os.environ.get('CFD_DOCKER_IMAGE', 'unknown'),
+            'runtime': os.environ.get('CFD_RUNTIME', 'native-linux'),
             'command': command,
             'cwd': str(self.root),
             'started_at': utc_now(),

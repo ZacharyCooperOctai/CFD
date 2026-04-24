@@ -1,0 +1,50 @@
+======================================================================
+DATA CENTRE FFD MODEL — GEOMETRY AND MESH SUMMARY
+======================================================================
+
+ROOM ENVELOPE
+  X (width):  18.3 m
+  Y (length): 23.4 m
+  White space height: 5.0 m
+  Plenum depth: 0.0 m
+  Total Z domain: 0.00 to 5.00 m
+
+MESH
+  Grid nodes:  X=166, Y=313, Z=94
+  Grid cells:  X=165, Y=312, Z=93
+  Total cells: 4,787,640
+  Min cell size X: 0.0500 m
+  Max cell size X: 0.2020 m
+  Min cell size Y: 0.0306 m
+  Max cell size Y: 0.2333 m
+  Min cell size Z: 0.0251 m
+  Max cell size Z: 0.0974 m
+
+RACK ROWS
+  row_1: X=[3.3, 16.5] Y=[1.8, 3.0] Z=[0.0, 1.95] heat=110000 W
+  row_2: X=[3.3, 16.5] Y=[4.2, 5.4] Z=[0.0, 1.95] heat=110000 W
+  row_3: X=[3.3, 16.5] Y=[6.6, 7.8] Z=[0.0, 1.95] heat=85000 W
+  row_4: X=[3.3, 16.5] Y=[9.0, 10.2] Z=[0.0, 1.95] heat=110000 W
+  row_5: X=[3.3, 16.5] Y=[11.4, 12.6] Z=[0.0, 1.95] heat=110000 W
+  row_6: X=[3.3, 16.5] Y=[13.8, 15.0] Z=[0.0, 1.95] heat=110000 W
+  row_7: X=[3.3, 16.5] Y=[16.2, 17.4] Z=[0.0, 1.95] heat=85000 W
+  row_8: X=[3.3, 16.5] Y=[18.6, 19.8] Z=[0.0, 1.95] heat=110000 W
+  row_9: X=[3.3, 16.5] Y=[21.0, 22.2] Z=[0.0, 1.95] heat=110000 W
+
+CONTAINMENT BLOCKS: 24
+ADDITIONAL SOLID BLOCKS: 148
+HOT-AISLE EXTRACTORS: 5
+PERFORATED TILE ZONES: 0
+PHYSICS SOURCE FILE: case.sources
+CRAC OPENINGS: 10
+VIRTUAL SENSORS: 577
+
+CELL FLAG DISTRIBUTION
+  fluid                    :  3,213,487 cells ( 67.1%)
+  solid                    :    391,622 cells (  8.2%)
+  wall_adiabatic           :    136,093 cells (  2.8%)
+  rack_cold_face           :     43,992 cells (  0.9%)
+  rack_hot_face            :    219,960 cells (  4.6%)
+  containment_wall         :     66,570 cells (  1.4%)
+  rack_device_body         :    667,836 cells ( 13.9%)
+  hot_aisle_extractor      :     48,080 cells (  1.0%)

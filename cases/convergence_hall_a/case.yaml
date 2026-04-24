@@ -1,0 +1,361 @@
+room:
+  length_x: 18.3
+  length_y: 23.4
+  white_space_height: 5.0
+  plenum_depth: 0.0
+  slab_to_ceiling: 5.0
+  walls_adiabatic: true
+  domain_z_min: 0.0
+  domain_z_max: 5.0
+  false_ceiling_base_z: 4.0
+  false_ceiling_thickness: 0.05
+rack_defaults:
+  rack_width: 0.6
+  rack_depth: 1.2
+  rack_height: 1.95
+  racks_per_row: 22
+  default_heat_per_rack_kw: 5.0
+  rack_fan_curve:
+    q_max_m3s_per_kw: 0.059
+    dp_max_pa: 80.0
+rack_rows:
+- id: row_1
+  origin_x: 3.3
+  origin_y: 1.8
+  row_length: 13.2
+  cold_face: -y
+  heat_per_rack_kw: 5.0
+- id: row_2
+  origin_x: 3.3
+  origin_y: 4.2
+  row_length: 13.2
+  cold_face: +y
+  heat_per_rack_kw: 5.0
+- id: row_3
+  origin_x: 3.3
+  origin_y: 6.6
+  row_length: 13.2
+  cold_face: -y
+  heat_per_rack_kw: 5.0
+  missing_rack_indices:
+  - 6
+  - 7
+  - 18
+  - 19
+  - 20
+- id: row_4
+  origin_x: 3.3
+  origin_y: 9.0
+  row_length: 13.2
+  cold_face: +y
+  heat_per_rack_kw: 5.0
+- id: row_5
+  origin_x: 3.3
+  origin_y: 11.4
+  row_length: 13.2
+  cold_face: -y
+  heat_per_rack_kw: 5.0
+- id: row_6
+  origin_x: 3.3
+  origin_y: 13.8
+  row_length: 13.2
+  cold_face: +y
+  heat_per_rack_kw: 5.0
+- id: row_7
+  origin_x: 3.3
+  origin_y: 16.2
+  row_length: 13.2
+  cold_face: -y
+  heat_per_rack_kw: 5.0
+  missing_rack_indices:
+  - 6
+  - 7
+  - 18
+  - 19
+  - 20
+- id: row_8
+  origin_x: 3.3
+  origin_y: 18.6
+  row_length: 13.2
+  cold_face: +y
+  heat_per_rack_kw: 5.0
+- id: row_9
+  origin_x: 3.3
+  origin_y: 21.0
+  row_length: 13.2
+  cold_face: -y
+  heat_per_rack_kw: 5.0
+aisles:
+  hot_aisles:
+  - id: ha_12
+    between:
+    - row_1
+    - row_2
+    containment: true
+    containment_top_z: 4.0
+    roof_panel: false
+  - id: ha_34
+    between:
+    - row_3
+    - row_4
+    containment: true
+    containment_top_z: 4.0
+    roof_panel: false
+  - id: ha_56
+    between:
+    - row_5
+    - row_6
+    containment: true
+    containment_top_z: 4.0
+    roof_panel: false
+  - id: ha_78
+    between:
+    - row_7
+    - row_8
+    containment: true
+    containment_top_z: 4.0
+    roof_panel: false
+  - id: ha_9s
+    location: south_of_row_9
+    containment: true
+    containment_top_z: 4.0
+    roof_panel: false
+hot_aisle_extractors:
+  capture_depth_below_top_m: 0.0
+perforated_tiles:
+  enabled: false
+crac_units:
+- id: crac_1
+  topology: direct_room_supply
+  wall: west
+  active: true
+  origin_y: 0.6
+  width_y: 3.5
+  depth_x: 1.08
+  unit_height_z: 2.65
+  return_cavity_base_z: 4.0
+  rated_flow_m3s: 12.7778
+  supply_temp_c: 21.5
+- id: crac_2
+  topology: direct_room_supply
+  wall: west
+  active: true
+  origin_y: 4.34
+  width_y: 3.5
+  depth_x: 1.08
+  unit_height_z: 2.65
+  return_cavity_base_z: 4.0
+  rated_flow_m3s: 12.7778
+  supply_temp_c: 21.5
+- id: crac_3
+  topology: direct_room_supply
+  wall: west
+  active: true
+  origin_y: 8.08
+  width_y: 3.5
+  depth_x: 1.08
+  unit_height_z: 2.65
+  return_cavity_base_z: 4.0
+  rated_flow_m3s: 12.7778
+  supply_temp_c: 21.5
+- id: crac_4
+  topology: direct_room_supply
+  wall: west
+  active: true
+  origin_y: 11.82
+  width_y: 3.5
+  depth_x: 1.08
+  unit_height_z: 2.65
+  return_cavity_base_z: 4.0
+  rated_flow_m3s: 12.7778
+  supply_temp_c: 21.5
+- id: crac_5
+  topology: direct_room_supply
+  wall: west
+  active: true
+  origin_y: 15.56
+  width_y: 3.5
+  depth_x: 1.08
+  unit_height_z: 2.65
+  return_cavity_base_z: 4.0
+  rated_flow_m3s: 12.7778
+  supply_temp_c: 21.5
+- id: crac_6
+  topology: direct_room_supply
+  wall: west
+  active: false
+  origin_y: 19.3
+  width_y: 3.5
+  depth_x: 1.08
+  unit_height_z: 2.65
+  return_cavity_base_z: 4.0
+  rated_flow_m3s: 12.7778
+  supply_temp_c: 21.5
+sensors:
+  rack_inlet_heights:
+  - 0.75
+  - 1.13
+  - 1.51
+  rack_inlet_offset: 0.025
+  extra_sensors:
+  - id: crac_1_supply
+    x: 1.12
+    y: 2.35
+    z: 1.3
+  - id: crac_1_return
+    x: 0.54
+    y: 2.35
+    z: 4.2
+  - id: crac_2_supply
+    x: 1.12
+    y: 6.09
+    z: 1.3
+  - id: crac_2_return
+    x: 0.54
+    y: 6.09
+    z: 4.2
+  - id: crac_3_supply
+    x: 1.12
+    y: 9.83
+    z: 1.3
+  - id: crac_3_return
+    x: 0.54
+    y: 9.83
+    z: 4.2
+  - id: crac_4_supply
+    x: 1.12
+    y: 13.57
+    z: 1.3
+  - id: crac_4_return
+    x: 0.54
+    y: 13.57
+    z: 4.2
+  - id: crac_5_supply
+    x: 1.12
+    y: 17.31
+    z: 1.3
+  - id: crac_5_return
+    x: 0.54
+    y: 17.31
+    z: 4.2
+  - id: crac_6_supply_sealed
+    x: 1.12
+    y: 21.05
+    z: 1.3
+  - id: room_centre
+    x: 9.15
+    y: 11.7
+    z: 1.5
+  - id: roof_cavity_centre
+    x: 9.15
+    y: 11.7
+    z: 4.5
+mesh:
+  base_cell_size: 0.2
+  refinement:
+    rack_faces:
+      min_cell_size: 0.07
+      depth: 0.25
+    hot_aisles:
+      min_cell_size: 0.06
+      x_min_cell_size: 0.10
+      z_min_cell_size: 0.05
+      x_margin: 0.0
+    crac_openings:
+      min_cell_size: 0.10
+      depth: 0.20
+    overhead_space:
+      min_cell_size: 0.08
+      z_min: 2.0
+      z_max: 5.0
+    ceiling_return:
+      min_cell_size: 0.06
+      z_min: 3.8
+      z_max: 5.0
+ffd:
+  time_step: 0.05
+  sync_interval: 10.0
+  total_time: 1800.0
+  turbulence_model: zero_equation
+  initial_temp_c: 24.0
+  buoyancy: true
+fluid:
+  density: 1.204
+  kinematic_viscosity: 1.516e-05
+  thermal_conductivity: 0.0257
+  specific_heat: 1006.0
+  thermal_expansion: 0.00343
+  thermal_diffusivity: 2.14e-05
+  gravity_z: -9.81
+output:
+  ffd_file: case.ffd
+  mesh_file: case.cfd
+  obstacle_file: case.dat
+  source_file: case.sources
+  sensor_file: case_sensors.csv
+case:
+  id: convergence_hall_a
+  generator: legacy_dc
+  physics_model: physics-v1
+  model_name: DataCentreFFD
+  standalone_timeout_s: 7200
+  controls:
+    fan_count: 6
+    supply_temp_count: 6
+  defaults:
+    scenario: baseline
+    stop_time: 900.0
+    sync_dt: 10.0
+  validation:
+    mat_required: true
+    fail_on_stdout_patterns:
+    - Segmentation fault
+    - Execution failed
+    - LOG_ASSERT
+    - Variable violating
+    fail_on_stderr_patterns:
+    - 'error:'
+    - assertion
+    - segmentation fault
+    fail_on_ffd_patterns:
+    - ERROR in
+    - Could not
+    - different number
+    - Segmentation fault
+    variable_bounds:
+    - name: dc.T_sup_out[1]
+      min: 270.0
+      max: 320.0
+    - name: dc.T_sup_out[2]
+      min: 270.0
+      max: 320.0
+    - name: dc.T_sup_out[3]
+      min: 270.0
+      max: 320.0
+    - name: dc.T_sup_out[4]
+      min: 270.0
+      max: 320.0
+    - name: dc.T_sup_out[5]
+      min: 270.0
+      max: 320.0
+    - name: dc.T_sup_out[6]
+      min: 270.0
+      max: 320.0
+    - name: dc.T_ret_out[1]
+      min: 270.0
+      max: 350.0
+    - name: dc.T_ret_out[2]
+      min: 270.0
+      max: 350.0
+    - name: dc.T_ret_out[3]
+      min: 270.0
+      max: 350.0
+    - name: dc.T_ret_out[4]
+      min: 270.0
+      max: 350.0
+    - name: dc.T_ret_out[5]
+      min: 270.0
+      max: 350.0
+    - name: dc.T_ret_out[6]
+      min: 270.0
+      max: 350.0
